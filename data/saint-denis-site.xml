@@ -125,7 +125,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <div type="part" xml:id="sd-cartulaire-blanc">
           <head>Le Cartulaire blanc</head>
         <div type="page" xml:id="sd-les-textes--cartulaire-blanc--introduction" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/introduction.html">
-            <head>Le Cartulaire blanc : introduction</head>
+            <head>Introduction</head>
             <div type="legacy-block" rend="static-content">
 <p>Les éléments ici offerts à la consultation sont le résultat, progressivement enrichi, d’un travail de longue haleine. Celui-ci vise à fournir le texte des quelque 2600 transcriptions portées, au dernier tiers du XIII<hi rend="sup">e</hi> siècle, dans le plus important (mais non le seul !) des cartulaires médiévaux de l’abbaye de Saint-Denis, dit « Cartulaire blanc ».</p>
 <p>La table des chapitres du Cartulaire blanc permet de comprendre l’organisation du recueil, de mettre en contexte les chapitres déjà disponibles, et d’accéder directement à ceux-ci. On peut aussi accéder à un chapitre déjà disponible en le sélectionnant sur un menu déroulant.</p>
@@ -141,7 +141,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
             </div>
           </div>
         <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation.html">
-              <head>Le Cartulaire blanc : présentation</head>
+              <head>Présentation</head>
               <anchor xml:id="sd-les-textes--cartulaire-blanc--presentation--preambule"/>
               <div type="legacy-block" rend="static-content">
 <p>Le Cartulaire blanc de l’abbaye de Saint-Denis nous est parvenu dans son état
@@ -155,7 +155,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
 </div>
           <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation--problemes-de-date-et-fabrication" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation/problemes-de-date-et-fabrication.html">
-              <head>Le Cartulaire blanc, présentation &gt; problèmes de date et de fabrication</head>
+              <head>Problèmes de date et de fabrication</head>
               <anchor xml:id="sd-les-textes--cartulaire-blanc--presentation--problemes-de-date-et-fabrication--fabrication"/>
               <div type="legacy-block" rend="static-content">
 
@@ -201,7 +201,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
           <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation--principes-de-classement" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation/principes-de-classement.html">
-              <head>Le Cartulaire blanc, présentation &gt; principes de classement</head>
+              <head>Principes de classement</head>
               <anchor xml:id="sd-les-textes--cartulaire-blanc--presentation--principes-de-classement--classement"/>
               <div type="legacy-block" rend="static-content">
 <p>Les compilateurs suivent à l’évidence l’ordre qu’ils ont trouvé au chartrier, sans
@@ -256,7 +256,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
           <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation--taux-de-couverture-des-archives" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation/taux-de-couverture-des-archives.html">
-              <head>Le Cartulaire blanc, présentation &gt; taux de couverture des archives</head>
+              <head>Taux de couverture des archives</head>
               <anchor xml:id="sd-les-textes--cartulaire-blanc--presentation--taux-de-couverture-des-archives--couverture"/>
               <div type="legacy-block" rend="static-content">
 <p>La masse de la documentation, le soin apporté au Cartulaire, typique du reste
@@ -278,7 +278,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
           <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation--autres-cartulaires" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation/autres-cartulaires.html">
-              <head>Le Cartulaire blanc, présentation &gt; d’autres cartulaires</head>
+              <head>Autres cartulaires</head>
               <anchor xml:id="sd-les-textes--cartulaire-blanc--presentation--autres-cartulaires--autres"/>
               <div type="legacy-block" rend="static-content">
 <p>Il convient enfin de ne pas oublier que le Cartulaire blanc, même s’il
@@ -311,7 +311,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
             </div>
         </div>
         <div type="page" xml:id="sd-les-textes--cartulaire-blanc--parcourir" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/parcourir.html">
-              <head>Le cartulaire blanc : l’édition électronique</head>
+              <head>Édition électronique</head>
               <div type="legacy-block" rend="static-content">
 <list type="unordered"><item><ref target="#sd-les-textes--cartulaire-blanc--parcourir--table-des-chapitres" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/parcourir/table-des-chapitres.html">Table des chapitres</ref></item><item>Chapitres édités<list type="unordered"><item>Accès direct aux éditions<list type="unordered"><item><ref target="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/pierrefitte/">Le chapitre
                                 de Pierrefitte</ref></item><item><ref target="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/dugny/">Le chapitre
@@ -329,7 +329,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
         <div type="page" xml:id="sd-les-textes--cartulaire-blanc--parcourir--table-des-chapitres" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/parcourir/table-des-chapitres.html">
-              <head>Le Cartulaire blanc : table des chapitres</head>
+              <head>Table des chapitres</head>
               <div type="legacy-block" rend="static-content">
 <p rend="intro">On trouvera ci-après la liste des chapitres entre lesquels se répartit
                 la matière des deux volumes du Cartulaire blanc (Paris, Archives nationales,
@@ -368,7 +368,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
         <div type="page" xml:id="sd-les-textes--cartulaire-blanc--parcourir--table-des-actes" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/parcourir/table-des-actes.html">
-              <head>Édition électronique du cartulaire blanc : liste cumulative des actes édités</head>
+              <head>Liste cumulative des actes édités</head>
               <div type="legacy-block">
 <p rend="intro"> Cette table présente dans l’ordre chronologique les actes déjà
                         édités, tous chapitres confondus. La date fournie est celle qui a été
@@ -4677,7 +4677,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
         <div type="page" xml:id="sd-les-images--images-cb" corresp="http://saint-denis.enc.sorbonne.fr/les-images/images-cb.html">
-            <head>Le Cartulaire blanc : les images</head>
+            <head>Les images</head>
             <div type="legacy-block" rend="static-content">
 <p>En suivant ces liens vous accèderez directement aux séries d’images numériques produites à partir de chacun des tomes du Cartulaire blanc.</p>
 <list type="unordered"><item>
