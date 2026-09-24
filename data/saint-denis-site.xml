@@ -107,7 +107,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <div type="part" xml:id="sd-actes-haut-moyen-age">
           <head>Actes du haut Moyen Âge</head>
         <div type="page" xml:id="sd-les-textes--actes-du-haut-moyen-age--introduction" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/actes-du-haut-moyen-age/introduction.html">
-            <head>Les actes du haut Moyen Âge</head>
+            <head>Introduction</head>
             <div type="legacy-block" rend="static-content">
 <p>En 2003, Daniel Sonzogni confiait un mémoire original, « Le chartrier de l’abbaye de Saint-Denis en France au haut Moyen Âge : essai de reconstitution », à la revue <hi rend="italic">Pecia, ressources en archivistique</hi>, volume 3, [Saint-Denis], 2003, p. 9-210. Après une brève introduction, il y donnait un état détaillé des sources et de la bibliographie disponibles sur l’histoire de l’abbaye jusqu’en l’an mil, puis le catalogue des 267 actes retrouvés du chartrier de l’établissement, qu’ils fussent publiés ou inédits, connus par une tradition foisonnante ou par d’allusives mentions. Cette mise au point a été reprise à l’identique par les Éditions Brepols, dans la collection « Pecia : le livre et l’écrit », dédiée à la codicologie et à l’histoire du livre.</p>
 <p>Ce premier catalogue, qui a apporté une aide décisive, pour les premiers siècles, à l’édition numérique de l’Inventaire général des archives dionysiennes de 1680-1720, était, tout ce temps durant, poursuivi par l’auteur, jusqu’à former un ouvrage totalement nouveau, à l’information décuplée : pourvu d’une introduction étoffée sur les particularité de la fabrication, de la tradition et de l’archivage des actes du fonds de Saint-Denis, il ajoute aux sèches notices du catalogue primitif quelques nouvelles mentions, et surtout le fruit d’un examen attentif des originaux et copies anciennes, notes dorsales comprises, des discussions chronologiques et critiques, des identifications toponymiques serrées, et <hi rend="italic">last but not least</hi>, des extraits copieux de la plupart des actes, qui permettent au chercheur d’approfondir commodément sa lecture. Ces extraits sont pris aux meilleures éditions, et aussi souvent que possible à la base « Chartes originales antérieures à 1121 conservées en France » (&lt;<ref target="http://www.cn-telma.fr/originaux/index/">http://www.cn-telma.fr/originaux/index/</ref>&gt;).</p>
@@ -4706,7 +4706,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <div type="part" xml:id="sd-inventaire-general">
           <head>L’Inventaire général</head>
         <div type="page" xml:id="sd-les-textes--inventaire--introduction" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/introduction.html">
-            <head>L’Inventaire général : introduction</head>
+            <head>Introduction</head>
             <div type="legacy-block" rend="static-content">
 <p>L’Inventaire général des archives de Saint-Denis procède du labeur d’un moine de
                 l’abbaye, Dom Antoine Thomas, et de successeurs anonymes, dont le travail s’est
@@ -4735,7 +4735,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
             </div>
           </div>
         <div type="page" xml:id="sd-les-textes--inventaire--presentation--distribution-des-volumes" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/distribution-des-volumes.html">
-              <head>L’Inventaire général : présentation &gt; distribution des volumes</head>
+              <head>Distribution des volumes</head>
               <div type="legacy-block" rend="static-content">
 <p>L’« Inventaire des chartes de l’abbaye de Saint-Denis en France selon l’ordre des dattes d’icelles, commencé en l’année 1688 » est le dernier grand représentant d’une longue suite de travaux archivistiques, ouverte à l’abbaye dès le début du XIVe siècle. Fort de quatorze volumes (Arch. nat., LL 1189-1202) de grandes dimensions (hauteur 43 cm x  largeur 28 cm), mené jusqu’en 1728, il doit à sa volonté affichée d’exhaustivité son titre postérieur d’« Inventaire général ».</p>
 <p>En dépit de quelques défauts et lacunes, il est un guide irremplaçable dans le chartrier de Saint-Denis, dont il permet en outre de prendre la mesure avant les saisies révolutionnaires et les démembrements qui ont suivi.</p>
@@ -4748,7 +4748,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
         <div type="page" xml:id="sd-les-textes--inventaire--presentation--les-auteurs" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/les-auteurs.html">
-              <head>L’Inventaire général : présentation &gt; les auteurs</head>
+              <head>Les auteurs</head>
               <div type="legacy-block" rend="static-content">
 <p>L’auteur, ou plus exactement l’initiateur et premier auteur de l’Inventaire général est un moine de l’abbaye, Dom François Thomas, qualifié en 1681 de « frère procureur » (Arch. nat., LL 1228,
                 Relevés des délibérations capitulaires, au 31 mars 1681). Son confrère Dom Michel Félibien rendit à sa personne et à son œuvre un hommage d’autant plus soutenu qu’il venait clore son <hi rend="italic">Histoire de
@@ -4761,7 +4761,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
         <div type="page" xml:id="sd-les-textes--inventaire--presentation--circonstances-et-visees-de-la-compilation" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/circonstances-et-visees-de-la-compilation.html">
-              <head>L’Inventaire général : présentation &gt; circonstances et visées de la compilation</head>
+              <head>Circonstances et visées de la compilation</head>
               <div type="legacy-block" rend="static-content">
 <p>L’Inventaire général n’est jamais que le dernier d’une série de travaux de récolement et d’inventoriage qui se sont accélérés au XVII<hi rend="sup">e</hi> siècle et qui, sans atteindre la même ampleur ni le même souci d’érudition, attirent l’attention mais restent à étudier (1619 par Jacques Coignée, 1647 par Jean Le Poix, 1681 par Locquet).</p>
 <p>Le dernier quart du XVII<hi rend="sup">e</hi> siècle fut, pour l’abbaye, le temps de grands changements, dont l’importance justifiait aisément, à elle seule, la confection d’un inventaire détaillé de l’ensemble du chartrier, sur un pied que n’avait connu aucune des entreprises précédentes, même récentes, et toutes d’ailleurs organisées dans l’ordre de coffres et de layettes qui pouvaient sembler intangibles. C’est d’abord le partage des biens de l’abbaye entre l’abbé (alors le cardinal de Retz) et les moines, sanctionné le 5 avril 1672 et ratifié les 9-11 février 1673. C’est ensuite, et surtout, l’affectation de la mense abbatiale à la fondation et à l’entretien de la Maison royale Saint-Louis de Saint-Cyr, instituée à l’instigation de Mme de Maintenon, avec pour conséquence  la suppression de la charge et du titre d’abbé, projet lancé en 1686, finalement sanctionné par le pape le 23 février 1691.</p>
@@ -4777,7 +4777,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
         <div type="page" xml:id="sd-les-textes--inventaire--presentation--contenu-et-presentation" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/contenu-et-presentation.html">
-              <head>L’Inventaire général : présentation &gt; contenu et présentation</head>
+              <head>Contenu et présentation</head>
               <div type="legacy-block" rend="static-content">
 <ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome1/voir.html?ns=inventairejpg_0477.jpg">
 <graphic url="legacy-source/assets/les-textes/inventaire/presentation/tome1_image0477_notice408.jpg" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/tome1_image0477_notice408.jpg" n="Inventaire général, tome 1 (LL1189), page 436, extrait, notice 408. Cliquer pour voir l’image entière"/>
@@ -4792,7 +4792,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
         <div type="page" xml:id="sd-les-textes--inventaire--presentation--richesses-et-faiblesses" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/richesses-et-faiblesses.html">
-              <head>L’Inventaire général : présentation &gt; richesses et faiblesses</head>
+              <head>Richesses et faiblesses</head>
               <div type="legacy-block" rend="static-content">
 <p>On a vu que l’Inventaire laissait échapper des documents, originaux non retrouvés ou copies de cartulaire jugées sans intérêt pour la défense et illustration de l’abbaye ; il n’en demeure pas moins le moyen de saisir le plus commodément et le plus largement les richesses du chartrier, avec près de 3300 regestes d’actes jusqu’à l’orée du XIV<hi rend="sup">e</hi> siècle, à comparer avec les quelque 2600 transcriptions du Cartulaire blanc, auxquelles il offre aussi du coup un accès commode.</p>
 <p>La même constatation s’impose au fond : le détail et la précision des regestes font de ceux-ci des outils précieux, mais à recevoir avec autant de prudence ; les identifications de lieux sont sujettes à caution, les termes institutionnels parfois travestis, les mots latins décalqués mécaniquement, certains montages compris de travers, et le tout est souvent recouvert d’un vernis d’anachronisme qui peut être trompeur si la traduction (puisque aussi bien la longueur de certains regestes confine à la traduction) n’est mise en rapport avec la version originelle du document. Historiens amateurs à bonne école, l’auteur ou plutôt les auteurs de l’Inventaire sont avant tout des praticiens, dont la maîtrise des clauses et des négoces devient patente dans le traitement des actes de juridiction gracieuse du XIII<hi rend="sup">e</hi> siècle, qui devaient leur être encore assez familiers.</p>
@@ -4800,7 +4800,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
         <div type="page" xml:id="sd-les-textes--inventaire--parcourir" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/parcourir.html">
-            <head>L’Inventaire général : l’édition électronique</head>
+            <head>Édition électronique</head>
             <div type="legacy-block" rend="static-content">
 <list type="unordered"><item>Les tomes édités <list type="unordered"><item>Accès direct aux éditions<list type="unordered"><item><ref target="http://saint-denis.enc.sorbonne.fr/inventaire/tome1/">Le tome I dans son
                                         intégralité</ref> (Archives nationales, LL 1189 : notices 1 à
@@ -4816,7 +4816,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
           </div>
         <div type="page" xml:id="sd-les-images--images-ig" corresp="http://saint-denis.enc.sorbonne.fr/les-images/images-ig.html">
-            <head>L’Inventaire général : les images</head>
+            <head>Les images</head>
             <div type="legacy-block" rend="static-content">
 <p>En suivant ces liens vous accèderez directement aux séries d’images numériques produites à partir de chacun des tomes de l’Inventaire général.</p>
 <list type="unordered"><item><ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome1/voir.html">Tome 1 (Archives nationales, LL 1189)</ref></item><item><ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome2/voir.html">Tome 2 (Archives nationales, LL 1190)</ref></item><item><ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html">Tome 3 (Archives nationales, LL 1191)</ref></item></list>
@@ -4826,7 +4826,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <div type="part" xml:id="sd-le-projet">
         <head>Le projet</head>
         <div type="page" xml:id="sd-le-projet--accueil" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/index.html">
-          <head>Le projet : présentation</head>
+          <head>Présentation</head>
           <div type="legacy-block" rend="static-content"><p>Cette partie du site rassemble toutes les informations
                 disponibles pour en savoir plus sur le présent projet.</p>
 <p>Il s’agit bien d’un projet - au sens où rien n’est terminé ; au contraire nous
@@ -4849,7 +4849,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
           <div type="subpart" xml:id="sd-scientifique-cartulaire">
             <head>Pour le Cartulaire blanc</head>
           <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc-projet-sc" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc-projet-sc.html">
-              <head>Le Cartulaire blanc : le travail de l’éditeur scientifique</head>
+              <head>Le travail de l’éditeur scientifique</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc-projet-sc--preambule"/>
               <div type="legacy-block" rend="static-content">
 <p>L’édition du Cartulaire blanc est une édition critique, collaborative et progressive,
@@ -5043,7 +5043,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <list type="unordered"><item>École nationale des chartes : Montmorency, Deuil, Le Pré-Saint-Gervais, Cormeilles.</item><item>Université Paris X (coord. François Bougard) : Dugny (Julien De Nauw), Chars (Christophe Araujo), Argenteuil (Jean-Baptiste Scref).</item><item>École pratique des hautes études (coord. Laurent Morelle) : Chaourse (Zuzana Vengrinova).</item><item>Samuel Leturcq : Toury.</item><item>Thomas Roche : Berneval, Angleterre.</item><item>Denise Angers : autres chapitres normands.</item></list><p><ref target="#sd-le-projet--aspects-scientifiques--cartulaire-blanc-projet-sc--preambule">Retour au début</ref></p></div>
             </div>
           <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--organisation-du-travail" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc/organisation-du-travail.html">
-              <head>Le Cartulaire blanc : le travail de l’éditeur scientifique &gt; organisation du travail</head>
+              <head>Organisation du travail</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--organisation-du-travail--organisation-du-travail"/>
               <div type="legacy-block" rend="static-content">
 <p>L’édition du Cartulaire blanc est une édition critique, collaborative et progressive,
@@ -5126,7 +5126,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
           <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--conventions-de-presentation" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc/conventions-de-presentation.html">
-              <head>Le Cartulaire blanc : le travail de l’éditeur scientifique &gt; conventions de présentation</head>
+              <head>Conventions de présentation</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--conventions-de-presentation--conventions-de-presentation"/>
               <div type="legacy-block" rend="static-content">
 <p>On ne signale ici que les conventions particulières adoptées, puisque pour le reste
@@ -5201,7 +5201,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
           <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--titres-cites-abreges" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc/titres-cites-abreges.html">
-              <head>Le Cartulaire blanc : le travail de l’éditeur scientifique &gt; titres cités de façon abrégée</head>
+              <head>Titres cités de façon abrégée</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--titres-cites-abreges--titres-cites-abreges"/>
               <div type="legacy-block" rend="static-content">
 <p>Les recueils usuels sont cités soit par leur abréviation courante (ex. R.H.G.F. pour
@@ -5238,7 +5238,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
           <div type="subpart" xml:id="sd-scientifique-inventaire">
             <head>Pour l’Inventaire</head>
           <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire-projet-sc" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire-projet-sc.html">
-              <head>L’Inventaire général : le travail de l’éditeur scientifique</head>
+              <head>Le travail de l’éditeur scientifique</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--inventaire-projet-sc--preambule"/>
               <div type="legacy-block" rend="static-content">
 <p>Riche, l’Inventaire général est aussi d’un emploi complexe ; aussi convient-il avant
@@ -5399,7 +5399,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
           <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--transcription" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/transcription.html">
-              <head>L’Inventaire général : le travail de l’éditeur scientifique &gt; transcription</head>
+              <head>Transcription</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--inventaire--transcription--transcription"/>
               <div type="legacy-block" rend="static-content">
 <p>Riche, l’Inventaire général est aussi d’un emploi complexe ; aussi convient-il avant
@@ -5421,7 +5421,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
           <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--dates" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/dates.html">
-              <head>L’Inventaire général : le travail de l’éditeur scientifique &gt; dates</head>
+              <head>Dates</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--inventaire--dates--dates"/>
               <div type="legacy-block" rend="static-content">
 <p>Les auteurs de l’Inventaire général convertissent les dates des seuls actes
@@ -5450,7 +5450,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
           <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--donnees-archivistiques" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/donnees-archivistiques.html">
-              <head>L’Inventaire général : le travail de l’éditeur scientifique &gt; données archivistiques</head>
+              <head>Données archivistiques</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--inventaire--donnees-archivistiques--donnees-archivistiques"/>
               <div type="legacy-block" rend="static-content">
 <p>L’Inventaire général donne un tableau de tradition qui mentionne, le cas échéant,
@@ -5488,7 +5488,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
           <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--donnees-bibliographiques" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/donnees-bibliographiques.html">
-              <head>L’Inventaire général : le travail de l’éditeur scientifique &gt; données bibliographiques</head>
+              <head>Données bibliographiques</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--inventaire--donnees-bibliographiques--donnees-bibliographiques"/>
               <div type="legacy-block" rend="static-content">
 <p>L’Inventaire général a tenté de mentionner les éditions d’actes du haut Moyen Âge. On
@@ -5571,7 +5571,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
           <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--types-d-auteurs-d-actes" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/types-d-auteurs-d-actes.html">
-              <head>L’Inventaire général : le travail de l’éditeur scientifique &gt; types d’auteurs d’actes</head>
+              <head>Types d’auteurs d’actes</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--inventaire--types-d-auteurs-d-actes--types-auteurs-actes"/>
               <div type="legacy-block" rend="static-content">
 <p>Pour tous les documents jusqu’en 1302 (vidimus compris), on a indexé le ou les
@@ -5610,7 +5610,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
           <div type="subpart" xml:id="sd-informatique-generalites">
             <head>Généralités</head>
           <div type="page" xml:id="sd-le-projet--aspects-informatiques--generalites--fabrique-du-corpus-numerique" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/generalites/fabrique-du-corpus-numerique.html">
-              <head>Aspects informatiques du projet : généralités &gt; la fabrique du corpus numérique</head>
+              <head>La fabrique du corpus numérique</head>
               <anchor xml:id="sd-le-projet--aspects-informatiques--generalites--fabrique-du-corpus-numerique--fabrique-du-corpus"/>
               <div type="legacy-block" rend="static-content">
 <p>Les deux documents primaires étudiés ici ont été informatisés, et ce qu’on manipule
@@ -5729,7 +5729,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
           <div type="subpart" xml:id="sd-informatique-inventaire">
             <head>Pour l’Inventaire</head>
           <div type="page" xml:id="sd-le-projet--aspects-informatiques--inventaire--principes-generaux-de-structuration" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/inventaire/principes-generaux-de-structuration.html">
-              <head>L’Inventaire général informatisé &gt; principes généraux de structuration</head>
+              <head>Principes généraux de structuration</head>
               <anchor xml:id="sd-le-projet--aspects-informatiques--inventaire--principes-generaux-de-structuration--structure"/>
               <div type="legacy-block" rend="static-content">
 <p>Commençons par un rappel des constats et principes qui ont gouverné l’informatisation
@@ -5818,7 +5818,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </div>
             </div>
           <div type="page" xml:id="sd-le-projet--aspects-informatiques--inventaire--structuration-du-texte" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/inventaire/structuration-du-texte.html">
-              <head>L’Inventaire général informatisé &gt; la structuration du texte de l’Inventaire</head>
+              <head>La structuration du texte de l’Inventaire</head>
               <anchor xml:id="sd-le-projet--aspects-informatiques--inventaire--structuration-du-texte--structuration-du-texte"/>
               <div type="legacy-block" rend="static-content">
 <ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome1/voir.html?ns=inventairejpg_0477.jpg">
@@ -5984,7 +5984,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
         </div>
         <!-- ecartee : perime, a supprimer -->
         <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--etat-d-avancement" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc/etat-d-avancement.html">
-              <head>Le Cartulaire blanc : le travail de l’éditeur scientifique &gt; état d’avancement de l’édition</head>
+              <head>État d’avancement de l’édition</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--etat-d-avancement--etat-avancement"/>
               <div type="legacy-block" rend="static-content">
 <p>La <ref target="#sd-les-textes--cartulaire-blanc--parcourir--table-des-chapitres" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/parcourir/table-des-chapitres.html">Table des
@@ -6001,7 +6001,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
             </div>
         <!-- ecartee : decrit PLEADE, application disparue -->
         <div type="page" xml:id="sd-le-projet--aspects-informatiques--generalites--caracteristiques-de-l-application" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/generalites/caracteristiques-de-l-application.html">
-              <head>Aspects informatiques du projet : généralités &gt; quelques caractéristiques de l’application</head>
+              <head>Quelques caractéristiques de l’application</head>
               <anchor xml:id="sd-le-projet--aspects-informatiques--generalites--caracteristiques-de-l-application--caracteristiques-application"/>
               <div type="legacy-block" rend="static-content">
 <p>Cette partie sera complétée ultérieurement.</p>
@@ -6033,7 +6033,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
             </div>
         <!-- ecartee : page vide (texte a ecrire au 3 septembre 2010) -->
         <div type="page" xml:id="sd-le-projet--aspects-informatiques--generalites--format-d-affichage-des-documents" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/generalites/format-d-affichage-des-documents.html">
-              <head>Aspects informatiques du projet : généralités &gt; le format d’affichage à l’écran des regestes et des actes</head>
+              <head>Le format d’affichage à l’écran des regestes et des actes</head>
               <anchor xml:id="sd-le-projet--aspects-informatiques--generalites--format-d-affichage-des-documents--format-d-affichage"/>
               <div type="legacy-block" rend="static-content">
 <p>Texte qui reste à écrire au 3 septembre 2010...</p>
@@ -6046,7 +6046,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
             </div>
         <!-- ecartee : page vide (texte a ecrire au 3 septembre 2010) -->
         <div type="page" xml:id="sd-le-projet--aspects-informatiques--inventaire--encodage-des-enrichissements-editoriaux" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/inventaire/encodage-des-enrichissements-editoriaux.html">
-              <head>L’Inventaire général informatisé &gt; encodage des enrichissements éditoriaux</head>
+              <head>Encodage des enrichissements éditoriaux</head>
               <anchor xml:id="sd-le-projet--aspects-informatiques--inventaire--encodage-des-enrichissements-editoriaux--enrichissements-editoriaux"/>
               <div type="legacy-block" rend="static-content">
 <p>Texte qui reste à écrire au 3 septembre 2010...</p>
