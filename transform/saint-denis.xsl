@@ -1109,4 +1109,161 @@
     </xsl:choose>
   </xsl:template>
 
+  <!-- ================================================================
+       D43 (2026-09-24) : les deux index des auteurs d'actes.
+
+       POURQUOI
+       ~~~~~~~~
+       L'ancien site publiait deux index d'auteurs d'actes, servis par Pleade
+       (navindex.html?base=tei&amp;f=fdocAuthor pour le Cartulaire blanc,
+       ?base=ead&amp;f=fauteursactes pour l'Inventaire général). Ils n'avaient pas
+       d'équivalent ici : les deux liens menaient, faute de mieux, à la recherche
+       plein texte, avec un intitulé de survol qui l'avouait.
+
+       Ils sont maintenant reconstitués depuis le TEI servi par DoTS et portés par
+       un fichier compagnon lu avec document(), comme saint-denis-images-locales.xml :
+       rien n'est ajouté à la base, rien n'est à réingérer. Parité vérifiée terme à
+       terme contre les index publiés (66 et 294 termes, 3 601 occurrences).
+
+       OÙ
+       ~~
+       Dans les deux pages « Parcourir » du site, celles-là même qui portaient les
+       liens Pleade ; le lien historique devient une ancre vers la rubrique.
+
+       GROUPEMENT PAR INITIALE
+       ~~~~~~~~~~~~~~~~~~~~~~~
+       La feuille est déclarée version="1.1" : pas de xsl:for-each-group. L'initiale
+       de classement est donc calculée à la fabrication du compagnon (@lettre sur
+       l'item, liste des initiales dans « lettres ») et la feuille se contente de
+       parcourir ces initiales. Même raison pour le libellé court d'un renvoi (@n
+       sur le ptr) : « Tremblay 15 », « t. I, n° 956 ».
+       ================================================================ -->
+  <xsl:variable name="sd-index-auteurs"
+                select="document('saint-denis-index-auteurs.xml')/sdIndexAuteurs"/>
+
+  <!-- Rubrique complète d'un des deux index. $cle = 'cartulaire' ou 'inventaire'. -->
+  <xsl:template name="sd-index-auteurs">
+    <xsl:param name="cle"/>
+    <xsl:variable name="idx" select="$sd-index-auteurs/index[@cle = $cle]"/>
+    <section class="sd-index-auteurs" id="sd-index-auteurs-{$cle}">
+      <h2 class="sd-index-auteurs-titre">
+        <xsl:value-of select="$idx/tei:list/tei:head"/>
+      </h2>
+      <p class="sd-index-auteurs-chapeau">
+        <xsl:value-of select="$idx/@termes"/>
+        <xsl:text> termes, </xsl:text>
+        <xsl:value-of select="$idx/@occurrences"/>
+        <xsl:text> renvois. Index reconstitué depuis le texte encodé, en parité avec l’index publié par le site d’origine.</xsl:text>
+      </p>
+      <nav class="sd-index-lettres" aria-label="Aller à une initiale">
+        <xsl:for-each select="$idx/lettres/lettre">
+          <xsl:variable name="c" select="string(.)"/>
+          <a class="sd-index-lettre-lien" href="#sd-index-auteurs-{$cle}-{translate($c, '*', '0')}">
+            <xsl:choose>
+              <xsl:when test="$c = '*'">&#8226;</xsl:when>
+              <xsl:otherwise><xsl:value-of select="$c"/></xsl:otherwise>
+            </xsl:choose>
+          </a>
+        </xsl:for-each>
+      </nav>
+      <xsl:for-each select="$idx/lettres/lettre">
+        <xsl:variable name="c" select="string(.)"/>
+        <div class="sd-index-groupe" id="sd-index-auteurs-{$cle}-{translate($c, '*', '0')}">
+          <h3 class="sd-index-initiale">
+            <xsl:choose>
+              <xsl:when test="$c = '*'">Sans initiale</xsl:when>
+              <xsl:otherwise><xsl:value-of select="$c"/></xsl:otherwise>
+            </xsl:choose>
+          </h3>
+          <ul class="sd-index-termes">
+            <xsl:for-each select="$idx/tei:list/tei:item[@lettre = $c]">
+              <li class="sd-index-terme">
+                <!-- « details » plutôt qu'une liste déployée : un terme porte jusqu'à
+                     647 renvois (« auteurs laïques », Inventaire). Fermé, l'index se lit
+                     comme la liste de termes et de comptes que publiait l'ancien site ;
+                     ouvert, il donne les renvois. HTML seul, ni script ni composant. -->
+                <details class="sd-index-details">
+                  <summary class="sd-index-sommaire">
+                    <span class="sd-index-libelle"><xsl:value-of select="tei:term"/></span>
+                    <span class="sd-index-nb"><xsl:value-of select="@n"/></span>
+                  </summary>
+                  <div class="sd-index-renvois">
+                    <xsl:for-each select="tei:ptr">
+                      <xsl:call-template name="sd-index-renvoi"/>
+                    </xsl:for-each>
+                  </div>
+                </details>
+              </li>
+            </xsl:for-each>
+          </ul>
+        </div>
+      </xsl:for-each>
+    </section>
+  </xsl:template>
+
+  <!-- Un renvoi de l'index. Les cibles ont les deux formes que la feuille résout
+       déjà pour les « ref » du TEI : « chapitre.xml#chapitre-acteN » (Cartulaire
+       blanc) et « ISD-volN.xml#noticeNNN » (Inventaire général, identifiant d'unité
+       préfixé par le volume, cf. D21). -->
+  <xsl:template name="sd-index-renvoi">
+    <xsl:variable name="file" select="substring-before(@target, '.xml')"/>
+    <xsl:variable name="frag" select="substring-after(@target, '#')"/>
+    <xsl:choose>
+      <xsl:when test="starts-with($file, 'ISD-vol')">
+        <a class="sd-inventaire sd-index-renvoi"
+           href="/saint-denis/document/{$file}?refId={$file}_{$frag}">
+          <xsl:value-of select="@n"/>
+        </a>
+      </xsl:when>
+      <xsl:otherwise>
+        <a class="sd-internal sd-index-renvoi"
+           href="/saint-denis/document/{$file}?refId={$frag}">
+          <xsl:value-of select="@n"/>
+        </a>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
+  <!-- Les deux pages « Parcourir » : même rendu que toute page du site
+       (div[@type='page'], plus haut), suivi de la rubrique d'index. -->
+  <xsl:template match="tei:div[@type = 'page']
+                              [@xml:id = 'sd-les-textes--cartulaire-blanc--parcourir'
+                               or @xml:id = 'sd-les-textes--inventaire--parcourir']"
+                priority="16">
+    <xsl:variable name="cle">
+      <xsl:choose>
+        <xsl:when test="@xml:id = 'sd-les-textes--cartulaire-blanc--parcourir'">cartulaire</xsl:when>
+        <xsl:otherwise>inventaire</xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <article class="sd-static-page sd-page-parcourir" id="{@xml:id}">
+      <xsl:if test="@corresp">
+        <xsl:attribute name="data-legacy-source"><xsl:value-of select="@corresp"/></xsl:attribute>
+      </xsl:if>
+      <h1 class="sd-page-title"><xsl:value-of select="tei:head[1]"/></h1>
+      <xsl:apply-templates select="node()[not(self::tei:head[1])]"/>
+      <xsl:call-template name="sd-index-auteurs">
+        <xsl:with-param name="cle" select="string($cle)"/>
+      </xsl:call-template>
+    </article>
+  </xsl:template>
+
+  <!-- Le lien Pleade historique. Il n'y en a que deux dans tout le corpus, chacun
+       sur la page « Parcourir » qui porte désormais son index : l'ancre est donc
+       toujours dans la page servie. Remplace le repli vers la recherche (priorité 16). -->
+  <xsl:template match="tei:ref[contains(@target, 'enc.sorbonne.fr')]
+                              [contains(@target, 'navindex.html')]"
+                priority="18">
+    <xsl:variable name="cle">
+      <xsl:choose>
+        <xsl:when test="contains(@target, 'base=ead')">inventaire</xsl:when>
+        <xsl:otherwise>cartulaire</xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <a class="sd-internal sd-index-ancre" href="#sd-index-auteurs-{$cle}"
+       title="Index reconstitué depuis le texte encodé, au bas de cette page.">
+      <xsl:apply-templates/>
+    </a>
+  </xsl:template>
+
 </xsl:transform>
