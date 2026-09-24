@@ -27,7 +27,7 @@
       <p rend="Numéros des notices">Chartes décrites sous les nos 3196-3265</p>
       <p rend="Dates">De 1300 à 1302</p>
       <p rend="URL de cette page">&lt;http://saint-denis.enc.sorbonne.fr/inventaire/tome3/noticeglobale&gt;</p>
-    <div type="notice" xml:id="ISD-vol3_notice3196" n="3196">
+    <div type="notice" xml:id="ISD-vol3_notice3196" n="3196"><pb n="1" facs="images/saint-denis/inventaire/tome3/inventairejpg_1969.jpg"/>
       <head>N° 3196. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3196</item>
@@ -64,7 +64,7 @@
       <p>En original</p>
       <p>K 37, n° 7</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3198" n="3198">
+    <div type="notice" xml:id="ISD-vol3_notice3198" n="3198"><pb n="2" facs="images/saint-denis/inventaire/tome3/inventairejpg_1970.jpg"/>
       <head>N° 3198. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3198</item>
@@ -85,7 +85,7 @@
       <p>Au 1er tome du cartulaire blanc p. 422</p>
       <p>Au second tome de la coppie d’iceluy p. 323</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3199" n="3199">
+    <div type="notice" xml:id="ISD-vol3_notice3199" n="3199"><pb n="3" facs="images/saint-denis/inventaire/tome3/inventairejpg_1971.jpg"/>
       <head>N° 3199. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3199</item>
@@ -152,7 +152,7 @@
       <p>Au 1er tome du cartulaire blanc p. 456</p>
       <p>Au second tome de la coppie d’iceluy p. 441</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3204" n="3204">
+    <div type="notice" xml:id="ISD-vol3_notice3204" n="3204"><pb n="4" facs="images/saint-denis/inventaire/tome3/inventairejpg_1972.jpg"/>
       <head>N° 3204. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3204</item>
@@ -210,7 +210,7 @@
       <p>Au 1er tome de la coppie d’iceluy p. 451</p>
       <p>Item au petit cartulaire de Chaource p. 228</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3207" n="3207">
+    <div type="notice" xml:id="ISD-vol3_notice3207" n="3207"><pb n="5" facs="images/saint-denis/inventaire/tome3/inventairejpg_1973.jpg"/>
       <head>N° 3207. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3207</item>
@@ -245,7 +245,7 @@
       <p>Au second tome du cartulaire blanc p. 578</p>
       <p>Coppie d’iceluy p. 1006</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3209" n="3209">
+    <div type="notice" xml:id="ISD-vol3_notice3209" n="3209"><pb n="7" facs="images/saint-denis/inventaire/tome3/inventairejpg_1975.jpg"/>
       <head>N° 3209. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3209</item>
@@ -279,7 +279,7 @@
       <p>En original</p>
       <p>S 2368, n° 2</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3211" n="3211">
+    <div type="notice" xml:id="ISD-vol3_notice3211" n="3211"><pb n="8" facs="images/saint-denis/inventaire/tome3/inventairejpg_1976.jpg"/>
       <head>N° 3211. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3211</item>
@@ -332,7 +332,7 @@
       <p>En original</p>
       <p>S 2355, n° 3</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3214" n="3214">
+    <div type="notice" xml:id="ISD-vol3_notice3214" n="3214"><pb n="9" facs="images/saint-denis/inventaire/tome3/inventairejpg_1977.jpg"/>
       <head>N° 3214. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3214</item>
@@ -381,7 +381,7 @@
       <p>Au second tome du cartulaire blanc p. 583</p>
       <p>Coppie d’iceluy p. 1014</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3217" n="3217">
+    <div type="notice" xml:id="ISD-vol3_notice3217" n="3217"><pb n="10" facs="images/saint-denis/inventaire/tome3/inventairejpg_1978.jpg"/>
       <head>N° 3217. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3217</item>
@@ -434,7 +434,7 @@
       <head type="section">Références données par l’Inventaire général</head>
       <p>En original</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3220" n="3220">
+    <div type="notice" xml:id="ISD-vol3_notice3220" n="3220"><pb n="15" facs="images/saint-denis/inventaire/tome3/inventairejpg_1983.jpg"/>
       <head>N° 3220. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3220</item>
@@ -507,7 +507,7 @@
       <head type="section">Références données par l’Inventaire général</head>
       <p>En original</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3225" n="3225">
+    <div type="notice" xml:id="ISD-vol3_notice3225" n="3225"><pb n="16" facs="images/saint-denis/inventaire/tome3/inventairejpg_1984.jpg"/>
       <head>N° 3225. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3225</item>
@@ -543,7 +543,7 @@
       <p>Au second tome du cartulaire blanc p. 580</p>
       <p>Coppie d’iceluy p. 1010</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3227" n="3227">
+    <div type="notice" xml:id="ISD-vol3_notice3227" n="3227"><pb n="17" facs="images/saint-denis/inventaire/tome3/inventairejpg_1985.jpg"/>
       <head>N° 3227. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3227</item>
@@ -598,7 +598,7 @@
       <p>Au second tome du cartulaire blanc p. 582</p>
       <p>Coppie d’iceluy p. 1013</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3230" n="3230">
+    <div type="notice" xml:id="ISD-vol3_notice3230" n="3230"><pb n="18" facs="images/saint-denis/inventaire/tome3/inventairejpg_1986.jpg"/>
       <head>N° 3230. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3230</item>
@@ -653,7 +653,7 @@
       <p>Item au 1er tome du cartulaire blanc p. 663</p>
       <p>Item au 3e tome de la coppie d’iceluy p. 1179</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3233" n="3233">
+    <div type="notice" xml:id="ISD-vol3_notice3233" n="3233"><pb n="19" facs="images/saint-denis/inventaire/tome3/inventairejpg_1987.jpg"/>
       <head>N° 3233. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3233</item>
@@ -689,7 +689,7 @@
       <p>Au second tome du cartulaire blanc p. 319</p>
       <p>Coppie d’iceluy p. 551</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3235" n="3235">
+    <div type="notice" xml:id="ISD-vol3_notice3235" n="3235"><pb n="20" facs="images/saint-denis/inventaire/tome3/inventairejpg_1988.jpg"/>
       <head>N° 3235. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3235</item>
@@ -722,7 +722,7 @@
       <head type="section">Références données par l’Inventaire général</head>
       <p>Au gros registre des fiefs p. 1227</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3237" n="3237">
+    <div type="notice" xml:id="ISD-vol3_notice3237" n="3237"><pb n="21" facs="images/saint-denis/inventaire/tome3/inventairejpg_1989.jpg"/>
       <head>N° 3237. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3237</item>
@@ -788,7 +788,7 @@
       <head type="section">Références données par l’Inventaire général</head>
       <p>Au gros registre des fiefs p. 39</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3241" n="3241">
+    <div type="notice" xml:id="ISD-vol3_notice3241" n="3241"><pb n="23" facs="images/saint-denis/inventaire/tome3/inventairejpg_1991.jpg"/>
       <head>N° 3241. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3241</item>
@@ -827,7 +827,7 @@
       <p>Au second tome du cartulaire blanc p. 320</p>
       <p>Au 1er tome de la coppie d’iceluy p. 552</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3243" n="3243">
+    <div type="notice" xml:id="ISD-vol3_notice3243" n="3243"><pb n="24" facs="images/saint-denis/inventaire/tome3/inventairejpg_1992.jpg"/>
       <head>N° 3243. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3243</item>
@@ -876,7 +876,7 @@
       <head type="section">Références données par l’Inventaire général</head>
       <p>En original</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3246" n="3246">
+    <div type="notice" xml:id="ISD-vol3_notice3246" n="3246"><pb n="25" facs="images/saint-denis/inventaire/tome3/inventairejpg_1993.jpg"/>
       <head>N° 3246. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3246</item>
@@ -919,7 +919,7 @@
       <head type="section">Édition du regeste</head>
       <p>Vidimus du quatrième may 1447 d’un autre vidimus du vendredis avant la feste de saint Pere 1307 des lettres du roy Philipes le Bel par lesquelles il deffend au prévost de Paris et à tous autres officiers de justice et sergens royaux d’exploitter ou faire aucun autre acte de justice dans l’estendue de la terre des abbé et religieux de Saint-Denis dans laquelle ils ont toute sorte de justice haute et basse, dattées de la vigile de la Conversion de saint Paul, l’an 1301.</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3249" n="3249">
+    <div type="notice" xml:id="ISD-vol3_notice3249" n="3249"><pb n="26" facs="images/saint-denis/inventaire/tome3/inventairejpg_1994.jpg"/>
       <head>N° 3249. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3249</item>
@@ -964,7 +964,7 @@
       <p>En original</p>
       <p>S 2355, n° 6</p>
     </div>
-    <div type="notice" xml:id="ISD-vol3_notice3252" n="3252">
+    <div type="notice" xml:id="ISD-vol3_notice3252" n="3252"><pb n="27" facs="images/saint-denis/inventaire/tome3/inventairejpg_1995.jpg"/>
       <head>N° 3252. </head>
       <list type="gloss">
         <label>Notice numéro</label><item>n° 3252</item>

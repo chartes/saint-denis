@@ -621,6 +621,78 @@
   </xsl:template>
 
   <!-- ================================================================
+       2026-09-24 — LES FOLIOS ATTACHÉS AU TEXTE PAR <pb facs>.
+
+       Décision du responsable : les images de folios entrent dans le TEI, pas dans une galerie
+       d'affichage. 1 874 `tei:pb[@facs]` ont donc été posés dans les sources :
+         - 441 en tête de la transcription d'un acte du Cartulaire blanc (7 chapitres), quand la
+           table des actes du site ET le témoin B de l'acte donnent la même page de cartulaire ;
+         - 1 433 en tête de la première notice de chaque page de l'Inventaire général
+           (ISD-vol1/2/3), d'après la mention « Archives nationales, LL 118x page N ».
+       Le @facs porte le chemin servi par DoTS-vue, `images/saint-denis/<série>/<fichier>`, comme
+       christofle porte `images/sources/…`.
+
+       ATTENTION : hteiml/xsl/tei2html.xsl a un modèle VIDE pour `tei:div/tei:pb` (l. 1149) ; sans
+       la surcharge ci-dessous tous ces pb disparaîtraient silencieusement, puisqu'ils sont
+       justement enfants directs de div (transcription, notice). La précédence d'import suffit,
+       la priorité n'est là que pour être explicite.
+
+       Le rendu est celui, déjà éprouvé et déjà mis en forme, des renvois `details.sd-folio` :
+       un intitulé cliquable qui déplie l'image sur place. On ne fabrique pas de lien vers
+       /images/… : DoTS-vue confie tout href de même origine à son routeur (leçon de D5 et E2).
+       Comme pour les renvois, la présence du fichier est vérifiée sur le side-car — engendré
+       depuis le CONTENU du dossier servi — et un @facs qui ne s'y trouverait pas ne produit rien
+       plutôt qu'une image cassée. -->
+  <xsl:template match="tei:pb[@facs]" priority="20">
+    <xsl:variable name="rel" select="substring-after(@facs, 'images/saint-denis/')"/>
+    <xsl:variable name="fichier" select="tokenize($rel, '/')[last()]"/>
+    <xsl:variable name="serie" select="substring-before($rel, concat('/', $fichier))"/>
+    <xsl:variable name="tome" select="substring-after($serie, '/')"/>
+    <xsl:variable name="ouvrage">
+      <xsl:choose>
+        <xsl:when test="starts-with($serie, 'cartulaireblanc/')">Cartulaire blanc</xsl:when>
+        <xsl:when test="starts-with($serie, 'inventaire/')">Inventaire général</xsl:when>
+        <xsl:otherwise/>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:variable name="cote">
+      <xsl:choose>
+        <xsl:when test="$serie = 'cartulaireblanc/tome1'">LL 1157</xsl:when>
+        <xsl:when test="$serie = 'cartulaireblanc/tome2'">LL 1158</xsl:when>
+        <xsl:when test="$serie = 'inventaire/tome1'">LL 1189</xsl:when>
+        <xsl:when test="$serie = 'inventaire/tome2'">LL 1190</xsl:when>
+        <xsl:when test="$serie = 'inventaire/tome3'">LL 1191</xsl:when>
+        <xsl:otherwise/>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:variable name="libelle">
+      <xsl:value-of select="$ouvrage"/>
+      <xsl:if test="$tome != ''">
+        <xsl:text>, tome </xsl:text>
+        <xsl:value-of select="substring-after($tome, 'tome')"/>
+      </xsl:if>
+      <xsl:if test="$cote != ''">
+        <xsl:text> (</xsl:text><xsl:value-of select="$cote"/><xsl:text>)</xsl:text>
+      </xsl:if>
+      <xsl:if test="normalize-space(@n) != ''">
+        <xsl:text>, page </xsl:text>
+        <xsl:value-of select="normalize-space(@n)"/>
+      </xsl:if>
+    </xsl:variable>
+    <xsl:if test="$sd-images-locales/folio[@serie = $serie][@fichier = $fichier]">
+      <details class="sd-folio sd-pb">
+        <summary>
+          <span class="sd-folio-libelle">
+            <xsl:value-of select="if (normalize-space($libelle) != '') then $libelle else $fichier"/>
+          </span>
+        </summary>
+        <img class="sd-folio-img" loading="lazy" src="{$sd-images}{$serie}/{$fichier}"
+             alt="{if (normalize-space($libelle) != '') then $libelle else $fichier}"/>
+      </details>
+    </xsl:if>
+  </xsl:template>
+
+  <!-- ================================================================
        2026-09-14 (agentsd) — LES CINQ VISIONNEUSES DE SÉRIE.
 
        Signalé par l'utilisateur depuis `sd-feuilleter-images` : « faudrait changer les liens, ça
@@ -1060,17 +1132,52 @@
        <a> SANS href : le lien de l'ancien site devient mort (releve D14c : 8 liens, « Table des
        chapitres », « en images », « mentions legales », « en savoir plus sur les choix
        d'indexation », « section de presentation du contenu de l'Inventaire »).
-       DoTS-vue ne sert que des rubriques entieres pour cette ressource (editByLevel 1) : la forme
-       qui ouvre la bonne page est /saint-denis/document/saint-denis-site?refId=<rubrique>#<unite>
-       (cf. D8). La rubrique se lit dans l'identifiant lui-meme (prefixe sd-les-textes suivi de 2 tirets,
-       sd-les-images, sd-le-projet). -->
+       DoTS-vue ne sert que des unites de niveau 1 entieres pour cette ressource (editByLevel 1) :
+       la forme qui ouvre la bonne page est
+       /saint-denis/document/saint-denis-site?refId=<unite de niveau 1>#<unite>  (cf. D8).
+
+       2026-09-24 : le sommaire ne suit plus la navigation de l'ancien site (3 rubriques) mais le
+       plan editorial du responsable scientifique : une page d'introduction generale puis quatre
+       parties. Le niveau 1 ne se lit donc PLUS dans le prefixe de l'identifiant — les xml:id
+       n'ont pas ete renommes, pour ne casser aucun ref/@target ni aucune ancre — et il faut la
+       table de correspondance ci-dessous. Les pages ecartees du sommaire (regroupees dans
+       div[@xml:id='sd-ecarte'], hors citeStructure) ne sont servies par aucun fragment : on leur
+       laisse deliberement $rub vide, elles retombent sur apply-imports et leur intitule redevient
+       du texte, au lieu de pointer vers une page que DoTS ne sert plus. -->
   <xsl:template match="tei:ref[not(@type = 'note')][starts-with(@target, '#sd-')][not(key('id', substring-after(@target, '#')))]" priority="14">
     <xsl:variable name="id" select="substring-after(@target, '#')"/>
     <xsl:variable name="rub">
       <xsl:choose>
-        <xsl:when test="$id = 'sd-les-textes' or starts-with($id, 'sd-les-textes--')">sd-les-textes</xsl:when>
-        <xsl:when test="$id = 'sd-les-images' or starts-with($id, 'sd-les-images--')">sd-les-images</xsl:when>
-        <xsl:when test="$id = 'sd-le-projet' or starts-with($id, 'sd-le-projet--')">sd-le-projet</xsl:when>
+        <!-- Pages ecartees du sommaire : aucune cible servie. A tester EN PREMIER, avant les
+             regles generiques qui les rattraperaient par leur prefixe. -->
+        <xsl:when test="$id = 'sd-les-images--accueil'
+                     or $id = 'sd-le-projet--feuille-de-route'
+                     or $id = 'sd-le-projet--mentions-legales'
+                     or $id = 'sd-le-projet--aspects-scientifiques--cartulaire-blanc--etat-d-avancement'
+                     or $id = 'sd-le-projet--aspects-informatiques--generalites--caracteristiques-de-l-application'
+                     or $id = 'sd-le-projet--aspects-informatiques--generalites--format-d-affichage-des-documents'
+                     or $id = 'sd-le-projet--aspects-informatiques--cartulaire-blanc-projet-inf'
+                     or $id = 'sd-le-projet--aspects-informatiques--inventaire--encodage-des-enrichissements-editoriaux'"/>
+        <!-- Introduction generale : partie a elle seule. -->
+        <xsl:when test="$id = 'sd-les-textes--accueil' or starts-with($id, 'sd-les-textes--accueil--')">sd-les-textes--accueil</xsl:when>
+        <!-- 1re partie : les actes du haut Moyen Age. -->
+        <xsl:when test="$id = 'sd-actes-haut-moyen-age' or starts-with($id, 'sd-les-textes--actes-du-haut-moyen-age')">sd-actes-haut-moyen-age</xsl:when>
+        <!-- 2e partie : le Cartulaire blanc (y compris ses images et le descriptif des termes
+             d'indexation, remontes depuis « Les images » et « Le projet »). -->
+        <xsl:when test="$id = 'sd-cartulaire-blanc'
+                     or starts-with($id, 'sd-les-textes--cartulaire-blanc')
+                     or starts-with($id, 'sd-recherche-cartulaire')
+                     or starts-with($id, 'sd-les-images--images-cb')
+                     or starts-with($id, 'sd-le-projet--aspects-scientifiques--auteurs-actes-principales-entrees')">sd-cartulaire-blanc</xsl:when>
+        <!-- 3e partie : l'Inventaire general (y compris ses images). -->
+        <xsl:when test="$id = 'sd-inventaire-general'
+                     or starts-with($id, 'sd-les-textes--inventaire')
+                     or starts-with($id, 'sd-les-images--images-ig')">sd-inventaire-general</xsl:when>
+        <!-- 4e partie : les pages de description du projet. -->
+        <xsl:when test="$id = 'sd-le-projet'
+                     or starts-with($id, 'sd-le-projet--')
+                     or $id = 'sd-aspects-scientifiques' or $id = 'sd-scientifique-cartulaire' or $id = 'sd-scientifique-inventaire'
+                     or $id = 'sd-aspects-informatiques' or $id = 'sd-informatique-generalites' or $id = 'sd-informatique-inventaire'">sd-le-projet</xsl:when>
       </xsl:choose>
     </xsl:variable>
     <xsl:choose>
