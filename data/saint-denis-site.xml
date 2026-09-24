@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='UTF-8'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="saint-denis-site">
   <teiHeader>
     <fileDesc>
@@ -22,13 +21,17 @@
         <p>Reconstruction des pages éditoriales statiques du site historique et de leur hiérarchie, séparée des six ressources TEI du Cartulaire blanc.</p>
       </projectDesc>
       <refsDecl>
-        <!-- autopilote 2026-09-11 : une seule citeStructure par niveau. DoTS construit le registre des
-             fragments citeStructure par citeStructure : des structures soeurs page/part/subpart plaçaient
-             toutes les pages d'un parent avant ses parties, contrairement à l'ordre du site
-             (manifests/structure.json). « section » = niveau où pages et parties se mêlent. -->
-        <citeStructure unit="rubrique" match="/TEI/text/body/div[@type='rubrique']" use="@xml:id">
+        <!-- 2026-09-24 : plan editorial du responsable scientifique (une page d'introduction
+             generale + quatre parties), en remplacement des trois rubriques de l'ancien site.
+             Une seule citeStructure par niveau : DoTS construit le registre des fragments
+             citeStructure par citeStructure, et des structures soeurs desordonneraient le
+             sommaire. 'partie' = niveau 1 (l'introduction generale y figure comme page) ;
+             'section' = niveau ou pages et sous-parties se melent.
+             Le div[@type='ecarte'] en fin de body n'est capte par aucun niveau : son contenu
+             reste dans le fichier mais hors sommaire. -->
+        <citeStructure unit="partie" match="/TEI/text/body/div[@type=('page','part')]" use="@xml:id">
           <citeData property="dct:title" use="head[1]"/>
-          <citeStructure unit="section" match="div[@type=('page','part')]" use="@xml:id">
+          <citeStructure unit="section" match="div[@type=('page','subpart')]" use="@xml:id">
             <citeData property="dct:title" use="head[1]"/>
             <citeStructure unit="section" match="div[@type=('page','subpart')]" use="@xml:id">
               <citeData property="dct:title" use="head[1]"/>
@@ -46,14 +49,12 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-09-10">Enrichissement du teiHeader selon le modèle DoTS : title[@type=short], publisher/@ref, date/@when, idno, licence/@target, notesStmt/note[@type=citation].</change><change when="2026-09-10">Création à partir du dump structurel du site historique Saint-Denis.</change>
+      <change when="2026-09-24">Refonte du sommaire selon le plan editorial du responsable scientifique : une page d'introduction generale puis quatre parties (actes du haut Moyen Age, Cartulaire blanc, Inventaire general, le projet). Les trois rubriques de navigation de l'ancien site disparaissent ; la rubrique Les images aussi, ses deux pages de feuilletage rejoignant les parties 2 et 3. Pages ecartees du sommaire regroupees dans div[@xml:id='sd-ecarte'], hors citeStructure. refsDecl adapte.</change><change when="2026-09-10">Enrichissement du teiHeader selon le modèle DoTS : title[@type=short], publisher/@ref, date/@when, idno, licence/@target, notesStmt/note[@type=citation].</change><change when="2026-09-10">Création à partir du dump structurel du site historique Saint-Denis.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
-      <div type="rubrique" xml:id="sd-les-textes">
-        <head>Les textes</head>
-        <div type="page" xml:id="sd-les-textes--accueil" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/index.html">
+      <div type="page" xml:id="sd-les-textes--accueil" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/index.html">
           <head>Chartes de l’abbaye de Saint-Denis : présentation</head>
           <anchor xml:id="sd-les-textes--accueil--preambule"/>
           <div type="legacy-block" rend="static-content">
@@ -103,9 +104,9 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p><ref target="#sd-les-textes--accueil--preambule">Retour au début</ref></p>
 </div>
         </div>
-        <div type="part" xml:id="sd-actes-haut-moyen-age">
+<div type="part" xml:id="sd-actes-haut-moyen-age">
           <head>Actes du haut Moyen Âge</head>
-          <div type="page" xml:id="sd-les-textes--actes-du-haut-moyen-age--introduction" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/actes-du-haut-moyen-age/introduction.html">
+        <div type="page" xml:id="sd-les-textes--actes-du-haut-moyen-age--introduction" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/actes-du-haut-moyen-age/introduction.html">
             <head>Les actes du haut Moyen Âge</head>
             <div type="legacy-block" rend="static-content">
 <p>En 2003, Daniel Sonzogni confiait un mémoire original, « Le chartrier de l’abbaye de Saint-Denis en France au haut Moyen Âge : essai de reconstitution », à la revue <hi rend="italic">Pecia, ressources en archivistique</hi>, volume 3, [Saint-Denis], 2003, p. 9-210. Après une brève introduction, il y donnait un état détaillé des sources et de la bibliographie disponibles sur l’histoire de l’abbaye jusqu’en l’an mil, puis le catalogue des 267 actes retrouvés du chartrier de l’établissement, qu’ils fussent publiés ou inédits, connus par une tradition foisonnante ou par d’allusives mentions. Cette mise au point a été reprise à l’identique par les Éditions Brepols, dans la collection « Pecia : le livre et l’écrit », dédiée à la codicologie et à l’histoire du livre.</p>
@@ -120,11 +121,11 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
               <p rend="date">[Auteur de cette page : Olivier Guyotjeannin ; date de la dernière mise à jour : 20 janvier 2017]</p>
             </div>
           </div>
-        </div>
-        <div type="part" xml:id="sd-cartulaire-blanc">
+      </div>
+<div type="part" xml:id="sd-cartulaire-blanc">
           <head>Le Cartulaire blanc</head>
-          <div type="page" xml:id="sd-les-textes--cartulaire-blanc--introduction" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/introduction.html">
-            <head>Le Cartulaire blanc</head>
+        <div type="page" xml:id="sd-les-textes--cartulaire-blanc--introduction" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/introduction.html">
+            <head>Le Cartulaire blanc : introduction</head>
             <div type="legacy-block" rend="static-content">
 <p>Les éléments ici offerts à la consultation sont le résultat, progressivement enrichi, d’un travail de longue haleine. Celui-ci vise à fournir le texte des quelque 2600 transcriptions portées, au dernier tiers du XIII<hi rend="sup">e</hi> siècle, dans le plus important (mais non le seul !) des cartulaires médiévaux de l’abbaye de Saint-Denis, dit « Cartulaire blanc ».</p>
 <p>La table des chapitres du Cartulaire blanc permet de comprendre l’organisation du recueil, de mettre en contexte les chapitres déjà disponibles, et d’accéder directement à ceux-ci. On peut aussi accéder à un chapitre déjà disponible en le sélectionnant sur un menu déroulant.</p>
@@ -139,9 +140,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
               <p rend="date">[Auteur des textes de cette section : Olivier Guyotjeannin ; date de la dernière mise à jour : 26 novembre 2015]</p>
             </div>
           </div>
-          <div type="subpart" xml:id="sd-cartulaire-blanc-presentation">
-            <head>Présentation</head>
-            <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation.html">
+        <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation.html">
               <head>Le Cartulaire blanc : présentation</head>
               <anchor xml:id="sd-les-textes--cartulaire-blanc--presentation--preambule"/>
               <div type="legacy-block" rend="static-content">
@@ -155,8 +154,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <list type="unordered"><item><ref target="#sd-les-textes--cartulaire-blanc--presentation--problemes-de-date-et-fabrication" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/problemes-de-date-et-fabrication.html">Problèmes de date et de fabrication</ref></item><item><ref target="#sd-les-textes--cartulaire-blanc--presentation--principes-de-classement" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/principes-de-classement.html">Principes de classement</ref></item><item><ref target="#sd-les-textes--cartulaire-blanc--presentation--taux-de-couverture-des-archives" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/taux-de-couverture-des-archives.html">Taux de couverture des archives</ref></item><item><ref target="#sd-les-textes--cartulaire-blanc--presentation--autres-cartulaires" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/autres-cartulaires.html">D’autres cartulaires</ref></item></list>
 </div>
 </div>
-            </div>
-            <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation--problemes-de-date-et-fabrication" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation/problemes-de-date-et-fabrication.html">
+          <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation--problemes-de-date-et-fabrication" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation/problemes-de-date-et-fabrication.html">
               <head>Le Cartulaire blanc, présentation &gt; problèmes de date et de fabrication</head>
               <anchor xml:id="sd-les-textes--cartulaire-blanc--presentation--problemes-de-date-et-fabrication--fabrication"/>
               <div type="legacy-block" rend="static-content">
@@ -202,7 +200,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Suite : <ref target="#sd-les-textes--cartulaire-blanc--presentation--principes-de-classement" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation/principes-de-classement.html">Principes de classement</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation--principes-de-classement" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation/principes-de-classement.html">
+          <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation--principes-de-classement" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation/principes-de-classement.html">
               <head>Le Cartulaire blanc, présentation &gt; principes de classement</head>
               <anchor xml:id="sd-les-textes--cartulaire-blanc--presentation--principes-de-classement--classement"/>
               <div type="legacy-block" rend="static-content">
@@ -257,7 +255,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
             archives</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation--taux-de-couverture-des-archives" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation/taux-de-couverture-des-archives.html">
+          <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation--taux-de-couverture-des-archives" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation/taux-de-couverture-des-archives.html">
               <head>Le Cartulaire blanc, présentation &gt; taux de couverture des archives</head>
               <anchor xml:id="sd-les-textes--cartulaire-blanc--presentation--taux-de-couverture-des-archives--couverture"/>
               <div type="legacy-block" rend="static-content">
@@ -279,7 +277,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Suite : <ref target="#sd-les-textes--cartulaire-blanc--presentation--autres-cartulaires" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation/autres-cartulaires.html">D’autres cartulaires</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation--autres-cartulaires" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation/autres-cartulaires.html">
+          <div type="page" xml:id="sd-les-textes--cartulaire-blanc--presentation--autres-cartulaires" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/presentation/autres-cartulaires.html">
               <head>Le Cartulaire blanc, présentation &gt; d’autres cartulaires</head>
               <anchor xml:id="sd-les-textes--cartulaire-blanc--presentation--autres-cartulaires--autres"/>
               <div type="legacy-block" rend="static-content">
@@ -311,10 +309,8 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
                         chartes</hi>, 39), p. 279-288.</p>
 </div>
             </div>
-          </div>
-          <div type="subpart" xml:id="sd-cartulaire-blanc-parcourir">
-            <head>Parcourir</head>
-            <div type="page" xml:id="sd-les-textes--cartulaire-blanc--parcourir" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/parcourir.html">
+        </div>
+        <div type="page" xml:id="sd-les-textes--cartulaire-blanc--parcourir" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/parcourir.html">
               <head>Le cartulaire blanc : l’édition électronique</head>
               <div type="legacy-block" rend="static-content">
 <list type="unordered"><item><ref target="#sd-les-textes--cartulaire-blanc--parcourir--table-des-chapitres" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/parcourir/table-des-chapitres.html">Table des chapitres</ref></item><item>Chapitres édités<list type="unordered"><item>Accès direct aux éditions<list type="unordered"><item><ref target="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/pierrefitte/">Le chapitre
@@ -332,7 +328,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </item></list>
 </div>
             </div>
-            <div type="page" xml:id="sd-les-textes--cartulaire-blanc--parcourir--table-des-chapitres" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/parcourir/table-des-chapitres.html">
+        <div type="page" xml:id="sd-les-textes--cartulaire-blanc--parcourir--table-des-chapitres" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/parcourir/table-des-chapitres.html">
               <head>Le Cartulaire blanc : table des chapitres</head>
               <div type="legacy-block" rend="static-content">
 <p rend="intro">On trouvera ci-après la liste des chapitres entre lesquels se répartit
@@ -371,7 +367,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
                             (Aisne)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0104R_L.jpg" n="Consulter les images des pages">205-220</ref></hi></cell><cell>18</cell></row><row><cell>De Solemio</cell><cell>Solesmes (Nord)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0113R_L.jpg" n="Consulter les images des pages">223-241</ref></hi></cell><cell>30</cell></row><row><cell>[De Seriaco]</cell><cell>Séry-lès-Mézières (Aisne)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0123V_L.jpg" n="Consulter les images des pages">244-258</ref></hi></cell><cell>23</cell></row><row><cell>De collatione ecclesiarum</cell><cell>Collation d’églises (actes d’évêques et d’archidiacres)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0132R_L.jpg" n="Consulter les images des pages">261-273</ref></hi></cell><cell>28</cell></row><row><cell>De Argentolio</cell><cell>Argenteuil (95)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0140R_L.jpg" n="Consulter les images des pages">277-306</ref></hi></cell><cell>51</cell></row><row><cell>De Centinodio ; de Besuntio</cell><cell>Sannois, Bezons (95)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0156R_L.jpg" n="Consulter les images des pages">309-322</ref></hi></cell><cell>20</cell></row><row><cell>De Essona</cell><cell>Essonnes (comm. Corbeil-Essonnes, 91)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0163R_L.jpg" n="Consulter les images des pages">323-330</ref></hi></cell><cell>17</cell></row><row><cell>De Grandiputeo</cell><cell>Grandpuits-Bailly-Carois (77)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0167R_L.jpg" n="Consulter les images des pages">331-380</ref></hi></cell><cell>63+1</cell></row><row><cell>De Calvomonte</cell><cell>Chaumont-en-Vexin (Oise)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0192R_L.jpg" n="Consulter les images des pages">381-384</ref></hi></cell><cell>15</cell></row><row><cell>De Sancto Claro</cell><cell>Saint-Clair-sur-Epte (95)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0196R_L.jpg" n="Consulter les images des pages">389-396</ref></hi></cell><cell>11</cell></row><row><cell>De Sancta Gauburge</cell><cell>Sainte-Gauburge (Orne)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0202R_L.jpg" n="Consulter les images des pages">401-419</ref></hi></cell><cell>46</cell></row><row><cell>De Rulliaco</cell><cell>Reuilly (Indre)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0212R_L.jpg" n="Consulter les images des pages">421-427</ref></hi></cell><cell>9</cell></row><row><cell>De Wallibus</cell><cell>Vaux (Vienne)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0216R_L.jpg" n="Consulter les images des pages">429</ref></hi></cell><cell>+1</cell></row><row><cell>De Walleta Sancti Dyonisii in pago Pictavensi</cell><cell>Vaux (Vienne)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0217R_L.jpg" n="Consulter les images des pages">431-438</ref></hi></cell><cell>11+1</cell></row><row><cell>De Limozino et Bituricensi atque Pictavensi pago</cell><cell>Limousin, Berry, Poitou</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0222R_L.jpg" n="Consulter les images des pages">441-443</ref></hi></cell><cell>2</cell></row><row><cell>De Capella Aude</cell><cell>La Chapelaude (Allier)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0224R_L.jpg" n="Consulter les images des pages">445-468</ref></hi></cell><cell>30</cell></row><row><cell>De prioratu Lesbraha</cell><cell>Lièpvre (Haut-Rhin)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0237R_L.jpg" n="Consulter les images des pages">471-475</ref></hi></cell><cell>6</cell></row><row><cell>[Pancarte/Privilegia ecclesiarum]</cell><cell>Pancartes et privilèges des églises (actes pontificaux majeurs)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0241R_L.jpg" n="Consulter les images des pages">479-516</ref></hi></cell><cell>43</cell></row><row><cell>Privilegia parva</cell><cell>Petits privilèges (pontificaux)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0260V_L.jpg" n="Consulter les images des pages">518-545</ref></hi></cell><cell>75</cell></row><row><cell>De Anglia</cell><cell>Angleterre</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0276R_L.jpg" n="Consulter les images des pages">549-554</ref></hi></cell><cell>10-1</cell></row><row><cell>De elemosina</cell><cell>Aumônerie</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0280R_L.jpg" n="Consulter les images des pages">557-586</ref></hi></cell><cell>46</cell></row><row><cell>De Berneval</cell><cell>Berneval-le-Grand (Seine-Maritime)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0296R_L.jpg" n="Consulter les images des pages">589-600</ref></hi></cell><cell>23</cell></row><row><cell>De Sancta Genovefa prope Gisortium</cell><cell>Sainte-Geneviève (Seine-Maritime)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0303R_L.jpg" n="Consulter les images des pages">603-620</ref></hi></cell><cell>42</cell></row><row><cell>De Haubein</cell><cell>Hesbaye (pays, Belgique)</cell><cell><hi rend="bold"><ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0313R_L.jpg" n="Consulter les images des pages">623-626</ref></hi></cell><cell>8</cell></row></table>
 </div>
             </div>
-            <div type="page" xml:id="sd-les-textes--cartulaire-blanc--parcourir--table-des-actes" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/parcourir/table-des-actes.html">
+        <div type="page" xml:id="sd-les-textes--cartulaire-blanc--parcourir--table-des-actes" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/parcourir/table-des-actes.html">
               <head>Édition électronique du cartulaire blanc : liste cumulative des actes édités</head>
               <div type="legacy-block">
 <p rend="intro"> Cette table présente dans l’ordre chronologique les actes déjà
@@ -4663,17 +4659,54 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </cell><cell/></row></table>
 </div>
             </div>
-          </div>
-          <div type="page" xml:id="sd-recherche-cartulaire">
+        <div type="page" xml:id="sd-recherche-cartulaire">
             <head>Recherche dans les chartes éditées</head>
             <p>Recherche plein texte dans les ressources DTS du Cartulaire blanc. Le formulaire est rendu par saint-denis.xsl et interroge dots-cli-es.</p>
             <div type="search"/>
           </div>
-        </div>
-        <div type="part" xml:id="sd-inventaire-general">
+        <div type="page" xml:id="sd-le-projet--aspects-scientifiques--auteurs-actes-principales-entrees" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/auteurs-actes-principales-entrees.html">
+              <head>Auteurs d’actes : les choix d’indexation</head>
+              <div type="legacy-block" rend="static-content">
+<p>Une liste alphabétique de toutes les entrées réelles de l’index des auteurs d’actes est consultable à partir des formulaires de recherche, et directement, pour l’Inventaire général et pour le Cartulaire blanc.</p>
+<p>Voici, dans un autre ordre, une liste des principales entrées, qui donne des explications sur le sens qu’on a donné à ces entrées et sur leur emploi :</p>
+<list type="unordered" rend="encadré"><item><hi rend="cite">Pape</hi></item><item>
+<hi rend="cite">Cardinal</hi> (sans autres précisions)
+            </item><item><hi rend="cite">Légat du pape</hi></item><item><hi rend="cite">Juges délégués</hi> (les ecclésiastiques agissant sur délégation du pape ou d’un légat sont indexés à la fois personnellement avec leur titre, et collectivement comme juges délégués)</item><item><hi rend="cite">Archevêque de …</hi></item><item><hi rend="cite">Évêques</hi> [en groupe, synode…]. De façon générale, on ne donne pas de précision de siège ou de lieu s’il y a plus de trois représentants d’un groupe</item><item><hi rend="cite">Évêque de …</hi></item><item><hi rend="cite">Archidiacre de …</hi></item><item>
+<hi rend="cite">Officialité de …</hi> (lieu seul pour une officialité épiscopale et pour celle de Saint-Denis)</item><item><hi rend="cite">Officialité de l’archidiacre de …</hi></item><item><hi rend="cite">Official de …</hi> (agissant à titre personnel, hors juridiction gracieuse)</item><item><hi rend="cite"> Prévôté de …</hi> (abbatiale) pour les lettres de prévôté</item><item><hi rend="cite">Doyen du chapitre cathédral de …</hi> (inclut les actes passés collectivement par le chapitre, mais pas les actes passés par d’autres dignitaires)</item><item><hi rend="cite">Doyen de … 
+           </hi>(pour  un chapitre ; inclut les actes passés par les chanoines)</item><item><hi rend="cite">Chapitre Saint-Paul de Saint-Denis</hi> (par exception ; inclut les actes du chantre)</item><item><hi rend="cite">Abbé de Saint-Denis</hi> (inclut les actes du convent, du prieur)</item><item><hi rend="cite">Abbé de …</hi> (inclut les actes du convent, les prieurs à la tête de prieurés indépendants), abbé de Saint-Victor de Paris, abbé de Saint-Germain-des-Prés, abbé de Sainte-Geneviève de Paris etc.</item><item><hi rend="cite">Abbesse de…</hi></item><item><hi rend="cite">Templiers</hi></item><item><hi rend="cite">Hospitaliers</hi></item><item><hi rend="cite">Franciscains</hi></item><item><hi rend="cite">Dominicains</hi></item><item><hi rend="cite">Trinitaires</hi></item><item><hi rend="cite">Mathurins</hi></item><item><hi rend="cite">Hôpital de …</hi></item><item><hi rend="cite">Léproserie de …</hi></item><item><hi rend="cite">Auteurs ecclésiastiques</hi> (auteur d’acte n’entrant pas dans les catégories ci-dessus)</item><item><hi rend="cite">Divers ecclésiastiques</hi> (idem, pour un notificateur, un enquêteur, un arbitre, y compris juges délégués, doyens de chrétienté…)</item><item><hi rend="cite">Roi de France</hi></item><item><hi rend="cite">Reine de France</hi></item><item><hi rend="cite">Comte de …</hi>,  <hi rend="cite">Comte</hi> s’il n’y a pas de circonscription. On retient le titre usuel chez les historiens, p. ex. « comte de Champagne », « comte de Toulouse » ou « duc de Normandie », et non celui que donne l’acte, « comte de Troyes », « comte de Normandie ». Même principe pour les femmes, indexées au nom masculin. Si plusieurs titres sont cumulés, on n’indique que le ressort concerné par l’acte (on néglige par exemple « roi de Navarre » pour la Champagne)</item><item><hi rend="cite">Duc de …</hi> Mêmes remarques que pour « comte »</item><item><hi rend="cite">Marquis de …</hi> Mêmes remarques que pour « comte »</item><item><hi rend="cite">Maire du palais</hi></item><item><hi rend="cite">Parlement</hi></item><item><hi rend="cite">Clercs royaux</hi> (membres de l’administration royale centrale hors Parlement)</item><item><hi rend="cite">Bailliage de …</hi> pour les lettres de bailliage</item><item><hi rend="cite">Bailli de …</hi>, <hi rend="cite">Bailli</hi> tout court s’il n’a pas de circonscription fixe, pour les interventions hors juridiction royale</item><item><hi rend="cite">Châtelet</hi> [de Paris]</item><item><hi rend="cite">Prévôté de …</hi> (royale, princière…, sauf Paris : voir « Châtelet ») pour les lettres de prévôté</item><item><hi rend="cite">Prévôt de …</hi> (hors juridiction gracieuse)</item><item><hi rend="cite">Châtellenie de …</hi> (circonscription royale de Normandie)</item><item><hi rend="cite">Ville de …</hi> (autorités municipales de tout genre, y compris Marchandise de l’eau de Paris)</item><item><hi rend="cite">Roi de Wessex</hi></item><item><hi rend="cite">Roi de Mercie</hi></item><item><hi rend="cite">Roi d’Angleterre</hi></item><item><hi rend="cite">Roi de Lotharingie</hi></item><item><hi rend="cite">Roi de Germanie</hi></item><item><hi rend="cite">Empereur</hi> (s’il n’a pas régné sur la France)</item><item><hi rend="cite">Auteurs laïques</hi> (pour les auteurs d’actes n’entrant pas dans les catégories ci-dessus)</item><item><hi rend="cite">Divers laïques</hi> (pour un notificateur, un enquêteur, un arbitre, un tabellion à partir de 1293…)</item><item><hi rend="cite">- sans auteur</hi> (notice, acte ou document sans auteur déclaré)</item></list>
+</div>
+            </div>
+        <div type="page" xml:id="sd-les-images--images-cb" corresp="http://saint-denis.enc.sorbonne.fr/les-images/images-cb.html">
+            <head>Le Cartulaire blanc : les images</head>
+            <div type="legacy-block" rend="static-content">
+<p>En suivant ces liens vous accèderez directement aux séries d’images numériques produites à partir de chacun des tomes du Cartulaire blanc.</p>
+<list type="unordered"><item>
+<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html">Tome 1 (Archives nationales LL 1157)</ref>
+<list type="unordered"><item>
+<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0203R_L.jpg">Le chapitre de Pierrefitte (aux pages 369-384)</ref>
+</item><item>
+<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0231R_L.jpg">Le chapitre de Dugny (aux pages 425-459)</ref>
+</item><item>
+<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0250R_L.jpg">Le chapitre de Tremblay-en-France (aux pages 463-490)</ref>
+</item><item>
+<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0268R_L.jpg">Le chapitre de Rueil (aux pages 499-534)</ref>
+</item><item>
+<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0287R_L.jpg">Le chapitre de Beaurain (aux pages 537-589)</ref>
+</item><item>
+<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0367R_L.jpg">Le chapitre de Saint-Martin-du-Tertre (aux pages 697-727)</ref>
+</item><item>
+<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0383R_L.jpg">Le chapitre d’Ully-Saint-Georges (aux pages 729-780)</ref>
+</item></list>
+</item><item>
+<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html">Tome 2 (Archives nationales LL 1158)</ref>
+</item></list>
+</div>
+          </div>
+      </div>
+<div type="part" xml:id="sd-inventaire-general">
           <head>L’Inventaire général</head>
-          <div type="page" xml:id="sd-les-textes--inventaire--introduction" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/introduction.html">
-            <head>L’Inventaire général</head>
+        <div type="page" xml:id="sd-les-textes--inventaire--introduction" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/introduction.html">
+            <head>L’Inventaire général : introduction</head>
             <div type="legacy-block" rend="static-content">
 <p>L’Inventaire général des archives de Saint-Denis procède du labeur d’un moine de
                 l’abbaye, Dom Antoine Thomas, et de successeurs anonymes, dont le travail s’est
@@ -4701,9 +4734,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
               <p rend="date">[Auteur des textes de cette section : Olivier Guyotjeannin ; date de la dernière mise à jour : 21 juin 2010]</p>
             </div>
           </div>
-          <div type="subpart" xml:id="sd-inventaire-presentation">
-            <head>Présentation</head>
-            <div type="page" xml:id="sd-les-textes--inventaire--presentation--distribution-des-volumes" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/distribution-des-volumes.html">
+        <div type="page" xml:id="sd-les-textes--inventaire--presentation--distribution-des-volumes" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/distribution-des-volumes.html">
               <head>L’Inventaire général : présentation &gt; distribution des volumes</head>
               <div type="legacy-block" rend="static-content">
 <p>L’« Inventaire des chartes de l’abbaye de Saint-Denis en France selon l’ordre des dattes d’icelles, commencé en l’année 1688 » est le dernier grand représentant d’une longue suite de travaux archivistiques, ouverte à l’abbaye dès le début du XIVe siècle. Fort de quatorze volumes (Arch. nat., LL 1189-1202) de grandes dimensions (hauteur 43 cm x  largeur 28 cm), mené jusqu’en 1728, il doit à sa volonté affichée d’exhaustivité son titre postérieur d’« Inventaire général ».</p>
@@ -4716,7 +4747,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Suite : <ref target="#sd-les-textes--inventaire--presentation--les-auteurs" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/les-auteurs.html">Les auteurs</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-les-textes--inventaire--presentation--les-auteurs" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/les-auteurs.html">
+        <div type="page" xml:id="sd-les-textes--inventaire--presentation--les-auteurs" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/les-auteurs.html">
               <head>L’Inventaire général : présentation &gt; les auteurs</head>
               <div type="legacy-block" rend="static-content">
 <p>L’auteur, ou plus exactement l’initiateur et premier auteur de l’Inventaire général est un moine de l’abbaye, Dom François Thomas, qualifié en 1681 de « frère procureur » (Arch. nat., LL 1228,
@@ -4729,7 +4760,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Suite : <ref target="#sd-les-textes--inventaire--presentation--circonstances-et-visees-de-la-compilation" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/circonstances-et-visees-de-la-compilation.html">Circonstances et visées de la compilation</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-les-textes--inventaire--presentation--circonstances-et-visees-de-la-compilation" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/circonstances-et-visees-de-la-compilation.html">
+        <div type="page" xml:id="sd-les-textes--inventaire--presentation--circonstances-et-visees-de-la-compilation" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/circonstances-et-visees-de-la-compilation.html">
               <head>L’Inventaire général : présentation &gt; circonstances et visées de la compilation</head>
               <div type="legacy-block" rend="static-content">
 <p>L’Inventaire général n’est jamais que le dernier d’une série de travaux de récolement et d’inventoriage qui se sont accélérés au XVII<hi rend="sup">e</hi> siècle et qui, sans atteindre la même ampleur ni le même souci d’érudition, attirent l’attention mais restent à étudier (1619 par Jacques Coignée, 1647 par Jean Le Poix, 1681 par Locquet).</p>
@@ -4745,7 +4776,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Suite : <ref target="#sd-les-textes--inventaire--presentation--contenu-et-presentation" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/contenu-et-presentation.html">Contenu et présentation</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-les-textes--inventaire--presentation--contenu-et-presentation" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/contenu-et-presentation.html">
+        <div type="page" xml:id="sd-les-textes--inventaire--presentation--contenu-et-presentation" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/contenu-et-presentation.html">
               <head>L’Inventaire général : présentation &gt; contenu et présentation</head>
               <div type="legacy-block" rend="static-content">
 <ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome1/voir.html?ns=inventairejpg_0477.jpg">
@@ -4760,7 +4791,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
                 Elle met en valeur, en tête, le type (assez lâche) de l’acte et, en fin, centré, le millésime (a. st.), exprimé, converti ou approximatif (ici « environ l’an 1174 »), qui sert au classement des actes (classement affiné d’après les autres précisions chronologiques de l’acte, reproduites telles, mais en général sans conversion). Les termes laissés en latin (noms de lieu, de droit…) sont grossis. Le regeste est suivi de l’état de la tradition (dans l’ordre : original, copies de cartulaires, éditions), et parfois assorti de la mention d’un lieu concerné.</p><p>Suite : <ref target="#sd-les-textes--inventaire--presentation--richesses-et-faiblesses" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/richesses-et-faiblesses.html">Richesses et faiblesses</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-les-textes--inventaire--presentation--richesses-et-faiblesses" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/richesses-et-faiblesses.html">
+        <div type="page" xml:id="sd-les-textes--inventaire--presentation--richesses-et-faiblesses" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/richesses-et-faiblesses.html">
               <head>L’Inventaire général : présentation &gt; richesses et faiblesses</head>
               <div type="legacy-block" rend="static-content">
 <p>On a vu que l’Inventaire laissait échapper des documents, originaux non retrouvés ou copies de cartulaire jugées sans intérêt pour la défense et illustration de l’abbaye ; il n’en demeure pas moins le moyen de saisir le plus commodément et le plus largement les richesses du chartrier, avec près de 3300 regestes d’actes jusqu’à l’orée du XIV<hi rend="sup">e</hi> siècle, à comparer avec les quelque 2600 transcriptions du Cartulaire blanc, auxquelles il offre aussi du coup un accès commode.</p>
@@ -4768,8 +4799,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Un autre écueil réside dans le classement chronologique en apparence strict, au mois et au jour près, des actes. Écueil d’abord avec les conversions de millésime qui, en début d’année, sont bien prises en compte, mais non indiquées (le millésime exprimé demeure en ancien style : « février 1230 » suit « décembre 1230 »), et surtout apparemment pliées à l’usage du style de Pâques, dont l’emploi est tout autre que sûr. Écueil aussi du fait que certaines dates sont mal interprétées, certains auteurs confondus (lettres d’Alexandre IV pris pour Alexandre III, classées à l’année 1163 au lieu de 1258 : n° 354-355 ; acte du roi Robert Ier pris pour Robert II, à la suite de Doublet d’ailleurs, et classé à l’année 988 au lieu de 923 : n° 166), des actes non datés, enfin, assignés à toute force à une année précise (« Environ l’an… ») mais très arbitraire.</p>
 </div>
             </div>
-          </div>
-          <div type="page" xml:id="sd-les-textes--inventaire--parcourir" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/parcourir.html">
+        <div type="page" xml:id="sd-les-textes--inventaire--parcourir" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/parcourir.html">
             <head>L’Inventaire général : l’édition électronique</head>
             <div type="legacy-block" rend="static-content">
 <list type="unordered"><item>Les tomes édités <list type="unordered"><item>Accès direct aux éditions<list type="unordered"><item><ref target="http://saint-denis.enc.sorbonne.fr/inventaire/tome1/">Le tome I dans son
@@ -4785,60 +4815,18 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 </item></list>
 </div>
           </div>
-        </div>
-      </div>
-      <div type="rubrique" xml:id="sd-les-images">
-        <head>Les images</head>
-        <div type="page" xml:id="sd-les-images--accueil" corresp="http://saint-denis.enc.sorbonne.fr/les-images/index.html">
-          <head>Les collections d’images</head>
-          <div type="legacy-block" rend="static-content">
-<p>Les utilisateurs qui s’intéresseraient avant tout aux sources primaires des éditions présentées ici peuvent accéder directement aux images numériques des documents. On peut ainsi notamment <hi rend="bold">feuilleter</hi> les images, et <hi rend="bold">charger à l’écran l’image de la page dont on connaît le numéro</hi>.</p>
-<p>On dispose aussi, toujours dans la même fenêtre, pour la totalité des volumes traités de l’Inventaire général, et pour les pages du Cartulaire blanc correspondant aux chapitres déjà édités, de trois types d’informations ou moyens de navigation :</p>
-<list type="unordered"><item>la <hi rend="bold">liste des regestes ou des actes présents sur la page</hi>, donnant leur numéro, et le début du regeste et sa date (pour un regeste de l’Inventaire général) ou la transcription de la rubrique (intitulé en rouge) de l’acte (pour un acte du Cartulaire blanc) ;</item><item>le cas échéant, pour chacun des regestes ou actes,<hi rend="bold"> la mention de leur correspondance avec les pages numérisées du Cartulaire blanc</hi> (« acte copié au Cartulaire blanc [...] », <hi rend="bold">ou avec l’édition du regeste</hi> (« analysé dans l’Inventaire général [...] »);</item><item>dans une colonne qui s’affiche à droite de l’image lorsqu’on clique sur le texte du début du regeste ou de la rubrique de l’acte, <hi rend="bold">l’édition</hi> (allégée de tous les liens) <hi rend="bold">du regeste ou de l’acte concerné</hi>.</item></list>
-<p>La fenêtre de consultation des images ne fonctionnera correctement qu’avec un navigateur Web récent dans lequel l’exécution des scripts Javascript aura été activée.</p>
-</div>
-        </div>
-        <div type="part" xml:id="sd-feuilleter-images">
-          <head>Feuilleter les images</head>
-          <div type="page" xml:id="sd-les-images--images-cb" corresp="http://saint-denis.enc.sorbonne.fr/les-images/images-cb.html">
-            <head>Le Cartulaire blanc : les images</head>
-            <div type="legacy-block" rend="static-content">
-<p>En suivant ces liens vous accèderez directement aux séries d’images numériques produites à partir de chacun des tomes du Cartulaire blanc.</p>
-<list type="unordered"><item>
-<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html">Tome 1 (Archives nationales LL 1157)</ref>
-<list type="unordered"><item>
-<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0203R_L.jpg">Le chapitre de Pierrefitte (aux pages 369-384)</ref>
-</item><item>
-<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0231R_L.jpg">Le chapitre de Dugny (aux pages 425-459)</ref>
-</item><item>
-<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0250R_L.jpg">Le chapitre de Tremblay-en-France (aux pages 463-490)</ref>
-</item><item>
-<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0268R_L.jpg">Le chapitre de Rueil (aux pages 499-534)</ref>
-</item><item>
-<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0287R_L.jpg">Le chapitre de Beaurain (aux pages 537-589)</ref>
-</item><item>
-<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0367R_L.jpg">Le chapitre de Saint-Martin-du-Tertre (aux pages 697-727)</ref>
-</item><item>
-<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0383R_L.jpg">Le chapitre d’Ully-Saint-Georges (aux pages 729-780)</ref>
-</item></list>
-</item><item>
-<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html">Tome 2 (Archives nationales LL 1158)</ref>
-</item></list>
-</div>
-          </div>
-          <div type="page" xml:id="sd-les-images--images-ig" corresp="http://saint-denis.enc.sorbonne.fr/les-images/images-ig.html">
+        <div type="page" xml:id="sd-les-images--images-ig" corresp="http://saint-denis.enc.sorbonne.fr/les-images/images-ig.html">
             <head>L’Inventaire général : les images</head>
             <div type="legacy-block" rend="static-content">
 <p>En suivant ces liens vous accèderez directement aux séries d’images numériques produites à partir de chacun des tomes de l’Inventaire général.</p>
 <list type="unordered"><item><ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome1/voir.html">Tome 1 (Archives nationales, LL 1189)</ref></item><item><ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome2/voir.html">Tome 2 (Archives nationales, LL 1190)</ref></item><item><ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html">Tome 3 (Archives nationales, LL 1191)</ref></item></list>
 </div>
           </div>
-        </div>
       </div>
-      <div type="rubrique" xml:id="sd-le-projet">
+<div type="part" xml:id="sd-le-projet">
         <head>Le projet</head>
         <div type="page" xml:id="sd-le-projet--accueil" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/index.html">
-          <head>Le projet</head>
+          <head>Le projet : présentation</head>
           <div type="legacy-block" rend="static-content"><p>Cette partie du site rassemble toutes les informations
                 disponibles pour en savoir plus sur le présent projet.</p>
 <p>Il s’agit bien d’un projet - au sens où rien n’est terminé ; au contraire nous
@@ -4856,16 +4844,11 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
                 de la dernière mise à jour : 4 août 2021]</p>
           </div>
         </div>
-        <div type="page" xml:id="sd-le-projet--contacts" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/contacts.html">
-          <head>Contacts</head>
-          <div type="legacy-block" rend="static-content"> <p>Ce site Web en est à une première version, beaucoup de choses ne fonctionnent pas encore de manière optimale, et des fonctionnalités ne sont pas encore en place. Par ailleurs les contenus seront enrichis dans les prochains mois. La <ref target="#sd-le-projet--feuille-de-route" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/feuille-de-route.html">feuille de route</ref> vous en dira plus sur ce qui est prévu.</p>
-<p>Vous voulez faire une suggestion, une remarque, poser une question, signaler un problème ? Vous êtes chercheur et vous aimeriez contribuer aux contenus ? Vous vous intéressez aux aspects informatiques ? Vous pouvez prendre contact avec nous en utilisant la boîte aux lettres <ref target="mailto:info.saint-denis@enc.sorbonne.fr?subject=saint-denis">info.saint-denis@enc.sorbonne.fr</ref>.</p></div>
-        </div>
-        <div type="part" xml:id="sd-aspects-scientifiques">
+        <div type="subpart" xml:id="sd-aspects-scientifiques">
           <head>Aspects scientifiques</head>
           <div type="subpart" xml:id="sd-scientifique-cartulaire">
             <head>Pour le Cartulaire blanc</head>
-            <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc-projet-sc" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc-projet-sc.html">
+          <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc-projet-sc" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc-projet-sc.html">
               <head>Le Cartulaire blanc : le travail de l’éditeur scientifique</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc-projet-sc--preambule"/>
               <div type="legacy-block" rend="static-content">
@@ -5059,7 +5042,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>L’édition des chapitres suivants est en cours :</p>
 <list type="unordered"><item>École nationale des chartes : Montmorency, Deuil, Le Pré-Saint-Gervais, Cormeilles.</item><item>Université Paris X (coord. François Bougard) : Dugny (Julien De Nauw), Chars (Christophe Araujo), Argenteuil (Jean-Baptiste Scref).</item><item>École pratique des hautes études (coord. Laurent Morelle) : Chaourse (Zuzana Vengrinova).</item><item>Samuel Leturcq : Toury.</item><item>Thomas Roche : Berneval, Angleterre.</item><item>Denise Angers : autres chapitres normands.</item></list><p><ref target="#sd-le-projet--aspects-scientifiques--cartulaire-blanc-projet-sc--preambule">Retour au début</ref></p></div>
             </div>
-            <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--organisation-du-travail" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc/organisation-du-travail.html">
+          <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--organisation-du-travail" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc/organisation-du-travail.html">
               <head>Le Cartulaire blanc : le travail de l’éditeur scientifique &gt; organisation du travail</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--organisation-du-travail--organisation-du-travail"/>
               <div type="legacy-block" rend="static-content">
@@ -5142,7 +5125,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
                 présentation</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--conventions-de-presentation" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc/conventions-de-presentation.html">
+          <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--conventions-de-presentation" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc/conventions-de-presentation.html">
               <head>Le Cartulaire blanc : le travail de l’éditeur scientifique &gt; conventions de présentation</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--conventions-de-presentation--conventions-de-presentation"/>
               <div type="legacy-block" rend="static-content">
@@ -5217,7 +5200,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Suite : <ref target="#sd-le-projet--aspects-scientifiques--cartulaire-blanc--titres-cites-abreges" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc/titres-cites-abreges.html">Titres cités de façon abrégée</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--titres-cites-abreges" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc/titres-cites-abreges.html">
+          <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--titres-cites-abreges" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc/titres-cites-abreges.html">
               <head>Le Cartulaire blanc : le travail de l’éditeur scientifique &gt; titres cités de façon abrégée</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--titres-cites-abreges--titres-cites-abreges"/>
               <div type="legacy-block" rend="static-content">
@@ -5251,26 +5234,10 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Suite : <ref target="#sd-le-projet--aspects-scientifiques--cartulaire-blanc--etat-d-avancement" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc/etat-d-avancement.html">État d’avancement de l’édition</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--etat-d-avancement" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc/etat-d-avancement.html">
-              <head>Le Cartulaire blanc : le travail de l’éditeur scientifique &gt; état d’avancement de l’édition</head>
-              <anchor xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--etat-d-avancement--etat-avancement"/>
-              <div type="legacy-block" rend="static-content">
-<p>La <ref target="#sd-les-textes--cartulaire-blanc--parcourir--table-des-chapitres" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/parcourir/table-des-chapitres.html">Table des
-                    chapitres</ref> du Cartulaire blanc signale en gras les chapitres déjà
-                disponibles, qui sont accessibles depuis la table (en cliquant sur le nom français
-                du chapitre) comme depuis un menu déroulant.</p>
-<p><hi rend="bold">L’<ref target="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/saint-martin/">édition du chapitre de Saint-Martin-du-Tertre est effective</ref> au 20 mai 2012.</hi></p>
-<p>L’<ref target="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/dugny/">édition du chapitre de Dugny (Université Paris X, Julien De Nauw, coord. François Bougard) est effective</ref> au 10 juin 2011.</p>
-<p>L’édition des chapitres suivants est en cours :</p>
-<list type="unordered"><item>École nationale des chartes : Montmorency, Deuil, Le Pré-Saint-Gervais,
-                    Cormeilles.</item><item>Université Paris X (coord. François Bougard) : Chars
-                    (Christophe Araujo), Argenteuil (Jean-Baptiste Scref).</item><item>École pratique des hautes études (coord. Laurent Morelle) : Chaourse (Zuzana
-                    Vengrinova).</item><item>Samuel Leturcq : Toury.</item><item>Thomas Roche : Berneval, Angleterre.</item><item>Denise Angers : autres chapitres normands.</item></list></div>
-            </div>
-          </div>
+        </div>
           <div type="subpart" xml:id="sd-scientifique-inventaire">
             <head>Pour l’Inventaire</head>
-            <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire-projet-sc" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire-projet-sc.html">
+          <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire-projet-sc" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire-projet-sc.html">
               <head>L’Inventaire général : le travail de l’éditeur scientifique</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--inventaire-projet-sc--preambule"/>
               <div type="legacy-block" rend="static-content">
@@ -5431,7 +5398,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p><ref target="#sd-le-projet--aspects-scientifiques--inventaire-projet-sc--preambule">Retour au début</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--transcription" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/transcription.html">
+          <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--transcription" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/transcription.html">
               <head>L’Inventaire général : le travail de l’éditeur scientifique &gt; transcription</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--inventaire--transcription--transcription"/>
               <div type="legacy-block" rend="static-content">
@@ -5453,7 +5420,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Suite : <ref target="#sd-le-projet--aspects-scientifiques--inventaire--dates" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/dates.html">Dates</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--dates" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/dates.html">
+          <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--dates" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/dates.html">
               <head>L’Inventaire général : le travail de l’éditeur scientifique &gt; dates</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--inventaire--dates--dates"/>
               <div type="legacy-block" rend="static-content">
@@ -5482,7 +5449,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Suite : <ref target="#sd-le-projet--aspects-scientifiques--inventaire--donnees-archivistiques" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/donnees-archivistiques.html">Données archivistiques</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--donnees-archivistiques" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/donnees-archivistiques.html">
+          <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--donnees-archivistiques" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/donnees-archivistiques.html">
               <head>L’Inventaire général : le travail de l’éditeur scientifique &gt; données archivistiques</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--inventaire--donnees-archivistiques--donnees-archivistiques"/>
               <div type="legacy-block" rend="static-content">
@@ -5520,7 +5487,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Suite : <ref target="#sd-le-projet--aspects-scientifiques--inventaire--donnees-bibliographiques" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/donnees-bibliographiques.html">Données bibliographiques</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--donnees-bibliographiques" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/donnees-bibliographiques.html">
+          <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--donnees-bibliographiques" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/donnees-bibliographiques.html">
               <head>L’Inventaire général : le travail de l’éditeur scientifique &gt; données bibliographiques</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--inventaire--donnees-bibliographiques--donnees-bibliographiques"/>
               <div type="legacy-block" rend="static-content">
@@ -5603,7 +5570,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Suite : <ref target="#sd-le-projet--aspects-scientifiques--inventaire--types-d-auteurs-d-actes" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/types-d-auteurs-d-actes.html">Types d’auteurs d’actes</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--types-d-auteurs-d-actes" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/types-d-auteurs-d-actes.html">
+          <div type="page" xml:id="sd-le-projet--aspects-scientifiques--inventaire--types-d-auteurs-d-actes" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/inventaire/types-d-auteurs-d-actes.html">
               <head>L’Inventaire général : le travail de l’éditeur scientifique &gt; types d’auteurs d’actes</head>
               <anchor xml:id="sd-le-projet--aspects-scientifiques--inventaire--types-d-auteurs-d-actes--types-auteurs-actes"/>
               <div type="legacy-block" rend="static-content">
@@ -5636,25 +5603,13 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
                 recherche. Les principales entrées de cette liste font également l’objet d’une <ref target="#sd-le-projet--aspects-scientifiques--auteurs-actes-principales-entrees" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/auteurs-actes-principales-entrees.html">présentation séparée</ref>.</p>
 </div>
             </div>
-            <div type="page" xml:id="sd-le-projet--aspects-scientifiques--auteurs-actes-principales-entrees" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/auteurs-actes-principales-entrees.html">
-              <head>Auteurs d’actes : les choix d’indexation</head>
-              <div type="legacy-block" rend="static-content">
-<p>Une liste alphabétique de toutes les entrées réelles de l’index des auteurs d’actes est consultable à partir des formulaires de recherche, et directement, pour l’Inventaire général et pour le Cartulaire blanc.</p>
-<p>Voici, dans un autre ordre, une liste des principales entrées, qui donne des explications sur le sens qu’on a donné à ces entrées et sur leur emploi :</p>
-<list type="unordered" rend="encadré"><item><hi rend="cite">Pape</hi></item><item>
-<hi rend="cite">Cardinal</hi> (sans autres précisions)
-            </item><item><hi rend="cite">Légat du pape</hi></item><item><hi rend="cite">Juges délégués</hi> (les ecclésiastiques agissant sur délégation du pape ou d’un légat sont indexés à la fois personnellement avec leur titre, et collectivement comme juges délégués)</item><item><hi rend="cite">Archevêque de …</hi></item><item><hi rend="cite">Évêques</hi> [en groupe, synode…]. De façon générale, on ne donne pas de précision de siège ou de lieu s’il y a plus de trois représentants d’un groupe</item><item><hi rend="cite">Évêque de …</hi></item><item><hi rend="cite">Archidiacre de …</hi></item><item>
-<hi rend="cite">Officialité de …</hi> (lieu seul pour une officialité épiscopale et pour celle de Saint-Denis)</item><item><hi rend="cite">Officialité de l’archidiacre de …</hi></item><item><hi rend="cite">Official de …</hi> (agissant à titre personnel, hors juridiction gracieuse)</item><item><hi rend="cite"> Prévôté de …</hi> (abbatiale) pour les lettres de prévôté</item><item><hi rend="cite">Doyen du chapitre cathédral de …</hi> (inclut les actes passés collectivement par le chapitre, mais pas les actes passés par d’autres dignitaires)</item><item><hi rend="cite">Doyen de … 
-           </hi>(pour  un chapitre ; inclut les actes passés par les chanoines)</item><item><hi rend="cite">Chapitre Saint-Paul de Saint-Denis</hi> (par exception ; inclut les actes du chantre)</item><item><hi rend="cite">Abbé de Saint-Denis</hi> (inclut les actes du convent, du prieur)</item><item><hi rend="cite">Abbé de …</hi> (inclut les actes du convent, les prieurs à la tête de prieurés indépendants), abbé de Saint-Victor de Paris, abbé de Saint-Germain-des-Prés, abbé de Sainte-Geneviève de Paris etc.</item><item><hi rend="cite">Abbesse de…</hi></item><item><hi rend="cite">Templiers</hi></item><item><hi rend="cite">Hospitaliers</hi></item><item><hi rend="cite">Franciscains</hi></item><item><hi rend="cite">Dominicains</hi></item><item><hi rend="cite">Trinitaires</hi></item><item><hi rend="cite">Mathurins</hi></item><item><hi rend="cite">Hôpital de …</hi></item><item><hi rend="cite">Léproserie de …</hi></item><item><hi rend="cite">Auteurs ecclésiastiques</hi> (auteur d’acte n’entrant pas dans les catégories ci-dessus)</item><item><hi rend="cite">Divers ecclésiastiques</hi> (idem, pour un notificateur, un enquêteur, un arbitre, y compris juges délégués, doyens de chrétienté…)</item><item><hi rend="cite">Roi de France</hi></item><item><hi rend="cite">Reine de France</hi></item><item><hi rend="cite">Comte de …</hi>,  <hi rend="cite">Comte</hi> s’il n’y a pas de circonscription. On retient le titre usuel chez les historiens, p. ex. « comte de Champagne », « comte de Toulouse » ou « duc de Normandie », et non celui que donne l’acte, « comte de Troyes », « comte de Normandie ». Même principe pour les femmes, indexées au nom masculin. Si plusieurs titres sont cumulés, on n’indique que le ressort concerné par l’acte (on néglige par exemple « roi de Navarre » pour la Champagne)</item><item><hi rend="cite">Duc de …</hi> Mêmes remarques que pour « comte »</item><item><hi rend="cite">Marquis de …</hi> Mêmes remarques que pour « comte »</item><item><hi rend="cite">Maire du palais</hi></item><item><hi rend="cite">Parlement</hi></item><item><hi rend="cite">Clercs royaux</hi> (membres de l’administration royale centrale hors Parlement)</item><item><hi rend="cite">Bailliage de …</hi> pour les lettres de bailliage</item><item><hi rend="cite">Bailli de …</hi>, <hi rend="cite">Bailli</hi> tout court s’il n’a pas de circonscription fixe, pour les interventions hors juridiction royale</item><item><hi rend="cite">Châtelet</hi> [de Paris]</item><item><hi rend="cite">Prévôté de …</hi> (royale, princière…, sauf Paris : voir « Châtelet ») pour les lettres de prévôté</item><item><hi rend="cite">Prévôt de …</hi> (hors juridiction gracieuse)</item><item><hi rend="cite">Châtellenie de …</hi> (circonscription royale de Normandie)</item><item><hi rend="cite">Ville de …</hi> (autorités municipales de tout genre, y compris Marchandise de l’eau de Paris)</item><item><hi rend="cite">Roi de Wessex</hi></item><item><hi rend="cite">Roi de Mercie</hi></item><item><hi rend="cite">Roi d’Angleterre</hi></item><item><hi rend="cite">Roi de Lotharingie</hi></item><item><hi rend="cite">Roi de Germanie</hi></item><item><hi rend="cite">Empereur</hi> (s’il n’a pas régné sur la France)</item><item><hi rend="cite">Auteurs laïques</hi> (pour les auteurs d’actes n’entrant pas dans les catégories ci-dessus)</item><item><hi rend="cite">Divers laïques</hi> (pour un notificateur, un enquêteur, un arbitre, un tabellion à partir de 1293…)</item><item><hi rend="cite">- sans auteur</hi> (notice, acte ou document sans auteur déclaré)</item></list>
-</div>
-            </div>
-          </div>
         </div>
-        <div type="part" xml:id="sd-aspects-informatiques">
+        </div>
+        <div type="subpart" xml:id="sd-aspects-informatiques">
           <head>Aspects informatiques</head>
           <div type="subpart" xml:id="sd-informatique-generalites">
             <head>Généralités</head>
-            <div type="page" xml:id="sd-le-projet--aspects-informatiques--generalites--fabrique-du-corpus-numerique" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/generalites/fabrique-du-corpus-numerique.html">
+          <div type="page" xml:id="sd-le-projet--aspects-informatiques--generalites--fabrique-du-corpus-numerique" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/generalites/fabrique-du-corpus-numerique.html">
               <head>Aspects informatiques du projet : généralités &gt; la fabrique du corpus numérique</head>
               <anchor xml:id="sd-le-projet--aspects-informatiques--generalites--fabrique-du-corpus-numerique--fabrique-du-corpus"/>
               <div type="legacy-block" rend="static-content">
@@ -5770,55 +5725,10 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
                     l’application</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-le-projet--aspects-informatiques--generalites--caracteristiques-de-l-application" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/generalites/caracteristiques-de-l-application.html">
-              <head>Aspects informatiques du projet : généralités &gt; quelques caractéristiques de l’application</head>
-              <anchor xml:id="sd-le-projet--aspects-informatiques--generalites--caracteristiques-de-l-application--caracteristiques-application"/>
-              <div type="legacy-block" rend="static-content">
-<p>Cette partie sera complétée ultérieurement.</p>
-<p>Pour développer l’application en utilisant, comme l’École des chartes le fait
-                toujours, des logiciels libres, nous sommes partis du logiciel libre PLEADE, qui
-                offrait déjà un environnement Web de recherche et de publication de documents
-                XML/EAD et des services de gestion et de consultation de collections d’images
-                numériques, soit deux des principaux groupes de fonctionnalités attendus. Ce
-                logiciel est par ailleurs hautement configurable. Il peut aussi être adapté ; c’est
-                ce qui a été fait, ce de manière assez forte, en particulier pour permettre la
-                recherche et la consultation des fichiers XML/TEI, l’affichage des informations
-                utiles dans la fenêtre de consultation des images et de manière plus générale la
-                gestion des liens. De nombreux fichiers de configuration, sitemaps, programmes
-                XSLT et scripts Javascript/AJAX ont donc été modifiés et ajoutés. La société AJLSM a auparavant animé pour nous et d’autres personnes une
-                formation technique à PLEADE 3, puis nous a fourni un embryon de module TEI ; nous
-                l’en remercions vivement.</p>
-<p>Le système d’URL utilisé à été « francisé », et surtout nous avons mis en place la
-                logique nécessaire pour que l’utilisateur cherchant une unité intellectuelle précise
-                (un tome de l’Inventaire, un chapitre du Cartulaire blanc, un regeste, un acte)
-                puisse former seul une URL. Ainsi : </p>
-<list type="unordered"><item>Pour consulter l’édition du tome 1 de l’Inventaire taper <lb/>
-<ref target="http://saint-denis.enc.sorbonne.fr/inventaire/tome1/"><code>http://saint-denis.enc.sorbonne.fr/inventaire/tome1/</code></ref></item><item>Pour consulter l’édition du regeste 408 de l’Inventaire taper <lb/><ref target="http://saint-denis.enc.sorbonne.fr/inventaire/tome1/notice408"><code>http://saint-denis.enc.sorbonne.fr/inventaire/tome1/notice408</code></ref></item><item>Pour consulter l’édition du chapitre de Beaurain du Cartulaire blanc taper
-                        <lb/><ref target="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/beaurain/"><code>http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/beaurain/</code></ref></item><item>Pour consulter l’édition de l’acte 12 du chapitre de Beaurain du Cartulaire
-                    blanc taper <lb/><ref target="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/beaurain/acte12"><code>http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/beaurain/acte12</code></ref>
-</item><item>Pour consulter l’édition de l’acte 5 du chapitre de Saint-Martin-du-Tertre du Cartulaire
-                    blanc taper <lb/><ref target="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/saint-martin/acte5"><code>http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/saint-martin/acte5</code></ref>
-</item></list>
-</div>
-            </div>
-            <div type="page" xml:id="sd-le-projet--aspects-informatiques--generalites--format-d-affichage-des-documents" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/generalites/format-d-affichage-des-documents.html">
-              <head>Aspects informatiques du projet : généralités &gt; le format d’affichage à l’écran des regestes et des actes</head>
-              <anchor xml:id="sd-le-projet--aspects-informatiques--generalites--format-d-affichage-des-documents--format-d-affichage"/>
-              <div type="legacy-block" rend="static-content">
-<p>Texte qui reste à écrire au 3 septembre 2010...</p>
-</div>
-            </div>
-          </div>
-          <div type="subpart" xml:id="sd-informatique-cartulaire">
-            <head>Pour le Cartulaire blanc</head>
-            <div type="page" xml:id="sd-le-projet--aspects-informatiques--cartulaire-blanc-projet-inf" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/cartulaire-blanc-projet-inf.html">
-              <head>Le Cartulaire blanc informatisé</head>
-              <p rend="static-content">Texte qui reste à écrire...</p>
-            </div>
-          </div>
+        </div>
           <div type="subpart" xml:id="sd-informatique-inventaire">
             <head>Pour l’Inventaire</head>
-            <div type="page" xml:id="sd-le-projet--aspects-informatiques--inventaire--principes-generaux-de-structuration" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/inventaire/principes-generaux-de-structuration.html">
+          <div type="page" xml:id="sd-le-projet--aspects-informatiques--inventaire--principes-generaux-de-structuration" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/inventaire/principes-generaux-de-structuration.html">
               <head>L’Inventaire général informatisé &gt; principes généraux de structuration</head>
               <anchor xml:id="sd-le-projet--aspects-informatiques--inventaire--principes-generaux-de-structuration--structure"/>
               <div type="legacy-block" rend="static-content">
@@ -5907,7 +5817,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
                     dit</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-le-projet--aspects-informatiques--inventaire--structuration-du-texte" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/inventaire/structuration-du-texte.html">
+          <div type="page" xml:id="sd-le-projet--aspects-informatiques--inventaire--structuration-du-texte" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/inventaire/structuration-du-texte.html">
               <head>L’Inventaire général informatisé &gt; la structuration du texte de l’Inventaire</head>
               <anchor xml:id="sd-le-projet--aspects-informatiques--inventaire--structuration-du-texte--structuration-du-texte"/>
               <div type="legacy-block" rend="static-content">
@@ -5976,14 +5886,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Suite : <ref target="#sd-le-projet--aspects-informatiques--inventaire--encodage-des-enrichissements-editoriaux" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/inventaire/encodage-des-enrichissements-editoriaux.html">Encodage des enrichissements éditoriaux</ref></p>
 </div>
             </div>
-            <div type="page" xml:id="sd-le-projet--aspects-informatiques--inventaire--encodage-des-enrichissements-editoriaux" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/inventaire/encodage-des-enrichissements-editoriaux.html">
-              <head>L’Inventaire général informatisé &gt; encodage des enrichissements éditoriaux</head>
-              <anchor xml:id="sd-le-projet--aspects-informatiques--inventaire--encodage-des-enrichissements-editoriaux--enrichissements-editoriaux"/>
-              <div type="legacy-block" rend="static-content">
-<p>Texte qui reste à écrire au 3 septembre 2010...</p>
-</div>
-            </div>
-          </div>
+        </div>
         </div>
         <div type="page" xml:id="sd-le-projet--telecharger" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/telecharger.html">
           <head>Téléchargements</head>
@@ -5997,13 +5900,10 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Pour toute question ou observation sur ces fichiers, merci d’utiliser la boîte aux lettres <ref target="mailto:info.saint-denis@enc.sorbonne.fr?subject=saint-denis">info.saint-denis@enc.sorbonne.fr</ref>.</p>
 </div>
         </div>
-        <div type="page" xml:id="sd-le-projet--feuille-de-route" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/feuille-de-route.html">
-          <head>Feuille de route du projet</head>
-          <div type="legacy-block" rend="static-content">
-<p>Au 15 juin 2012, après l’édition du chapitre de Dugny en 2011, <hi rend="bold">l’édition d’un 6<hi rend="sup">e</hi> chapitre, celui de Saint-Martin-du-Tertre, est effective</hi>, ce qui porte à <hi rend="bold">411 le nombre d’actes édités</hi> (sur 2600). Par ailleurs le modèle d’encodage est aujourd’hui relativement stabilisé, tous les fichiers TEI ont été relus et rendus conformes à ce modèle. Les fichiers TEI et le schéma Relax NG défini sont téléchargeables (voir la page <ref target="#sd-le-projet--telecharger" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/telecharger.html">Télécharger</ref>). Les fichiers METS ont aussi subi des changements pour être rendus tout à fait conformes au standard METS actuel.</p>
-<p>Sont par ailleurs en cours ou prévus, pour parvenir à une version 2 de l’application à l’été 2012 :</p>
-<list type="unordered"><item>divers ajustements et améliorations ponctuels</item><item>la finalisation des pages de présentation</item><item>l’intégration de documents et illustrations annexes</item><item>l’ajout de métadonnées pour chaque page Web, notamment pour chacun des composants du corpus</item><item>la création d’un entrepôt de métadonnées OAI-PMH pour la totalité des ressources textuelles éditées</item><item>l’export PDF depuis l’édition des actes du Cartulaire blanc</item><item>une table des actes dynamique et téléchargeable</item><item>l’enrichissement de la table des chapitres</item><item>la mise en place de dispositifs graphiques pour présenter autrement certains résultats de recherche</item></list>
-</div>
+        <div type="page" xml:id="sd-le-projet--contacts" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/contacts.html">
+          <head>Contacts</head>
+          <div type="legacy-block" rend="static-content"> <p>Ce site Web en est à une première version, beaucoup de choses ne fonctionnent pas encore de manière optimale, et des fonctionnalités ne sont pas encore en place. Par ailleurs les contenus seront enrichis dans les prochains mois. La <ref target="#sd-le-projet--feuille-de-route" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/feuille-de-route.html">feuille de route</ref> vous en dira plus sur ce qui est prévu.</p>
+<p>Vous voulez faire une suggestion, une remarque, poser une question, signaler un problème ? Vous êtes chercheur et vous aimeriez contribuer aux contenus ? Vous vous intéressez aux aspects informatiques ? Vous pouvez prendre contact avec nous en utilisant la boîte aux lettres <ref target="mailto:info.saint-denis@enc.sorbonne.fr?subject=saint-denis">info.saint-denis@enc.sorbonne.fr</ref>.</p></div>
         </div>
         <div type="page" xml:id="sd-le-projet--credits" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/credits.html">
           <head>Crédits</head>
@@ -6024,6 +5924,33 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 
 </div>
         </div>
+      </div>
+      <div type="ecarte" xml:id="sd-ecarte" rend="hors-sommaire">
+        <head>Pages ecartees du sommaire</head>
+        <!-- Pages retirees du plan editorial (mail du responsable scientifique, et pages
+             vides). Conservees ici hors citeStructure : elles ne paraissent plus au
+             sommaire DoTS mais restent dans le fichier, et les ref/@target internes
+             continuent de resoudre. -->
+        <!-- ecartee : introduction aux images jugee sans utilite -->
+        <div type="page" xml:id="sd-les-images--accueil" corresp="http://saint-denis.enc.sorbonne.fr/les-images/index.html">
+          <head>Les collections d’images</head>
+          <div type="legacy-block" rend="static-content">
+<p>Les utilisateurs qui s’intéresseraient avant tout aux sources primaires des éditions présentées ici peuvent accéder directement aux images numériques des documents. On peut ainsi notamment <hi rend="bold">feuilleter</hi> les images, et <hi rend="bold">charger à l’écran l’image de la page dont on connaît le numéro</hi>.</p>
+<p>On dispose aussi, toujours dans la même fenêtre, pour la totalité des volumes traités de l’Inventaire général, et pour les pages du Cartulaire blanc correspondant aux chapitres déjà édités, de trois types d’informations ou moyens de navigation :</p>
+<list type="unordered"><item>la <hi rend="bold">liste des regestes ou des actes présents sur la page</hi>, donnant leur numéro, et le début du regeste et sa date (pour un regeste de l’Inventaire général) ou la transcription de la rubrique (intitulé en rouge) de l’acte (pour un acte du Cartulaire blanc) ;</item><item>le cas échéant, pour chacun des regestes ou actes,<hi rend="bold"> la mention de leur correspondance avec les pages numérisées du Cartulaire blanc</hi> (« acte copié au Cartulaire blanc [...] », <hi rend="bold">ou avec l’édition du regeste</hi> (« analysé dans l’Inventaire général [...] »);</item><item>dans une colonne qui s’affiche à droite de l’image lorsqu’on clique sur le texte du début du regeste ou de la rubrique de l’acte, <hi rend="bold">l’édition</hi> (allégée de tous les liens) <hi rend="bold">du regeste ou de l’acte concerné</hi>.</item></list>
+<p>La fenêtre de consultation des images ne fonctionnera correctement qu’avec un navigateur Web récent dans lequel l’exécution des scripts Javascript aura été activée.</p>
+</div>
+        </div>
+        <!-- ecartee : perimee -->
+        <div type="page" xml:id="sd-le-projet--feuille-de-route" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/feuille-de-route.html">
+          <head>Feuille de route du projet</head>
+          <div type="legacy-block" rend="static-content">
+<p>Au 15 juin 2012, après l’édition du chapitre de Dugny en 2011, <hi rend="bold">l’édition d’un 6<hi rend="sup">e</hi> chapitre, celui de Saint-Martin-du-Tertre, est effective</hi>, ce qui porte à <hi rend="bold">411 le nombre d’actes édités</hi> (sur 2600). Par ailleurs le modèle d’encodage est aujourd’hui relativement stabilisé, tous les fichiers TEI ont été relus et rendus conformes à ce modèle. Les fichiers TEI et le schéma Relax NG défini sont téléchargeables (voir la page <ref target="#sd-le-projet--telecharger" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/telecharger.html">Télécharger</ref>). Les fichiers METS ont aussi subi des changements pour être rendus tout à fait conformes au standard METS actuel.</p>
+<p>Sont par ailleurs en cours ou prévus, pour parvenir à une version 2 de l’application à l’été 2012 :</p>
+<list type="unordered"><item>divers ajustements et améliorations ponctuels</item><item>la finalisation des pages de présentation</item><item>l’intégration de documents et illustrations annexes</item><item>l’ajout de métadonnées pour chaque page Web, notamment pour chacun des composants du corpus</item><item>la création d’un entrepôt de métadonnées OAI-PMH pour la totalité des ressources textuelles éditées</item><item>l’export PDF depuis l’édition des actes du Cartulaire blanc</item><item>une table des actes dynamique et téléchargeable</item><item>l’enrichissement de la table des chapitres</item><item>la mise en place de dispositifs graphiques pour présenter autrement certains résultats de recherche</item></list>
+</div>
+        </div>
+        <!-- ecartee : CC-BY 2.0 : licence a trancher -->
         <div type="page" xml:id="sd-le-projet--mentions-legales" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/mentions-legales.html">
           <head>Mentions légales</head>
           <div type="legacy-block" rend="static-content">
@@ -6055,6 +5982,76 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 
 </div>
         </div>
+        <!-- ecartee : perime, a supprimer -->
+        <div type="page" xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--etat-d-avancement" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-scientifiques/cartulaire-blanc/etat-d-avancement.html">
+              <head>Le Cartulaire blanc : le travail de l’éditeur scientifique &gt; état d’avancement de l’édition</head>
+              <anchor xml:id="sd-le-projet--aspects-scientifiques--cartulaire-blanc--etat-d-avancement--etat-avancement"/>
+              <div type="legacy-block" rend="static-content">
+<p>La <ref target="#sd-les-textes--cartulaire-blanc--parcourir--table-des-chapitres" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/cartulaire-blanc/parcourir/table-des-chapitres.html">Table des
+                    chapitres</ref> du Cartulaire blanc signale en gras les chapitres déjà
+                disponibles, qui sont accessibles depuis la table (en cliquant sur le nom français
+                du chapitre) comme depuis un menu déroulant.</p>
+<p><hi rend="bold">L’<ref target="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/saint-martin/">édition du chapitre de Saint-Martin-du-Tertre est effective</ref> au 20 mai 2012.</hi></p>
+<p>L’<ref target="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/dugny/">édition du chapitre de Dugny (Université Paris X, Julien De Nauw, coord. François Bougard) est effective</ref> au 10 juin 2011.</p>
+<p>L’édition des chapitres suivants est en cours :</p>
+<list type="unordered"><item>École nationale des chartes : Montmorency, Deuil, Le Pré-Saint-Gervais,
+                    Cormeilles.</item><item>Université Paris X (coord. François Bougard) : Chars
+                    (Christophe Araujo), Argenteuil (Jean-Baptiste Scref).</item><item>École pratique des hautes études (coord. Laurent Morelle) : Chaourse (Zuzana
+                    Vengrinova).</item><item>Samuel Leturcq : Toury.</item><item>Thomas Roche : Berneval, Angleterre.</item><item>Denise Angers : autres chapitres normands.</item></list></div>
+            </div>
+        <!-- ecartee : decrit PLEADE, application disparue -->
+        <div type="page" xml:id="sd-le-projet--aspects-informatiques--generalites--caracteristiques-de-l-application" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/generalites/caracteristiques-de-l-application.html">
+              <head>Aspects informatiques du projet : généralités &gt; quelques caractéristiques de l’application</head>
+              <anchor xml:id="sd-le-projet--aspects-informatiques--generalites--caracteristiques-de-l-application--caracteristiques-application"/>
+              <div type="legacy-block" rend="static-content">
+<p>Cette partie sera complétée ultérieurement.</p>
+<p>Pour développer l’application en utilisant, comme l’École des chartes le fait
+                toujours, des logiciels libres, nous sommes partis du logiciel libre PLEADE, qui
+                offrait déjà un environnement Web de recherche et de publication de documents
+                XML/EAD et des services de gestion et de consultation de collections d’images
+                numériques, soit deux des principaux groupes de fonctionnalités attendus. Ce
+                logiciel est par ailleurs hautement configurable. Il peut aussi être adapté ; c’est
+                ce qui a été fait, ce de manière assez forte, en particulier pour permettre la
+                recherche et la consultation des fichiers XML/TEI, l’affichage des informations
+                utiles dans la fenêtre de consultation des images et de manière plus générale la
+                gestion des liens. De nombreux fichiers de configuration, sitemaps, programmes
+                XSLT et scripts Javascript/AJAX ont donc été modifiés et ajoutés. La société AJLSM a auparavant animé pour nous et d’autres personnes une
+                formation technique à PLEADE 3, puis nous a fourni un embryon de module TEI ; nous
+                l’en remercions vivement.</p>
+<p>Le système d’URL utilisé à été « francisé », et surtout nous avons mis en place la
+                logique nécessaire pour que l’utilisateur cherchant une unité intellectuelle précise
+                (un tome de l’Inventaire, un chapitre du Cartulaire blanc, un regeste, un acte)
+                puisse former seul une URL. Ainsi : </p>
+<list type="unordered"><item>Pour consulter l’édition du tome 1 de l’Inventaire taper <lb/>
+<ref target="http://saint-denis.enc.sorbonne.fr/inventaire/tome1/"><code>http://saint-denis.enc.sorbonne.fr/inventaire/tome1/</code></ref></item><item>Pour consulter l’édition du regeste 408 de l’Inventaire taper <lb/><ref target="http://saint-denis.enc.sorbonne.fr/inventaire/tome1/notice408"><code>http://saint-denis.enc.sorbonne.fr/inventaire/tome1/notice408</code></ref></item><item>Pour consulter l’édition du chapitre de Beaurain du Cartulaire blanc taper
+                        <lb/><ref target="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/beaurain/"><code>http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/beaurain/</code></ref></item><item>Pour consulter l’édition de l’acte 12 du chapitre de Beaurain du Cartulaire
+                    blanc taper <lb/><ref target="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/beaurain/acte12"><code>http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/beaurain/acte12</code></ref>
+</item><item>Pour consulter l’édition de l’acte 5 du chapitre de Saint-Martin-du-Tertre du Cartulaire
+                    blanc taper <lb/><ref target="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/saint-martin/acte5"><code>http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/saint-martin/acte5</code></ref>
+</item></list>
+</div>
+            </div>
+        <!-- ecartee : page vide (texte a ecrire au 3 septembre 2010) -->
+        <div type="page" xml:id="sd-le-projet--aspects-informatiques--generalites--format-d-affichage-des-documents" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/generalites/format-d-affichage-des-documents.html">
+              <head>Aspects informatiques du projet : généralités &gt; le format d’affichage à l’écran des regestes et des actes</head>
+              <anchor xml:id="sd-le-projet--aspects-informatiques--generalites--format-d-affichage-des-documents--format-d-affichage"/>
+              <div type="legacy-block" rend="static-content">
+<p>Texte qui reste à écrire au 3 septembre 2010...</p>
+</div>
+            </div>
+        <!-- ecartee : page vide (texte a ecrire) -->
+        <div type="page" xml:id="sd-le-projet--aspects-informatiques--cartulaire-blanc-projet-inf" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/cartulaire-blanc-projet-inf.html">
+              <head>Le Cartulaire blanc informatisé</head>
+              <p rend="static-content">Texte qui reste à écrire...</p>
+            </div>
+        <!-- ecartee : page vide (texte a ecrire au 3 septembre 2010) -->
+        <div type="page" xml:id="sd-le-projet--aspects-informatiques--inventaire--encodage-des-enrichissements-editoriaux" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/inventaire/encodage-des-enrichissements-editoriaux.html">
+              <head>L’Inventaire général informatisé &gt; encodage des enrichissements éditoriaux</head>
+              <anchor xml:id="sd-le-projet--aspects-informatiques--inventaire--encodage-des-enrichissements-editoriaux--enrichissements-editoriaux"/>
+              <div type="legacy-block" rend="static-content">
+<p>Texte qui reste à écrire au 3 septembre 2010...</p>
+</div>
+            </div>
       </div>
     </body>
   </text>
