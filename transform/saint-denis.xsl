@@ -426,6 +426,86 @@
     </section>
   </xsl:template>
 
+  <!-- 2026-09-25 : les rubriques internes d'une notice étaient encodées <head type="section">.
+       TEI n'admet un <head> qu'en tête de son <div> (model.divTop) : placé après la liste des
+       champs ou après un <p>, il est refusé — d'où 9 333 erreurs contre tei_all dans les trois
+       volumes. Arbitrage pris sur la source, encore en ligne (Pleade/EAD,
+       saint-denis.enc.sorbonne.fr, relevé le 2026-09-25, trois notices témoins, une par tome) :
+       ces rubriques n'y sont pas des titres. Ce sont les <head> EAD de <scopecontent>,
+       <bibliography>, <odd> et du bloc éditorial « cart-links », rendus en
+       <p class="pl-pgd-head…"> — jamais en <h1>-<h6> — au même titre que les <th> du tableau
+       de champs, que nous encodons déjà en <label>. La conversion HTML→TEI a confondu le <head>
+       d'EAD (une rubrique) avec celui de TEI (le titre d'une division) : on les rend donc à
+       <label type="section">, l'élément TEI des étiquettes, comme les champs courts voisins.
+       Le rendu ne bouge pas d'un octet : on reprend ici le modèle générique de tei:head
+       (hteiml/xsl/tei2html.xsl, l. 441), niveau de titre calculé de la même façon pour que les
+       fragments DoTS gardent le leur, classe « head section notice » et signet inchangés. -->
+  <xsl:template match="tei:div[@type = 'notice']/tei:label[@type = 'section']" priority="14">
+    <xsl:variable name="level" select="count(ancestor::tei:*) - 2"/>
+    <xsl:variable name="name">
+      <xsl:choose>
+        <xsl:when test="normalize-space(.) = ''"/>
+        <xsl:when test="$level &lt; 1">h1</xsl:when>
+        <xsl:when test="$level &gt; 7">h6</xsl:when>
+        <xsl:otherwise>h<xsl:value-of select="$level"/></xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:if test="$name != ''">
+      <xsl:apply-templates select="tei:pb"/>
+      <xsl:element name="{$name}" namespace="http://www.w3.org/1999/xhtml">
+        <xsl:attribute name="class">head section notice</xsl:attribute>
+        <xsl:apply-templates select="node()[local-name() != 'pb']"/>
+        <xsl:if test="not(following-sibling::*[1][self::tei:head or self::tei:label])
+                      and $format != $epub2 and $format != $epub3">
+          <xsl:variable name="bookmark-href"><xsl:for-each select="ancestor::tei:div[1]"><xsl:call-template name="href"/></xsl:for-each></xsl:variable>
+          <xsl:if test="normalize-space($bookmark-href) != ''">
+            <a class="bookmark" href="{$bookmark-href}"><xsl:text> §</xsl:text></a>
+          </xsl:if>
+        </xsl:if>
+      </xsl:element>
+    </xsl:if>
+  </xsl:template>
+
+  <!-- Corollaire du point précédent : la table des matières de hteiml (nav/ol.tree, servie par
+       l'API avec le document comme avec le fragment) compose l'intitulé d'une unité en
+       chaînant TOUS ses <head> enfants (common.xsl, l. 679 : for-each tei:head[not(@type='sub')],
+       séparés par « . »). Une notice y figurait donc sous « N° 3196. Édition du regeste.
+       Références données par l'Inventaire général… ». Les rubriques n'étant plus des <head>,
+       cet intitulé se réduirait au seul titre : ce serait mieux, mais ce serait changer ce qui
+       s'affiche, ce que ce chantier s'interdit. On rend donc l'intitulé à l'identique, rubriques
+       comprises. Les 9 333 rubriques sont du texte nu, sans balise ni espace final (vérifié),
+       d'où le simple normalize-space() là où un <head> passerait par son mode title.
+       À rouvrir si l'on veut un jour raccourcir ces intitulés : il suffira de retirer
+       tei:label du for-each ci-dessous. -->
+  <xsl:template match="tei:div[@type = 'notice']" mode="a" priority="14">
+    <xsl:param name="class"/>
+    <a>
+      <xsl:attribute name="href"><xsl:call-template name="href"/></xsl:attribute>
+      <xsl:if test="$class">
+        <xsl:attribute name="class"><xsl:value-of select="$class"/></xsl:attribute>
+      </xsl:if>
+      <xsl:call-template name="isd-intitule"/>
+    </a>
+  </xsl:template>
+
+  <xsl:template match="tei:div[@type = 'notice']" mode="title" priority="14">
+    <xsl:call-template name="isd-intitule"/>
+  </xsl:template>
+
+  <xsl:template name="isd-intitule">
+    <xsl:for-each select="tei:head[not(@type = 'sub')] | tei:label[@type = 'section']">
+      <xsl:choose>
+        <xsl:when test="self::tei:head"><xsl:apply-templates select="." mode="title"/></xsl:when>
+        <xsl:otherwise><xsl:value-of select="normalize-space(.)"/></xsl:otherwise>
+      </xsl:choose>
+      <xsl:if test="position() != last()">
+        <xsl:variable name="norm" select="normalize-space(.)"/>
+        <xsl:variable name="last" select="substring($norm, string-length($norm))"/>
+        <xsl:if test="translate($last, '.;:?!»', '') != ''">. </xsl:if>
+      </xsl:if>
+    </xsl:for-each>
+  </xsl:template>
+
   <!-- Les champs d'une notice : une liste de définitions, comme le tableau du site. -->
   <xsl:template match="tei:list[@type = 'gloss'][ancestor::tei:div[@type = 'notice']]" priority="14">
     <dl class="isd-champs">
