@@ -593,28 +593,28 @@
        (router.push) : les images sont donc rendues en <img>, jamais en lien.
        ================================================================ -->
   <xsl:variable name="sd-images" select="'/images/saint-denis/'"/>
-  <!-- Illustrations des chapitres présentes sur la machine (les autres manquent : décision en attente). -->
-  <xsl:variable name="sd-illustrations-locales" select="' Ully-Cassini.jpg Ully-carte-de-situation.jpg '"/>
 
   <xsl:template match="tei:graphic[starts-with(@url, 'legacy-source/assets/')]" priority="12">
     <img class="sd-graphic" loading="lazy" src="{$sd-images}assets/{substring-after(@url, 'legacy-source/assets/')}" alt="{normalize-space(@n)}"/>
   </xsl:template>
 
-  <!-- 2026-09-12 : les illustrations de chapitre sont rapatriées, pour celles qu'on a pu
-       identifier. L'ancien site ne les servait PAS sous le nom du TEI mais comme pièces jointes
-       Pleade, sous des noms engendrés (`functions/tei/attached/tremblay/tremblay_e0000328.jpg`) :
-       26 des 39 renvois ont été appariés par le libellé du lien dans les fragments de l'ancien
-       site, appariement fait par sd_images_sidecar.py et consigné dans le side-car. Les autres
-       gardent le rendu « absente » — mieux vaut le dire que de montrer la mauvaise image.
-       `$sd-illustrations-locales` reste consulté pour les deux fichiers déjà présents avant. -->
+  <!-- 2026-09-12, refondu le 2026-09-25 : les illustrations de chapitre sont rapatriées, pour
+       celles qu'on a pu identifier. L'ancien site ne les servait PAS sous le nom du TEI mais comme
+       pièces jointes Pleade, sous des noms engendrés
+       (`functions/tei/attached/tremblay/tremblay_e0000328.jpg`) : 26 des 37 noms cités ont été
+       appariés par le libellé du lien dans les fragments de l'ancien site. Les autres gardent le
+       rendu « absente » — mieux vaut le dire que de montrer la mauvaise image.
+
+       La table nom → fichier vivait dans un compagnon lu avec document(). Elle est maintenant
+       DANS LE TEI : les 96 renvois qui citent une de ces 26 illustrations portent le chemin servi
+       en @facs, la forme que le corpus emploie déjà 1 874 fois pour ses pages. Plus de compagnon,
+       plus de document(), et le chemin voyage avec le renvoi qui s'en sert. -->
   <xsl:template match="tei:ref[starts-with(@target, 'illustrations/')] | tei:ptr[starts-with(@target, 'illustrations/')]" priority="12">
     <xsl:variable name="file" select="substring-after(@target, 'illustrations/')"/>
-    <xsl:variable name="jointe" select="$sd-images-locales/illustration[@nom = $file][1]/@fichier"/>
+    <xsl:variable name="jointe" select="substring-after(@facs, 'images/saint-denis/illustrations/')"/>
     <xsl:choose>
-      <xsl:when test="contains($sd-illustrations-locales, concat(' ', $file, ' ')) or $jointe">
-        <xsl:variable name="src"
-          select="if ($jointe) then concat($sd-images, 'illustrations/', $jointe)
-                  else concat($sd-images, 'illustrations/', $file)"/>
+      <xsl:when test="$jointe">
+        <xsl:variable name="src" select="concat($sd-images, 'illustrations/', $jointe)"/>
         <xsl:choose>
           <!-- Une généalogie en PDF ne s'affiche pas : on la sert par l'autre origine locale
                (port 8081), seule façon d'ouvrir un fichier — DoTS-vue détourne les liens de même
@@ -656,48 +656,33 @@
        Ce que visaient ces liens : `images/<série>/voir.html?ns=<fichier>.jpg`, c'est-à-dire une
        visionneuse Pleade, pas un fichier. Les fichiers sont maintenant servis par DoTS-vue depuis
        public/images/saint-denis/<série>/<fichier>.
-       Le side-car saint-denis-images-locales.xml dit lesquels sont présents — il est engendré
-       depuis le CONTENU du dossier servi par dots-autopilot/scripts/sd_images_sidecar.py, pour
-       qu'une liste écrite à la main ne puisse pas mentir. Ce qui manque garde le lien vers
-       l'ancien site, tant qu'il répond.
-       2026-09-13 : l'audit de cohérence a trouvé qu'il restait EXACTEMENT UN renvoi dans ce cas
-       — `cartulaireblanc/tome1/FRCHANLL_LL1157_0138V_L.jpg`, cité dans l'introduction de Dugny,
-       seul absent des 322 folios référencés. Le fichier répondait encore (200, 490 557 octets) ;
-       il a été rapatrié et le side-car régénéré : 321 → 322 folios, et plus aucun lien de
-       visionneuse ne sort vers le site qui ferme.
-       (Modifier le side-car ne suffit pas à rafraîchir l'affichage : la clé du cache HTML de
-       DoTS ne dépend que de la date de CETTE feuille, qu'il faut donc toucher.)
+       Un compagnon lu avec document() énumérait les fichiers présents et servait de garde-fou.
+       Il a été retiré le 2026-09-25, après mesure : les 839 renvois `ns=` désignent tous un
+       fichier recensé, 839 sur 839, et les 1 874 `pb/@facs` de même, 1 874 sur 1 874. Le garde-fou
+       ne rejetait donc rien. Le fonds d'images étant clos (il reste local, rien n'y sera
+       ajouté), le @target et le @facs pilotent seuls, comme sur christofle.
+       (Le cache HTML de DoTS ne se rafraîchit pas tout seul : sa clé ne dépend que de la date de
+       CETTE feuille, qu'il faut donc toucher — ou vider le store du corpus.)
        Pourquoi un <details> et non un lien : DoTS-vue confie tout href de même origine à son
        routeur, donc un lien vers /images/… mène à une route morte (leçon de D5 et de E2). -->
-  <xsl:variable name="sd-images-locales" select="document('saint-denis-images-locales.xml')/images"/>
-
   <xsl:template match="tei:ref[contains(@target, 'images/cartulaireblanc/') or contains(@target, 'images/inventaire/')][contains(@target, 'ns=')]" priority="13">
     <xsl:variable name="serie" select="substring-before(substring-after(@target, 'images/'), '/voir.html')"/>
     <xsl:variable name="fichier" select="normalize-space(substring-after(@target, 'ns='))"/>
     <xsl:variable name="libelle" select="if (normalize-space(.) != '') then normalize-space(.) else normalize-space(@n)"/>
-    <xsl:choose>
-      <xsl:when test="$sd-images-locales/folio[@serie = $serie][@fichier = $fichier]">
-        <details class="sd-folio">
-          <summary>
-            <span class="sd-folio-libelle">
-              <!-- Le contenu du renvoi est rendu tel quel : ce peut être un libellé
-                   (« LL 1157, p. 465 ») ou une vignette (`tei:graphic`), qui devient alors
-                   l'aperçu cliquable. Un renvoi vide retombe sur le nom du fichier, pour ne
-                   jamais produire un <summary> muet. -->
-              <xsl:apply-templates/>
-              <xsl:if test="not(node())"><xsl:value-of select="$fichier"/></xsl:if>
-            </span>
-          </summary>
-          <img class="sd-folio-img" loading="lazy" src="{$sd-images}{$serie}/{$fichier}"
-               alt="{if ($libelle != '') then $libelle else $fichier}"/>
-        </details>
-      </xsl:when>
-      <xsl:otherwise>
-        <a class="sd-legacy-viewer" href="http://saint-denis.enc.sorbonne.fr/images/{substring-after(@target, 'images/')}" target="_blank" rel="noopener">
+    <details class="sd-folio">
+      <summary>
+        <span class="sd-folio-libelle">
+          <!-- Le contenu du renvoi est rendu tel quel : ce peut être un libellé
+               (« LL 1157, p. 465 ») ou une vignette (`tei:graphic`), qui devient alors
+               l'aperçu cliquable. Un renvoi vide retombe sur le nom du fichier, pour ne
+               jamais produire un <summary> muet. -->
           <xsl:apply-templates/>
-        </a>
-      </xsl:otherwise>
-    </xsl:choose>
+          <xsl:if test="not(node())"><xsl:value-of select="$fichier"/></xsl:if>
+        </span>
+      </summary>
+      <img class="sd-folio-img" loading="lazy" src="{$sd-images}{$serie}/{$fichier}"
+           alt="{if ($libelle != '') then $libelle else $fichier}"/>
+    </details>
   </xsl:template>
 
   <!-- ================================================================
@@ -720,9 +705,8 @@
        Le rendu est celui, déjà éprouvé et déjà mis en forme, des renvois `details.sd-folio` :
        un intitulé cliquable qui déplie l'image sur place. On ne fabrique pas de lien vers
        /images/… : DoTS-vue confie tout href de même origine à son routeur (leçon de D5 et E2).
-       Comme pour les renvois, la présence du fichier est vérifiée sur le side-car — engendré
-       depuis le CONTENU du dossier servi — et un @facs qui ne s'y trouverait pas ne produit rien
-       plutôt qu'une image cassée. -->
+       Le @facs fait foi : le compagnon qui vérifiait la présence du fichier a été retiré le
+       2026-09-25, ses 4 368 folios couvrant déjà les 1 874 @facs sans en rejeter un seul. -->
   <xsl:template match="tei:pb[@facs]" priority="20">
     <xsl:variable name="rel" select="substring-after(@facs, 'images/saint-denis/')"/>
     <xsl:variable name="fichier" select="tokenize($rel, '/')[last()]"/>
@@ -759,17 +743,15 @@
         <xsl:value-of select="normalize-space(@n)"/>
       </xsl:if>
     </xsl:variable>
-    <xsl:if test="$sd-images-locales/folio[@serie = $serie][@fichier = $fichier]">
-      <details class="sd-folio sd-pb">
-        <summary>
-          <span class="sd-folio-libelle">
-            <xsl:value-of select="if (normalize-space($libelle) != '') then $libelle else $fichier"/>
-          </span>
-        </summary>
-        <img class="sd-folio-img" loading="lazy" src="{$sd-images}{$serie}/{$fichier}"
-             alt="{if (normalize-space($libelle) != '') then $libelle else $fichier}"/>
-      </details>
-    </xsl:if>
+    <details class="sd-folio sd-pb">
+      <summary>
+        <span class="sd-folio-libelle">
+          <xsl:value-of select="if (normalize-space($libelle) != '') then $libelle else $fichier"/>
+        </span>
+      </summary>
+      <img class="sd-folio-img" loading="lazy" src="{$sd-images}{$serie}/{$fichier}"
+           alt="{if (normalize-space($libelle) != '') then $libelle else $fichier}"/>
+    </details>
   </xsl:template>
 
   <!-- ================================================================
@@ -791,18 +773,20 @@
        toutes les deux `ns=` et partent donc en `sd-folio` ; ce modèle-ci ne garde plus rien.)
 
        AUCUNE DE CES CINQ ADRESSES N'A D'ÉQUIVALENT LOCAL, et c'est mesuré, pas supposé : ce qui a
-       été rapatrié, ce sont des FOLIOS (322, énumérés dans le side-car depuis le contenu du
-       dossier servi), pas une visionneuse de tome. Il n'existe pas non plus de route de galerie
+       été rapatrié, ce sont des FOLIOS, pas une visionneuse de tome. Il n'existe pas non plus de route de galerie
        côté DoTS-vue — seules `/saint-denis/search` et les routes de document sont déclarées.
        Un lien de série ne désigne aucune image : lui en choisir une (la première du tome, par
        exemple) serait fabriquer une cible que le TEI n'a jamais écrite. On ne le fait pas.
 
        Ils cessent donc d'être des liens et redeviennent du texte, ce qui répond à la demande sans
        inventer de destination. L'intitulé de survol dit franchement ce qu'on a et ce qu'on n'a pas
-       — même parti pris que `sd-recherche-locale` ci-dessous. Le décompte affiché est CALCULÉ sur
-       le side-car (`count(...)`) et non écrit à la main, pour qu'il ne puisse pas mentir quand des
-       images seront ajoutées ou retirées : 283 pour cartulaireblanc/tome1, 33 pour
-       cartulaireblanc/tome2, 6 pour inventaire/tome1, 0 pour inventaire/tome2 et tome3.
+       — même parti pris que `sd-recherche-locale` ci-dessous. Le décompte affiché était calculé
+       sur le compagnon ; depuis son retrait (2026-09-25) il est LU SUR LE @n DU RENVOI, dans le
+       TEI, où une note dit en toutes lettres que ces cinq nombres sont un état arrêté du fonds
+       (relevé du 2026-09-24 : 968, 629, 938, 1 029, 804) et non un calcul. Le fonds est clos.
+       On les a mis dans la source et non dans la feuille parce qu'ils décrivent le corpus, non
+       sa présentation : ils doivent voyager avec le renvoi qu'ils qualifient, être versionnés
+       avec lui, et disparaître avec lui.
        Pour le tome 1 du Cartulaire blanc, l'équivalent local existe déjà et fonctionne : la
        sous-liste des sept chapitres, juste au-dessous, est faite de sept `details.sd-folio`.
        ================================================================ -->
@@ -810,7 +794,7 @@
                               [contains(@target, '/voir.html')][not(contains(@target, 'ns='))]"
                 priority="15">
     <xsl:variable name="serie" select="substring-before(substring-after(@target, 'images/'), '/voir.html')"/>
-    <xsl:variable name="n" select="count($sd-images-locales/folio[@serie = $serie])"/>
+    <xsl:variable name="n" select="normalize-space(@n)"/>
     <span class="sd-visionneuse-absente">
       <xsl:attribute name="title">
         <xsl:choose>

@@ -240,8 +240,8 @@
                 <div>
                     <head>Documents associés</head>
                     <list>
-                        <item><ref target="illustrations/Saint-Martin-plan-de-situation.jpg" type="link">Plan de situation</ref></item>
-                        <item><ref target="illustrations/Saint-Martin-Cassini.jpg" type="link">Saint-Martin-du-Tertre et ses environs d’après la carte de Cassini</ref></item>
+                        <item><ref target="illustrations/Saint-Martin-plan-de-situation.jpg" type="link" facs="images/saint-denis/illustrations/saint-martin/saint-martin_e0000238.jpg">Plan de situation</ref></item>
+                        <item><ref target="illustrations/Saint-Martin-Cassini.jpg" type="link" facs="images/saint-denis/illustrations/saint-martin/saint-martin_e0000240.jpg">Saint-Martin-du-Tertre et ses environs d’après la carte de Cassini</ref></item>
                     </list>
                 </div>
             </div>

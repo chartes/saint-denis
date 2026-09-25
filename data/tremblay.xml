@@ -364,19 +364,19 @@
                             <label xml:id="doc5" rend="vieuxpays.jpg(840-616)">Le village de Tremblay : carte archéologique</label>
                             <item>document Mairie de Tremblay</item>-->
                         <!--<item>Extrait de la carte de Cassini : <ref type="link" target="illustrations/NN470-feuille7H-vallee-Crould.jpg">la vallée du Crould</ref></item>-->
-                        <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="link">Tremblay : carte de position</ref></item>
-                        <item><ref target="illustrations/Tremblay-finage.jpg" type="link">Le finage de Tremblay</ref> : carte schématique avec les microtoponymes identifiés</item>
-                        <item><ref target="illustrations/Tremblay-Cassini.jpg" type="link">Tremblay et ses alentours</ref> (atlas Cassini, impr., 1736 (Arch. nat., NN 470, feuille 7H)).</item>
-                        <item><ref target="illustrations/Tremblay-Delagrive.jpg" type="link">Les finages de Tremblay et Villepinte</ref> (carte Delagrive des environs de Paris, impr., 1740, feuille 9 (Arch. nat., NN 192)).</item>
-                        <item><ref type="link" target="illustrations/Tremblay-planparcellaire-18e.jpg">Plans parcellaires de la seigneurie champartière de Saint-Denis à Tremblay (XVIII<hi rend="sup">e</hi> siècle)</ref> (Arch. nat., N IV Seine-et-Oise 30, planche 1 pour le bourg de Tremblay).</item>
-                        <item><ref type="link" target="illustrations/Tremblay-cadastre-napoleonien.jpg">Le village de Tremblay au début du XIX<hi rend="sup">e</hi> siècle</ref> (cadastre napoléonien, feuilles Tremblay et Villepinte (Arch. dép. Seine-Saint-Denis)).</item>
-                        <item><ref type="link" target="illustrations/Tremblay-carte-archeologique.jpg">Le village de Tremblay : carte archéologique</ref>  (document mairie de Tremblay).</item>
+                        <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="link" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
+                        <item><ref target="illustrations/Tremblay-finage.jpg" type="link" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000330.jpg">Le finage de Tremblay</ref> : carte schématique avec les microtoponymes identifiés</item>
+                        <item><ref target="illustrations/Tremblay-Cassini.jpg" type="link" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000332.jpg">Tremblay et ses alentours</ref> (atlas Cassini, impr., 1736 (Arch. nat., NN 470, feuille 7H)).</item>
+                        <item><ref target="illustrations/Tremblay-Delagrive.jpg" type="link" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000334.jpg">Les finages de Tremblay et Villepinte</ref> (carte Delagrive des environs de Paris, impr., 1740, feuille 9 (Arch. nat., NN 192)).</item>
+                        <item><ref type="link" target="illustrations/Tremblay-planparcellaire-18e.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000336.jpg">Plans parcellaires de la seigneurie champartière de Saint-Denis à Tremblay (XVIII<hi rend="sup">e</hi> siècle)</ref> (Arch. nat., N IV Seine-et-Oise 30, planche 1 pour le bourg de Tremblay).</item>
+                        <item><ref type="link" target="illustrations/Tremblay-cadastre-napoleonien.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000339.jpg">Le village de Tremblay au début du XIX<hi rend="sup">e</hi> siècle</ref> (cadastre napoléonien, feuilles Tremblay et Villepinte (Arch. dép. Seine-Saint-Denis)).</item>
+                        <item><ref type="link" target="illustrations/Tremblay-carte-archeologique.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000342.jpg">Le village de Tremblay : carte archéologique</ref>  (document mairie de Tremblay).</item>
                     </list>
                     <list type="généalogie">
                         <head>Tableaux généalogiques</head>
                         <!--<label xml:id="doc6" rend="genealogie.htm(860-610)">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</label>
                             <item/>-->
-                        <item><ref type="link" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                        <item><ref type="link" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                     </list>
                     <list type="photo">
                         <head>Photographies</head>
@@ -458,7 +458,7 @@
                         <list type="simple">
                             <head>Documents annexes</head>
                             <!-- F. Clavaud 5 septembre 2012<item corresp="#doc1">Tremblay : carte de position</item>-->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                          
                         </list>
                    
@@ -593,9 +593,9 @@
                         <list type="simple">
                             <head>Documents annexes</head>
                             <!-- FC 5 septembre 2012<item corresp="#doc1">Tremblay : carte de position</item>-->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                          <!--   <item corresp="#doc2">Finage de Tremblay</item>-->
-                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration">Finage de Tremblay</ref></item>
+                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000330.jpg">Finage de Tremblay</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -750,7 +750,7 @@
                         <list type="simple">
                             <head>Documents annexes</head>
                             <!--FC 5 septembre 2012 <item corresp="#doc1">Tremblay : carte de position</item>-->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -813,7 +813,7 @@
                         <list type="simple">
                             <head>Documents annexes</head>
                         <!--   FC 5 septembre 2012 <item corresp="#doc1">Tremblay : carte de position</item>-->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                         </list>
                     </div>
                 </back>
@@ -1011,9 +1011,9 @@
                         <list type="simple">
                             <head>Documents annexes</head>
                            <!-- <item corresp="#doc1">Tremblay : carte de position</item>-->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                            <!-- <item corresp="#doc2">Finage de Tremblay</item>-->
-                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration">Finage de Tremblay</ref></item>
+                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000330.jpg">Finage de Tremblay</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -1163,7 +1163,7 @@
                         <list type="simple">
                             <head>Documents annexes</head>
                             <!-- FC 5 septembre 2012<item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -1359,9 +1359,9 @@
                           <!-- FC 5 septembre 2012<item corresp="#doc1">Tremblay : carte de position</item>
                             
                             <item corresp="#doc2">Finage de Tremblay</item>-->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                          
-                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration">Finage de Tremblay</ref></item>
+                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000330.jpg">Finage de Tremblay</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -1570,7 +1570,7 @@
                             <head>Documents annexes</head>
                            <!-- FC 5 septembre 2012<item corresp="#doc2">Finage de Tremblay</item>-->
                            
-                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration">Finage de Tremblay</ref></item>
+                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000330.jpg">Finage de Tremblay</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -1692,7 +1692,7 @@
                             <head>Documents annexes</head>
                       <!--    FC 5 septembre 2012  <item corresp="#doc2">Finage de Tremblay</item>-->
                          
-                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration">Finage de Tremblay</ref></item>
+                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000330.jpg">Finage de Tremblay</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -1834,10 +1834,10 @@
                             <item corresp="#doc2">Finage de Tremblay</item>
                             <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
                             
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                            
-                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration">Finage de Tremblay</ref></item>
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000330.jpg">Finage de Tremblay</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -1902,7 +1902,7 @@
                         <list type="simple">
                             <head>Documents annexes</head>
                           <!-- FC 5 septembre 2012 <item corresp="#doc1">Tremblay : carte de position</item>-->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                             
                         </list>
                     </div>
@@ -1960,7 +1960,7 @@
                         <list type="simple">
                             <head>Documents annexes</head>
                           <!--  FC 5 septembre 2012<item corresp="#doc1">Tremblay : carte de position</item>-->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -2015,7 +2015,7 @@
                         <list type="simple">
                             <head>Documents annexes</head>
                     <!--     FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>-->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -2232,7 +2232,7 @@
                         <list type="simple">
                             <head>Documents annexes</head>
                            <!-- FC 5 septembre 2012<item corresp="#doc1">Tremblay : carte de position</item>-->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -2301,7 +2301,7 @@
                         <list type="simple">
                             <head>Documents annexes</head>
                           <!--  FC 5 septembre 2012<item corresp="#doc1">Tremblay : carte de position</item>-->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -2384,8 +2384,8 @@
                             <head>Documents annexes</head>
                       <!--   FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>
                             <item corresp="#doc2">Finage de Tremblay</item>-->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
-                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration">Finage de Tremblay</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000330.jpg">Finage de Tremblay</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -2474,8 +2474,8 @@
                           
                             <!--   FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>
                                 <item corresp="#doc2">Finage de Tremblay</item>-->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
-                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration">Finage de Tremblay</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000330.jpg">Finage de Tremblay</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -2536,7 +2536,7 @@
                            
                             <!--   FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>
                                 -->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                            
                         </list>
                     </div>
@@ -2655,8 +2655,8 @@
                             <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
                             
                          
-                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration">Finage de Tremblay</ref></item>
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000330.jpg">Finage de Tremblay</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -2723,7 +2723,7 @@
                         <list type="simple">
                             <head>Documents annexes</head>
                         <!--   FC 5 septembre 2012 <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                         </list>
                     </div>
                 </back>
@@ -2792,7 +2792,7 @@
                       
                             <!--   FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>
                             -->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -2873,7 +2873,7 @@
                        
                             <!--   FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>
                             -->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -2953,7 +2953,7 @@
                          
                             <!--   FC 5 septembre 2012      <item corresp="#doc2">Finage de Tremblay</item>
                             -->
-                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration">Finage de Tremblay</ref></item>
+                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000330.jpg">Finage de Tremblay</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -3340,9 +3340,9 @@
                         
                             <!--   FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>
                             -->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                             <!--   FC 5 septembre 2012   <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -3540,8 +3540,8 @@
                             <head>Documents annexes</head>
                            <!-- FC 5 septembre 2012<item corresp="#doc1">Tremblay : carte de position</item>
                             <item corresp="#doc2">Finage de Tremblay</item>-->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
-                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration">Finage de Tremblay</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000330.jpg">Finage de Tremblay</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -3672,9 +3672,9 @@
                         
                             <!--   FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>
                             -->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                             <!--   FC 5 septembre 2012   <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -3812,9 +3812,9 @@
                        
                             <!--   FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>
                             -->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                             <!--   FC 5 septembre 2012   <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -3940,9 +3940,9 @@
                         
                             <!--   FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>
                             -->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                             <!--   FC 5 septembre 2012   <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -4027,9 +4027,9 @@
                      
                             <!--   FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>
                             -->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                             <!--   FC 5 septembre 2012   <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -4150,9 +4150,9 @@
                           
                             <!--   FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>
                             -->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                             <!--   FC 5 septembre 2012   <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -4258,9 +4258,9 @@
                        
                             <!--   FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>
                             -->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                             <!--   FC 5 septembre 2012   <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -4378,7 +4378,7 @@
                             
                          
                             <!--   FC 5 septembre 2012   <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                             
                             
                         </list>
@@ -4552,7 +4552,7 @@
                          
                             <!--   FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>
                             -->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -4732,7 +4732,7 @@
                             <head>Documents annexes</head>
 
                             <!--   FC 5 septembre 2012   <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                             
                         </list>
                     </div>
@@ -4855,7 +4855,7 @@
                             
                             <!--   FC 5 septembre 2012   <item corresp="#doc1">Tremblay : carte de position</item>
                             -->
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -4939,7 +4939,7 @@
                           
                             
                             <!--   FC 5 septembre 2012   <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                             
                             
                         </list>
@@ -5156,11 +5156,11 @@
                         <list type="simple">
                             <head>Documents annexes</head>
                             
-                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration">Tremblay : carte de position</ref></item>
-                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration">Finage de Tremblay</ref></item>
+                            <item><ref target="illustrations/Tremblay-carte-de-position.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000328.jpg">Tremblay : carte de position</ref></item>
+                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000330.jpg">Finage de Tremblay</ref></item>
                             
                             <!--   FC 5 septembre 2012   <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                             
                         </list>
                     </div>
@@ -5244,7 +5244,7 @@
                             <head>Documents annexes</head>
                     
                             <!--   FC 5 septembre 2012   <item corresp="#doc6">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</item>-->
-                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
+                            <item><ref type="illustration" target="illustrations/genealogie-Senlis-Villepinte.jpg" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000346.jpg">Généalogie des bouteillers de Senlis et seigneurs de Villepinte, XII<hi rend="sup">e</hi> - XIII<hi rend="sup">e</hi> siècle</ref></item>
                         </list>
                     </div>
                     <div type="notes">
@@ -5338,7 +5338,7 @@
                         <list type="simple">
                             <head>Documents annexes</head>
                          <!--  FC 5 septembre 2012 <item corresp="#doc2">Finage de Tremblay</item>-->
-                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration">Finage de Tremblay</ref></item>
+                            <item><ref target="illustrations/Tremblay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/tremblay/tremblay_e0000330.jpg">Finage de Tremblay</ref></item>
                             
                         </list>
                     </div>

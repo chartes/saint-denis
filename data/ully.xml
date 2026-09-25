@@ -691,9 +691,9 @@
                 <div>
                     <head>Cartes jointes </head>
                     <list>
-                        <item><ref target="illustrations/Ully-carte-de-situation.jpg">Carte de situation : l’implantation dyonisienne autour
+                        <item><ref target="illustrations/Ully-carte-de-situation.jpg" facs="images/saint-denis/illustrations/ully/ully_e0000529.jpg">Carte de situation : l’implantation dyonisienne autour
                             d’Ully</ref>.</item>
-                        <item><ref target="illustrations/Ully-Cassini.jpg">Ully
+                        <item><ref target="illustrations/Ully-Cassini.jpg" facs="images/saint-denis/illustrations/ully/ully_e0000531.jpg">Ully
                                 et ses alentours (fond : Carte de Cassini, numérisation
                             IGN)</ref>.</item>
                     </list>

@@ -49,6 +49,7 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
+      <change when="2026-09-25">Les cinq renvois de visionneuse de serie portent desormais en @n le nombre de pages conservees localement : 968 et 629 pour les deux tomes du Cartulaire blanc, 938, 1029 et 804 pour les trois tomes de l’Inventaire, soit 4 368 pages. Ces nombres sont un ETAT ARRETE du fonds, releve le 2026-09-24 sur le dossier d’images servi, et non un calcul : le TEI ne liste pas les folios un a un et rien ici ne permet de les recalculer. Ils remplacent un decompte que la feuille tirait du fichier compagnon saint-denis-images-locales.xml, supprime le meme jour. Le fonds etant clos, ils n’ont pas vocation a changer ; s’il s’ouvrait de nouveau, ils seraient a reprendre a la main.</change>
       <change when="2026-09-24">Refonte du sommaire selon le plan editorial du responsable scientifique : une page d'introduction generale puis quatre parties (actes du haut Moyen Age, Cartulaire blanc, Inventaire general, le projet). Les trois rubriques de navigation de l'ancien site disparaissent ; la rubrique Les images aussi, ses deux pages de feuilletage rejoignant les parties 2 et 3. Pages ecartees du sommaire regroupees dans div[@xml:id='sd-ecarte'], hors citeStructure. refsDecl adapte.</change><change when="2026-09-10">Enrichissement du teiHeader selon le modèle DoTS : title[@type=short], publisher/@ref, date/@when, idno, licence/@target, notesStmt/note[@type=citation].</change><change when="2026-09-10">Création à partir du dump structurel du site historique Saint-Denis.</change>
     </revisionDesc>
   </teiHeader>
@@ -5386,7 +5387,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
             <div type="legacy-block" rend="static-content">
 <p>En suivant ces liens vous accèderez directement aux séries d’images numériques produites à partir de chacun des tomes du Cartulaire blanc.</p>
 <list type="unordered"><item>
-<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html">Tome 1 (Archives nationales LL 1157)</ref>
+<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html" n="968">Tome 1 (Archives nationales LL 1157)</ref>
 <list type="unordered"><item>
 <ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0203R_L.jpg">Le chapitre de Pierrefitte (aux pages 369-384)</ref>
 </item><item>
@@ -5403,7 +5404,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0383R_L.jpg">Le chapitre d’Ully-Saint-Georges (aux pages 729-780)</ref>
 </item></list>
 </item><item>
-<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html">Tome 2 (Archives nationales LL 1158)</ref>
+<ref target="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html" n="629">Tome 2 (Archives nationales LL 1158)</ref>
 </item></list>
 </div>
           </div>
@@ -9767,7 +9768,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
             <head>Les images</head>
             <div type="legacy-block" rend="static-content">
 <p>En suivant ces liens vous accèderez directement aux séries d’images numériques produites à partir de chacun des tomes de l’Inventaire général.</p>
-<list type="unordered"><item><ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome1/voir.html">Tome 1 (Archives nationales, LL 1189)</ref></item><item><ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome2/voir.html">Tome 2 (Archives nationales, LL 1190)</ref></item><item><ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html">Tome 3 (Archives nationales, LL 1191)</ref></item></list>
+<list type="unordered"><item><ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome1/voir.html" n="938">Tome 1 (Archives nationales, LL 1189)</ref></item><item><ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome2/voir.html" n="1029">Tome 2 (Archives nationales, LL 1190)</ref></item><item><ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html" n="804">Tome 3 (Archives nationales, LL 1191)</ref></item></list>
 </div>
           </div>
       </div>

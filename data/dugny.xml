@@ -422,17 +422,17 @@
                     <head>Documents associés</head>
                     <list>
                         <head>Cartes et plans</head>
-                        <item>Extrait de la carte de Cassini : <ref type="link" target="illustrations/NN470-feuille7H-vallee-Crould.jpg">la vallée du Crould</ref></item>
-                        <item><ref target="illustrations/Dugny-finage.jpg" type="link">Le finage de Dugny</ref> (microtoponymes cités dans les actes)</item>
-                        <item><ref target="illustrations/Garges-finage.jpg" type="link">Le finage de Garges</ref> (microtoponymes cités dans les actes)</item>
-                        <item><ref target="illustrations/Le-Thillay-finage.jpg" type="link">Le finage du Thillay</ref> (microtoponymes cités dans les actes)</item>
-                        <item><ref target="illustrations/Gonesse-finage.jpg" type="link">Le finage de Gonesse</ref> (microtoponymes cités dans les actes)</item>
-                        <item><ref target="illustrations/S2260-A-dossier2-Paluel-Pont-Galand.jpg" type="link">Plan de mesurage et bornage de la censive des fiefs de Paluel et Pont-Galand dans la seigneurie de Dugny</ref></item>
-                        <item><ref target="illustrations/S2260-A-dossier3-Garges-Dugny.jpg" type="link">Plan de bornage entre le territoire de Garges et la seigneurie de Dugny</ref></item>
+                        <item>Extrait de la carte de Cassini : <ref type="link" target="illustrations/NN470-feuille7H-vallee-Crould.jpg" facs="images/saint-denis/illustrations/dugny/dugny_e0000382.jpg">la vallée du Crould</ref></item>
+                        <item><ref target="illustrations/Dugny-finage.jpg" type="link" facs="images/saint-denis/illustrations/dugny/dugny_e0000384.jpg">Le finage de Dugny</ref> (microtoponymes cités dans les actes)</item>
+                        <item><ref target="illustrations/Garges-finage.jpg" type="link" facs="images/saint-denis/illustrations/dugny/dugny_e0000386.jpg">Le finage de Garges</ref> (microtoponymes cités dans les actes)</item>
+                        <item><ref target="illustrations/Le-Thillay-finage.jpg" type="link" facs="images/saint-denis/illustrations/dugny/dugny_e0000388.jpg">Le finage du Thillay</ref> (microtoponymes cités dans les actes)</item>
+                        <item><ref target="illustrations/Gonesse-finage.jpg" type="link" facs="images/saint-denis/illustrations/dugny/dugny_e0000390.jpg">Le finage de Gonesse</ref> (microtoponymes cités dans les actes)</item>
+                        <item><ref target="illustrations/S2260-A-dossier2-Paluel-Pont-Galand.jpg" type="link" facs="images/saint-denis/illustrations/dugny/dugny_e0000392.jpg">Plan de mesurage et bornage de la censive des fiefs de Paluel et Pont-Galand dans la seigneurie de Dugny</ref></item>
+                        <item><ref target="illustrations/S2260-A-dossier3-Garges-Dugny.jpg" type="link" facs="images/saint-denis/illustrations/dugny/dugny_e0000394.jpg">Plan de bornage entre le territoire de Garges et la seigneurie de Dugny</ref></item>
                     </list>
                     <list>
                         <head>Tableaux généalogiques</head>
-                        <item>La <ref target="illustrations/Genealogie-famille-Cernay-Mauleon.pdf" type="link">famille de Cernay-Mauléon</ref></item>
+                        <item>La <ref target="illustrations/Genealogie-famille-Cernay-Mauleon.pdf" type="link" facs="images/saint-denis/illustrations/dugny/dugny_e0000398.pdf">famille de Cernay-Mauléon</ref></item>
                         <item>La famille de Dugny-Paluel</item>
                         <item>La famille de Garges-Champagnes</item>
                         <item>La famille de Jagny</item>
@@ -1527,7 +1527,7 @@
                     </div>
                     <div type="appendices">
                         <list>
-                            <item><ref target="illustrations/S2260-A-dossier2-Paluel-Pont-Galand.jpg" type="illustration">Plan de mesurage et bornage de la censive des fiefs de Paluel et Pont-Galand dans la seigneurie de Dugny, Arch. nat.,
+                            <item><ref target="illustrations/S2260-A-dossier2-Paluel-Pont-Galand.jpg" type="illustration" facs="images/saint-denis/illustrations/dugny/dugny_e0000392.jpg">Plan de mesurage et bornage de la censive des fiefs de Paluel et Pont-Galand dans la seigneurie de Dugny, Arch. nat.,
                                     S 2260A, dossier 2</ref></item>
                         </list>
                     </div>
@@ -1761,7 +1761,7 @@
                     </div>
                     <div type="appendices">
                         <list>
-                            <item><ref target="illustrations/S2260-A-dossier3-Garges-Dugny.jpg" type="illustration">Plan de bornage entre le territoire de Garges et la seigneurie de Dugny (Arch. nat., S 2260A, doss. 3)</ref></item>
+                            <item><ref target="illustrations/S2260-A-dossier3-Garges-Dugny.jpg" type="illustration" facs="images/saint-denis/illustrations/dugny/dugny_e0000394.jpg">Plan de bornage entre le territoire de Garges et la seigneurie de Dugny (Arch. nat., S 2260A, doss. 3)</ref></item>
                         </list>
                     </div>
                 </back>
@@ -3517,8 +3517,8 @@
                     </div>
                     <div type="appendices">
                         <list>
-                            <item><ref target="illustrations/Le-Thillay-finage.jpg" type="illustration">Carte du finage du Thillay</ref></item>
-                            <item><ref target="illustrations/Gonesse-finage.jpg" type="illustration">Carte du finage de Gonesse</ref></item>
+                            <item><ref target="illustrations/Le-Thillay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/dugny/dugny_e0000388.jpg">Carte du finage du Thillay</ref></item>
+                            <item><ref target="illustrations/Gonesse-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/dugny/dugny_e0000390.jpg">Carte du finage de Gonesse</ref></item>
                         </list>
                     </div>
                 </back>
@@ -3659,7 +3659,7 @@
                     </div>
                     <div type="appendices">
                         <list>
-                            <item><ref target="illustrations/Gonesse-finage.jpg" type="illustration">Le finage de Gonesse</ref></item>
+                            <item><ref target="illustrations/Gonesse-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/dugny/dugny_e0000390.jpg">Le finage de Gonesse</ref></item>
                         </list>
                     </div>
                 </back>
@@ -3777,7 +3777,7 @@
                     </div>
                     <div type="appendices">
                         <list>
-                            <item><ref target="illustrations/Gonesse-finage.jpg" type="illustration">Le finage de Gonesse</ref></item>
+                            <item><ref target="illustrations/Gonesse-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/dugny/dugny_e0000390.jpg">Le finage de Gonesse</ref></item>
                             <item><ref target="illustrations/Dugny-carte-de-position.jpg" type="illustration">Dugny, carte de position</ref></item>
                         </list>
                     </div>
@@ -3887,7 +3887,7 @@
                     <div type="appendices">
                         <list>
                             <item><ref target="illustrations/Dugny-carte-de-position.jpg" type="illustration">Dugny, carte de position</ref></item>
-                            <item><ref target="illustrations/Dugny-finage.jpg" type="illustration">Le finage de Dugny</ref></item>
+                            <item><ref target="illustrations/Dugny-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/dugny/dugny_e0000384.jpg">Le finage de Dugny</ref></item>
                         </list>
                     </div>
                 </back>
@@ -3945,8 +3945,8 @@
                     <div type="appendices">
                         <list>
                             <item><ref target="illustrations/Dugny-carte-de-position.jpg" type="illustration">Dugny, carte de position</ref></item>
-                            <item><ref target="illustrations/Gonesse-finage.jpg" type="illustration">Le finage de Gonesse</ref></item>
-                            <item><ref target="illustrations/Le-Thillay-finage.jpg" type="illustration">Le finage du Thillay</ref></item>
+                            <item><ref target="illustrations/Gonesse-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/dugny/dugny_e0000390.jpg">Le finage de Gonesse</ref></item>
+                            <item><ref target="illustrations/Le-Thillay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/dugny/dugny_e0000388.jpg">Le finage du Thillay</ref></item>
                         </list>
                     </div>
                 </back>
@@ -4117,7 +4117,7 @@
                     <div type="appendices">
                         <list>
                             <item><ref target="illustrations/Dugny-carte-de-position.jpg" type="illustration">Dugny, carte de position</ref></item>
-                            <item><ref target="illustrations/Garges-finage.jpg" type="illustration">Le finage de Garges</ref></item>
+                            <item><ref target="illustrations/Garges-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/dugny/dugny_e0000386.jpg">Le finage de Garges</ref></item>
                         </list>
                     </div>
                 </back>
@@ -4528,8 +4528,8 @@
                         <list>
                             <item><ref target="illustrations/Dugny-carte-de-position.jpg" type="illustration">Dugny, carte de position</ref></item>
                             <item>Généalogie de la famille de Cernay-Mauléon</item>
-                            <item><ref target="illustrations/Gonesse-finage.jpg" type="illustration">Le finage de Gonesse</ref></item>
-                            <item><ref target="illustrations/Le-Thillay-finage.jpg" type="illustration">Le finage du Thillay</ref></item>
+                            <item><ref target="illustrations/Gonesse-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/dugny/dugny_e0000390.jpg">Le finage de Gonesse</ref></item>
+                            <item><ref target="illustrations/Le-Thillay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/dugny/dugny_e0000388.jpg">Le finage du Thillay</ref></item>
                         </list>
                     </div>
                 </back>
@@ -4610,7 +4610,7 @@
                     </div>
                     <div type="appendices">
                         <list>
-                            <item><ref target="illustrations/Le-Thillay-finage.jpg" type="illustration">Le finage du Thillay</ref></item>
+                            <item><ref target="illustrations/Le-Thillay-finage.jpg" type="illustration" facs="images/saint-denis/illustrations/dugny/dugny_e0000388.jpg">Le finage du Thillay</ref></item>
                             <item><ref target="illustrations/Dugny-carte-de-position.jpg" type="illustration">Dugny, carte de position</ref></item>
                         </list>
                     </div>

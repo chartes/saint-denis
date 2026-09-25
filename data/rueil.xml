@@ -402,22 +402,22 @@
                     <list type="carte">
                         <head>Cartes et plans</head>
                         <!--<item facs="Rueil1.jpg" xml:id="doc18">La prévôté de Rueil.</item>-->
-                        <item><ref target="illustrations/Rueil-prevote.jpg" type="link">La prévôté de Rueil</ref></item>
+                        <item><ref target="illustrations/Rueil-prevote.jpg" type="link" facs="images/saint-denis/illustrations/rueil/rueil_e0000486.jpg">La prévôté de Rueil</ref></item>
                         
                         <!--<item xml:id="doc19" facs="Rueil2.jpg">Rueil et ses alentours.</item>-->
-                        <item><ref target="illustrations/Rueil-et-alentours.jpg" type="link">Rueil et ses alentours</ref></item>
+                        <item><ref target="illustrations/Rueil-et-alentours.jpg" type="link" facs="images/saint-denis/illustrations/rueil/rueil_e0000488.jpg">Rueil et ses alentours</ref></item>
                         <!--<item xml:id="doc21" facs="rueilcassini.jpg">Atlas Cassini, impr., 1736.</item>-->
-                        <item><ref target="illustrations/Rueil-Cassini.jpg" type="link">Atlas Cassini, impr., 1736</ref></item>
+                        <item><ref target="illustrations/Rueil-Cassini.jpg" type="link" facs="images/saint-denis/illustrations/rueil/rueil_e0000490.jpg">Atlas Cassini, impr., 1736</ref></item>
                         <!--<item>Archives nationales, NN 470, feuille 7H.</item>-->
                         <!--<item>Archives nationales, NN 470, feuille 7H</item>-->
                         <!--<item xml:id="doc22" facs="rueilbourg.jpg">Plan du bourg de Rueil, atlas manuscrit de la seigneurie, 1770.</item>-->
-                        <item><ref target="illustrations/Rueil-bourg.jpg" type="link">Plan du bourg de Rueil, atlas manuscrit de la seigneurie, 1770</ref></item>
+                        <item><ref target="illustrations/Rueil-bourg.jpg" type="link" facs="images/saint-denis/illustrations/rueil/rueil_e0000492.jpg">Plan du bourg de Rueil, atlas manuscrit de la seigneurie, 1770</ref></item>
                       <!--  <item>Archives nationales, N IV Seine-et-Oise 46, f. 1.</item>-->
                     </list>
                     <list type="généalogie">
                         <head>Tableaux généalogiques</head>
                         <!--<item xml:id="doc20" facs="RueilTG.jpg">Généalogie des seigneurs de Marly, XII<hi rend="sup">e</hi>-XIII<hi rend="sup">e</hi> siècle</item>-->
-                        <item><ref target="illustrations/genealogie-seigneurs-Marly.jpg" type="link">Généalogie des seigneurs de Marly, XII<hi rend="sup">e</hi>-XIII<hi rend="sup">e</hi> siècle</ref></item>
+                        <item><ref target="illustrations/genealogie-seigneurs-Marly.jpg" type="link" facs="images/saint-denis/illustrations/rueil/rueil_e0000496.jpg">Généalogie des seigneurs de Marly, XII<hi rend="sup">e</hi>-XIII<hi rend="sup">e</hi> siècle</ref></item>
                     </list>
                 </div>
             </div>
