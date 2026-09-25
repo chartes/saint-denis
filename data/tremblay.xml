@@ -411,7 +411,7 @@
             <text xml:id="tremblay-acte1">
                 <front>
                     <titlePart type="main">Tremblay 1</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate>
                         <date when="0833-01-20">[833, 20 janvier] </date>
                     </docDate>
@@ -471,7 +471,7 @@
             <text xml:id="tremblay-acte2">
                 <front>
                     <titlePart type="main">Tremblay 2</titlePart>
-                    <docAuthor>comte de Dammartin</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0036">comte de Dammartin</docAuthor>
                     <docDate>
                         <date notBefore="1153" notAfter="1162">[1153-1162] </date>
                     </docDate>
@@ -607,7 +607,7 @@
             <text xml:id="tremblay-acte3">
                 <front>
                     <titlePart type="main">Tremblay 3</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate>
                         <date notBefore="1151" notAfter="1169">[1151-1169]</date>
                     </docDate>
@@ -686,7 +686,7 @@
             <text xml:id="tremblay-acte4">
                 <front>
                     <titlePart type="main">Tremblay 4</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate>
                         <date when="1205-01">1205 (n. st.), janvier</date>
                     </docDate>
@@ -761,7 +761,7 @@
             <text xml:id="tremblay-acte5">
                 <front>
                     <titlePart type="main">Tremblay 5</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate>
                         <date when="1205-01">1205 (n.st.), janvier</date>
                     </docDate>
@@ -821,7 +821,7 @@
             <text xml:id="tremblay-acte6">
                 <front>
                     <titlePart type="main">Tremblay 6</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate>
                         <date when="1205-01">1205 (n.st.), [janvier]</date>
                         <placeName>Paris</placeName>
@@ -862,7 +862,7 @@
             <text xml:id="tremblay-acte7">
                 <front>
                     <titlePart type="main">Tremblay 7</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate>
                         <date when="1206-11">1206, novembre</date>
                     </docDate>
@@ -929,7 +929,7 @@
             <text xml:id="tremblay-acte8">
                 <front>
                     <titlePart type="main">Tremblay 8</titlePart>
-                    <docAuthor>abbé de Sainte-Geneviève de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0012">abbé de Sainte-Geneviève de Paris</docAuthor>
                     <docDate>
                         <date when="1211">1211</date>
                         <placeName>Paris, Montagne[-Sainte-Geneviève]</placeName>
@@ -1031,7 +1031,7 @@
             <text xml:id="tremblay-acte9">
                 <front>
                     <titlePart type="main">Tremblay 9</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate>
                         <date notBefore="1151" notAfter="1169">[1151-1169]</date>
                     </docDate>
@@ -1175,7 +1175,7 @@
             <text xml:id="tremblay-acte10">
                 <front>
                     <titlePart type="main">Tremblay 10</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate>
                         <date notBefore="1153-08-01" notAfter="1154-04-03">1153, 1<hi rend="sup">er</hi> août-1154, 3 avril</date>
                         <placeName>Paris</placeName>
@@ -1264,7 +1264,7 @@
             <text xml:id="tremblay-acte11">
                 <front>
                     <titlePart type="main">Tremblay 11</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate>
                         <date notBefore="1200" notAfter="1230">[S. d., sans doute premières décennies du XIII<hi rend="sup">e</hi> siècle]</date>
                     </docDate>
@@ -1305,7 +1305,7 @@
             <text xml:id="tremblay-acte12">
                 <front>
                     <titlePart type="main">Tremblay 12</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate>
                         <date when="1216-04">1216, avril</date>
                     </docDate>
@@ -1375,7 +1375,7 @@
             <text xml:id="tremblay-acte13">
                 <front>
                     <titlePart type="main">Tremblay 13</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate>
                         <date when="1218-03">1217 (a.st.), sans doute 1218 (n. st.), mars</date>
                     </docDate>
@@ -1462,8 +1462,8 @@
             <text xml:id="tremblay-acte14">
                 <front>
                     <titlePart type="main">Tremblay 14</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate>
                         <date when="1218-05">1218, mai</date>
                     </docDate>
@@ -1585,9 +1585,9 @@
             <text xml:id="tremblay-acte15">
                 <front>
                     <titlePart type="main">Tremblay 15</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
-                    <docAuthor>auteurs ecclésiastiques</docAuthor>
-                    <docAuthor>abbé d’Igny</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0026">auteurs ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0001">abbé d’Igny</docAuthor>
                     <docDate>
                         <date notBefore="1219-10" notAfter="1220-03-28">1219, octobre-1220 (n. st.), 28 mars</date>
                     </docDate>
@@ -1632,7 +1632,7 @@
             <text xml:id="tremblay-acte16">
                 <front>
                     <titlePart type="main">Tremblay 16</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate>
                         <date when="1222-07">1222, juillet</date>
                     </docDate>
@@ -1703,7 +1703,7 @@
             <text xml:id="tremblay-acte17">
                 <front>
                     <titlePart type="main">Tremblay 17</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate>
                         <date when="1222-11">1222, novembre</date>
                     </docDate>
@@ -1759,7 +1759,7 @@
             <text xml:id="tremblay-acte18">
                 <front>
                     <titlePart type="main">Tremblay 18</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate>
                         <date when="1223-02">1223 (n.st.), février</date>
                     </docDate>
@@ -1849,7 +1849,7 @@
             <text xml:id="tremblay-acte19">
                 <front>
                     <titlePart type="main">Tremblay 19</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate>
                         <date when="1228-07">1228, juillet</date>
                     </docDate>
@@ -1915,7 +1915,7 @@
             <text xml:id="tremblay-acte20">
                 <front>
                     <titlePart type="main">Tremblay 20</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate>
                         <date when="1229-02">1229 (n.st.), février</date>
                     </docDate>
@@ -1972,7 +1972,7 @@
             <text xml:id="tremblay-acte21">
                 <front>
                     <titlePart type="main">Tremblay 21</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate>
                         <date notBefore="1229-03" notAfter="1229-04">S.d. [après février 1229]</date>
                     </docDate>
@@ -2026,7 +2026,7 @@
             <text xml:id="tremblay-acte22">
                 <front>
                     <titlePart type="main">Tremblay 22</titlePart>
-                    <docAuthor>divers laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0038">divers laïques</docAuthor>
                     <docDate>
                         <date when="1230-04">1230 (n.st.), avril</date>
                     </docDate>
@@ -2245,7 +2245,7 @@
             <text xml:id="tremblay-acte23">
                 <front>
                     <titlePart type="main">Tremblay 23</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate>
                         <date when="1230-04-12">1230 (n.st.), 12 avril</date>
                     </docDate>
@@ -2312,7 +2312,7 @@
             <text xml:id="tremblay-acte24">
                 <front>
                     <titlePart type="main">Tremblay 24</titlePart>
-                    <docAuthor>abbé de Chaalis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0003">abbé de Chaalis</docAuthor>
                     <docDate>
                         <date when="1243-11">1243, novembre</date>
                     </docDate>
@@ -2405,7 +2405,7 @@
             <text xml:id="tremblay-acte25">
                 <front>
                     <titlePart type="main">Tremblay 25</titlePart>
-                    <docAuthor>abbé de Livry</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0006">abbé de Livry</docAuthor>
                     <docDate>
                         <date when="1244-02">1244 (n. st.), février</date>
                     </docDate>
@@ -2488,7 +2488,7 @@
             <text xml:id="tremblay-acte26">
                 <front>
                     <titlePart type="main">Tremblay 26</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate>
                         <date when="0861-07-01">861, 1<hi rend="sup">er</hi> juillet</date>
                         <placeName>Compiègne</placeName>
@@ -2548,7 +2548,7 @@
             <text xml:id="tremblay-acte27">
                 <front>
                     <titlePart type="main">Tremblay 27</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate>
                         <date when="1253-09">1253, septembre</date>
                     </docDate>
@@ -2674,7 +2674,7 @@
             <text xml:id="tremblay-acte28">
                 <front>
                     <titlePart type="main">Tremblay 28</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate>
                         <date when="1253-10">1253, octobre</date>
                     </docDate>
@@ -2731,7 +2731,7 @@
             <text xml:id="tremblay-acte29">
                 <front>
                     <titlePart type="main">Tremblay 29</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate>
                         <date when="1255-05">1255, mai</date>
                     </docDate>
@@ -2803,7 +2803,7 @@
             <text xml:id="tremblay-acte30">
                 <front>
                     <titlePart type="main">Tremblay 30</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate>
                         <date when="1274-10">1274, octobre</date>
                     </docDate>
@@ -2884,7 +2884,7 @@
             <text xml:id="tremblay-acte31">
                 <front>
                     <titlePart type="main">Tremblay 31</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate>
                         <date when="1269-10-16">1269, 16 octobre</date>
                     </docDate>
@@ -2964,7 +2964,7 @@
             <text xml:id="tremblay-acte32a">
                 <front>
                     <titlePart type="main">Tremblay 32a. Insertion erronée</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Meaux</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0051">officialité de l’archidiacre de Meaux</docAuthor>
                     <docDate>
                         <date when="1273-12">1273, décembre</date>
                     </docDate>
@@ -3084,7 +3084,7 @@
             <text xml:id="tremblay-acte32b">
                 <front>
                     <titlePart type="main">Tremblay 32b. Insertion erronée</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate>
                         <date when="1273-12">[1273, décembre]</date>
                     </docDate>
@@ -3128,7 +3128,7 @@
             <text xml:id="tremblay-acte33">
                 <front>
                     <titlePart type="main">Tremblay 33</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate>
                         <date when="1270-11">1270, novembre</date>
                     </docDate>
@@ -3191,7 +3191,7 @@
             <text xml:id="tremblay-acte34">
                 <front>
                     <titlePart type="main">Tremblay 34</titlePart>
-                    <docAuthor>officialité de Lisieux</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0053">officialité de Lisieux</docAuthor>
                     <docDate>
                         <date when="1270-12-09">1270, 9 décembre</date>
                     </docDate>
@@ -3275,7 +3275,7 @@
             <text xml:id="tremblay-acte35b">
                 <front>
                     <titlePart type="main">Tremblay 35b</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate>
                         <date when="1281-08-01">1281, 1<hi rend="sup">er</hi> août</date>
                     </docDate>
@@ -3353,7 +3353,7 @@
             <text xml:id="tremblay-acte36">
                 <front>
                     <titlePart type="main">Tremblay 36</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate>
                         <date when="1279-06">1279, juin</date>
                     </docDate>
@@ -3565,7 +3565,7 @@
             <text xml:id="tremblay-acte37">
                 <front>
                     <titlePart type="main">Tremblay 37</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate>
                         <date when="1281-07-07">1281, 7 juillet</date>
                     </docDate>
@@ -3686,7 +3686,7 @@
             <text xml:id="tremblay-acte38">
                 <front>
                     <titlePart type="main">Tremblay 38</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate>
                         <date when="1281-07-07">1281, 7 juillet</date>
                     </docDate>
@@ -3832,7 +3832,7 @@
             <text xml:id="tremblay-acte39">
                 <front>
                     <titlePart type="main">Tremblay 39</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate>
                         <date when="1281-07-23">1281, 23 juillet</date>
                     </docDate>
@@ -3954,7 +3954,7 @@
             <text xml:id="tremblay-acte40">
                 <front>
                     <titlePart type="main">Tremblay 40</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate>
                         <date when="1281-07-10">1281, 10 juillet</date>
                     </docDate>
@@ -4040,7 +4040,7 @@
             <text xml:id="tremblay-acte41">
                 <front>
                     <titlePart type="main">Tremblay 41</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate>
                         <date when="1283-03-27">1283 (n. st.), 27 mars</date>
                     </docDate>
@@ -4165,7 +4165,7 @@
             <text xml:id="tremblay-acte42">
                 <front>
                     <titlePart type="main">Tremblay 42</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate>
                         <date when="1283-03-27">1283 (n.st.), 27 mars</date>
                         <placeName>Paris</placeName>
@@ -4273,7 +4273,7 @@
             <text xml:id="tremblay-acte43">
                 <front>
                     <titlePart type="main">Tremblay 43</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate>
                         <date when="1283-03-28">1283 (n.st.), 28 mars</date>
                         <placeName>Paris</placeName>
@@ -4393,7 +4393,7 @@
             <text xml:id="tremblay-acte44">
                 <front>
                     <titlePart type="main">Tremblay 44</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate>
                         <date when="1248-09">1248, septembre</date>
                     </docDate>
@@ -4468,7 +4468,7 @@
             <text xml:id="tremblay-acte45">
                 <front>
                     <titlePart type="main">Tremblay 45</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate>
                         <date notBefore="1181-03-28" notAfter="1181-10-31">1182, 28 mars-31 octobre</date>
                     </docDate>
@@ -4510,7 +4510,7 @@
             <text xml:id="tremblay-acte46">
                 <front>
                     <titlePart type="main">Tremblay 46</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate>
                         <date when="1197-07">1197, juillet</date>
                         <placeName>Mantes</placeName>
@@ -4563,7 +4563,7 @@
             <text xml:id="tremblay-acte47">
                 <front>
                     <titlePart type="main">Tremblay 47</titlePart>
-                    <docAuthor>maladrerie de Saint-Lazare de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0046">maladrerie de Saint-Lazare de Paris</docAuthor>
                     <docDate>
                         <date notBefore="1190" notAfter="1220">[Fin XII<hi rend="sup">e</hi>-début XIII<hi rend="sup">e</hi> siècle]</date>
                     </docDate>
@@ -4647,7 +4647,7 @@
             <text xml:id="tremblay-acte48">
                 <front>
                     <titlePart type="main">Tremblay 48</titlePart>
-                    <docAuthor>divers laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0038">divers laïques</docAuthor>
                     <docDate>
                         <date when="1248-06">1248, juin</date>
                         <placeName>Paris</placeName>
@@ -4746,7 +4746,7 @@
             <text xml:id="tremblay-acte49">
                 <front>
                     <titlePart type="main">Tremblay 49</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate>
                         <date when="1283-09">1283, septembre</date>
                     </docDate>
@@ -4867,7 +4867,7 @@
             <text xml:id="tremblay-acte50">
                 <front>
                     <titlePart type="main">Tremblay 50</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate>
                         <date when="1283-12-22">1283, 22 décembre</date>
                     </docDate>
@@ -4952,7 +4952,7 @@
             <text xml:id="tremblay-acte51a">
                 <front>
                     <titlePart type="main">Tremblay 51a</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate>
                         <date when="1279-06">1279, juin</date>
                     </docDate>
@@ -5175,7 +5175,7 @@
             <text xml:id="tremblay-acte51b">
                 <front>
                     <titlePart type="main">Tremblay 51b</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate>
                         <date when="1280-04-08">1280 (n.st.), 8 avril</date>
                     </docDate>
@@ -5255,7 +5255,7 @@
             <text xml:id="tremblay-acte52">
                 <front>
                     <titlePart type="main">Tremblay 52</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate>
                         <date when="1299-11-25">1299, 25 novembre</date>
                     </docDate>

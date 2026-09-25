@@ -704,7 +704,7 @@
             <text xml:id="ully-acte1">
                 <front>
                     <titlePart>Ully 1</titlePart>
-                    <docAuthor>évêque de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0041">évêque de Beauvais</docAuthor>
                     <docDate><date notBefore="1089" notAfter="1095">[1089-1095]</date></docDate>
                     <div type="summary">
                         <p>L’évêque de Beauvais Foulque notifie l’affranchissement par l’abbé et les
@@ -795,7 +795,7 @@
             <text xml:id="ully-acte2">
                 <front>
                     <titlePart>Ully 2</titlePart>
-                    <docAuthor>évêque de Senlis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0044">évêque de Senlis</docAuthor>
                     <docDate><date notBefore="1183" notAfter="1185">[1183-1185]</date></docDate>
                     <div type="summary">
                         <p>L’évêque de Senlis Henri, sur commission pontificale, tranche le litige
@@ -893,7 +893,7 @@
             <text xml:id="ully-acte3">
                 <front>
                     <titlePart>Ully 3</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date notBefore="1202" notAfter="1223">[…1202-1223]</date></docDate>
                     <div type="summary">
                         <p>Yves chevalier de Beaumont[-sur-Oise]<ref type="note" n="1" target="#ully-acte3-n-1"/> inféode à son fidèle serviteur Jean du
@@ -989,7 +989,7 @@
             <text xml:id="ully-acte4">
                 <front>
                     <titlePart>Ully 4</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1201">[1201]</date></docDate>
                     <div type="summary">
                         <p>Renaud de Mello<ref type="note" n="1" target="#ully-acte4-n-1"/>,
@@ -1070,7 +1070,7 @@
             <text xml:id="ully-acte5">
                 <front>
                     <titlePart>Ully 5</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1165">1165</date></docDate>
                     <div type="summary">
                         <p>Eudes, abbé de Saint-Denis, notifie la composition passée, en présence du
@@ -1282,8 +1282,8 @@
             <text xml:id="ully-acte6">
                 <front>
                     <titlePart>Ully 6</titlePart>
-                    <docAuthor>évêque de Senlis</docAuthor>
-                    <docAuthor>juges délégués</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0044">évêque de Senlis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0045">juges délégués</docAuthor>
                     <docDate><date when="1180">1180, avant le 1<hi rend="sup">er</hi>
                             novembre</date><placeName>Abbaye de Saint-Denis, en
                         chapitre</placeName></docDate>
@@ -1565,7 +1565,7 @@
             <text xml:id="ully-acte7">
                 <front>
                     <titlePart>Ully 7</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1201">1201</date></docDate>
                     <div type="summary">
                         <p>Renaud seigneur de Mello<ref type="note" n="1" target="#ully-acte7-n-1"/>
@@ -1630,7 +1630,7 @@
             <text xml:id="ully-acte8">
                 <front>
                     <titlePart>Ully 8</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1202-03">1202 (a. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Yves de Beaumont[-sur-Oise]<ref type="note" n="1" target="#ully-acte8-n-1"/>, avoué d’Ully, donne à Saint-Denis deux
@@ -1741,7 +1741,7 @@
             <text xml:id="ully-acte9">
                 <front>
                     <titlePart>Ully 9</titlePart>
-                    <docAuthor>évêque de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0041">évêque de Beauvais</docAuthor>
                     <docDate><date when="1202-03">1202 (a. st.), mars</date></docDate>
                     <div type="summary">
                         <p>L’évêque de Beauvais Philippe<ref type="note" n="1" target="#ully-acte9-n-1"/> notifie la donation faite à Saint-Denis
@@ -1821,7 +1821,7 @@
             <text xml:id="ully-acte10">
                 <front>
                     <titlePart>Ully 10</titlePart>
-                    <docAuthor>auteurs ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0026">auteurs ecclésiastiques</docAuthor>
                     <docDate><date when="1204-08">1204, août,</date><placeName>Beauvais</placeName></docDate>
                     <div type="summary">
                         <p>Guillaume de Mello<ref type="note" n="1" target="#ully-acte10-n-1"/>,
@@ -1959,7 +1959,7 @@
             <text xml:id="ully-acte11">
                 <front>
                     <titlePart>Ully 11</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1204-12">1204, décembre</date></docDate>
                     <div type="summary">
                         <p>Guillaume et Manassès, frères, [co-]seigneurs de Mello<ref type="note" n="1" target="#ully-acte11-n-1"/>, vidiment et confirment l’acte par
@@ -2279,8 +2279,8 @@
             <text xml:id="ully-acte12">
                 <front>
                     <titlePart>Ully 12</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
-                    <docAuthor>abbé de Froidmont</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0004">abbé de Froidmont</docAuthor>
                     <docDate><date when="1207-08">1207, août</date></docDate>
                     <div type="summary">
                         <p>Les abbés de Saint-Denis et de Froidmont<ref type="note" n="1" target="#ully-acte12-n-1"/> réduisent à un les deux moulins qu'ils
@@ -2409,8 +2409,8 @@
             <text xml:id="ully-acte13">
                 <front>
                     <titlePart>Ully 13</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
-                    <docAuthor>abbé de Froidmont</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0004">abbé de Froidmont</docAuthor>
                     <docDate><date when="1208-03">1208 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Autre notification par les abbés de Saint-Denis et de Froidmont<ref type="note" n="1" target="#ully-acte13-n-1"/> de leur accord sur la
@@ -2531,7 +2531,7 @@
             <text xml:id="ully-acte14">
                 <front>
                     <titlePart>Ully 14</titlePart>
-                    <docAuthor>baillis royaux</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0029">baillis royaux</docAuthor>
                     <docDate><date when="1207">1207</date><placeName>Paris, en la cour du
                             roi.</placeName></docDate>
                     <div type="summary">
@@ -2646,7 +2646,7 @@
             <text xml:id="ully-acte15">
                 <front>
                     <titlePart>Ully 15</titlePart>
-                    <docAuthor>comte de Beaumont-sur-Oise</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0034">comte de Beaumont-sur-Oise</docAuthor>
                     <docDate><date when="1210">1210</date></docDate>
                     <div type="summary">
                         <p>Jean comte de Beaumont[-sur-Oise]<ref type="note" n="1" target="#ully-acte15-n-1"/> reconnaît tenir en fief de l’abbé de
@@ -2713,7 +2713,7 @@
             <text xml:id="ully-acte16">
                 <front>
                     <titlePart>Ully 16</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1212">1212</date></docDate>
                     <div type="summary">
                         <p>Guillaume et Manassès, frères et seigneurs de Mello<ref type="note" n="1" target="#ully-acte16-n-1"/>, reconnaissent, après l’avoir contesté,
@@ -2817,7 +2817,7 @@
             <text xml:id="ully-acte17">
                 <front>
                     <titlePart>Ully 17</titlePart>
-                    <docAuthor>divers laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0038">divers laïques</docAuthor>
                     <docDate><date when="1213-08">1213, août</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Yves de Beaumont[-sur-Oise]<ref type="note" n="1" target="#ully-acte17-n-1"/> confirme la vente faite à Saint-Denis
@@ -2926,7 +2926,7 @@
             <text xml:id="ully-acte18">
                 <front>
                     <titlePart>Ully 18</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1213-08">1213, août</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Jean de Fayel<ref type="note" n="1" target="#ully-acte18-n-1"/> confirme comme seigneur féodal la vente
@@ -3014,7 +3014,7 @@
             <text xml:id="ully-acte19">
                 <front>
                     <titlePart>Ully 19</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1213-08">1213, août</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Hugues de Beaumont[-sur-Oise]<ref type="note" n="1" target="#ully-acte19-n-1"/> confirme comme seigneur féodal la vente
@@ -3109,7 +3109,7 @@
             <text xml:id="ully-acte20">
                 <front>
                     <titlePart>Ully 20</titlePart>
-                    <docAuthor>évêque de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0041">évêque de Beauvais</docAuthor>
                     <docDate><date when="1213-11">1213, novembre</date></docDate>
                     <div type="summary">
                         <p>L’évêque de Beauvais Philippe notifie la vente faite à Saint-Denis par le
@@ -3189,7 +3189,7 @@
             <text xml:id="ully-acte21">
                 <front>
                     <titlePart>Ully 21</titlePart>
-                    <docAuthor>abbé de Froidmont</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0004">abbé de Froidmont</docAuthor>
                     <docDate><date when="1214">1214</date></docDate>
                     <div type="summary">
                         <p>Henri abbé et Nicolas prieur de Froidmont<ref type="note" n="1" target="#ully-acte21-n-1"/> et Pierre doyen de Hermes<ref type="note" n="2" target="#ully-acte21-n-2"/> notifient la
@@ -3277,7 +3277,7 @@
             <text xml:id="ully-acte22">
                 <front>
                     <titlePart>Ully 22</titlePart>
-                    <docAuthor>évêque de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0041">évêque de Beauvais</docAuthor>
                     <docDate><date when="1214">1214</date></docDate>
                     <div type="summary">
                         <p>L’évêque de Beauvais Philippe détaille les droits perçus par Saint-Denis
@@ -3365,7 +3365,7 @@
             <text xml:id="ully-acte23">
                 <front>
                     <titlePart>Ully 23</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1215-06">1215, juin</date></docDate>
                     <div type="summary">
                         <p>Yves de Beaumont[-sur-Oise]<ref type="note" n="1" target="#ully-acte23-n-1"/>, avoué d'Ully, cède à Saint-Denis le
@@ -3447,7 +3447,7 @@
             <text xml:id="ully-acte24">
                 <front>
                     <titlePart>Ully 24</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1216-01">1216 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Manassès de Mello<ref type="note" n="1" target="#ully-acte24-n-1"/> notifie les droits dont jouit Jean,
@@ -3649,7 +3649,7 @@
             <text xml:id="ully-acte25">
                 <front>
                     <titlePart>Ully 25</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1216-05">1216, mai</date></docDate>
                     <div type="summary">
                         <p>Jean, titulaire viager de la charge de concierge de Cires[-lès-Mello]<ref type="note" n="1" target="#ully-acte25-n-1"/>, dépendance de
@@ -3781,7 +3781,7 @@
             <text xml:id="ully-acte26">
                 <front>
                     <titlePart>Ully 26</titlePart>
-                    <docAuthor>comte de Beaumont-sur-Oise</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0034">comte de Beaumont-sur-Oise</docAuthor>
                     <docDate><date when="1218-03">1218 (a. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Jean comte de Beaumont[-sur-Oise]<ref type="note" n="1" target="#ully-acte26-n-1"/> notifie et confirme comme seigneur
@@ -3900,7 +3900,7 @@
             <text xml:id="ully-acte27">
                 <front>
                     <titlePart>Ully 27</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1224-02">1224 (N. st.), février</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Gaucher de Thourotte<ref type="note" n="1" target="#ully-acte27-n-1"/>, avec le consentement de son épouse
@@ -3993,7 +3993,7 @@
             <text xml:id="ully-acte28">
                 <front>
                     <titlePart>Ully 28</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1220-05">1220, mai</date></docDate>
                     <div type="summary">
                         <p>Hugues de Fercourt<ref type="note" n="1" target="#ully-acte28-n-1"/>
@@ -4108,7 +4108,7 @@
             <text xml:id="ully-acte29">
                 <front>
                     <titlePart>Ully 29</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1222-02">1222 (n. st.), février</date></docDate>
                     <div type="summary">
                         <p>Jean, concierge de Cires[-lès-Mello]<ref type="note" n="1" target="#ully-acte29-n-1"/>, vend à l'abbaye de Saint-Denis son
@@ -4230,7 +4230,7 @@
             <text xml:id="ully-acte30">
                 <front>
                     <titlePart>Ully 30</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1224-02">1224 (n. st.), février</date></docDate>
                     <div type="summary">
                         <p>Les chevaliers Guillaume et Gaucher de Thourotte<ref type="note" n="1" target="#ully-acte30-n-1"/>, frères, avec l'accord de leurs épouses
@@ -4343,7 +4343,7 @@
             <text xml:id="ully-acte31">
                 <front>
                     <titlePart>Ully 31</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1224-02">1224 (n. st.),
                             février</date><placeName>Paris.</placeName></docDate>
                     <div type="summary">
@@ -4443,7 +4443,7 @@
             <text xml:id="ully-acte32">
                 <front>
                     <titlePart>Ully 32</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1223-03">1223 (a. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Ade de Persan<ref type="note" n="1" target="#ully-acte32-n-1"/>), veuve
@@ -4549,7 +4549,7 @@
             <text xml:id="ully-acte33">
                 <front>
                     <titlePart>Ully 33</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1223-12">1223, décembre</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Jean de Trie<ref type="note" n="1" target="#ully-acte33-n-1"/> confirme comme seigneur féodal la cession faite à Saint-Denis par
@@ -4638,7 +4638,7 @@
             <text xml:id="ully-acte34">
                 <front>
                     <titlePart>Ully 34</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1223-12">1223, décembre</date></docDate>
                     <div type="summary">
                         <p>Les chevaliers Jean de Conty<ref type="note" n="1" target="#ully-acte34-n-1"/> et Ansoud d’Erquery<ref type="note" n="2" target="#ully-acte34-n-2"/> se portent garants envers
@@ -4725,7 +4725,7 @@
             <text xml:id="ully-acte35">
                 <front>
                     <titlePart>Ully 35</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1223-12">1223, décembre</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Dreu de Mouy<ref type="note" n="1" target="#ully-acte35-n-1"/> confirme comme seigneur féodal la cession faite à Saint-Denis par
@@ -4808,7 +4808,7 @@
             <text xml:id="ully-acte36">
                 <front>
                     <titlePart>Ully 36</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1223-12">1223, décembre</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Guillaume de Thourotte<ref type="note" n="1" target="#ully-acte36-n-1"/> et son épouse Béatrice cèdent à
@@ -4895,7 +4895,7 @@
             <text xml:id="ully-acte37">
                 <front>
                     <titlePart>Ully 37</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1225-01">1225 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Pierre de Crouy<ref type="note" n="1" target="#ully-acte37-n-1"/> confirme comme seigneur féodal, en
@@ -4981,7 +4981,7 @@
             <text xml:id="ully-acte38">
                 <front>
                     <titlePart>Ully 38</titlePart>
-                    <docAuthor>Biard Michel</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0030">Biard Michel</docAuthor>
                     <docDate><date when="1225-01">1225 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Pierre de Crouy[-en-Thelle]<ref type="note" n="1" target="#ully-acte38-n-1"/> donne son accord à la cession faite à
@@ -5140,7 +5140,7 @@
             <text xml:id="ully-acte40">
                 <front>
                     <titlePart>Ully 40</titlePart>
-                    <docAuthor>abbé d’Ourscamp</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0002">abbé d’Ourscamp</docAuthor>
                     <docDate><date when="1225-06">1225, juin</date></docDate>
                     <div type="summary">
                         <p>Albert, abbé d'Ourscamp<ref type="note" n="1" target="#ully-acte40-n-1"/>, notifie et ratifie la vente faite à Saint-Denis par l'abbaye de
@@ -5219,7 +5219,7 @@
             <text xml:id="ully-acte41">
                 <front>
                     <titlePart>Ully 41</titlePart>
-                    <docAuthor>abbé de Froidmont</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0004">abbé de Froidmont</docAuthor>
                     <docDate><date when="1225-06">1225, juin</date></docDate>
                     <div type="summary">
                         <p>L’abbé et le convent de Froidmont<ref type="note" n="1" target="#ully-acte41-n-1"/> vendent à Saint-Denis, pour 150 £, la
@@ -5295,7 +5295,7 @@
             <text xml:id="ully-acte42">
                 <front>
                     <titlePart>Ully 42</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1227-11">1227, novembre</date></docDate>
                     <div type="summary">
                         <p>Béatrice de Foulangues<ref type="note" n="1" target="#ully-acte42-n-1"/>
@@ -5387,7 +5387,7 @@
             <text xml:id="ully-acte43">
                 <front>
                     <titlePart>Ully 43</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1229-09">1229, septembre</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Dreu de Mouy<ref type="note" n="1" target="#ully-acte43-n-1"/> atteste que les frères Richard et Aleaume d'Atteignicourt<ref type="note" n="2" target="#ully-acte43-n-2"/> , incarcérés dans la
@@ -5498,7 +5498,7 @@
             <text xml:id="ully-acte44">
                 <front>
                     <titlePart>Ully 44</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1230-08">1230, août</date></docDate>
                     <div type="summary">
                         <p>Richard d’Atteignicort<ref type="note" n="1" target="#ully-acte44-n-1"/>
@@ -5616,7 +5616,7 @@
             <text xml:id="ully-acte45">
                 <front>
                     <titlePart>Ully 45</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1233-02">1233 (n. st.), février</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Eudes de Jouy[-sous-Thelle]<ref type="note" n="1" target="#ully-acte45-n-1"/> vend à Saint-Denis pour 22 £ parisis,
@@ -5691,7 +5691,7 @@
             <text xml:id="ully-acte46">
                 <front>
                     <titlePart>Ully 46</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1232-06">1232, juin</date></docDate>
                     <div type="summary">
                         <p>Simon seigneur de Dargies<ref type="note" n="1" target="#ully-acte46-n-1"/> et son épouse Élisabeth, fille de Renaud de Mello<ref type="note" n="2" target="#ully-acte46-n-2"/>, ratifient l’accord passé entre
@@ -5774,7 +5774,7 @@
             <text xml:id="ully-acte47">
                 <front>
                     <titlePart>Ully 47</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1236-01-12">1236 (n. st.), 12 janvier</date></docDate>
                     <div type="summary">
                         <p>Benoît, maire de Cires[-lès-Mello]<ref type="note" n="1" target="#ully-acte47-n-1"/>, reconnaît ne rien pouvoir percevoir sur
@@ -5910,7 +5910,7 @@
             <text xml:id="ully-acte49">
                 <front>
                     <titlePart>Ully 49</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1236-05">1236, mai</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Dreu le Tonloyer de Beauvais<ref type="note" n="1" target="#ully-acte49-n-1"/>, s’engage à payer à l’abbé Eudes de
@@ -6007,7 +6007,7 @@
             <text xml:id="ully-acte50">
                 <front>
                     <titlePart>Ully 50</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1236-06">1236, juin</date></docDate>
                     <div type="summary">
                         <p>Agnès veuve du chevalier Eudes de Jouy[-sous-Thelle]<ref type="note" n="1" target="#ully-acte50-n-1"/>, Jean, Renaud, Nicolas, Aelis,
@@ -6097,7 +6097,7 @@
             <text xml:id="ully-acte51">
                 <front>
                     <titlePart>Ully 51</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1238-01">1238 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Thibaud du Délugeref <ref type="note" n="1" target="#ully-acte51-n-1"/> vend à l'abbaye de Saint-Denis tous les
@@ -6204,7 +6204,7 @@
             <text xml:id="ully-acte52">
                 <front>
                     <titlePart>Ully 52</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1238-01">1238 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Gérard du Déluge<ref type="note" n="1" target="#ully-acte52-n-1"/> approuve comme seigneur féodal la vente
@@ -6284,7 +6284,7 @@
             <text xml:id="ully-acte53">
                 <front>
                     <titlePart>Ully 53</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1238-01">1238 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Dreu seigneur de Mouy<ref type="note" n="1" target="#ully-acte53-n-1"/>
@@ -6360,7 +6360,7 @@
             <text xml:id="ully-acte54">
                 <front>
                     <titlePart>Ully 54</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1238-01">1238 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Gérard du Déluge<ref type="note" n="1" target="#ully-acte54-n-1"/> approuve comme seigneur féodal la vente
@@ -6450,7 +6450,7 @@
             <text xml:id="ully-acte55">
                 <front>
                     <titlePart>Ully 55</titlePart>
-                    <docAuthor>officialité de Rouen</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0056">officialité de Rouen</docAuthor>
                     <docDate><date when="1238-02">1238 (n. st.), février</date></docDate>
                     <div type="summary">
                         <p>Autre notification, devant le doyen de Chaumont[-en-Vexin]<ref type="note" n="1" target="#ully-acte55-n-1"/>, de la vente faite à
@@ -6552,7 +6552,7 @@
             <text xml:id="ully-acte56">
                 <front>
                     <titlePart>Ully 56</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1238-02">1238 (n. st.), février</date></docDate>
                     <div type="summary">
                         <p>Gautier maire d'Ully déclare les prérogatives et revenus de sa charge. Il
@@ -6673,7 +6673,7 @@
             <text xml:id="ully-acte57">
                 <front>
                     <titlePart>Ully 57</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1238-04">1238 (a. st.), avril</date></docDate>
                     <div type="summary">
                         <p>Thibaud du Déluge<ref type="note" n="1" target="#ully-acte57-n-1"/> ayant
@@ -6750,7 +6750,7 @@
             <text xml:id="ully-acte58">
                 <front>
                     <titlePart>Ully 58</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1240-07-06">1240, 6 juillet</date></docDate>
                     <div type="summary">
                         <p>Julien, dit le Prévôt d'Ully, et son épouse Agnès vendent à Saint-Denis
@@ -6852,7 +6852,7 @@
             <text xml:id="ully-acte59">
                 <front>
                     <titlePart>Ully 59</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1241-01-07">1241 (n. st.), 7 janvier</date></docDate>
                     <div type="summary">
                         <p>Jean de Jouy[-sous-Thelle]<ref type="note" n="1" target="#ully-acte59-n-1"/> et son épouse Émeline de Cavieres<ref type="note" n="2" target="#ully-acte59-n-2"/> vendent à Saint-Denis
@@ -6948,7 +6948,7 @@
             <text xml:id="ully-acte60">
                 <front>
                     <titlePart>Ully 560</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1240-07-20">1240, 20 juillet</date></docDate>
                     <div type="summary">
                         <p>Nicolas Maucion, bourgeois de Beaumont[-sur-Oise]<ref type="note" n="1" target="#ully-acte60-n-1"/>, reconnaît tenir de Saint-Denis la
@@ -7033,7 +7033,7 @@
             <text xml:id="ully-acte61">
                 <front>
                     <titlePart>Ully 61</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1243-10">1243, octobre</date></docDate>
                     <div type="summary">
                         <p>Le maire et les pairs de la commune de Beaumont[-sur-Oise]<ref type="note" n="1" target="#ully-acte61-n-1"/> assignent à
@@ -7142,7 +7142,7 @@
             <text xml:id="ully-acte62">
                 <front>
                     <titlePart>Ully 62</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1243-10">1243, octobre</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Jean de Champagne<ref type="note" n="1" target="#ully-acte62-n-1"/> se porte garant envers Saint-Denis de
@@ -7223,7 +7223,7 @@
             <text xml:id="ully-acte63">
                 <front>
                     <titlePart>Ully 63</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1243-10">1243, octobre</date></docDate>
                     <div type="summary">
                         <p>Renaud chevalier du Plessis<ref type="note" n="1" target="#ully-acte63-n-1"/> oblige tous ses biens à l’abbé de
@@ -7309,7 +7309,7 @@
             <text xml:id="ully-acte64">
                 <front>
                     <titlePart>Ully 64</titlePart>
-                    <docAuthor>Prévôté de Beaumon-sur-Oise</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0058">Prévôté de Beaumon-sur-Oise</docAuthor>
                     <docDate><date when="1243-10">1243, octobre</date></docDate>
                     <div type="summary">
                         <p>Robert de Luzarches<ref type="note" n="1" target="#ully-acte64-n-1"/>,
@@ -7413,7 +7413,7 @@
             <text xml:id="ully-acte65">
                 <front>
                     <titlePart>Ully 65</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1243-11-13">1243, 13 novembre</date></docDate>
                     <div type="summary">
                         <p>Jean d’Ully, clerc, fils de feu Julien, maire d’Ully, reçoit de
@@ -7498,7 +7498,7 @@
             <text xml:id="ully-acte66">
                 <front>
                     <titlePart>Ully 66</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1244-03-17">1244 (n.st), 17 mars</date></docDate>
                     <div type="summary">
                         <p>Arbitrage prononcé dans les litiges opposant Saint-Denis et la communauté
@@ -7650,7 +7650,7 @@
             <text xml:id="ully-acte67">
                 <front>
                     <titlePart>Ully 67</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1244-06">1244, juin</date></docDate>
                     <div type="summary">
                         <p>Jean du Déluge<ref type="note" n="1" target="#ully-acte67-n-1"/>, écuyer,
@@ -7967,7 +7967,7 @@
             <text xml:id="ully-acte68">
                 <front>
                     <titlePart>Ully 68</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1244-06">1244, juin</date></docDate>
                     <div type="summary">
                         <p>Jean du Déluge<ref type="note" n="1" target="#ully-acte68-n-1"/>, écuyer,
@@ -8057,7 +8057,7 @@
             <text xml:id="ully-acte69">
                 <front>
                     <titlePart>Ully 69</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1244-06">1244, juin</date></docDate>
                     <div type="summary">
                         <p>Jean de Foulangues<ref type="note" n="1" target="#ully-acte69-n-1"/>,
@@ -8209,7 +8209,7 @@
             <text xml:id="ully-acte70">
                 <front>
                     <titlePart>Ully 70</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1244-06">1244, juin</date></docDate>
                     <div type="summary">
                         <p>Jean de Foulangues<ref type="note" n="1" target="#ully-acte70-n-1"/>
@@ -8298,7 +8298,7 @@
             <text xml:id="ully-acte71">
                 <front>
                     <titlePart>Ully 71</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1244-06">1244, juin</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Gérard du Déluge<ref type="note" n="1" target="#ully-acte71-n-1"/> consent comme seigneur féodal à
@@ -8461,7 +8461,7 @@
             <text xml:id="ully-acte72">
                 <front>
                     <titlePart>Ully 72</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1244-06">1244, juin</date></docDate>
                     <div type="summary">
                         <p>Mathieu de Trie<ref type="note" n="1" target="#ully-acte72-n-1"/> et Dreu
@@ -8591,7 +8591,7 @@
             <text xml:id="ully-acte73">
                 <front>
                     <titlePart>Ully 73</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1244-06">1244, juin</date></docDate>
                     <div type="summary">
                         <p>Mathieu de Trie<ref type="note" n="1" target="#ully-acte73-n-1"/> et Dreu
@@ -8724,7 +8724,7 @@
             <text xml:id="ully-acte74">
                 <front>
                     <titlePart>Ully 74</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1244-06">1244, juin</date></docDate>
                     <div type="summary">
                         <p>Renaud le Tonloyer<ref type="note" n="1" target="#ully-acte74-n-1"/>
@@ -8845,7 +8845,7 @@
             <text xml:id="ully-acte75">
                 <front>
                     <titlePart>Ully 75</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1238-01">1238 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Mathieu, seigneur de Trie<ref type="note" n="1" target="#ully-acte75-n-1"/> consent, au titre de seigneur de l’arrière-fief et en aumône, à la
@@ -8925,7 +8925,7 @@
             <text xml:id="ully-acte76">
                 <front>
                     <titlePart>Ully 76</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1239-06">1239, juin</date></docDate>
                     <div type="summary">
                         <p>Le clerc Guillaume de Balagny[-sur-Thérain]<ref type="note" n="1" target="#ully-acte76-n-1"/>, qui a acheté d’Eudes [de] Bailleul<ref type="note" n="2" target="#ully-acte76-n-2"/> et de son épouse un
@@ -9019,7 +9019,7 @@
             <text xml:id="ully-acte77">
                 <front>
                     <titlePart>Ully 77</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1187">1187</date><placeName>Saint-Denis, en
                             chapitre</placeName></docDate>
                     <div type="summary">
@@ -9119,7 +9119,7 @@
             <text xml:id="ully-acte78">
                 <front>
                     <titlePart>Ully 78</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1248-02-18">1248 (n. st.), 18 février</date></docDate>
                     <div type="summary">
                         <p>Guillaume maire de Morancy<ref type="note" n="1" target="#ully-acte78-n-1"/>, concierge<ref type="note" n="2" target="#ully-acte78-n-2"/> d’Ully, abandonne à Saint-Denis, avec
@@ -9370,7 +9370,7 @@
             <text xml:id="ully-acte79">
                 <front>
                     <titlePart>Ully 79</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="0861-07-21">861, 21
                             juillet</date><placeName>Quierzy</placeName></docDate>
                     <div type="summary">
@@ -9444,7 +9444,7 @@
             <text xml:id="ully-acte80">
                 <front>
                     <titlePart>Ully 80</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="0862-04-20">862, 20
                             avril</date><placeName>Attigny</placeName></docDate>
                     <div type="summary">
@@ -9516,7 +9516,7 @@
             <text xml:id="ully-acte81">
                 <front>
                     <titlePart>Ully 81</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1243-11-13">1243, 13 novembre</date></docDate>
                     <div type="summary">
                         <p>Engagement à ce que Guillaume du Plessis<ref type="note" n="1" target="#ully-acte81-n-1"/>, époux d’Ermengearde fille de feu
@@ -9615,7 +9615,7 @@
             <text xml:id="ully-acte82">
                 <front>
                     <titlePart>Ully 82</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1222-03">1222 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Jean de Cires[-lès-Mello]<ref type="note" n="1" target="#ully-acte82-n-1"/> décrit les profits et charges de sa fonction viagère de sergent à
@@ -9736,7 +9736,7 @@
             <text xml:id="ully-acte83">
                 <front>
                     <titlePart>Ully 83</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1246-08-25">1246, 25 août</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Raoul de Franconville<ref type="note" n="1" target="#ully-acte83-n-1"/> et son épouse la Bouteillère<ref type="note" n="2" target="#ully-acte83-n-2"/> reconnaissent le prêt
@@ -9843,7 +9843,7 @@
             <text xml:id="ully-acte84">
                 <front>
                     <titlePart>Ully 84</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1246-08">1246, août</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Raoul de Franconville<ref type="note" n="1" target="#ully-acte84-n-1"/> reconnaît le prêt de 24 £ parisis que
@@ -9941,7 +9941,7 @@
             <text xml:id="ully-acte85">
                 <front>
                     <titlePart>Ully 85</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1263-02">1263 (n. st.), février.</date></docDate>
                     <div type="summary">
                         <p>Simon seigneur d’Erquery<ref type="note" n="1" target="#ully-acte85-n-1"/>, chevalier, vend à Saint-Denis, pour 340 £ parisis, avec l’accord de
@@ -10093,7 +10093,7 @@
             <text xml:id="ully-acte86">
                 <front>
                     <titlePart>Ully 86</titlePart>
-                    <docAuthor>comte de Dammartin</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0036">comte de Dammartin</docAuthor>
                     <docDate><date when="1263-02">1263 (n. st.), février.</date></docDate>
                     <div type="summary">
                         <p>Mathieu de Trie<ref type="note" n="1" target="#ully-acte86-n-1"/>, comte
@@ -10195,7 +10195,7 @@
             <text xml:id="ully-acte87">
                 <front>
                     <titlePart>Ully 87</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1263-02">1263 (n. st.), février.</date></docDate>
                     <div type="summary">
                         <p>Ansoud seigneur d’Offémont<ref type="note" n="1" target="#ully-acte87-n-1"/>, chevalier, vidime et confirme l’acte
@@ -10282,7 +10282,7 @@
             <text xml:id="ully-acte88a">
                 <front>
                     <titlePart>Ully 88a</titlePart>
-                    <docAuthor>officialité de Senlis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0057">officialité de Senlis</docAuthor>
                     <docDate><date when="1273-07-08">1273, 8 juillet.</date></docDate>
                     <div type="summary">
                         <p>Geoffroy le Maréchal, écuyer, et Béatrice son épouse vendent à
@@ -10491,8 +10491,8 @@
             <text xml:id="ully-acte88b">
                 <front>
                     <titlePart>Ully 88b</titlePart>
-                    <docAuthor>bailliage de Senlis</docAuthor>
-                    <docAuthor>auteurs laïcs</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0028">bailliage de Senlis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïcs</docAuthor>
                     <docDate><date when="1273-07">1273, juillet.</date></docDate>
                     <div type="summary">
                         <p>Autre notification, sous les sceaux de Gilles de Courcelles, bailli de
@@ -10698,7 +10698,7 @@
             <text xml:id="ully-acte89">
                 <front>
                     <titlePart>Ully 89</titlePart>
-                    <docAuthor>châtellenie de Blois</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0033">châtellenie de Blois</docAuthor>
                     <docDate><date when="1273-07-17">1273, 17 juillet</date></docDate>
                     <div type="summary">
                         <p>Le châtelain de Blais<ref type="note" n="1" target="#ully-acte89-n-1"/>
@@ -10801,7 +10801,7 @@
             <text xml:id="ully-acte90">
                 <front>
                     <titlePart>Ully 90</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1254">1254</date></docDate>
                     <div type="summary">
                         <p>Renaud de Crouy[-en-Thelle]<ref type="note" n="1" target="#ully-acte90-n-1"/>, écuyer, déclare les fiefs qu’il tient
@@ -10898,7 +10898,7 @@
             <text xml:id="ully-acte91">
                 <front>
                     <titlePart>Ully 91</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1276-03">1276 (a. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Jean de Cousnicourt<ref type="note" n="1" target="#ully-acte91-n-1"/> déclare tenir de Saint-Denis à une foi
@@ -11047,7 +11047,7 @@
             <text xml:id="ully-acte92">
                 <front>
                     <titlePart>Ully 92</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1270-03">1270 (n. st.), mars.</date><placeName>Vézelay.</placeName></docDate>
                     <div type="summary">
                         <p>Le roi de France Louis [IX] s’engage à ce que tout détenteur à venir du
@@ -11105,8 +11105,8 @@
             <text xml:id="ully-acte93">
                 <front>
                     <titlePart>Ully 93</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1280-09">1280, septembre</date></docDate>
                     <div type="summary">
                         <p>Maître Gautier de Neuilly[-en-Thelle]<ref type="note" n="1" target="#ully-acte93-n-1"/>, archidiacre du Cotentin en l’église
@@ -11296,8 +11296,8 @@
             <text xml:id="ully-acte94">
                 <front>
                     <titlePart>Ully 94</titlePart>
-                    <docAuthor>comte de Dammatin</docAuthor>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0036">comte de Dammatin</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1280-08">1280, août</date></docDate>
                     <div type="summary">
                         <p>Jean comte de Dammartin<ref type="note" n="1" target="#ully-acte94-n-1"/>, seigneur de Trie<ref type="note" n="2" target="#ully-acte94-n-2"/>
@@ -11433,7 +11433,7 @@
             <text xml:id="ully-acte95">
                 <front>
                     <titlePart>Ully 95</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1280-08">1280, oaût</date></docDate>
                     <div type="summary">
                         <p>Nicolas chevalier de Moliens<ref type="note" n="1" target="#ully-acte95-n-1"/> et Adam du Bois-Morel<ref type="note" n="2" target="#ully-acte95-n-2"/>, écuyer, autorisent et
@@ -11570,8 +11570,8 @@
             <text xml:id="ully-acte96">
                 <front>
                     <titlePart>Ully 96</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
-                    <docAuthor>auteurs laïcs</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïcs</docAuthor>
                     <docDate><date when="1280-09">1280, septembre</date></docDate>
                     <div type="summary">
                         <p>Simon chevalier de Ronquerolles<ref type="note" n="1" target="#ully-acte96-n-1"/>, son épouse Isabelle et ses enfants
@@ -11760,8 +11760,8 @@
             <text xml:id="ully-acte97">
                 <front>
                     <titlePart>Ully 97</titlePart>
-                    <docAuthor>bailliage de Senlis</docAuthor>
-                    <docAuthor>auteurs laïcs</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0028">bailliage de Senlis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïcs</docAuthor>
                     <docDate><date when="1283-09">1283, septembre</date></docDate>
                     <div type="summary">
                         <p>Aalez de Sainte-Eusoye<ref type="note" n="1" target="#ully-acte97-n-1"/>,
@@ -11906,7 +11906,7 @@
             <text xml:id="ully-acte98">
                 <front>
                     <titlePart>Ully 98</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1277-09">1277, septembre</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Jean de Poissy<ref type="note" n="1" target="#ully-acte98-n-1"/> vend à l’abbé Mathieu<ref type="note" n="2" target="#ully-acte98-n-2"/> de Saint-Denis pour 140 £ parisis
@@ -12048,7 +12048,7 @@
             <text xml:id="ully-acte99">
                 <front>
                     <titlePart>Ully 99</titlePart>
-                    <docAuthor>comte de Clermont-en-Beauvaisis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0035">comte de Clermont-en-Beauvaisis</docAuthor>
                     <docDate><date when="1290-07-22">1290, 22 juillet.</date></docDate>
                     <div type="summary">
                         <p>Robert, fils du roi de France, comte de Clermont et seigneur de

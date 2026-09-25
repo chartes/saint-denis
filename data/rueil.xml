@@ -426,7 +426,7 @@
             <text xml:id="rueil-acte1">
                 <front>
                     <titlePart type="main">Rueil 1. Acte faux</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="0873-10-09">873, 9 octobre</date><placeName> Saint-Denis</placeName></docDate>
                     <div type="summary">
                         <p>Charles le Chauve donne aux religieux de Saint-Denis, dont il est abbé, la <foreign xml:lang="lat">villa</foreign> de Rueil, située en Parisis et en Pincerais, ainsi que la réserve de pêche depuis le ruisseau de
@@ -480,7 +480,7 @@
             <text xml:id="rueil-acte2">
                 <front>
                     <titlePart type="main">Rueil 2</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date notBefore="1113-08-03" notAfter="1113-12-31">1113, [après le 3 août]</date><placeName>Paris</placeName></docDate>
                     <div type="summary">
                         <p>Louis [VI], à la demande de l’abbé Adam et sur l’intervention du moine Gérard, abandonne à Saint-Denis, qui a la prééminence sur toutes les églises du royaume, la coutume qu’il levait comme les rois ses
@@ -528,7 +528,7 @@
             <text xml:id="rueil-acte3">
                 <front>
                     <titlePart type="main">Rueil 3</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1206-11">1206, novembre</date></docDate>
                     <div type="summary">
                         <p>Robert de Croissy<ref type="note" n="1" target="#rueil-acte3-n-1"/> donne à Saint-Denis ce qu’il possédait (<foreign xml:lang="lat">dominium</foreign>) entre La Celle<ref type="note" n="2" target="#rueil-acte3-n-2"/> et Rueil, recevant en échange un don de 19 livres parisis ; Roger chevalier de Ville d’Avray<ref type="note" n="3" target="#rueil-acte3-n-3"/> donne son consentement comme seigneur
@@ -575,7 +575,7 @@
             <text xml:id="rueil-acte4">
                 <front>
                     <titlePart type="main">Rueil 4</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1207-11">1207, novembre</date><placeName>Paris</placeName></docDate>
                     <div type="summary">
                         <p>Philippe Auguste atteste que Payen de Rueil, pour se libérer envers les juifs du roi, a vendu sa voirie au prieur de Saint-Denis, moyennant cent livres parisis ; le roi confirme cette vente.</p>
@@ -609,7 +609,7 @@
             <text xml:id="rueil-acte5">
                 <front>
                     <titlePart type="main">Rueil 5</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1209-06">1209, juin</date></docDate>
                     <div type="summary">
                         <p>Bouchard, seigneur de Marly[-le-Roi]<ref type="note" n="1" target="#rueil-acte5-n-1"/>, donne à Saint-Denis (avec le consentement de sa mère Mathilde, de sa femme Mathilde et de ses frères Mathieu et Guillaume)
@@ -679,7 +679,7 @@
             <text xml:id="rueil-acte6">
                 <front>
                     <titlePart type="main">Rueil 6</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1209-06">1209, juin</date></docDate>
                     <div type="summary">
                         <p>Mathieu, seigneur de Montmorency<ref type="note" n="1" target="#rueil-acte6-n-1"/>, notifie et confirme l’acte de son fidèle et parent (<foreign xml:lang="lat">homo et consaguineus</foreign>) Bouchard de Marly
@@ -737,8 +737,8 @@
             <text xml:id="rueil-acte7">
                 <front>
                     <titlePart type="main">Rueil 7</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1218-05">1218, mai</date></docDate>
                     <div type="summary">
                         <p>G., archidiacre de Paris, Hélie, aumônier de Saint-Denis, et maître <foreign xml:lang="fro">Ham</foreign><ref type="note" n="1" target="#rueil-acte7-n-1"/>, chanoine de Senlis, choisis par l’évêque de Paris et
@@ -832,7 +832,7 @@
             <text xml:id="rueil-acte8">
                 <front>
                     <titlePart type="main">Rueil 8</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1218-07">1218, juillet</date></docDate>
                     <div type="summary">
                         <p>Roais, mairesse de Nanterre<ref type="note" n="1" target="#rueil-acte8-n-1"/>, et ses fils Yves, Simon, Bouchard et Étienne vendent à maître Geoffroy de Saint-Denis une vigne de cinq arpents moins un quartier au
@@ -919,7 +919,7 @@
             <text xml:id="rueil-acte9">
                 <front>
                     <titlePart type="main">Rueil 9</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
                     <docDate><date when="1219-12">1219, décembre</date></docDate>
                     <div type="summary">
                         <p>Jean, chantre de l’église Saint-Paul de Saint-Denis atteste que Eudes, maire de Rueil, et son épouse Odeline se sont engagés, en présence de nombreux témoins, dont les baillis du roi Guillaume Menier et Renaud
@@ -987,7 +987,7 @@
             <text xml:id="rueil-acte10">
                 <front>
                     <titlePart type="main">Rueil 10</titlePart>
-                    <docAuthor>divers laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0038">divers laïques</docAuthor>
                     <docDate><date when="1221-07">1221, juillet</date></docDate>
                     <div type="summary">
                         <p>Guillaume Manier et Renaud l’Archer, baillis du roi, notifient l’arbitrage prononcé sur les réquisitions laisées au maire de Rueil [<ref target="#rueil-acte9">acte Rueil n<hi rend="sup">o</hi> 9</ref>], auquel ils
@@ -1050,7 +1050,7 @@
             <text xml:id="rueil-acte11">
                 <front>
                     <titlePart type="main">Rueil 11</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1222-02">1222 (n.st.), février</date></docDate>
                     <div type="summary">
                         <p>Pierre, abbé de Saint-Denis, reconnaît que Bernard Saunier a versé, comme il l’a fait par le passé, la dîme qu’il doit pour les vignes qu’il possède <foreign xml:lang="lat">apud Hardillam Vallem</foreign><ref type="note" n="1" target="#rueil-acte11-n-1"/> et s’est engagé à l’acquitter à l’avenir.</p>
@@ -1092,7 +1092,7 @@
             <text xml:id="rueil-acte12">
                 <front>
                     <titlePart type="main">Rueil 12</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1223-04">1223 (a.st.), avril</date></docDate>
                     <div type="summary">
                         <p>Adam de Buc<ref type="note" n="1" target="#rueil-acte12-n-1"/> et Jean de Maubuisson<ref type="note" n="2" target="#rueil-acte12-n-2"/> vendent à Saint-Denis pour 28 livres parisis un arpent et demi de vigne à
@@ -1149,8 +1149,8 @@
             <text xml:id="rueil-acte13">
                 <front>
                     <titlePart type="main">Rueil 13</titlePart>
-                    <docAuthor>roi de France</docAuthor>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1225-02">1225 (n.st.), février</date><placeName>Saint-Germain-en-Laye</placeName></docDate>
                     <div type="summary">
                         <p>Le roi Louis [VIII] vidime et confirme l’acte de janvier 1225 (n.st.) par lequel Pierre, abbé de Saint-Denis, affranchit Pierre <foreign xml:lang="fro">Tuquin</foreign>, son épouse Ermenjarde et leurs héritiers,
@@ -1215,7 +1215,7 @@
             <text xml:id="rueil-acte14">
                 <front>
                     <titlePart type="main">Rueil 14</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1229-12-26">1229, 26 décembre</date></docDate>
                     <div type="summary">
                         <p>L’official de l’archidiacre de Paris fait savoir à Eudes, abbé de Saint-Denis, que Jean Lisiard, chanoine de Saint-Thomas-du-Louvre, a acheté en villénage<ref type="note" n="1" target="#rueil-acte14-n-1"/> une
@@ -1262,7 +1262,7 @@
             <text xml:id="rueil-acte15">
                 <front>
                     <titlePart type="main">Rueil 15</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1231-01">1231 (n.st.), janvier</date><placeName>Pontoise</placeName></docDate>
                     <div type="summary">
                         <p>Le roi Louis [IX] notifie le compromis d’arbitrage auquel sont parvenus l’abbaye de Saint-Denis et Robert de <foreign xml:lang="fro">Mallento/Mellento</foreign><ref type="note" n="1" target="#rueil-acte15-n-1"/>,
@@ -1335,7 +1335,7 @@
             <text xml:id="rueil-acte16a">
                 <front>
                     <titlePart type="main">Rueil 16a</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1230-03">1230 (a.st.), mars</date></docDate>
                     <div type="summary">
                         <p>Raoul de Rocquencourt<ref type="note" n="1" target="#rueil-acte16a-n-1"/> et Ælis son épouse donnent pour un cinquième et vendent pour le reste, contre 36 livres parisis, à l’abbaye de Saint-Denis 30 sous
@@ -1400,7 +1400,7 @@
             <text xml:id="rueil-acte16b">
                 <front>
                     <titlePart type="main">Rueil 16b</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1231-02">1231 (n.st.), février</date></docDate>
                     <div type="summary">
                         <p>Hervé de Chatou<ref type="note" n="1" target="#rueil-acte16b-n-1"/> chevalier, approuve le cession par son fidèle Raoul de Rocquencourt<ref type="note" n="2" target="#rueil-acte16b-n-2"/> à l’abbaye Saint-Denis de
@@ -1453,7 +1453,7 @@
             <text xml:id="rueil-acte17">
                 <front>
                     <titlePart type="main">Rueil 17</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1231">1231</date></docDate>
                     <div type="summary">
                         <p>Garnier de Rocquencourt<ref type="note" n="1" target="#rueil-acte17-n-1"/> donne pour un cinquième et vend pour le reste, contre 7 livres et demie parisis, à l’abbaye de Saint-Denis 6 sous 4 deniers parisis de
@@ -1500,7 +1500,7 @@
             <text xml:id="rueil-acte18">
                 <front>
                     <titlePart type="main">Rueil 18</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1231-03">1231 (n.st.), mars</date></docDate>
                     <div type="summary">
                         <p>Hervé chevalier de Chatou<ref type="note" n="1" target="#rueil-acte18-n-1"/> approuve la cession par Garnier de Rocquencourt<ref type="note" n="2" target="#rueil-acte18-n-2"/> à l’abbaye Saint-Denis de 6 sous 4
@@ -1558,7 +1558,7 @@
             <text xml:id="rueil-acte19">
                 <front>
                     <titlePart type="main">Rueil 19</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1232-11-26">1232, 26 novembre</date></docDate>
                     <div type="summary">
                         <p>Simon chevalier de Poissy<ref type="note" n="1" target="#rueil-acte19-n-1"/> approuve la vente faite par Raoul chevalier de Suresnes<ref type="note" n="2" target="#rueil-acte19-n-2"/>. et son épouse Agnès à
@@ -1610,7 +1610,7 @@
             <text xml:id="rueil-acte20">
                 <front>
                     <titlePart type="main">Rueil 20</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1232-11">1232, novembre</date></docDate>
                     <div type="summary">
                         <p>Raoul de Suresnes<ref type="note" n="1" target="#rueil-acte20-n-1"/> et sa épouse Agnès vendent à l’abbaye Saint-Denis pour 110 livres parisis tout qu’ils avaient à Rueil, dans et autour de la <foreign xml:lang="lat">villa</foreign>, tenu en fief de Simon chevalier de Poissy<ref type="note" n="2" target="#rueil-acte20-n-2"/>, avec le consentement des frères de Raoul, Roger et Adam, et de Simon de Poissy. —
@@ -1667,7 +1667,7 @@
             <text xml:id="rueil-acte21">
                 <front>
                     <titlePart type="main">Rueil 21</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1234-05">1234, mai</date></docDate>
                     <div type="summary">
                         <p>Raoul chevalier de Suresnes<ref type="note" n="1" target="#rueil-acte21-n-1"/> et son épouse Agnès vendent à l’abbaye Saint-Denis, pour 33 livres parisis, vingt arpents de terre contigus à la couture de l’abbaye
@@ -1724,7 +1724,7 @@
             <text xml:id="rueil-acte22">
                 <front>
                     <titlePart type="main">Rueil 22</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1238-11">1238, novembre</date></docDate>
                     <div type="summary">
                         <p>Bérenger dit l’Avare, maire de Saint-Denis à Rueil, et son épouse Héloyse vendent à l’abbaye de Saint-Denis, pour 19 livres parisis, une rente annuelle de 40 sous parisis prise sur les 4 livres parisis qu’ils
@@ -1784,7 +1784,7 @@
             <text xml:id="rueil-acte23">
                 <front>
                     <titlePart type="main">Rueil 23</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1239-07">1239, juillet</date></docDate>
                     <div type="summary">
                         <p>Pierre seigneur de Marly[-le-Roi]<ref type="note" n="1" target="#rueil-acte23-n-1"/> notifie et confirme l’abandon fait par Robert chevalier de <foreign xml:lang="lat">Vineolis</foreign><ref type="note" n="2" target="#rueil-acte23-n-2"/> à l’abbaye de Saint-Denis (en don pour un cinquième, en vente pour le reste, contre 25 livres parisis), du chevage (census capitalis) qu’il levait sur des terres, vignes et prés
@@ -1849,7 +1849,7 @@
             <text xml:id="rueil-acte24">
                 <front>
                     <titlePart type="main">Rueil 24</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1239-07">1239, juillet</date></docDate>
                     <div type="summary">
                         <p>Hugues de Vineolis<ref type="note" n="1" target="#rueil-acte24-n-1"/> notifie et confirme l’abandon par son frère Robert de cens qu’il levait entre Rueil, La Celle[-Saint-Cloud]<ref type="note" n="2" target="#rueil-acte24-n-2"/> et le Bois-Bérenger<ref type="note" n="3" target="#rueil-acte24-n-3"/>, comme l’acte précédent [<ref target="#rueil-acte23"><!--FC septembre 2012 [&gt;-->acte Rueil n<hi rend="sup">o</hi> 23<!--]--></ref>].</p>
@@ -1906,7 +1906,7 @@
             <text xml:id="rueil-acte25">
                 <front>
                     <titlePart type="main">Rueil 25</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1241-03">1241 (a.st.), mars</date></docDate>
                     <div type="summary">
                         <p>Bérenger dit l’Avare, maire de Saint-Denis à Rueil, et son épouse Héloyse, vendent à l’abbaye pour 30 livres parisis tout ce qu’ils tenaient de la mairie de Rueil, avec l’accord d’Héloyse, épouse de leur fils
@@ -1955,7 +1955,7 @@
             <text xml:id="rueil-acte26">
                 <front>
                     <titlePart type="main">Rueil 26</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1241-03">1241 (a.st.), mars</date></docDate>
                     <div type="summary">
                         <p>Guillaume, fils de Bérenger dit l’Avare, confirme la vente faite <hi rend="i">[</hi>à l’abbaye de Saint-Denis<hi rend="i">]</hi> par son père et sa mère Héloyse de la mairie de Rueil, telle qu’elle est contenue
@@ -2003,7 +2003,7 @@
             <text xml:id="rueil-acte27">
                 <front>
                     <titlePart type="main">Rueil 27</titlePart>
-                    <docAuthor>doyen de Saint-Thomas-du-Louvre</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0039">doyen de Saint-Thomas-du-Louvre</docAuthor>
                     <docDate><date when="1244-09">1244, septembre</date></docDate>
                     <div type="summary">
                         <p>Le doyen et le chapitre de Saint-Thomas-du-Louvre font savoir que l’abbaye de Saint-Denis a amorti en leur faveur les rentes à percevoir dans la censive de Saint-Denis (dix muids de vin, mesure de Paris, sur le
@@ -2057,7 +2057,7 @@
             <text xml:id="rueil-acte28a">
                 <front>
                     <titlePart type="main">Rueil 28a</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1245-09-30">1245, 30 septembre</date></docDate>
                     <div type="summary">
                         <p>Gérard, prêtre de Suresnes<ref type="note" n="1" target="#rueil-acte28a-n-1"/>, reconnaît tenir à la façon d’un laïque toutes les vignes qu’il tient de l’abbaye de Saint-Denis dans le bailliage
@@ -2101,7 +2101,7 @@
             <text xml:id="rueil-acte28b">
                 <front>
                     <titlePart type="main">Rueil 28b</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1145">1145</date></docDate>
                     <div type="summary">
                         <p>Charte de franchises concédée par Suger, abbé de Saint-Denis, à tout homme venant s’installer dans la villeneuve qu’il a fait édifier à Vaucresson<ref type="note" n="1" target="#rueil-acte28b-n-1"/>. L’habitant
@@ -2232,7 +2232,7 @@
             <text xml:id="rueil-acte29">
                 <front>
                     <titlePart type="main">Rueil 29</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1229-08">1229, août</date></docDate>
                     <div type="summary">
                         <p>Isabelle de Champigny<ref type="note" n="1" target="#rueil-acte29-n-1"/>, veuve d’Herlouin de <foreign xml:lang="fro">Mellento</foreign><ref type="note" n="2" target="#rueil-acte29-n-2"/>, chambrier du roi, fait
@@ -2296,7 +2296,7 @@
             <text xml:id="rueil-acte30">
                 <front>
                     <titlePart type="main">Rueil 30</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date notBefore="1150-08-01" notAfter="1151-04-07">1150, [1<hi rend="sup">er</hi> août-1151, 7 avril].</date></docDate>
                     <div type="summary">
                         <p>Le roi Louis <hi rend="i">[</hi>VII<hi rend="i">]</hi> fait savoir qu’il donne son approbation au rachat par les héritiers de Guéry (<foreign xml:lang="lat">Guerius</foreign>) de Rueil du pré, de la vigne et du
@@ -2350,7 +2350,7 @@
             <text xml:id="rueil-acte31">
                 <front>
                     <titlePart type="main">Rueil 31</titlePart>
-                    <docAuthor>abbé de Tiron</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0016">abbé de Tiron</docAuthor>
                     <docDate><date when="1249-10">1249, octobre</date></docDate>
                     <div type="summary">
                         <p>L’abbé G(ervais) et les moines de Tiron<ref type="note" n="1" target="#rueil-acte31-n-1"/> notifient l’échange auquel ils ont procédé avec l’abbaye de Saint-Denis avec l’accord du prieur de Jardy<ref type="note" n="2" target="#rueil-acte31-n-2"/>. Ils donnent à Saint-Denis des biens du prieuré, les deux tiers d’un tiers de la dîme du vin de Rueil et de la menue dîme de Rueil, le tiers de la grosse dîme et la menue
@@ -2410,7 +2410,7 @@
             <text xml:id="rueil-acte32">
                 <front>
                     <titlePart type="main">Rueil 32</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1229-08">[1229, août]</date></docDate>
                     <div type="summary">
                         <p>Notification de l’acte d’Isabelle de Champigny [<ref target="#rueil-acte29"><!--FC septembre 2012[-->acte Rueil n<hi rend="sup">o</hi> 29<!--]--></ref>] sous le sceau de l’officialité de Paris.</p>
@@ -2438,7 +2438,7 @@
             <text xml:id="rueil-acte33">
                 <front>
                     <titlePart type="main">Rueil 33</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1258-10">1258, octobre</date></docDate>
                     <div type="summary">
                         <p>Le roi Louis <hi>[</hi>IX<hi>]</hi> exempte à perpétuité du droit de gîte le village de Rueil appartenant à l’abbaye de Saint-Denis, après avoir voulu user de ce droit et s’être fait représenter par l’abbé de ce
@@ -2500,7 +2500,7 @@
             <text xml:id="rueil-acte34">
                 <front>
                     <titlePart type="main">Rueil 34</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1254-03-31">1254, 31 mars</date> ou <date when="1255-03-16">1255 (n.st.), 16 mars</date></docDate>
                     <div type="summary">
                         <p>Raoul chevalier de Puteaux<ref type="note" n="1" target="#rueil-acte34-n-1"/> et son épouse Eustachie abandonnent à l’abbaye de Saint-Denis (par vente pour les quatre cinquièmes, contre 550 livres parisis, et par
@@ -2596,7 +2596,7 @@
             <text xml:id="rueil-acte35">
                 <front>
                     <titlePart type="main">Rueil 35</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date notBefore="1254-03-25" notAfter="1254-03-31">1254, 25-31 mars</date> ou <date notBefore="1255-03-01" notAfter="1255-03-27">1255 (n.st.), 1<hi rend="sup">er</hi>-27 mars</date></docDate>
                     <div type="summary">
                         <p>Notification de la vente par Raoul chevalier de Puteaux<ref type="note" n="1" target="#rueil-acte35-n-1"/> et son épouse Eustachie des quatre cinquièmes de la maison de Fouilleuse<ref type="note" n="2" target="#rueil-acte35-n-2"/> et des terres qui en dépendent [<ref target="#rueil-acte34"><!--FC septembre 2012[-->acte Rueil n<hi rend="sup">o</hi> 34<!--]--></ref>]. — Acte passé sous le sceau de l’officialité de Paris.</p>
@@ -2658,7 +2658,7 @@
             <text xml:id="rueil-acte36">
                 <front>
                     <titlePart type="main">Rueil 36</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date notBefore="1254-03-25" notAfter="1254-03-31">1254, 25-31 mars</date> ou <date notBefore="1255-03-01" notAfter="1255-03-27">1255 (n.st.), 1<hi rend="sup">er</hi>-27 mars</date></docDate>
                     <div type="summary">
                         <p>Notification de la donation par Raoul chevalier de Puteaux<ref type="note" n="1" target="#rueil-acte36-n-1"/> et son épouse Eustachie d’un cinquième de la maison de Fouilleuse<ref type="note" n="2" target="#rueil-acte36-n-2"/> et des terres qui en dépendent <ref target="#rueil-acte34">[acte Rueil n<hi rend="sup">o</hi> 34]</ref>. — Acte passé sous le sceau de l’officialité archidiaconale de Paris.</p>
@@ -2713,7 +2713,7 @@
             <text xml:id="rueil-acte37">
                 <front>
                     <titlePart type="main">Rueil 37</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1258-11">1258, novembre</date></docDate>
                     <div type="summary">
                         <p>La reine de France Marguerite fait savoir que l’abbé et le couvent de Saint-Denis, sur ses instances, ont cédé à vie à son clerc Geoffroy de Saint-Benoît leur maison de Fouilleuse<ref type="note" n="1" target="#rueil-acte37-n-1"/> et ses dépendances, libre de toute redevance et dîme.</p>
@@ -2758,7 +2758,7 @@
             <text xml:id="rueil-acte38">
                 <front>
                     <titlePart type="main">Rueil 38</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1267-02">1267 (n.st.), février</date></docDate>
                     <div type="summary">
                         <p>Maître Grégoire, clerc de Saint-Magloire de Paris<ref type="note" n="1" target="#rueil-acte38-n-1"/>, donne à l’abbaye de Saint-Denis une vigne à Rueil, contiguë au pourpris de l’abbaye et dans sa censive. — Acte
@@ -2807,7 +2807,7 @@
             <text xml:id="rueil-acte39">
                 <front>
                     <titlePart type="main">Rueil 39</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1234-06">1234, juin</date></docDate>
                     <div type="summary">
                         <p>Bouchard seigneur de Montmorency<ref type="note" n="1" target="#rueil-acte39-n-1"/> approuve l’abandon fait devant le roi et lui-même à l’abbaye de Saint-Denis par Pierre de Marly<hi>[</hi>-le-Roi<hi>]</hi><ref type="note" n="2" target="#rueil-acte39-n-2"/>, son parent et fidèle, des droits qu’il réclamait sur la maison et le pourpris de l’abbaye au finage dit Bois-Bérenger<ref type="note" n="3" target="#rueil-acte39-n-3"/> : Pierre prétendait pouvoir interdire à l’abbaye d’y élever une fortification, et disposer du droit de chasse dans le bois de Saint-Denis contigu audit pourpris, tous droits qu’il
@@ -2876,8 +2876,8 @@
             <text xml:id="rueil-acte40">
                 <front>
                     <titlePart type="main">Rueil 40</titlePart>
-                    <docAuthor>archidiacre de Bayeux</docAuthor>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0022">archidiacre de Bayeux</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1241-09">1241, septembre</date></docDate>
                     <div type="summary">
                         <p>Pierre, archidiacre de Bayeux et chanoine de Paris, vidime l’acte de juin 1241 par lequel l’abbé Eudes et le convent de Saint-Denis, en reconnaissance des nombreux services par lui rendus à l’abbaye et du don
@@ -2968,7 +2968,7 @@
             <text xml:id="rueil-acte41">
                 <front>
                     <titlePart type="main">Rueil 41</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1250-02">1250 (n.st.), février</date></docDate>
                     <div type="summary">
                         <p>Jean, prêtre de Saint-André de Paris reconnaît tenir comme un laïque du prévôt de Rueil les vignes qu’il a en villénage dans la censive de Saint-Denis, dans le bailliage et prévôté de Rueil. — Acte passé sous le
@@ -3007,7 +3007,7 @@
             <text xml:id="rueil-acte42">
                 <front>
                     <titlePart type="main">Rueil 42</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1260-04-06">1260, 6 avril</date></docDate>
                     <div type="summary">
                         <p>Morand, prêtre de Montmagny<ref type="note" n="1" target="#rueil-acte42-n-1"/>, s’engage, à la demande de l’abbaye de Saint-Denis comme seigneur féodal, à mettre hors de sa main<ref type="note" n="2" target="#rueil-acte42-n-2"/> dans un an et un jour la rente de 40 sous parisis qui a été donnée par feue Alis de Richebourg<ref type="note" n="3" target="#rueil-acte42-n-3"/> pour la fondation d’une
@@ -3068,7 +3068,7 @@
             <text xml:id="rueil-acte43">
                 <front>
                     <titlePart type="main">Rueil 43</titlePart>
-                    <docAuthor>doyen du chapitre cathédral de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0040">doyen du chapitre cathédral de Paris</docAuthor>
                     <docDate><date when="1262-11">1262, novembre</date></docDate>
                     <div type="summary">
                         <p>Le doyen Geoffroy et le chapitre cathédral de Paris font savoir que, avec leur accord, les chanoines de Saint-Denis-du-Pas de Paris ont abandonné les 19 deniers obole de chevage (<foreign xml:lang="lat">capitalis
@@ -3136,7 +3136,7 @@
             <text xml:id="rueil-acte44">
                 <front>
                     <titlePart type="main">Rueil 44</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1255-12">1255, décembre</date></docDate>
                     <div type="summary">
                         <p>Jean écuyer de Suresnes<ref type="note" n="1" target="#rueil-acte44-n-1"/> et son épouse Pétronille vendent à l’abbaye de Saint-Denis pour 28 livres parisis une pièce de terre arable vers Rueil, au lieu dit
@@ -3188,7 +3188,7 @@
             <text xml:id="rueil-acte45">
                 <front>
                     <titlePart type="main">Rueil 45</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1262-03">1262 (a.st.), mars</date></docDate>
                     <div type="summary">
                         <p>Raoul Garnier de Puteaux<ref type="note" n="1" target="#rueil-acte45-n-1"/> et son épouse Odeline vendent à l’abbaye de Saint-Denis, pour 50 livres parisis, une rente de cinq muids de vin qu’ils percevaient dans
@@ -3249,7 +3249,7 @@
             <text xml:id="rueil-acte46">
                 <front>
                     <titlePart type="main">Rueil 46</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1265-04">1265 (n.st.), avril</date></docDate>
                     <div type="summary">
                         <p>Anseau de <foreign xml:lang="fro">Genesta</foreign> et son épouse Jeanne vendent à l’abbaye de Saint-Denis, pour 120 livres parisis, une rente de 8 livres parisis, tenue en fief de l’abbaye et que Jeanne avait
@@ -3313,7 +3313,7 @@
             <text xml:id="rueil-acte47">
                 <front>
                     <titlePart type="main">Rueil 47</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1265-04">[1265 (n.st.), avril]</date></docDate>
                     <div type="summary">
                         <p>Notification de la transaction précédente <ref target="#rueil-acte46"><hi>[</hi>acte Rueil n<hi rend="sup">o</hi> 46<hi>]</hi></ref> sous le sceau de la prévôté de Paris.</p>
@@ -3345,7 +3345,7 @@
             <text xml:id="rueil-acte48">
                 <front>
                     <titlePart type="main">Rueil 48</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1222-08">1222, août</date></docDate>
                     <div type="summary">
                         <p>Guillaume Malesherbes aumône à l’église Saint-Martin de <foreign xml:lang="fro">Neenval</foreign><ref type="note" n="1" target="#rueil-acte48-n-1"/> tout ce qu’il possède à Colombes<ref type="note" n="2" target="#rueil-acte48-n-2"/> et 31 sous et demi de cens à percevoir à Colombes (20 sous et demi le dimanche d’Invocavit me et 11 sous à la Saint-Remi). La donation est approuvée par Payen de <foreign xml:lang="fro">Lers</foreign>, dont le cens était tenu en fief. — Acte notifié par l’archidiacre de Paris Étienne.</p>
@@ -3397,7 +3397,7 @@
             <text xml:id="rueil-acte49">
                 <front>
                     <titlePart type="main">Rueil 49</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1223-11">1223, novembre</date></docDate>
                     <div type="summary">
                         <p>Gervais chevalier de <foreign xml:lang="fro">Chameliaco</foreign><ref type="note" n="1" target="#rueil-acte49-n-1"/> et son fils Guillaume vendent à l’abbaye de Saint-Denis, pour 50 livres parisis, tout ce qu’ils
@@ -3460,7 +3460,7 @@
             <text xml:id="rueil-acte50">
                 <front>
                     <titlePart type="main">Rueil 50</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1223-10">1223, octobre</date></docDate>
                     <div type="summary">
                         <p>L’official de Paris autorise l’abbesse et le convent de Val-Profond<ref type="note" n="1" target="#rueil-acte50-n-1"/> à vendre à l’abbaye de Saint-Denis un cens de 32 sous à Colombes<ref type="note" n="2" target="#rueil-acte50-n-2"/>, du fief de Gervais de <foreign xml:lang="fro">Chamelliaco</foreign> (qui le tenait lui-même de Saint-Denis), qui leur avait été donné par feu Guillaume Malesherbes, chevalier, et
@@ -3512,7 +3512,7 @@
             <text xml:id="rueil-acte51">
                 <front>
                     <titlePart type="main">Rueil 51</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1234-11">1234, novembre</date></docDate>
                     <div type="summary">
                         <p>Ferry, maire de Colombes<ref type="note" n="1" target="#rueil-acte51-n-1"/>, son épouse Berthe et ses frères Étienne et Jean abandonnent la mairie de Colombes à l’abbaye de Saint-Denis. — Acte passé sous le sceau
@@ -3568,7 +3568,7 @@
             <text xml:id="rueil-acte52">
                 <front>
                     <titlePart type="main">Rueil 52</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1240-03">1240 (a.st.), mars</date></docDate>
                     <div type="summary">
                         <p>Eudes dit du Port, de Rueil, et Havoise son épouse vendent à l’abbaye de Saint-Denis, pour 7 livres parisis, 15 sous et 8 deniers parisis de croît de cens qu’ils avaient sur des terres, vignes et parcelles
@@ -3618,7 +3618,7 @@
             <text xml:id="rueil-acte53">
                 <front>
                     <titlePart type="main">Rueil 53</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1273-08">1273, août</date><placeName>Fontainebleau</placeName></docDate>
                     <div type="summary">
                         <p>Le roi de France Philippe <hi>[</hi>III<hi>]</hi> donne à l’abbaye de Saint-Denis toute la justice, haute et basse, qu’il avait à Charlevanne<ref type="note" n="1" target="#rueil-acte53-n-1"/> sur les voies,
@@ -3666,7 +3666,7 @@
             <text xml:id="rueil-acte54">
                 <front>
                     <titlePart type="main">Rueil 54</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1278-11">1278, novembre</date></docDate>
                     <div type="summary">
                         <p>Le bailli du seigneur de Marly<hi>[</hi>-le-Roi<hi>]</hi><ref type="note" n="1" target="#rueil-acte54-n-1"/> reconnaît qu’aucun préjudice ne pourra être porté aux droits de justice de l’abbaye de Saint-Denis sur
@@ -3730,7 +3730,7 @@
             <text xml:id="rueil-acte55">
                 <front>
                     <titlePart type="main">Rueil 55</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1280-02">1280 (n.st.), février</date><placeName>Vincennes</placeName></docDate>
                     <div type="summary">
                         <p>Le roi de France Philippe <hi>[</hi>III<hi>]</hi> accense à l’abbaye de Saint-Denis, pour 20 livres tournois par an, la vigne qu’il possède à Charlevanne<ref type="note" n="1" target="#rueil-acte55-n-1"/>,
@@ -3789,7 +3789,7 @@
             <text xml:id="rueil-acte56">
                 <front>
                     <titlePart type="main">Rueil 56</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1271-04">1271 (a.st.), avril</date></docDate>
                     <div type="summary">
                         <p>Baudouin <foreign xml:lang="lat">de Hospitio</foreign><ref type="note" n="1" target="#rueil-acte56-n-1"/> donne à l’abbaye de Saint-Denis tout ce qu’il possède de son conquêt au finage de Fouilleuse<ref type="note" n="2" target="#rueil-acte56-n-2"/>, de Saint-Cloud<ref type="note" n="3" target="#rueil-acte56-n-3"/> et de Rueil, soit un ensemble de trente-cinq arpents et demi de vignes et de terres — dont le
@@ -3867,7 +3867,7 @@
             <text xml:id="rueil-acte57">
                 <front>
                     <titlePart type="main">Rueil 57</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1273-05-06">1273, 6 mai</date></docDate>
                     <div type="summary">
                         <p>Jean de Chambourcy<ref type="note" n="1" target="#rueil-acte57-n-1"/> et son épouse Félise vendent à l’abbaye de Saint-Denis, pour 27 livres parisis, une vigne qu’ils avaient au vignoble (<foreign xml:lang="fro">vignou</foreign>) de Charlevanne<ref type="note" n="2" target="#rueil-acte57-n-2"/>, sise au lieu dit La Pointe et grevée de trois redevances à acquitter dans l’octave de la Saint-Denis : 2 deniers d’aumône
@@ -3937,7 +3937,7 @@
             <text xml:id="rueil-acte58">
                 <front>
                     <titlePart type="main">Rueil 58</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1290-07">1290, juillet</date></docDate>
                     <div type="summary">
                         <p>Isabelle, veuve de Denis de Maubuisson<ref type="note" n="1" target="#rueil-acte58-n-1"/>, vend à l’abbaye de Saint-Denis, pour 60 livres parisis, la sixième partie du fief de Maubuisson près Louveciennes<ref type="note" n="2" target="#rueil-acte58-n-2"/>, tenue par elle en fief de l’abbaye ; le fief comprend un hébergement (<foreign xml:lang="fro">herbergage</foreign>)<ref type="note" n="3" target="#rueil-acte58-n-3"/>, des bois et un vivier, un four, quatre-vingts hostises, diverses terres et vignes, divers droits et trois fiefs, dont le détail est donné. — Acte passé sous le sceau de la
@@ -4037,7 +4037,7 @@
             <text xml:id="rueil-acte59">
                 <front>
                     <titlePart type="main">Rueil 59</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1290-07">1290, juillet</date></docDate>
                     <div type="summary">
                         <p>Notification de la vente par Isabelle de Maubuisson<ref type="note" n="1" target="#rueil-acte59-n-1"/> de la sixième partie du fief de Maubuisson près Louveciennes<ref type="note" n="2" target="#rueil-acte59-n-2"/> [<ref target="#rueil-acte58"><!--[-->acte Rueil n<hi rend="sup">o</hi> 58<!--]--></ref>], passée devant l’officialité de Paris.</p>
@@ -4115,7 +4115,7 @@
             <text xml:id="rueil-acte60">
                 <front>
                     <titlePart type="main">Rueil 60</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1290-07-29">1290, 29 juillet</date></docDate>
                     <div type="summary">
                         <p>Guillaume Thibaud écuyer d’Issy<ref type="note" n="1" target="#rueil-acte60-n-1"/> et son épouse Hellouys vendent à l’abbaye de Saint-Denis, pour 100 livres parisis, sous peine de 20 livres parisis en cas de
@@ -4200,7 +4200,7 @@
             <text xml:id="rueil-acte61">
                 <front>
                     <titlePart type="main">Rueil 61</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1290-07">1290, juillet</date></docDate>
                     <div type="summary">
                         <p>Nicolas de Marc, chevalier, et Julienne son épouse, veuve de Jean Thibaut d’Issy<ref type="note" n="1" target="#rueil-acte61-n-1"/> et belle-mère de Guill(aume) Thibaud d’Issy, ratifient la vente faite par ce
@@ -4255,7 +4255,7 @@
             <text xml:id="rueil-acte62">
                 <front>
                     <titlePart type="main">Rueil 62</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1290-08-18">1290, 18 août</date></docDate>
                     <div type="summary">
                         <p>Nicolas dit <foreign xml:lang="fro">Mainet de Figien</foreign><ref type="note" n="1" target="#rueil-acte62-n-1"/>, clerc, pour lui et ses associés, octroie la vente faite par leur débiteur Guillot écuyer
@@ -4308,7 +4308,7 @@
             <text xml:id="rueil-acte63">
                 <front>
                     <titlePart type="main">Rueil 63</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1250-01">1250 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Pierre écuyer de <foreign xml:lang="fro">Tieconvilla</foreign><ref type="note" n="1" target="#rueil-acte63-n-1"/> et son épouse Agathe, fille de feue Mathilde de Maubuisson<ref type="note" n="2" target="#rueil-acte63-n-2"/> près Louveciennes<ref type="note" n="3" target="#rueil-acte63-n-3"/>, vendent à l’abbaye de Saint-Denis, pour 100 livres parisis, le huitième, hérité de Mathilde, d’un ensemble de
@@ -4380,7 +4380,7 @@
             <text xml:id="rueil-acte64">
                 <front>
                     <titlePart type="main">Rueil 64</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1292-04-21">1292, 21 avril</date></docDate>
                     <div type="summary">
                         <p>Robert écuyer de Maubuisson<ref type="note" n="1" target="#rueil-acte64-n-1"/> et son épouse Jeanne vendent à l’abbaye de Saint-Denis, pour 35 livres 15 sous parisis, tout ce qu’ils avaient dans les bois de
@@ -4442,7 +4442,7 @@
             <text xml:id="rueil-acte65">
                 <front>
                     <titlePart type="main">Rueil 65</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1295-12-17">1295, 17 décembre</date></docDate>
                     <div type="summary">
                         <p>Robert écuyer de Maubuisson<ref type="note" n="1" target="#rueil-acte65-n-1"/> et son épouse Jeanne vendent à l’abbaye de Saint-Denis, pour 79 sous 4 deniers parisis, des cens perçus à Louveciennes<ref type="note" n="2" target="#rueil-acte65-n-2"/> (et dont le détail est donné) pour un total de 4 livres 10 sous 9 deniers<ref type="note" n="3" target="#rueil-acte65-n-3"/>, ainsi que divers cens, terres, aulnaie, friche
@@ -4533,7 +4533,7 @@
             <text xml:id="rueil-acte66">
                 <front>
                     <titlePart type="main">Rueil 66</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1295-02-01">1295 (n.st.), 1<hi rend="sup">er</hi> février</date></docDate>
                     <div type="summary">
                         <p>Garnier écuyer de Cergy<ref type="note" n="1" target="#rueil-acte66-n-1"/>, sergent du roi, et son épouse Isabelle, fille de feu Denis de Maubuisson<ref type="note" n="2" target="#rueil-acte66-n-2"/> et
@@ -4606,7 +4606,7 @@
             <text xml:id="rueil-acte67">
                 <front>
                     <titlePart type="main">Rueil 67</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1275-09-03">1275, 3 septembre</date></docDate>
                     <div type="summary">
                         <p>Héloise l’Épicière transfère à son fils Louis l’Épicier la sergenterie de Saint-Denis, consistant en <hi>[</hi>une rente de<hi>]</hi> trente setiers de grain. — Acte passé sous le sceau de la prévôté de Paris.</p>
@@ -4655,7 +4655,7 @@
             <text xml:id="rueil-acte68">
                 <front>
                     <titlePart type="main">Rueil 68</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1298-11-26">1298, 26 novembre</date></docDate>
                     <div type="summary">
                         <p>Jean fils de feu Louis l’Épicier, vend à l’abbaye de Saint-Denis, pour 32 livres parisis, une rente de vingt-sept setiers de grain, qu’il percevait à Rueil, mesure du lieu, et héritée de son père, au titre d’une
@@ -4714,7 +4714,7 @@
             <text xml:id="rueil-acte69">
                 <front>
                     <titlePart type="main">Rueil 69</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1298-11-25">1298, 25 novembre</date></docDate>
                     <div type="summary">
                         <p>Notification sous le sceau de l’officialité de Paris de la transaction précédente <ref target="#rueil-acte68">[acte Rueil n<hi rend="sup">o</hi> 68]</ref>.</p>
@@ -4769,7 +4769,7 @@
             <text xml:id="rueil-acte70">
                 <front>
                     <titlePart type="main">Rueil 70</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1297-09-05">1297, 5 septembre</date></docDate>
                     <div type="summary">
                         <p>Jean Douyn et son épouse Gile, bourgeois de Poissy<ref type="note" n="1" target="#rueil-acte70-n-1"/>, vendent à l’abbaye de Saint-Denis, pour 70 livres parisis, la sergenterie dite La Moissine qu’ils avaient à

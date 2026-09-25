@@ -250,7 +250,7 @@
             <text xml:id="saint-martin-acte1">
                 <front>
                     <titlePart>Saint-Martin 1</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="0845-01-21">845, 21 janvier</date><placeName>[Compiègne]</placeName></docDate>
                     <div type="summary">
                         <p>Le roi Charles [le Chauve] confirme le don fait à Saint-Denis par son fidèle Leuton de biens que le souverain lui avait remis par précepte : la <foreign xml:lang="lat">villa</foreign> de Morancy <foreign xml:lang="lat">(Maurinciagi curtis)</foreign><ref type="note" n="1" target="#saint-martin-acte1-n-1"/> sise sur l’Oise, en Chambliois, avec deux <foreign xml:lang="lat">villule</foreign> du même nom et
@@ -304,7 +304,7 @@
             <text xml:id="saint-martin-acte2">
                 <front>
                     <titlePart>Saint-Martin 2</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1073">1073</date></docDate>
                     <div type="summary">
                         <p>Le roi Philippe [I<hi rend="sup">er</hi>], à la demande de sa tante Adèle, comtesse de Flandre, abandonne les coutumes qu’il avait sur la <foreign xml:lang="lat">villa</foreign> de Courcelles<ref type="note" n="1" target="#saint-martin-acte2-n-1"/>, qu´Adèle avait achetée puis donnée à Saint-Denis.</p>
@@ -343,7 +343,7 @@
             <text xml:id="saint-martin-acte3">
                 <front>
                     <titlePart>Saint-Martin 3</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date notBefore="1151" notAfter="1158">[1151-1158]</date></docDate>
                     <div type="summary">
                         <p>L’abbé de Saint-Denis Eudes [II] notifie l’accord qu’il a conclu avec Mathieu [II], comte de Beaumont[-sur-Oise], à la demande de ce dernier : le comte reçoit de l’abbaye une terre inculte dite Fontaine-Béhu<ref type="note" n="1" target="#saint-martin-acte3-n-1"/>, proche de Maffliers<ref type="note" n="2" target="#saint-martin-acte3-n-2"/>, pour y installer des étangs, des moulins ou des pêcheries ; sans aucun
@@ -479,7 +479,7 @@
             <text xml:id="saint-martin-acte4">
                 <front>
                     <titlePart>Saint-Martin 4</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date notBefore="1151" notAfter="1159">[1151-1159]</date><placeName>Saint-Denis, en chapitre</placeName></docDate>
                     <div type="summary">
                         <p>L’abbé de Saint-Denis Eudes [II ou III] notifie la confirmation appuyée par serment qu’Adam fils de Payen de Presles<ref type="note" n="1" target="#saint-martin-acte4-n-1"/>, a faite en chapitre et en sa présence,
@@ -578,8 +578,8 @@
             <text xml:id="saint-martin-acte5">
                 <front>
                     <titlePart>Saint-Martin 5</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
-                    <docAuthor>comte de Beaumont-sur-Oise</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0034">comte de Beaumont-sur-Oise</docAuthor>
                     <docDate><date when="1189">1189</date></docDate>
                     <div type="summary">
                         <p>L’abbé de Saint-Denis Hugues et Mathieu [III], comte de Beaumont[-sur-Oise] et seigneur de Valois<ref type="note" n="1" target="#saint-martin-acte5-n-1"/>, accensent aux habitants de Mours<ref type="note" n="2" target="#saint-martin-acte5-n-2"/> et de Beaumont <hi rend="i">intra muros</hi> le bois des Rondeaux<ref type="note" n="3" target="#saint-martin-acte5-n-3"/>, à raison d’un arpent de bois à chaque foyer
@@ -684,7 +684,7 @@
             <text xml:id="saint-martin-acte6">
                 <front>
                     <titlePart>Saint-Martin 6</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate>
                         <date notBefore="1174-03-24" notAfter="1175-04-12">1174, 24 mars - 1175, 12 avril</date><placeName>Paris</placeName></docDate>
                     <div type="summary">
@@ -750,8 +750,8 @@
             <text xml:id="saint-martin-acte7">
                 <front>
                     <titlePart>Saint-Martin 7</titlePart>
-                    <docAuthor>évêque de Senlis</docAuthor>
-                    <docAuthor>juges délégués</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0044">évêque de Senlis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0045">juges délégués</docAuthor>
                     <docDate><date when="1179-08-24">1179, 24 août</date><placeName>Senlis, palais épiscopal</placeName></docDate>
                     <div type="summary">
                         <p>L’évêque Henri de Senlis, juge délégué par le pape, notifie l’accord intervenu entre l’abbaye de Saint-Denis et Mathieu [III], comte de Beaumont[-sur-Oise], dans le litige qui les opposait sur l’interprétation de
@@ -820,7 +820,7 @@
             <text xml:id="saint-martin-acte8">
                 <front>
                     <titlePart>Saint-Martin 8</titlePart>
-                    <docAuthor>comte de Beaumont-sur-Oise</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0034">comte de Beaumont-sur-Oise</docAuthor>
                     <docDate><date when="1210-08">1210, août</date></docDate>
                     <div type="summary">
                         <p>Jean, comte de Beaumont[-sur-Oise], notifie l’accord auquel il est parvenu avec l’abbaye de Saint-Denis après divers litiges. Le bois de <foreign xml:lang="fro">Luath</foreign><ref type="note" n="1" target="#saint-martin-acte8-n-1"/> leur appartient en commun, comme les Détroits de Maffliers<ref type="note" n="2" target="#saint-martin-acte8-n-2"/>. Tout ce qui est dans l’enclave des bornes du village de
@@ -908,7 +908,7 @@
             <text xml:id="saint-martin-acte9">
                 <front>
                     <titlePart>Saint-Martin 9</titlePart>
-                    <docAuthor>évêque de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0041">évêque de Beauvais</docAuthor>
                     <docDate><date when="1205-10">1205, octobre</date></docDate>
                     <div type="summary">
                         <p>L’évêque Philippe de Beauvais notifie l’abandon par Thomas, maire de Mours<ref type="note" n="1" target="#saint-martin-acte9-n-1"/> pour Saint-Denis, de sa prétention à recevoir de l’abbaye un muid de grain.</p>
@@ -953,7 +953,7 @@
             <text xml:id="saint-martin-acte10">
                 <front>
                     <titlePart>Saint-Martin 10</titlePart>
-                    <docAuthor>comte de Beaumont-sur-Oise</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0034">comte de Beaumont-sur-Oise</docAuthor>
                     <docDate><date when="1208-03">1208 (n. st.), mars</date><placeName>Saint-Denis</placeName></docDate>
                     <div type="summary">
                         <p>Mathieu [III], comte de Beaumont[-sur-Oise], renonce à sa prétention à faire réunir à L’Épine de Maffliers<ref type="note" n="1" target="#saint-martin-acte10-n-1"/> une assemblée qui jugerait de ses différends
@@ -1006,7 +1006,7 @@
             <text xml:id="saint-martin-acte11">
                 <front>
                     <titlePart>Saint-Martin 11</titlePart>
-                    <docAuthor>comte de Beaumont-sur-Oise</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0034">comte de Beaumont-sur-Oise</docAuthor>
                     <docDate><date when="1210-03">1210 (n. st.), mars.</date></docDate>
                     <div type="summary">
                         <p>Jean, comte de Beaumont[-sur-Oise], reconnaît avoir acquitté les droits de relief que demandait l’abbé Henri de Saint-Denis lorsqu’il lui a fait hommage.</p>
@@ -1049,7 +1049,7 @@
             <text xml:id="saint-martin-acte12">
                 <front>
                     <titlePart>Saint-Martin 12</titlePart>
-                    <docAuthor>comte de Beaumont-sur-Oise</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0034">comte de Beaumont-sur-Oise</docAuthor>
                     <docDate><date when="1212-03">1212 (a. st.), mars.</date></docDate>
                     <div type="summary">
                         <p>Jean, comte de Beaumont[-sur-Oise], s’engage à comparaître devant l’abbé de Saint-Denis dès que celui-ci le citera : il avait comparu devant l’abbé Henri pour des méfaits commis selon ce dernier dans le bois de
@@ -1094,8 +1094,8 @@
             <text xml:id="saint-martin-acte13">
                 <front>
                     <titlePart>Saint-Martin 13</titlePart>
-                    <docAuthor> auteurs laïques</docAuthor>
-                    <docAuthor>comte de Beaumont-sur-Oise</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027"> auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0034">comte de Beaumont-sur-Oise</docAuthor>
                     <docDate><date when="1216">1216</date></docDate>
                     <div type="summary">
                         <p>Étienne de Sancerre et Aliénor son épouse, jadis comtesse de Beaumont[-sur-Oise]<ref type="note" n="1" target="#saint-martin-acte13-n-1"/>, donnent en aumône au prieuré Notre-Dame du Lay<ref type="note" n="2" target="#saint-martin-acte13-n-2"/> la vigne qu’ils avaient à Beaumont et que Mathieu comte de Beaumont et Aliénor avaient achetée à Thibaud chevalier de Ronqueroles<ref type="note" n="3" target="#saint-martin-acte13-n-3"/>, ce don fait contre célébration de leur anniversaire et de ceux de la reine Adèle et de leurs pères et mères.</p>
@@ -1148,7 +1148,7 @@
             <text xml:id="saint-martin-acte14">
                 <front>
                     <titlePart>Saint-Martin 14</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1217-05">1217, mai</date></docDate>
                     <div type="summary">
                         <p>Jean, comte de Beaumont[-sur-Oise], notifie l’accord auquel il est parvenu avec l’abbé Henri et le convent de Saint-Denis au sujet de la vente de son bois dit La Châteigneraie<ref type="note" n="1" target="#saint-martin-acte14-n-1"/>, de l’avouerie de Cavillon<ref type="note" n="2" target="#saint-martin-acte14-n-2"/> et du droit de pêche dans leur vivier d’Ully[-Saint-Georges]<ref type="note" n="3" target="#saint-martin-acte14-n-3"/>, pêche que Jean réclamait au nom d’Yves chevalier de Beaumont, qui en avait disposé sa vie durant. L’abbaye pourra vendre à sa guise, maintenant et à l’avenir, tout le
@@ -1243,7 +1243,7 @@
             <text xml:id="saint-martin-acte15">
                 <front>
                     <titlePart>Saint-Martin 15</titlePart>
-                    <docAuthor>comte de Beaumont-sur-Oise</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0034">comte de Beaumont-sur-Oise</docAuthor>
                     <docDate><date when="1217-05">1217, mai</date></docDate>
                     <div type="summary">
                         <p>Jean, comte de Beaumont[-sur-Oise], notifie l’accord qu’il a conclu avec l’abbé Henri et le convent de Saint-Denis sur les bois de <foreign xml:lang="fro">Fai Ridel</foreign><ref type="note" n="1" target="#saint-martin-acte15-n-1"/> et des Détroits de Maffliers<ref type="note" n="2" target="#saint-martin-acte15-n-2"/>. Les parties s’engagent à ne pas y exercer leurs droits d’usage respectifs pendant
@@ -1303,7 +1303,7 @@
             <text xml:id="saint-martin-acte16">
                 <front>
                     <titlePart>Saint-Martin 16</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
                     <docDate><date when="1219-11">1219, novembre</date></docDate>
                     <div type="summary">
                         <p> Bouchard, doyen de Boran<ref type="note" n="1" target="#saint-martin-acte16-n-1"/>, fait savoir que Haimard et son épouse Golende ont reconnu devant lui n’avoir aucun droit sur la mairie de Courcelles<ref type="note" n="2" target="#saint-martin-acte16-n-2"/> et de Presles<ref type="note" n="3" target="#saint-martin-acte16-n-3"/>, y renonçant par serment. Le doyen atteste avoir aussi entendu que l’abbé Henri de
@@ -1356,7 +1356,7 @@
             <text xml:id="saint-martin-acte17">
                 <front>
                     <titlePart>Saint-Martin 17</titlePart>
-                    <docAuthor>doyen du chapitre cathédral de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0040">doyen du chapitre cathédral de Paris</docAuthor>
                     <docDate><date when="1219-10">1219, octobre</date></docDate>
                     <div type="summary">
                         <p>Étienne, doyen de Paris, fait savoir à maître Geoffroy, official de Beauvais, que Robert, curé de Maffliers<ref type="note" n="1" target="#saint-martin-acte17-n-1"/>, au diocèse de Beauvais, a résigné son église
@@ -1398,7 +1398,7 @@
             <text xml:id="saint-martin-acte18">
                 <front>
                     <titlePart>Saint-Martin 18</titlePart>
-                    <docAuthor>comte de Beaumont-sur-Oise</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0034">comte de Beaumont-sur-Oise</docAuthor>
                     <docDate><date when="1221">1221</date></docDate>
                     <div type="summary">
                         <p>Jean, comte de Beaumont[-sur-Oise], donne à l’église Notre-Dame de Mortemer<ref type="note" n="1" target="#saint-martin-acte18-n-1"/>, pour le remède de son âme et de celles de tous ses prédécesseurs, deux arpents
@@ -1451,7 +1451,7 @@
             <text xml:id="saint-martin-acte19">
                 <front>
                     <titlePart>Saint-Martin 19</titlePart>
-                    <docAuthor>comte de Beaumont-sur-Oise</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0034">comte de Beaumont-sur-Oise</docAuthor>
                     <docDate><date when="1221-09">1221, septembre</date></docDate>
                     <div type="summary">
                         <p>Jean, comte de Beaumont[-sur-Oise], donne à l’église de Marcheroux<ref type="note" n="1" target="#saint-martin-acte19-n-1"/> une vigne qu’il a arrachée des mains d’Henri chevalier de Montsoult<ref type="note" n="2" target="#saint-martin-acte19-n-2"/>. </p>
@@ -1504,7 +1504,7 @@
             <text xml:id="saint-martin-acte20">
                 <front>
                     <titlePart>Saint-Martin 20</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1223-02">1223 (n. st.), février</date></docDate>
                     <div type="summary">
                         <p>Guillaume chevalier de <foreign xml:lang="fro">Hus</foreign><ref type="note" n="1" target="#saint-martin-acte20-n-1"/> et son épouse Alix donnent en aumône à Saint-Denis le cinquième de la vigne qu’ils possèdent
@@ -1559,7 +1559,7 @@
             <text xml:id="saint-martin-acte21">
                 <front>
                     <titlePart>Saint-Martin 21</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1223-04-23">1223, 23 avril</date> - <date when="1223-04-30">1223, 30 avril</date></docDate>
                     <div type="summary">
                         <p>Le roi Philippe [Auguste] fait savoir que l’abbé P(ierre) et le convent de Saint-Denis lui ont abandonné tout ce que le feu comte Jean de Beaumont[-sur-Oise] et ses prédécesseurs tenaient de l’abbaye, fiefs et
@@ -1622,7 +1622,7 @@
             <text xml:id="saint-martin-acte22">
                 <front>
                     <titlePart>Saint-Martin 22</titlePart>
-                    <docAuthor>archevêque de Reims</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0021">archevêque de Reims</docAuthor>
                     <docDate><date when="1223">1223</date></docDate>
                     <div type="summary">
                         <p>L’archevêque Guillaume de Reims atteste que Garnier chevalier de Mouchy<ref type="note" n="1" target="#saint-martin-acte22-n-1"/> a vendu à Saint-Denis, pour 25 livres parisis, tout ce qu’il tenait en domaine du
@@ -1685,7 +1685,7 @@
             <text xml:id="saint-martin-acte23">
                 <front>
                     <titlePart>Saint-Martin 23</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1227-02">1227 (n. st.), février</date></docDate>
                     <div type="summary">
                         <p>Le roi Louis [IX] échange des bois avec Saint-Denis. Il donne à l’abbaye la part de la châtaigneraie qu’il possédait à Saint-Martin-du-Tertre<ref type="note" n="1" target="#saint-martin-acte23-n-1"/>, soit
@@ -1756,7 +1756,7 @@
             <text xml:id="saint-martin-acte24">
                 <front>
                     <titlePart>Saint-Martin 24</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1224-02">1224 (n. st.), février</date></docDate>
                     <div type="summary">
                         <p>Guillaume chevalier de Thourotte et son épouse Béatrice<ref type="note" n="1" target="#saint-martin-acte24-n-1"/> vendent à Saint-Denis, pour 20 livres parisis, leur part de la vigne du jardin à fermer<ref type="note" n="2" target="#saint-martin-acte24-n-2"/> sise à Beaumont[-sur-Oise].</p>
@@ -1804,7 +1804,7 @@
             <text xml:id="saint-martin-acte25">
                 <front>
                     <titlePart>Saint-Martin 25</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1224-06">1224, juin</date></docDate>
                     <div type="summary">
                         <p>Garnier, doyen de <foreign xml:lang="lat">Mollento</foreign><ref type="note" n="1" target="#saint-martin-acte25-n-1"/>, atteste que Guillaume chevalier de Chaumontel<ref type="note" n="2" target="#saint-martin-acte25-n-2"/> a vendu à Saint-Denis, pour 12 livres parisis, avec l’assentiment de son épouse Mathilde, 10 sous de cens et un arpent de pré à Beaumont[-sur-Oise], mouvant du fief de
@@ -1868,7 +1868,7 @@
             <text xml:id="saint-martin-acte26">
                 <front>
                     <titlePart>Saint-Martin 26</titlePart>
-                    <docAuthor>abbé de Marcheroux</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0007">abbé de Marcheroux</docAuthor>
                     <docDate><date when="1224-08">1224, août</date></docDate>
                     <div type="summary">
                         <p>L’abbé Adam et le convent de Marcheroux<ref type="note" n="1" target="#saint-martin-acte26-n-1"/> abandonnent à Saint-Denis, pour 10 livres parisis, une vigne sise à Courcelles<ref type="note" n="2" target="#saint-martin-acte26-n-2"/>, qu’ils avaient reçue de Jean, feu comte de Beaumont<ref type="note" n="3" target="#saint-martin-acte26-n-3"/>.</p>
@@ -1912,7 +1912,7 @@
             <text xml:id="saint-martin-acte27">
                 <front>
                     <titlePart>Saint-Martin 27</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1224-12">1224, décembre</date></docDate>
                     <div type="summary">
                         <p>Pierre chevalier de Gancourt<ref type="note" n="1" target="#saint-martin-acte27-n-1"/> et son épouse Aaliz donnent à Saint-Denis le cinquième de leurs biens sis à Saint-Martin-du-Tertre, Asnières<ref type="note" n="2" target="#saint-martin-acte27-n-2"/> et Viarmes<ref type="note" n="3" target="#saint-martin-acte27-n-3"/>, tant en champarts, cens et rentes qu’autre, et vendent le reste pour 90 livres parisis. Simon
@@ -1981,7 +1981,7 @@
             <text xml:id="saint-martin-acte28">
                 <front>
                     <titlePart>Saint-Martin 28</titlePart>
-                    <docAuthor>divers laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0038">divers laïques</docAuthor>
                     <docDate><date when="1225-01">1225 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Anseau chevalier de L’Isle-Adam<ref type="note" n="1" target="#saint-martin-acte28-n-1"/> notifie et approuve comme arrière-seigneur du fief l’abandon fait à Saint-Denis par Pierre d’Énencourt<ref type="note" n="2" target="#saint-martin-acte28-n-2"/> et son épouse Richilde de leur part des tailles <foreign xml:lang="lat">(tensamentum)</foreign> perçues à Presles<ref type="note" n="3" target="#saint-martin-acte28-n-3"/>, en aumône pour un cinquième et en vente pour le reste, et ce avec l’assentiment du frère de Pierre, Jean chevalier d’Énencourt, comme seigneur du fief et homme
@@ -2039,7 +2039,7 @@
             <text xml:id="saint-martin-acte29">
                 <front>
                     <titlePart>Saint-Martin 29</titlePart>
-                    <docAuthor>divers laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0038">divers laïques</docAuthor>
                     <docDate><date when="1225-01">1225 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Anseau chevalier de L’Isle-Adam<ref type="note" n="1" target="#saint-martin-acte29-n-1"/> notifie et approuve comme arrière-seigneur du fief l’abandon fait à Saint-Denis par Adam de Frépillon<ref type="note" n="2" target="#saint-martin-acte29-n-2"/>, son épouse Gille et leurs fils de leur part des tailles <foreign xml:lang="lat">(tensamentum)</foreign> perçues à Presles<ref type="note" n="3" target="#saint-martin-acte29-n-3"/>, Courcelles<ref type="note" n="4" target="#saint-martin-acte29-n-4"/> et <foreign xml:lang="fro">Courcelettes</foreign><ref type="note" n="5" target="#saint-martin-acte29-n-5"/>, en aumône pour un cinquième et en vente pour le reste, et ce avec l’assentiment de Simon de Grisy<ref type="note" n="6" target="#saint-martin-acte29-n-6"/> comme seigneur
@@ -2104,7 +2104,7 @@
             <text xml:id="saint-martin-acte30">
                 <front>
                     <titlePart>Saint-Martin 30</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1225-01">1225 (n. st.), février</date></docDate>
                     <div type="summary">
                         <p>Adam de Frépillon<ref type="note" n="1" target="#saint-martin-acte30-n-1"/> et son épouse Gille donnent à Saint-Denis le cinquième de leur part des tailles <foreign xml:lang="lat">(tensamentum)</foreign> perçues à
@@ -2167,7 +2167,7 @@
             <text xml:id="saint-martin-acte31">
                 <front>
                     <titlePart>Saint-Martin 31</titlePart>
-                    <docAuthor>abbé de Mortemer</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0008">abbé de Mortemer</docAuthor>
                     <docDate><date when="1225-04">1225, avril</date></docDate>
                     <div type="summary">
                         <p>L’abbé Vital de Mortemer<ref type="note" n="1" target="#saint-martin-acte31-n-1"/> vend à Saint-Denis deux arpents de vigne, sis au Clos-l’évêque, aux Aubins<ref type="note" n="2" target="#saint-martin-acte31-n-2"/>, et donnés par Jean comte de Beaumont[-sur-Oise]<ref type="note" n="3" target="#saint-martin-acte31-n-3"/>, pour 15 livres parisis.</p>
@@ -2215,7 +2215,7 @@
             <text xml:id="saint-martin-acte32">
                 <front>
                     <titlePart>Saint-Martin 32</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1225-07">1225, juillet</date></docDate>
                     <div type="summary">
                         <p>Ansoud chevalier de Champagne<ref type="note" n="1" target="#saint-martin-acte32-n-1"/> notifie et ratifie comme seigneur féodal le don en aumône fait par Cécile de Presles<ref type="note" n="2" target="#saint-martin-acte32-n-2"/> à Saint-Denis du cinquième des droits qu’elle percevait à Mours<ref type="note" n="3" target="#saint-martin-acte32-n-3"/> et à Beaumont[-sur-Oise] : à Mours, seize deniers
@@ -2261,7 +2261,7 @@
             <text xml:id="saint-martin-acte33">
                 <front>
                     <titlePart>Saint-Martin 33</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1225-11">1225, novembre</date></docDate>
                     <div type="summary">
                         <p>Gaucher de Thourotte<ref type="note" n="1" target="#saint-martin-acte33-n-1"/> vend à Saint-Denis la vigne qu’il possède à Beaumont[-sur-Oise]<ref type="note" n="2" target="#saint-martin-acte33-n-2"/>, dans le
@@ -2309,7 +2309,7 @@
             <text xml:id="saint-martin-acte34">
                 <front>
                     <titlePart>Saint-Martin 34</titlePart>
-                    <docAuthor>abbé de Saint-Germain-en-Laye</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0013">abbé de Saint-Germain-en-Laye</docAuthor>
                     <docDate><date when="1229-07">1229, juillet</date></docDate>
                     <div type="summary">
                         <p>Pierre, prieur [de Notre-Dame] du Lay<ref type="note" n="1" target="#saint-martin-acte34-n-1"/>, vend à Saint-Denis une parcelle de vigne au finage de Ringuet<ref type="note" n="2" target="#saint-martin-acte34-n-2"/>, vers Noisy[-sur-Oise], qui avait été donnée en aumône au prieuré par Étienne de Sancerre<ref type="note" n="3" target="#saint-martin-acte34-n-3"/>, puis réclamée par
@@ -2356,7 +2356,7 @@
             <text xml:id="saint-martin-acte35">
                 <front>
                     <titlePart>Saint-Martin 35</titlePart>
-                    <docAuthor>abbé du Bec</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0018">abbé du Bec</docAuthor>
                     <docDate><date when="1229-07">1229, juillet</date></docDate>
                     <div type="summary">
                         <p>L’abbé H[enri] du Bec<ref type="note" n="1" target="#saint-martin-acte35-n-1"/> confirme la vente faite par le prieuré [de Notre-Dame] du Lay<ref type="note" n="2" target="#saint-martin-acte35-n-2"/> d’une
@@ -2404,7 +2404,7 @@
             <text xml:id="saint-martin-acte36">
                 <front>
                     <titlePart>Saint-Martin 36</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1229-03">1229 (a. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Raoul chevalier de Franconville<ref type="note" n="1" target="#saint-martin-acte36-n-1"/> vend à Saint-Denis les quatre cinquièmes de trois arpents de pré qu’il tenait de l’abbaye à Pont-de-Thève<ref type="note" n="2" target="#saint-martin-acte36-n-2"/>, pour 30 livres parisis, et donne le dernier cinquième en aumône. La transaction est confirmée par son épouse Agnès.</p>
@@ -2453,7 +2453,7 @@
             <text xml:id="saint-martin-acte37">
                 <front>
                     <titlePart>Saint-Martin 37</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1231-02">1231 (n. st.), février</date></docDate>
                     <div type="summary">
                         <p>Raoul chevalier de Franconville<ref type="note" n="1" target="#saint-martin-acte37-n-1"/> abandonne à Saint-Denis, à titre d’aumône, les droits qu’il pouvait avoir sur le fief que l’abbaye a acheté à Pierre
@@ -2504,7 +2504,7 @@
             <text xml:id="saint-martin-acte38">
                 <front>
                     <titlePart>Saint-Martin 38</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1231-03">1231 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Raoul, chevalier, seigneur de Franconville<ref type="note" n="1" target="#saint-martin-acte38-n-1"/>, avec son épouse Agnès, ratifie la vente faite par Pierre de Gancourt<ref type="note" n="2" target="#saint-martin-acte38-n-2"/> à Saint-Denis, du temps de l’abbé P[ierre], d’un fief sis aux finages de Franconville et de Saint-Martin-du-Tertre, et que Raoul dit mouvoir de lui. – Acte passé sous le
@@ -2566,7 +2566,7 @@
             <text xml:id="saint-martin-acte39">
                 <front>
                     <titlePart>Saint-Martin 39</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1232-04">1232, avril</date></docDate>
                     <div type="summary">
                         <p>Jean dit Doyen de Morancy<ref type="note" n="1" target="#saint-martin-acte39-n-1"/> et son épouse Agnès vendent à Saint-Denis leur sergenterie de Morancy, dite « le doyenné », au prix de 40 livres parisis. Le
@@ -2621,7 +2621,7 @@
             <text xml:id="saint-martin-acte40">
                 <front>
                     <titlePart>Saint-Martin 40</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1232-12-21">1232, 21 décembre</date></docDate>
                     <div type="summary">
                         <p>Raoul de Franconville<ref type="note" n="1" target="#saint-martin-acte40-n-1"/> et son épouse Alix vendent à Saint-Denis, pour 20 livres parisis et un muid de grain, tout ce qu’ils tenaient en fief de Robert
@@ -2686,7 +2686,7 @@
             <text xml:id="saint-martin-acte41">
                 <front>
                     <titlePart>Saint-Martin 41</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1232-06">1232, juin</date></docDate>
                     <div type="summary">
                         <p>Robert chevalier de Saint-Denis transfère à Saint-Denis, avec l’accord de son épouse Aveline, tous ses droits sur le fief que Raoul de Franconville<ref type="note" n="1" target="#saint-martin-acte41-n-1"/>, fils
@@ -2750,7 +2750,7 @@
             <text xml:id="saint-martin-acte42">
                 <front>
                     <titlePart>Saint-Martin 42</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1234-11">1234, novembre</date></docDate>
                     <div type="summary">
                         <p>Raoul chevalier de Franconville<ref type="note" n="1" target="#saint-martin-acte42-n-1"/> reconnaît être l’homme lige de l’abbé Eudes [IV] de Saint-Denis pour une série de fiefs tenus de lui, dont la liste
@@ -2869,7 +2869,7 @@
             <text xml:id="saint-martin-acte43">
                 <front>
                     <titlePart>Saint-Martin 43</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
                     <docDate><date when="1234-11">1234, novembre</date></docDate>
                     <div type="summary">
                         <p>Le doyen de Presles<ref type="note" n="1" target="#saint-martin-acte43-n-1"/> fait savoir que Raoul chevalier de Franconville<ref type="note" n="2" target="#saint-martin-acte43-n-2"/>, accompagné de son épouse
@@ -2930,7 +2930,7 @@
             <text xml:id="saint-martin-acte44">
                 <front>
                     <titlePart>Saint-Martin 44</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1234-11">1234, novembre</date></docDate>
                     <div type="summary">
                         <p>Vidimus sous le sceau de l’officialité de Beauvais de l’acte par lequel Raoul chevalier de Franconville<ref type="note" n="1" target="#saint-martin-acte44-n-1"/> reconnaît être l’homme lige de l’abbé Eudes [IV] de
@@ -3041,7 +3041,7 @@
             <text xml:id="saint-martin-acte45">
                 <front>
                     <titlePart>Saint-Martin 45</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1235-12-03">1235, 3 décembre</date></docDate>
                     <div type="summary">
                         <p>Maître Adam de Maffliers<ref type="note" n="1" target="#saint-martin-acte45-n-1"/>, clerc, et son frère Thibaud renoncent à leurs prétentions sur la mairie de Maffliers, que leur feu père Landry avait tenu de
@@ -3091,7 +3091,7 @@
             <text xml:id="saint-martin-acte46">
                 <front>
                     <titlePart>Saint-Martin 46</titlePart>
-                    <docAuthor>abbesse de Pentemont</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0020">abbesse de Pentemont</docAuthor>
                     <docDate><date when="1236-05">1236, mai</date></docDate>
                     <div type="summary">
                         <p>L’abbesse Marguerite et le convent de Penthemont<ref type="note" n="1" target="#saint-martin-acte46-n-1"/>, ordre cistercien, reprennent de Saint-Denis, au chef-cens de cinq sous parisis, portables aux octaves de
@@ -3139,7 +3139,7 @@
             <text xml:id="saint-martin-acte47">
                 <front>
                     <titlePart>Saint-Martin 47</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1236-05">1236, mai</date></docDate>
                     <div type="summary">
                         <p>Gautier, maire de Bailleul<ref type="note" n="1" target="#saint-martin-acte47-n-1"/>, et ses fils Jean et Gérard reconnaissent envers l’abbé de Saint-Denis une dette de 30 livres parisis, qu’ils promettent de
@@ -3192,7 +3192,7 @@
             <text xml:id="saint-martin-acte48">
                 <front>
                     <titlePart>Saint-Martin 48</titlePart>
-                    <docAuthor>abbé de Saint-Leu d’Esserent</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0014">abbé de Saint-Leu d’Esserent</docAuthor>
                     <docDate><date when="1239-11">1239, novembre</date></docDate>
                     <div type="summary">
                         <p>Étienne prieur et le convent de Saint-Leu d’Esserent<ref type="note" n="1" target="#saint-martin-acte48-n-1"/> vendent à Saint-Denis la rente de six sous parisis à Morancy<ref type="note" n="2" target="#saint-martin-acte48-n-2"/> que leur avait léguée feue Érembourge de Saint-Leu.</p>
@@ -3232,7 +3232,7 @@
             <text xml:id="saint-martin-acte49">
                 <front>
                     <titlePart>Saint-Martin 49</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate>
                         <date when="1240-06">1240, juin</date></docDate>
                     <div type="summary">
@@ -3295,7 +3295,7 @@
             <text xml:id="saint-martin-acte50">
                 <front>
                     <titlePart>Saint-Martin 50</titlePart>
-                    <docAuthor> officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049"> officialité de Beauvais</docAuthor>
                     <docDate>
                         <date when="1240-07">1240, juillet</date></docDate>
                     <div type="summary">
@@ -3349,7 +3349,7 @@
             <text xml:id="saint-martin-acte51">
                 <front>
                     <titlePart>Saint-Martin 51</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1240-07">1240, juillet</date></docDate>
                     <div type="summary">
                         <p>Guillaume, maire de Morancy<ref type="note" n="1" target="#saint-martin-acte51-n-1"/> et sergent du roi, son épouse Émeline, Hubert de Breuil et son épouse Marie, sœur de Guillaume, vendent à Saint-Denis une
@@ -3400,7 +3400,7 @@
             <text xml:id="saint-martin-acte52">
                 <front>
                     <titlePart>Saint-Martin 52</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1243-02">1243 (n. st.), février</date></docDate>
                     <div type="summary">
                         <p>Raoul, chevalier, seigneur de Franconville<ref type="note" n="1" target="#saint-martin-acte52-n-1"/>, se porte garant de l’obligation que son gendre Guillaume Bateste, chevalier, a posée sur cinquante et un
@@ -3461,7 +3461,7 @@
             <text xml:id="saint-martin-acte53">
                 <front>
                     <titlePart>Saint-Martin 53</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1243-02-26">1243, 26 février</date></docDate>
                     <div type="summary">
                         <p>Guillaume Bateste, chevalier, reconnaît avoir emprunté à Saint-Denis la somme de 40 livres parisis, qu’il s’engage à rembourser par moitié à la prochaine Chandeleur et à la Chandeleur suuivante. Il donne pour
@@ -3525,7 +3525,7 @@
             <text xml:id="saint-martin-acte54">
                 <front>
                     <titlePart>Saint-Martin 54</titlePart>
-                    <docAuthor>officialité de Bayeux</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0048">officialité de Bayeux</docAuthor>
                     <docDate><date when="1243-03">1243 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Guillaume Bateste, chevalier, et son épouse Isabelle obligent à titre de gage cinquante et un arpents au bois du Rossay<ref type="note" n="1" target="#saint-martin-acte54-n-1"/>, dans la partie dite La Chênaie<ref type="note" n="2" target="#saint-martin-acte54-n-2"/>, contiguë à la vieille route de Montmorency<ref type="note" n="3" target="#saint-martin-acte54-n-3"/> et jusqu’aux Friches de Villaines<ref type="note" n="4" target="#saint-martin-acte54-n-4"/>, pour un prêt de 40 livres parisis à eux consenti par l’abbaye de Saint-Denis et qu’ils devront rembourser pour moitié à la prochaine Chandeleur et pour moitié à la
@@ -3574,7 +3574,7 @@
             <text xml:id="saint-martin-acte55">
                 <front>
                     <titlePart>Saint-Martin 55</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1243-09-30">1243, 30 septembre</date></docDate>
                     <div type="summary">
                         <p>André, curé de Maffliers<ref type="note" n="1" target="#saint-martin-acte55-n-1"/>, conclut après de longs débats un compromis avec l’abbaye de Saint-Denis, aux termes duquel tous les litiges mobiliers et
@@ -3626,7 +3626,7 @@
             <text xml:id="saint-martin-acte56">
                 <front>
                     <titlePart>Saint-Martin 56</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1244-03">1244 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Raoul chevalier de Franconville<ref type="note" n="1" target="#saint-martin-acte56-n-1"/> consent à l’aliénation faite par son gendre Guillaume Bateste, chevalier, au profit de Saint-Denis, de neuf arpents moins
@@ -3696,7 +3696,7 @@
             <text xml:id="saint-martin-acte57">
                 <front>
                     <titlePart>Saint-Martin 57</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1244-03">1244 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Guillaume Bateste, chevalier, abandonne à Saint-Denis, pour éteindre une dette de 40 livres parisis, neuf arpents moins six perches de bois qu’il a reçus de son beau-père Raoul chevalier de Franconville<ref type="note" n="1" target="#saint-martin-acte57-n-1"/>. Ce dernier lui ayant donné, au titre de la dot de sa fille Isabelle, quarante-deux arpents au bois proche de sa maison de Franconville, tenu du roi, et
@@ -3764,7 +3764,7 @@
             <text xml:id="saint-martin-acte58">
                 <front>
                     <titlePart>Saint-Martin 58</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1244-05">1244, mai</date></docDate>
                     <div type="summary">
                         <p>Guy seigneur de Laval<ref type="note" n="1" target="#saint-martin-acte58-n-1"/> ratifie le don fait à Saint-Denis, pour le remède de son âme, par son frère Mathieu comte de Ponthieu<ref type="note" n="2" target="#saint-martin-acte58-n-2"/>, avec l’accord de son épouse et en réparation des torts causés à l’abbaye par leur père Mathieu seigneur de Montmorency<ref type="note" n="3" target="#saint-martin-acte58-n-3"/>, du cinquième de la moitié qu’il avait dans les bois dits Détroits de Maffliers<ref type="note" n="4" target="#saint-martin-acte58-n-4"/> et dans l’étang de Béhu<ref type="note" n="5" target="#saint-martin-acte58-n-5"/> et sa pêcherie, tous biens tenus en fief de Saint-Denis. Les quatre autres cinquièmes ont été vendus à l’abbaye au prix de 360 livres parisis.</p>
@@ -3832,8 +3832,8 @@
             <text xml:id="saint-martin-acte59">
                 <front>
                     <titlePart>Saint-Martin 59</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
-                    <docAuthor>divers laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0038">divers laïques</docAuthor>
                     <docDate><date when="1230-10">1230, octobre</date></docDate>
                     <div type="summary">
                         <p>P. de Boissy, chanoine de Bayeux, et Adam de Presles<ref type="note" n="1" target="#saint-martin-acte59-n-1"/>, chanoine de Saint-Pierre de <foreign xml:lang="fro">Chalec‘</foreign><ref type="note" n="2" target="#saint-martin-acte59-n-2"/> prononcent leur arbitrage dans le litige qui opposait Saint-Denis et Raoul chevalier de Franconville<ref type="note" n="3" target="#saint-martin-acte59-n-3"/> au sujet de
@@ -3894,8 +3894,8 @@
             <text xml:id="saint-martin-acte60">
                 <front>
                     <titlePart>Saint-Martin 60</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1246-08">1246, août</date></docDate>
                     <div type="summary">
                         <p>Raoul chevalier de Franconville<ref type="note" n="1" target="#saint-martin-acte60-n-1"/> vend à Saint-Denis, avec l’accord de son épouse Bouteillère<ref type="note" n="2" target="#saint-martin-acte60-n-2"/> et de
@@ -3949,8 +3949,8 @@
             <text xml:id="saint-martin-acte61">
                 <front>
                     <titlePart>Saint-Martin 61</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1246-08-25">1246, 25 août</date></docDate>
                     <div type="summary">
                         <p>Autre notification par l’official de Beauvais de la vente par Raoul chevalier de Franconville<ref type="note" n="1" target="#saint-martin-acte61-n-1"/>, avec l’accord de son épouse Bouteillère<ref type="note" n="2" target="#saint-martin-acte61-n-2"/> et de son fils aîné Raoul, de bois et de bruyère<ref type="note" n="3" target="#saint-martin-acte61-n-3"/> au Rossay<ref type="note" n="4" target="#saint-martin-acte61-n-4"/> (<ref target="#saint-martin-acte60">acte Saint-Martin n° 60</ref>).</p>
@@ -4005,7 +4005,7 @@
             <text xml:id="saint-martin-acte62">
                 <front>
                     <titlePart>Saint-Martin 62</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1266-09">1266, septembre</date></docDate>
                     <div type="summary">
                         <p>Raoul chevalier de Franconville<ref type="note" n="1" target="#saint-martin-acte62-n-1"/> notifie l’accord auquel il est parvenu avec Saint-Denis au cours d’une procédure engagée devant Gérard de Chevresis, bailli
@@ -4075,7 +4075,7 @@
             <text xml:id="saint-martin-acte63">
                 <front>
                     <titlePart>Saint-Martin 63</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1231-02">1231 (n. st.), février</date></docDate>
                     <div type="summary">
                         <p>Raoul chevalier de Franconville<ref type="note" n="1" target="#saint-martin-acte63-n-1"/> assigne le remboursemen des 60 livres parisis qu’il doit à Saint-Denis sur la prochaine vente [de coupe de bois], qui
@@ -4122,7 +4122,7 @@
             <text xml:id="saint-martin-acte64">
                 <front>
                     <titlePart>Saint-Martin 64</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1259-10">1259, 16 octobre</date></docDate>
                     <div type="summary">
                         <p>Raoul, chevalier, seigneur de Franconville<ref type="note" n="1" target="#saint-martin-acte64-n-1"/>, notifie le compromis d’arbitrage passé pour régler une série de différends qui l’opposaient à Saint-Denis : il
@@ -4190,7 +4190,7 @@
             <text xml:id="saint-martin-acte65">
                 <front>
                     <titlePart>Saint-Martin 65</titlePart>
-                    <docAuthor>abbé de Notre-Dame-du-Val</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0010">abbé de Notre-Dame-du-Val</docAuthor>
                     <docDate><date when="1265-08">1265, août</date></docDate>
                     <div type="summary">
                         <p>Jean, abbé de Notre-Dame-du-Val<ref type="note" n="1" target="#saint-martin-acte65-n-1"/>, ordre cistercien, vidime l’acte par lequel l’abbé Mathieu de Saint-Denis autorise son abbaye à tenir en mainmorte tous les
@@ -4275,7 +4275,7 @@
             <text xml:id="saint-martin-acte66">
                 <front>
                     <titlePart>Saint-Martin 66</titlePart>
-                    <docAuthor>officialité de Beauvais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0049">officialité de Beauvais</docAuthor>
                     <docDate><date when="1268-04-27">1268, 27 avril</date></docDate>
                     <div type="summary">
                         <p>Pierre Fournier, fils de feu Oudard Fournier, de Morancy<ref type="note" n="1" target="#saint-martin-acte66-n-1"/> et son épouse Alix (<foreign xml:lang="lat">Aelidis</foreign>) vendent à Saint-Denis un pressoir
@@ -4328,7 +4328,7 @@
             <text xml:id="saint-martin-acte67">
                 <front>
                     <titlePart>Saint-Martin 67</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1208-03">1208 (n. st.), mars. - Saint-Germain-en-Laye</date></docDate>
                     <div type="summary">
                         <p>Le roi de France Philippe [Auguste] fait savoir que Mathieu [III] comte de Beaumont[-sur-Oise] a accepté de voir les litiges qui l’opposaient à l’abbaye de Saint-Denis sur des fiefs tenus de celle-ci jugés par la
@@ -4365,7 +4365,7 @@
             <text xml:id="saint-martin-acte68">
                 <front>
                     <titlePart>Saint-Martin 68</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="0845-01-21">845, 21 janvier</date><placeName>[Compiègne]</placeName></docDate>
                     <div type="summary">
                         <p>Le roi Charles [le Chauve] confirme le don fait à Saint-Denis par son fidèle Leuton de biens que lui avait remis le roi par précepte : la <foreign xml:lang="lat">villa</foreign> de Morancy (<foreign xml:lang="lat">Maurinciagi curtis</foreign>)<ref type="note" n="1" target="#saint-martin-acte68-n-1"/> sise sur l’Oise, en Chambliois, avec deux <foreign xml:lang="lat">villule</foreign> du même nom et l’église ; la
@@ -4470,7 +4470,7 @@
             <text xml:id="saint-martin-acte70">
                 <front>
                     <titlePart>Saint-Martin 70</titlePart>
-                    <docAuthor>prévôté de Beaumont-sur-Oise</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0058">prévôté de Beaumont-sur-Oise</docAuthor>
                     <docDate><date when="1296-12-16">1296, 16 décembre</date></docDate>
                     <div type="summary">
                         <p>Thomas de Mours<ref type="note" n="1" target="#saint-martin-acte70-n-1"/> et son épouse Odeline vendent à Saint-Denis, pour 64 livres parisis, une pièce de vigne sise au finage de Mours, au lieu-dit
@@ -4528,7 +4528,7 @@
             <text xml:id="saint-martin-acte71">
                 <front>
                     <titlePart>Saint-Martin 71</titlePart>
-                    <docAuthor> prévôté de Beaumont-sur-Oise</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0058"> prévôté de Beaumont-sur-Oise</docAuthor>
                     <docDate><date when="1300-02-07">1300 (n. st.), 7 février</date></docDate>
                     <div type="summary">
                         <p>Jean de Berville<ref type="note" n="1" target="#saint-martin-acte71-n-1"/>, résidant à Beaumont[-sur-Oise], vend à Saint-Denis, pour 15 sous parisis, un demi-arpent de bois sis aux Rondeaux de Mours<ref type="note" n="2" target="#saint-martin-acte71-n-2"/>, tenant à Thibaud Garin et à l’abbaye, et mouvant d’elle. – Acte passé sous le sceau de la prévôté de Beaumont-sur-Oise.</p>

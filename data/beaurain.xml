@@ -361,7 +361,7 @@
             <text xml:id="beaurain-acte1">
                 <front>
                     <titlePart>Beaurain 1</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="0774-12">774, décembre</date><placeName>Palais de Samoussy</placeName></docDate>
                     <div type="summary">
                         <p>Charlemagne, roi des Francs et des Lombards, donne à l’abbaye de Saint-Denis, présidée par l’abbé Fulrad, les <foreign xml:lang="lat">ville</foreign> de Faverolles<ref type="note" n="1" target="#beaurain-acte1-n-1"/> et Néron<ref type="note" n="2" target="#beaurain-acte1-n-2"/> aumônées [par son frère Carloman] à la demande de son père Pépin, et la forêt d’Yveline [déjà donnée par son père
@@ -428,7 +428,7 @@
             <text xml:id="beaurain-acte2">
                 <front>
                     <titlePart>Beaurain 2</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1179">1179</date></docDate>
                     <div type="summary">
                         <p>Guillaume abbé et le convent de Saint-Denis notifient l’accord auquel ils sont parvenus avec Guy [II] de Chevreuse, après de nombreuses contestations et grâce en particulier à l’entremise de Hugues abbé de
@@ -563,7 +563,7 @@
             <text xml:id="beaurain-acte3">
                 <front>
                     <titlePart>Beaurain 3</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date notBefore="1172-04-16" notAfter="1173-04-07">1172, 16 avril - 7 avril 1173</date><placeName>Paris</placeName></docDate>
                     <div type="summary">
                         <p>Le roi Louis [VII] notifie l’accord auquel sont parvenus, après plusieurs débats en sa présence, Yves abbé de Saint-Denis et Guy [II] de Chevreuse au sujet de l’avouerie de la terre de l’abbaye en vallée de
@@ -644,7 +644,7 @@
             <text xml:id="beaurain-acte4">
                 <front>
                     <titlePart>Beaurain 4</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date notBefore="1101" notAfter="1220">[XII<hi rend="sup">e</hi> ou début XIII<hi rend="sup">e</hi> siècle.]</date></docDate>
                     <div type="summary">
                         <p>Amaury de Maurepas<ref type="note" n="1" target="#beaurain-acte4-n-1"/> fait entrer dans sa ministérialité (<foreign xml:lang="lat">famularitas</foreign>) Michel, fèvre de Trappes<ref type="note" n="2" target="#beaurain-acte4-n-2"/>. Michel et son héritier verseront chaque année onze muids et quatre setiers d’avoine et quatre livres parisis ; ils percevront trois oboles sur chacune des meules<ref type="note" n="3" target="#beaurain-acte4-n-3"/> faites dans cette terre<ref type="note" n="4" target="#beaurain-acte4-n-4"/> ; à la mort du titulaire, son héritier versera cinq sous parisis de relief. </p>
@@ -714,7 +714,7 @@
             <text xml:id="beaurain-acte5">
                 <front>
                     <titlePart>Beaurain 5</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1201-03">1201 (a. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Hugues abbé de Saint-Denis cède pour sept ans à compter de la prochaine Saint-Jean [24 juin] la coupe de ce qui appartient à l’abbaye dans le bois au-dessus d’Yvette<ref type="note" n="1" target="#beaurain-acte5-n-1"/> et dans le bois dit Crêne<ref type="note" n="2" target="#beaurain-acte5-n-2"/> à Renaud de Cornillon<ref type="note" n="3" target="#beaurain-acte5-n-3"/>, prévôt de Paris, et
@@ -774,7 +774,7 @@
             <text xml:id="beaurain-acte6">
                 <front>
                     <titlePart>Beaurain 6</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
                     <docDate><date when="1204-03">1204 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Jean abbé de Sainte-Geneviève de Paris et A(lexandre) prieur de Saint-Germain-des-Prés notifient l’accord auquel sont parvenus l’abbaye de Saint-Denis et les fils de feu Philippe de Lévis (l’archidiacre de
@@ -872,7 +872,7 @@
             <text xml:id="beaurain-acte7">
                 <front>
                     <titlePart>Beaurain 7</titlePart>
-                    <docAuthor>Templiers</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0065">Templiers</docAuthor>
                     <docDate><date when="1207-01">1207 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>André de Coulours<ref type="note" n="1" target="#beaurain-acte7-n-1"/>, procureur des maisons du Temple en France, ratifie l’accord passé avec l’abbaye de Saint-Denis (<ref target="#beaurain-acte8">acte Beaurain
@@ -969,9 +969,9 @@
             <text xml:id="beaurain-acte8">
                 <front>
                     <titlePart>Beaurain 8</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
-                    <docAuthor>abbé de Sainte-Geneviève de Paris</docAuthor>
-                    <docAuthor>juges délégués</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0012">abbé de Sainte-Geneviève de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0045">juges délégués</docAuthor>
                     <docDate><date when="1206-09">1206, septembre</date></docDate>
                     <div type="summary">
                         <p>J(ean) abbé et M(ichel) prieur de Sainte-Geneviève de Paris, juges délégués du pape, notifient l’accord auquel sont parvenus devant eux l’abbaye de Saint-Denis et les Templiers au sujet de la dîme de la Ville-Dieu
@@ -1035,7 +1035,7 @@
             <text xml:id="beaurain-acte9">
                 <front>
                     <titlePart>Beaurain 9</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1207-03">1207 (a. st.), mars</date><placeName>La Chapelle<ref type="note" n="1" target="#beaurain-acte9-n-1"/>, en l’église Sainte-Geneviève.</placeName></docDate>
                     <div type="summary">
                         <p>Guy [III] de Chevreuse ratifie l’arbitrage (<ref target="#beaurain-acte10">acte Beaurain n<hi rend="sup">o</hi> 10</ref>) qui met fin au litige l’opposant à l’abbaye de Saint-Denis au sujet du droit de charroi
@@ -1093,8 +1093,8 @@
             <text xml:id="beaurain-acte10">
                 <front>
                     <titlePart>Beaurain 10</titlePart>
-                    <docAuthor>divers laïques</docAuthor>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0038">divers laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
                     <docDate><date when="1207-03">1207 (a. st.), mars</date><placeName>La Chapelle<ref type="note" n="1" target="#beaurain-acte10-n-1"/>, en l’église Sainte-Geneviève.</placeName></docDate>
                     <div type="summary">
                         <p>Raoul aumônier de l’abbaye de Saint-Denis et Gilles de Versailles, bailli du roi<ref type="note" n="2" target="#beaurain-acte10-n-2"/>, arbitrent, en présence d’Henri abbé de Saint-Denis, de Mathieu de
@@ -1154,7 +1154,7 @@
             <text xml:id="beaurain-acte11">
                 <front>
                     <titlePart>Beaurain 11</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1207-08">1207, août</date></docDate>
                     <div type="summary">
                         <p>Jean Paille et Guillaume <foreign xml:lang="fro">Escuacol</foreign>, frères, notifient le compromis d’arbitrage auquel ils sont parvenus avec l’abbé de Saint-Denis et le prieur d’Argenteuil<ref type="note" n="1" target="#beaurain-acte11-n-1"/> et son chapitre pour régler le conflit qui les opposait à propos du Bois Notre-Dame<ref type="note" n="2" target="#beaurain-acte11-n-2"/> près de Trappes et de la terre donnée
@@ -1220,7 +1220,7 @@
             <text xml:id="beaurain-acte12">
                 <front>
                     <titlePart>Beaurain 12</titlePart>
-                    <docAuthor>abbé des Vaux-de-Cernay</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0017">abbé des Vaux-de-Cernay</docAuthor>
                     <docDate><date when="1210-08">1210, août</date></docDate>
                     <div type="summary">
                         <p><persName>Guy abbé des Vaux-de-Cernay</persName><ref type="note" n="1" target="#beaurain-acte12-n-1"/> notifie la concession faite à son abbaye par Henri abbé de Saint-Denis, de dix arpents et un quartier de pré
@@ -1296,7 +1296,7 @@
             <text xml:id="beaurain-acte13">
                 <front>
                     <titlePart>Beaurain 13</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1216-03">1216 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Pierre évêque de Paris notifie l’échange qui est intervenu entre le curé de Saint-Lambert<ref type="note" n="1" target="#beaurain-acte13-n-1"/>, agissant au nom de son église, et l’abbaye de Saint-Denis : le curé
@@ -1365,7 +1365,7 @@
             <text xml:id="beaurain-acte14">
                 <front>
                     <titlePart>Beaurain 14</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1218-03">1218 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Pierre évêque de Paris notifie l’accord auquel il est parvenu avec l’abbaye de Saint-Denis au sujet des dîmes novales à percevoir sur des terres défrichées depuis le concile de Latran [III]<ref type="note" n="1" target="#beaurain-acte14-n-1"/> dans les paroisses de Dampierre<ref type="note" n="2" target="#beaurain-acte14-n-2"/>, Senlisse<ref type="note" n="3" target="#beaurain-acte14-n-3"/>, Rueil<ref type="note" n="4" target="#beaurain-acte14-n-4"/>, Vaucresson<ref type="note" n="5" target="#beaurain-acte14-n-5"/>, Colombes<ref type="note" n="6" target="#beaurain-acte14-n-6"/>, Asnières<ref type="note" n="7" target="#beaurain-acte14-n-7"/>, Le Mesnil-Saint-Denis<ref type="note" n="8" target="#beaurain-acte14-n-8"/>, Villeneuve-Saint-Denis<ref type="note" n="9" target="#beaurain-acte14-n-9"/> près Tournan<ref type="note" n="10" target="#beaurain-acte14-n-10"/>, Tremblay<ref type="note" n="11" target="#beaurain-acte14-n-11"/> et Villepinte<ref type="note" n="12" target="#beaurain-acte14-n-12"/>, dont l’évêque
@@ -1544,7 +1544,7 @@
             <text xml:id="beaurain-acte15">
                 <front>
                     <titlePart>Beaurain 15</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1217-11">1217, novembre</date></docDate>
                     <div type="summary">
                         <p>Cécilie d’Aulnay<ref type="note" n="1" target="#beaurain-acte15-n-1"/>, veuve du chevalier Robert Mauvoisin, notifie l’accord auquel elle est parvenue avec l’abbé de Saint-Denis, après un procès intenté par
@@ -1603,7 +1603,7 @@
             <text xml:id="beaurain-acte16">
                 <front>
                     <titlePart>Beaurain 16</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1218-03">1218 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Autre transcription de l’<ref target="#beaurain-acte14">acte Beaurain n<hi rend="sup">o</hi> 14</ref>. </p>
@@ -1647,7 +1647,7 @@
             <text xml:id="beaurain-acte17">
                 <front>
                     <titlePart>Beaurain 17</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1218-05">1218, mai</date></docDate>
                     <div type="summary">
                         <p>Pierre évêque de Paris notifie l’accord auquel sont parvenus l’abbaye de Saint-Denis et N. curé du Mesnil-Saint-Denis<ref type="note" n="1" target="#beaurain-acte17-n-1"/> dans la cause qui les opposait devant
@@ -1706,8 +1706,8 @@
             <text xml:id="beaurain-acte18">
                 <front>
                     <titlePart>Beaurain 18</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
-                    <docAuthor>chapitre cathédral de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0031">chapitre cathédral de Paris</docAuthor>
                     <docDate><date when="1218-06">1218, juin</date></docDate>
                     <div type="summary">
                         <p>Pierre évêque de Paris, Étienne doyen et le chapitre cathédral de Paris ratifient l’enquête menée par G. archidiacre de Paris, H(élie) aumônier de Saint-Denis et Hémeri chanoine de Notre-Dame de Senlis, sur des
@@ -1772,7 +1772,7 @@
             <text xml:id="beaurain-acte19">
                 <front>
                     <titlePart>Beaurain 19</titlePart>
-                    <docAuthor>divers laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0038">divers laïques</docAuthor>
                     <docDate><date when="1218-12">1218, décembre</date></docDate>
                     <div type="summary">
                         <p>Guillaume Menier<ref type="note" n="1" target="#beaurain-acte19-n-1"/>, Gilles <foreign xml:lang="lat">Bullic’</foreign><ref type="note" n="2" target="#beaurain-acte19-n-2"/>, Thibaud le Maigre<ref type="note" n="3" target="#beaurain-acte19-n-3"/> et Thiboud de Chartres notifient le compromis d’arbitrage passé entre l’abbaye Saint-Denis et Mathieu maire de Dampierre<ref type="note" n="4" target="#beaurain-acte19-n-4"/> au cours du litige qui les opposait devant eux au sujet de la mairie de Dampierre et des dommages causés à l’abbaye par Mathieu et ses frères et neveux : après enquête, les
@@ -1842,7 +1842,7 @@
             <text xml:id="beaurain-acte20">
                 <front>
                     <titlePart>Beaurain 20</titlePart>
-                    <docAuthor>divers laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0038">divers laïques</docAuthor>
                     <docDate><date when="1222-05">1222, mai</date></docDate>
                     <div type="summary">
                         <p>Guillaume Menier, châtelain d’Étampes<ref type="note" n="1" target="#beaurain-acte20-n-1"/>, et Renoud l’Archer, sergent du roi<ref type="note" n="2" target="#beaurain-acte20-n-2"/>, rendent l’arbitrage que leur
@@ -1916,7 +1916,7 @@
             <text xml:id="beaurain-acte21">
                 <front>
                     <titlePart>Beaurain 21</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1222-04-03">1222, 3 avril</date></docDate>
                     <div type="summary">
                         <p>Le roi de France Philippe [Auguste] vidime un acte de Pierre, abbé de Saint-Denis (<ref target="#beaurain-acte92">acte Beaurain n<hi rend="sup">o</hi> 92</ref>), notifiant l’accord conclu avec Mathieu maire de
@@ -1964,7 +1964,7 @@
             <text xml:id="beaurain-acte22">
                 <front>
                     <titlePart>Beaurain 22</titlePart>
-                    <docAuthor>archidiacre de Pincerais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0025">archidiacre de Pincerais</docAuthor>
                     <docDate><date when="1223">1223</date></docDate>
                     <div type="summary">
                         <p>Ève, veuve du maréchal de Trappes<ref type="note" n="1" target="#beaurain-acte22-n-1"/>, et son fils Jean vendent à l’abbaye de Saint-Denis leur maison de Trappes pour 50 livres parisis et, pour la même somme, la
@@ -2028,7 +2028,7 @@
             <text xml:id="beaurain-acte23">
                 <front>
                     <titlePart>Beaurain 23</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1225-03">1225 (a. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Guy [IV] de Chevreuse notifie le double compromis d’arbitrage conclu avec l’abbaye de Saint-Denis dans deux litiges : [Amaury] comte de Montfort<ref type="note" n="1" target="#beaurain-acte23-n-1"/> et Barthélemy
@@ -2095,7 +2095,7 @@
             <text xml:id="beaurain-acte24">
                 <front>
                     <titlePart>Beaurain 24</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1226-05">1226, mai</date></docDate>
                     <div type="summary">
                         <p>Guy [IV] seigneur de Chevreuse, avec l’accord de sa mère, de son épouse Hélisende, de son frère Hervé et de ses sœurs, abandonne à l’abbaye de Saint-Denis l’avouerie, la justice et tous les droits liés qu’il avait
@@ -2148,7 +2148,7 @@
             <text xml:id="beaurain-acte25">
                 <front>
                     <titlePart>Beaurain 25</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1226-05">1226, mai</date></docDate>
                     <div type="summary">
                         <p>Le roi de France Louis [VIII] vidime la renonciation de Guy [IV] de Chevreuse à l’avouerie et à la justice sur le bailliage [monastique] de Beaurain (<ref target="#beaurain-acte24">acte Beaurain n<hi rend="sup">o</hi> 24</ref>). </p>
@@ -2186,7 +2186,7 @@
             <text xml:id="beaurain-acte26">
                 <front>
                     <titlePart>Beaurain 26</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1226-05">1226, mai</date></docDate>
                     <div type="summary">
                         <p>Guy [IV] de Chevreuse reconnaît avoir reçu de l’abbaye de Saint-Denis trois cents livres parisis, qui lui ont été remises par [Amaury] comte de Montfort et Barthélemy de Roye<ref type="note" n="1" target="#beaurain-acte26-n-1"/>, en échange de sa renonciation à l’avouerie et à la justice qu’il détenait dans le bailliage [monastique] de Beaurain (<ref target="#beaurain-acte24">acte Beaurain n<hi rend="sup">o</hi> 24</ref>). </p>
@@ -2242,7 +2242,7 @@
             <text xml:id="beaurain-acte27">
                 <front>
                     <titlePart>Beaurain 27</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1226-05">1226, mai</date></docDate>
                     <div type="summary">
                         <p>Guy [IV] de Chevreuse vend à l’abbaye de Saint-Denis pour 300 livres parisis l’avouerie, la justice et les droits afférents qu’il exerçait sur les terres de l’abbaye dans le bailliage [monastique] de Beaurain, et
@@ -2300,7 +2300,7 @@
             <text xml:id="beaurain-acte28">
                 <front>
                     <titlePart>Beaurain 28</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1226-05">1226, mai</date></docDate>
                     <div type="summary">
                         <p>Guy [IV] de Chevreuse, son épouse Hélisende et son frère le chevalier Hervé abandonnent à l’abbaye de Saint-Denis l’ensemble de leurs terres, redevances et droits d’usage et les droits d’usage de leurs hommes dans
@@ -2368,7 +2368,7 @@
             <text xml:id="beaurain-acte29">
                 <front>
                     <titlePart>Beaurain 29</titlePart>
-                    <docAuthor>divers laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0038">divers laïques</docAuthor>
                     <docDate><date when="1226-07">1226, juillet</date><placeName>Paris</placeName></docDate>
                     <div type="summary">
                         <p>Hugues d’Athis, panetier du roi, et Renoud l’Archer, échanson du roi, notifient la sentence qu’ils ont rendu après avoir été choisis comme arbitres avec Baudouin de Corbeil et Mathieu de Marly, celui-ci ensuite
@@ -2441,7 +2441,7 @@
             <text xml:id="beaurain-acte30">
                 <front>
                     <titlePart>Beaurain 30</titlePart>
-                    <docAuthor>Templiers</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0065">Templiers</docAuthor>
                     <docDate><date when="1226-06">1226, juin</date></docDate>
                     <div type="summary">
                         <p>Olivier de la Roche, précepteur des maisons du Temple en France<ref type="note" n="1" target="#beaurain-acte30-n-1"/> notifie la conclusion du litige qui l’opposait à l’abbaye de Saint-Denis au sujet des droits
@@ -2519,7 +2519,7 @@
             <text xml:id="beaurain-acte31">
                 <front>
                     <titlePart>Beaurain 31</titlePart>
-                    <docAuthor>évêque de Chartres</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0042">évêque de Chartres</docAuthor>
                     <docDate><date when="1227-07">1227, juillet</date></docDate>
                     <div type="summary">
                         <p>Gautier évêque de Chartres notifie l’abandon fait par Guillaume, curé de Trappes, à l’abbaye de Saint-Denis de son droit d’usage dans le Bois Notre-Dame<ref type="note" n="1" target="#beaurain-acte31-n-1"/> à
@@ -2574,7 +2574,7 @@
             <text xml:id="beaurain-acte32">
                 <front>
                     <titlePart>Beaurain 32</titlePart>
-                    <docAuthor>évêque de Chartres</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0042">évêque de Chartres</docAuthor>
                     <docDate><date when="1227-07">1227, juillet</date></docDate>
                     <div type="summary">
                         <p>Gautier évêque de Chartres notifie l’abandon fait par la léproserie d’<foreign xml:lang="fro">Aneel </foreign> près de Trappes<ref type="note" n="1" target="#beaurain-acte32-n-1"/> à l’abbaye de Saint-Denis de son
@@ -2632,7 +2632,7 @@
             <text xml:id="beaurain-acte33">
                 <front>
                     <titlePart>Beaurain 33</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1228-05">1228, mai</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Philippe d’Orce<ref type="note" n="1" target="#beaurain-acte33-n-1"/> notifie la vente qu’il a faite à l’abbaye de Saint-Denis pour 210 livres parisis de tout ce qu’il tenait jadis à Dampierre<ref type="note" n="2" target="#beaurain-acte33-n-2"/> d’Isabelle de Gif<ref type="note" n="3" target="#beaurain-acte33-n-3"/>, et depuis de l’abbaye, tant domaine que fiefs, dîme et hôtes mouvant de l’abbé, sauf
@@ -2705,7 +2705,7 @@
             <text xml:id="beaurain-acte34">
                 <front>
                     <titlePart>Beaurain 34</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1228-06-08">1228, 8 juin</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Philippe d’Orce<ref type="note" n="1" target="#beaurain-acte34-n-1"/> et son épouse Hélisende vendent à l’abbaye de Saint-Denis pour 210 livres parisis tout ce qu’ils tenaient jadis d’Isabelle de Gif
@@ -2761,7 +2761,7 @@
             <text xml:id="beaurain-acte35">
                 <front>
                     <titlePart>Beaurain 35</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1228-10-09">1228, 9 octobre</date></docDate>
                     <div type="summary">
                         <p>Guy [IV] seigneur de Chevreuse ratifie l’arbitrage prononcé par Étienne de Sancerre<ref type="note" n="1" target="#beaurain-acte35-n-1"/>, que lui-même et l’abbaye de Saint-Denis avaient choisi comme arbitre dans
@@ -2836,7 +2836,7 @@
             <text xml:id="beaurain-acte36">
                 <front>
                     <titlePart>Beaurain 36</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1229-05-29">1229, 29 mai</date></docDate>
                     <div type="summary">
                         <p>Guillaume évêque de Paris notifie les conventions passées en sa présence à Saint Forget<ref type="note" n="1" target="#beaurain-acte36-n-1"/>, près de Chevreuse, entre l’abbaye de Saint Denis et Guy [IV] seigneur
@@ -2967,7 +2967,7 @@
             <text xml:id="beaurain-acte37">
                 <front>
                     <titlePart>Beaurain 37</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1229-05-29">1229, 29 mai</date></docDate>
                     <div type="summary">
                         <p>Eudes abbé de Saint-Denis notifie sous son sceau les conventions qu’il a passées avec Guy de Chevreuse en présence de l’évêque de Paris (<ref target="#beaurain-acte36">acte Beaurain n<hi rend="sup">o</hi>
@@ -3097,7 +3097,7 @@
             <text xml:id="beaurain-acte38">
                 <front>
                     <titlePart>Beaurain 38</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1229-05">1229, mai</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Renaud de Montigny<ref type="note" n="1" target="#beaurain-acte38-n-1"/> approuve devant Th(omas) archidiacre de Pincerais<ref type="note" n="2" target="#beaurain-acte38-n-2"/> l’achat fait par feu
@@ -3179,7 +3179,7 @@
             <text xml:id="beaurain-acte39">
                 <front>
                     <titlePart>Beaurain 39</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1229-05">1229, mai</date></docDate>
                     <div type="summary">
                         <p>Autre transcription de l’<ref target="#beaurain-acte38">acte Beaurain n<hi rend="sup">o</hi> 38</ref>. </p>
@@ -3208,7 +3208,7 @@
             <text xml:id="beaurain-acte40">
                 <front>
                     <titlePart>Beaurain 40</titlePart>
-                    <docAuthor>archidiacre de Pincerais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0025">archidiacre de Pincerais</docAuthor>
                     <docDate><date when="1229-05">1229, mai</date></docDate>
                     <div type="summary">
                         <p>Thomas archidiacre de Pincerais<ref type="note" n="1" target="#beaurain-acte40-n-1"/> notifie l’approbation donnée par le chevalier Renaud de Montigny<ref type="note" n="2" target="#beaurain-acte40-n-2"/> à
@@ -3270,7 +3270,7 @@
             <text xml:id="beaurain-acte41">
                 <front>
                     <titlePart>Beaurain 41</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1229-05">1229, mai</date><placeName>Paris</placeName></docDate>
                     <div type="summary">
                         <p>Le roi de France Louis [IX] ratifie l’achat fait par feu l’abbé de Saint-Denis Pierre<ref type="note" n="1" target="#beaurain-acte41-n-1"/> au chevalier Philippe d’Orce<ref type="note" n="2" target="#beaurain-acte41-n-2"/> de tout ce que ce dernier tenait en propre et en fiefs à Dampierre<ref type="note" n="3" target="#beaurain-acte41-n-3"/> et Senlisse<ref type="note" n="4" target="#beaurain-acte41-n-4"/>, dîmes, prés, hostises, hôtes, cens et autres. </p>
@@ -3321,8 +3321,8 @@
             <text xml:id="beaurain-acte42">
                 <front>
                     <titlePart>Beaurain 42</titlePart>
-                    <docAuthor>divers laïques</docAuthor>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0038">divers laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
                     <docDate><date when="1230-05">[1230, mai, ou peu avant.]</date></docDate>
                     <div type="summary">
                         <p>Hélisende, épouse de Guy [IV] de Chevreuse, et Cécile (<foreign xml:lang="lat">Cicilia</foreign>), sœur de ce dernier, confirment la vente faite à l’abbaye de Saint-Denis par leur époux et frère de ses droits et
@@ -3378,7 +3378,7 @@
             <text xml:id="beaurain-acte43">
                 <front>
                     <titlePart>Beaurain 43</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
                     <docDate><date when="1229-06">1229, juin</date></docDate>
                     <div type="summary">
                         <p>Aveline, mère de Guy [IV] de Chevreuse, ratifie la vente faite par celui-ci à l’abbaye de Saint-Denis de l’avouerie et de la justice du bailliage [monastique] de Beaurain, avec le consentement de son époux Pierre
@@ -3431,7 +3431,7 @@
             <text xml:id="beaurain-acte44">
                 <front>
                     <titlePart>Beaurain 44</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1229-06">1229, juin</date></docDate>
                     <div type="summary">
                         <p>Hélisende, épouse de Guy [IV] de Chevreuse, Hervé, frère de Guy, Philippe de Thourotte<ref type="note" n="1" target="#beaurain-acte44-n-1"/> et son épouse Cécile (<foreign xml:lang="lat">Sicilia</foreign>), sœur
@@ -3488,7 +3488,7 @@
             <text xml:id="beaurain-acte45">
                 <front>
                     <titlePart>Beaurain 45</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1229-11">1229, novembre</date></docDate>
                     <div type="summary">
                         <p>L’évêque de Paris Guillaume confirme la cession faite par les curés de Senlisse<ref type="note" n="1" target="#beaurain-acte45-n-1"/> et Dampierre<ref type="note" n="2" target="#beaurain-acte45-n-2"/> à l’abbaye
@@ -3534,7 +3534,7 @@
             <text xml:id="beaurain-acte46">
                 <front>
                     <titlePart>Beaurain 46</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
                     <docDate><date when="1229-12">1229, décembre</date></docDate>
                     <div type="summary">
                         <p>Alix (<foreign xml:lang="lat">Aales</foreign>) épouse de Thomas de Chaudon<ref type="note" n="1" target="#beaurain-acte46-n-1"/> approuve l’abandon fait par celui-ci à l’abbaye de Saint-Denis de tous les droits
@@ -3587,7 +3587,7 @@
             <text xml:id="beaurain-acte47">
                 <front>
                     <titlePart>Beaurain 47</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
                     <docDate><date when="1230-03">1230 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Les hôtes de l’abbaye de Saint-Denis établis à proximité de Chevreuse, dont liste nominative est donnée, abandonnent tous les droits coutumiers qu’ils exerçaient dans les bois que l’abbaye a cédés à G(uy) de
@@ -3656,7 +3656,7 @@
             <text xml:id="beaurain-acte48">
                 <front>
                     <titlePart>Beaurain 48</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1230-04">1230, avril</date></docDate>
                     <div type="summary">
                         <p>L’abbé de Saint-Denis Eudes notifie le compromis d’arbitrage passé avec Guy [IV] de Chevreuse pour régler des désaccords survenus dans l’application d’une précédente convention : l’abbé demandait en effet
@@ -3743,7 +3743,7 @@
             <text xml:id="beaurain-acte49">
                 <front>
                     <titlePart>Beaurain 49</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1231-04">1231, avril</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Guy [IV] de Chevreuse reconnaît avoir reçu en prêt de l’abbaye de Saint-Denis 40 livres parisis qu’il devra rendre quinze jours après que l’abbaye les lui aura réclamées. Il donne comme garants Raoul
@@ -3788,7 +3788,7 @@
             <text xml:id="beaurain-acte50">
                 <front>
                     <titlePart>Beaurain 50</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1230-05-01">1230, 1<hi rend="sup">er</hi> mai</date></docDate>
                     <div type="summary">
                         <p>Guy [IV] seigneur de Chevreuse vend à l’abbaye de Saint-Denis la justice et l’avouerie qu’il détenait dans le bailliage [monastique] de Beaurain pour 300 livres parisis. Il cède également les [redevances en]
@@ -3908,7 +3908,7 @@
             <text xml:id="beaurain-acte51">
                 <front>
                     <titlePart>Beaurain 51</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="1230-05">1230, mai</date><placeName>Anet<ref type="note" n="1" target="#beaurain-acte51-n-1"/></placeName></docDate>
                     <div type="summary">
                         <p>Le roi Louis [IX] vidime et confirme l’accord passé par Guy [IV] de Chevreuse avec l’abbaye de Saint-Denis (<ref target="#beaurain-acte50">acte Beaurain n<hi rend="sup">o</hi> 50</ref>) et rapporte la promesse
@@ -3969,7 +3969,7 @@
             <text xml:id="beaurain-acte52">
                 <front>
                     <titlePart>Beaurain 52</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1230-05">1230, mai</date></docDate>
                     <div type="summary">
                         <p>Guy [IV] seigneur de Chevreuse promet à l’abbé de Saint-Denis, par la foi qu’il lui doit, et à l’abbaye qu’il leur portera aide si le chevalier Adam de Bethonsart<ref type="note" n="1" target="#beaurain-acte52-n-1"/> ou les héritiers du feu chevalier Thomas de Bonnelles<ref type="note" n="2" target="#beaurain-acte52-n-2"/> leur faisaient violence à propos des droits d’usage dans les bois de
@@ -4016,7 +4016,7 @@
             <text xml:id="beaurain-acte53">
                 <front>
                     <titlePart>Beaurain 53</titlePart>
-                    <docAuthor>archidiacre de Chartres</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0023">archidiacre de Chartres</docAuthor>
                     <docDate><date when="1230-05">1230, mai</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Adam de Gazeran<ref type="note" n="1" target="#beaurain-acte53-n-1"/> et son épouse Isabelle vendent à l’abbaye de Saint-Denis pour 100 livres parisis ce qu’ils possédaient à Dampierre<ref type="note" n="2" target="#beaurain-acte53-n-2"/> et Senlisse<ref type="note" n="3" target="#beaurain-acte53-n-3"/>, en fiefs, hôtes, censives, terres, prés, justice et bois, à l’exception de ce que tient d’eux Odeline,
@@ -4107,7 +4107,7 @@
             <text xml:id="beaurain-acte54">
                 <front>
                     <titlePart>Beaurain 54</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1230-11-08">1230, 8 novembre</date></docDate>
                     <div type="summary">
                         <p>Houdiarde (<foreign xml:lang="lat">Hodardis</foreign>) épouse de Guiard pelletier de Trappes<ref type="note" n="1" target="#beaurain-acte54-n-1"/> s’engage, avec le consentement de son époux, à partir pour la
@@ -4159,7 +4159,7 @@
             <text xml:id="beaurain-acte55">
                 <front>
                     <titlePart>Beaurain 55</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1231-04">1231 (a. st.), avril</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Guy [IV] de Chevreuse, avec l’accord de son épouse Hélisende, abandonne en aumône à l’abbaye de Saint-Denis tout ce qu’il pouvait avoir dans la redîme des dîmes de Dampierre<ref type="note" n="1" target="#beaurain-acte55-n-1"/>, de Senlisse<ref type="note" n="2" target="#beaurain-acte55-n-2"/>, de Doinvilliers<ref type="note" n="3" target="#beaurain-acte55-n-3"/> – dans la terre échangée avec feu
@@ -4211,7 +4211,7 @@
             <text xml:id="beaurain-acte56">
                 <front>
                     <titlePart>Beaurain 56</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1231">1231</date></docDate>
                     <div type="summary">
                         <p>Les hommes de Dampierre<ref type="note" n="1" target="#beaurain-acte56-n-1"/> et Senlisse<ref type="note" n="2" target="#beaurain-acte56-n-2"/>, dont liste nominative est donnée, abandonnent tous les droits
@@ -4279,7 +4279,7 @@
             <text xml:id="beaurain-acte57">
                 <front>
                     <titlePart>Beaurain 57</titlePart>
-                    <docAuthor>archidiacre de Pincerais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0025">archidiacre de Pincerais</docAuthor>
                     <docDate><date when="1231-03">1231 (a. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Bernard, maire de Trappes<ref type="note" n="1" target="#beaurain-acte57-n-1"/>, et son épouse Pétronille abandonnent à l’abbaye de Saint-Denis la mairie de Trappes, en échange de trente arpents de terre à
@@ -4399,8 +4399,8 @@
             <text xml:id="beaurain-acte58a">
                 <front>
                     <titlePart>Beaurain 58a</titlePart>
-                    <docAuthor>abbé des Vaux-de-Cernay</docAuthor>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0017">abbé des Vaux-de-Cernay</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1231-04">1231 (a. st.), avril</date></docDate>
                     <div type="summary">
                         <p>Thibaud abbé des Vaux-de-Cernay<ref type="note" n="1" target="#beaurain-acte58a-n-1"/> vidime l’acte par lequel Eudes abbé de Saint-Denis notifie l’abandon qui lui a été fait de la mairie de Trappes<ref type="note" n="2" target="#beaurain-acte58a-n-2"/> par Bernard, ancien maire de Trappes, et son épouse Pétronille, et la compensation qu’il a donnée à Bernard en augment du fief qu’il tient à Trappes et au
@@ -4476,7 +4476,7 @@
             <text xml:id="beaurain-acte58b">
                 <front>
                     <titlePart>Beaurain 58b</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1231-03">1231 (a. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Guy [IV] de Chevreuse, avec l’accord de son épouse Hélisende, abandonne à l’abbaye de Saint-Denis tout les droits qu’il pouvait avoir dans les bois de l’abbaye au bailliage [monastique] de Beaurain à
@@ -4521,7 +4521,7 @@
             <text xml:id="beaurain-acte59">
                 <front>
                     <titlePart>Beaurain 59</titlePart>
-                    <docAuthor>archidiacre de Pincerais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0025">archidiacre de Pincerais</docAuthor>
                     <docDate><date when="1231-03">1231 (a. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Autre transcription de l’<ref target="#beaurain-acte57">acte Beaurain n<hi rend="sup">o</hi> 57</ref>. </p>
@@ -4562,7 +4562,7 @@
             <text xml:id="beaurain-acte60">
                 <front>
                     <titlePart>Beaurain 60</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1232-05">1232, mai</date></docDate>
                     <div type="summary">
                         <p>Odeline, veuve du chevalier Thomas de Bonnelles<ref type="note" n="1" target="#beaurain-acte60-n-1"/>, vend à l’abbaye de Saint-Denis, pour 200 livres 100 sous parisis, tout ce qu’elle avait à Dampierre<ref type="note" n="2" target="#beaurain-acte60-n-2"/>, Senlisse<ref type="note" n="3" target="#beaurain-acte60-n-3"/>, Doinvilliers<ref type="note" n="4" target="#beaurain-acte60-n-4"/> et Champ-Romery<ref type="note" n="5" target="#beaurain-acte60-n-5"/>, en fiefs, hôtes, censives, dîmes, terres, prés, justice et, si c’est la cas, bois, avec le consentement de ses fils Jean et Pierre de Bonnelles et de ses
@@ -4652,7 +4652,7 @@
             <text xml:id="beaurain-acte61">
                 <front>
                     <titlePart>Beaurain 61</titlePart>
-                    <docAuthor>archidiacre de Chartres</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0023">archidiacre de Chartres</docAuthor>
                     <docDate><date when="1232-06">1232, juin</date></docDate>
                     <div type="summary">
                         <p>Étienne archidiacre de Chartres notifie, en vidimant un acte de Guillaume évêque de Paris, la vente faite à l’abbaye de Saint-Denis par Odeline veuve de Thomas de Bonnelles (<ref target="#beaurain-acte60">acte
@@ -4706,7 +4706,7 @@
             <text xml:id="beaurain-acte62">
                 <front>
                     <titlePart>Beaurain 62</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1232-11-11">1232, 11 novembre</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Guy de Chevreuse reconnaît devoir à l’abbaye de Saint-Denis 100 livres parisis, qu’il remboursera moitié dans l’octave de la prochaine Toussaint<ref type="note" n="1" target="#beaurain-acte62-n-1"/>,
@@ -4758,7 +4758,7 @@
             <text xml:id="beaurain-acte63">
                 <front>
                     <titlePart>Beaurain 63</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1234-11">1234, novembre</date></docDate>
                     <div type="summary">
                         <p>Guy [II] de Lévis, maréchal d’Albigeois<ref type="note" n="1" target="#beaurain-acte63-n-1"/>, ratifie la composition passée par sa mère avec l’abbaye de Saint-Denis dans le litige qui l’opposait, avec son fils, à
@@ -4843,7 +4843,7 @@
             <text xml:id="beaurain-acte64">
                 <front>
                     <titlePart>Beaurain 64</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1234-12">1234, décembre</date></docDate>
                     <div type="summary">
                         <p>Guy [II] de Lévis, maréchal d’Albigeois<ref type="note" n="1" target="#beaurain-acte64-n-1"/>, reconnaît et confirme le don que feu son père et homonyme<ref type="note" n="2" target="#beaurain-acte64-n-2"/> a fait
@@ -4889,7 +4889,7 @@
             <text xml:id="beaurain-acte65">
                 <front>
                     <titlePart>Beaurain 65</titlePart>
-                    <docAuthor>abbé de Notre-Dame de la Roche</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0009">abbé de Notre-Dame de la Roche</docAuthor>
                     <docDate><date when="1234-12">1234, décembre</date></docDate>
                     <div type="summary">
                         <p>Roger abbé de Notre-Dame de la Roche<ref type="note" n="1" target="#beaurain-acte65-n-1"/> reprend au cens de 30 sous parisis, portable à Beaurain au prévôt du lieu ou à son délégué à la Saint-André<ref type="note" n="2" target="#beaurain-acte65-n-2"/>, les soixante arpents de terre qu’il a achetés du seigneur Guy de Chevreuse et de son frère Hervé, chevaliers, et que ceux-ci tenaient de Saint-Denis au chef
@@ -4966,7 +4966,7 @@
             <text xml:id="beaurain-acte66">
                 <front>
                     <titlePart>Beaurain 66</titlePart>
-                    <docAuthor>abbé de Notre-Dame de la Roche</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0009">abbé de Notre-Dame de la Roche</docAuthor>
                     <docDate><date when="1234-12">1234, décembre</date></docDate>
                     <div type="summary">
                         <p>Autre notification par l’abbé de la Roche de la prise à cens de deux terres, l’une acquise de Guy et Hervé de Chevreuse, l’autre proche de son étang (<ref target="#beaurain-acte65">acte Beaurain n<hi rend="sup">o</hi> 65</ref>). </p>
@@ -5034,7 +5034,7 @@
             <text xml:id="beaurain-acte67">
                 <front>
                     <titlePart>Beaurain 67</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1239-07">1239, juillet</date></docDate>
                     <div type="summary">
                         <p>Guillaume évêque de Paris notifie la composition passée avec son accord entre l’abbaye de Saint-Denis et le curé de Saint-Lambert<ref type="note" n="1" target="#beaurain-acte67-n-1"/> : celui-ci, qui percevait
@@ -5106,7 +5106,7 @@
             <text xml:id="beaurain-acte68">
                 <front>
                     <titlePart>Beaurain 68</titlePart>
-                    <docAuthor>abbesse de Fontevraud</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0019">abbesse de Fontevraud</docAuthor>
                     <docDate><date when="1235-11">1235, novembre</date></docDate>
                     <div type="summary">
                         <p>A(dèle) abbesse de Fontevraud<ref type="note" n="1" target="#beaurain-acte68-n-1"/> cède à l’abbaye de Saint-Denis la dîme que le prieuré des Hautes-Bruyères<ref type="note" n="2" target="#beaurain-acte68-n-2"/>
@@ -5168,7 +5168,7 @@
             <text xml:id="beaurain-acte69">
                 <front>
                     <titlePart>Beaurain 69</titlePart>
-                    <docAuthor>archidiacre de Pincerais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0025">archidiacre de Pincerais</docAuthor>
                     <docDate><date when="1240-05-20">1240, 20 mai</date></docDate>
                     <div type="summary">
                         <p>Guillaume de Chartres archidiacre de Pincerais fait savoir que Guibert le Roi, opposé dans un conflit à Eudes Belot, ses frères et parents (<foreign xml:lang="lat">amici</foreign>) jusqu’à de mortelles inimitiés,
@@ -5221,7 +5221,7 @@
             <text xml:id="beaurain-acte70">
                 <front>
                     <titlePart>Beaurain 70</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1241-01-10">1241 (n. st.), 10 janvier</date></docDate>
                     <div type="summary">
                         <p>Les chevaliers Nivelon de Montigny<ref type="note" n="1" target="#beaurain-acte70-n-1"/> et Philippe Sarrasin son frère reconnaissent n’avoir aucun droit dans les bois [de l’abbaye] de Saint-Denis à Trappes<ref type="note" n="2" target="#beaurain-acte70-n-2"/>, tant que les hommes de cette contrée (<foreign xml:lang="lat">patria</foreign>) n’y auront de droit de pâturage et que Nivelon et Philippe ne voudront en
@@ -5271,7 +5271,7 @@
             <text xml:id="beaurain-acte71">
                 <front>
                     <titlePart>Beaurain 71</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1242-10">1242, octobre</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Guérin <foreign xml:lang="lat">de Valle</foreign><ref type="note" n="1" target="#beaurain-acte71-n-1"/> approuve comme seigneur féodal la vente faite par Renaud de Villebon<ref type="note" n="2" target="#beaurain-acte71-n-2"/> et son épouse Isabelle à l’abbaye de Saint-Denis d’une redevance d’un muid d’avoine et de quatre sous parisis au finage de Beaurain (<ref target="#beaurain-acte73">acte
@@ -5330,7 +5330,7 @@
             <text xml:id="beaurain-acte72">
                 <front>
                     <titlePart>Beaurain 72</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1242-10">1242, octobre</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Jean de Nanteau, seigneur de Lévis<ref type="note" n="1" target="#beaurain-acte72-n-1"/>, ratifie, avec l’accord de son épouse Marguerite, la vente faite par Renaud de Villebon<ref type="note" n="2" target="#beaurain-acte72-n-2"/> et son épouse Isabelle à l’abbaye de Saint-Denis d’une redevance d’un muid d’avoine et de quatre sous parisis au finage de Beaurain (<ref target="#beaurain-acte73">acte
@@ -5385,7 +5385,7 @@
             <text xml:id="beaurain-acte73">
                 <front>
                     <titlePart>Beaurain 73</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1242-11">1242, novembre</date></docDate>
                     <div type="summary">
                         <p>Renaud de Villebon<ref type="note" n="1" target="#beaurain-acte73-n-1"/> et son épouse Isabelle vendent en mainmorte à l’abbaye de Saint-Denis, pour 40 livres parisis, une redevance d’un muid d’avoine et quatre
@@ -5452,7 +5452,7 @@
             <text xml:id="beaurain-acte74">
                 <front>
                     <titlePart>Beaurain 74</titlePart>
-                    <docAuthor>prieur de Saint-Martin-des-Champs</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0062">prieur de Saint-Martin-des-Champs</docAuthor>
                     <docDate><date when="1243-12">1243, décembre</date></docDate>
                     <div type="summary">
                         <p>É(vrard) prieur de Saint-Martin-des-Champs à Paris<ref type="note" n="1" target="#beaurain-acte74-n-1"/> notifie le compromis qui a mis fin à un litige avec l’abbaye de Saint-Denis : celle-ci abandonne la moitié
@@ -5532,7 +5532,7 @@
             <text xml:id="beaurain-acte75">
                 <front>
                     <titlePart>Beaurain 75</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1246-01">1246 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Lettres de non-préjudice délivrées à l’abbaye de Saint-Denis par le chevalier Guy [IV] seigneur de Chevreuse, dont les gens ont libéré durant son absence outre-mer un homme capturé à Dampierre<ref type="note" n="1" target="#beaurain-acte75-n-1"/> sur la justice où l’abbaye prétendait, contre Guy, avoir une part. </p>
@@ -5579,7 +5579,7 @@
             <text xml:id="beaurain-acte76">
                 <front>
                     <titlePart>Beaurain 76</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1246-01">1246 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Les hommes et hôtes du chevalier Guy [IV] seigneur de Chevreuse à Senlisse<ref type="note" n="1" target="#beaurain-acte76-n-1"/> et <foreign xml:lang="fro">Choviler</foreign><ref type="note" n="2" target="#beaurain-acte76-n-2"/>, dont liste nominative est donnée, abandonnent à l’abbaye de Saint-Denis tout droit d’usage qu’ils pouvaient avoir dans les bois de Saint-Denis, tant dans la prévôté de
@@ -5675,7 +5675,7 @@
             <text xml:id="beaurain-acte77">
                 <front>
                     <titlePart>Beaurain 77</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1246-01">1246 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Guy [IV] seigneur de Chevreuse fait savoir que ses hommes et hôtes de Senlisse<ref type="note" n="1" target="#beaurain-acte77-n-1"/> et Choviler<ref type="note" n="2" target="#beaurain-acte77-n-2"/>,
@@ -5766,7 +5766,7 @@
             <text xml:id="beaurain-acte78">
                 <front>
                     <titlePart>Beaurain 78</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1245-12">1245, décembre</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Guy [II] de Lévis<ref type="note" n="1" target="#beaurain-acte78-n-1"/> notifie le compromis d’arbitrage qu’il a conclu avec Guillaume abbé de Saint-Denis au sujet du droit de tensement qu’il
@@ -5838,7 +5838,7 @@
             <text xml:id="beaurain-acte79">
                 <front>
                     <titlePart>Beaurain 79</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1246-03">1246 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Jean de Nanteau<ref type="note" n="1" target="#beaurain-acte79-n-1"/> s’engage à observer la sentence du chevalier Guy Chevrel et de Lambert de <foreign xml:lang="lat">Tertia Leuca</foreign><ref type="note" n="2" target="#beaurain-acte79-n-2"/>, arbitres dans le litige qui l’opposait, lui et le chevalier Guy [II] de Lévis<ref type="note" n="3" target="#beaurain-acte79-n-3"/>, à l’abbaye de
@@ -5912,7 +5912,7 @@
             <text xml:id="beaurain-acte80a">
                 <front>
                     <titlePart>Beaurain 80a</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1246-03">1246 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Guy [II] de Lévis<ref type="note" n="1" target="#beaurain-acte80a-n-1"/> s’engage à observer la sentence du chevalier Guy Chevrel et de Lambert de <foreign xml:lang="lat">Tertia Leuca</foreign><ref type="note" n="2" target="#beaurain-acte80a-n-2"/>, arbitres dans le litige qui l’opposait, lui et le chevalier Jean de Nanteau<ref type="note" n="3" target="#beaurain-acte80a-n-3"/>, à l’abbaye de
@@ -5982,7 +5982,7 @@
             <text xml:id="beaurain-acte80b">
                 <front>
                     <titlePart>Beaurain 80b</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1226-08">1226, août</date></docDate>
                     <div type="summary">
                         <p>Pierre abbé de Saint-Denis notifie les exemptions et avantages qu’il a accordés aux hommes de Trappes, domaine de l’abbaye, qui ont abandonné les droits d’usage qu’ils avaient dans ses bois de Trappes dits Bois de
@@ -6092,7 +6092,7 @@
             <text xml:id="beaurain-acte81">
                 <front>
                     <titlePart>Beaurain 81</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1244-08-12">1244, 12 août</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Guy [IV] seigneur de Chevreuse s’engage à donner à l’abbé Eudes et à l’abbaye de Saint-Denis, sur l’abandon par ses hommes de Senlisse<ref type="note" n="1" target="#beaurain-acte81-n-1"/>,
@@ -6155,7 +6155,7 @@
             <text xml:id="beaurain-acte82">
                 <front>
                     <titlePart>Beaurain 82</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1228-03-31">1228 (a. st.), 31 mars</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Gautier de Nanteau<ref type="note" n="1" target="#beaurain-acte82-n-1"/> notifie le compromis d’arbitrage qu’il a passé avec l’abbaye de Saint-Denis, avec laquelle il était en litige, réclamant un
@@ -6209,7 +6209,7 @@
             <text xml:id="beaurain-acte83">
                 <front>
                     <titlePart>Beaurain 83</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1245-12">1245, décembre</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Jean de Nanteau<ref type="note" n="1" target="#beaurain-acte83-n-1"/> notifie le compromis d’arbitrage qu’il a conclu avec Guillaume abbé de Saint-Denis au sujet du droit de tensement qu’il prétendait
@@ -6270,7 +6270,7 @@
             <text xml:id="beaurain-acte84">
                 <front>
                     <titlePart>Beaurain 84</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1248-06">1248, juin</date></docDate>
                     <div type="summary">
                         <p>Gautier, prêtre de Saint-Eustache-la-Forêt<ref type="note" n="1" target="#beaurain-acte84-n-1"/> au diocèse de Rouen, fils de feu Étienne de Lévis<ref type="note" n="2" target="#beaurain-acte84-n-2"/>, donne à
@@ -6324,7 +6324,7 @@
             <text xml:id="beaurain-acte85">
                 <front>
                     <titlePart>Beaurain 85</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1229-05-29">1229, 29 mai</date></docDate>
                     <div type="summary">
                         <p>Autre transcription de l’<ref target="#beaurain-acte36">acte Beaurain n<hi rend="sup">o</hi> 36</ref>. </p>
@@ -6355,7 +6355,7 @@
             <text xml:id="beaurain-acte86">
                 <front>
                     <titlePart>Beaurain 86</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1229-05-29">1229, 29 mai</date></docDate>
                     <div type="summary">
                         <p>Autre transcription de l’<ref target="#beaurain-acte37">acte Beaurain n<hi rend="sup">o</hi> 37</ref>. </p>
@@ -6386,7 +6386,7 @@
             <text xml:id="beaurain-acte87">
                 <front>
                     <titlePart>Beaurain 87</titlePart>
-                    <docAuthor>sans auteur déclaré</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0064">sans auteur déclaré</docAuthor>
                     <docDate><date notBefore="1218-09" notAfter="1222-05">[1218, septembre - 1222, mai.]</date></docDate>
                     <div type="summary">
                         <p>Dépositions de témoins sur les dommages et préjudices causés à l’abbaye de Saint-Denis par Mathieu maire de Dampierre<ref type="note" n="1" target="#beaurain-acte87-n-1"/>, ses frères et neveux. </p>
@@ -6501,7 +6501,7 @@
             <text xml:id="beaurain-acte88">
                 <front>
                     <titlePart>Beaurain 88</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date when="0862-09-19">862, 19 septembre</date></docDate>
                     <div type="summary">
                         <p>Charles [le Chauve] roi [de Francie occidentale] donne à l’abbaye de Saint-Denis la <foreign xml:lang="lat">villa</foreign> de Senlisse<ref type="note" n="1" target="#beaurain-acte88-n-1"/> (<foreign xml:lang="lat">Scindelitias</foreign>) en Parisis. </p>
@@ -6548,7 +6548,7 @@
             <text xml:id="beaurain-acte89">
                 <front>
                     <titlePart>Beaurain 89</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1218-11">1218, novembre</date></docDate>
                     <div type="summary">
                         <p>Constatation du versement de 10 livres parisis par l’abbaye de Saint-Denis à N. curé du Mesnil-Saint-Denis<ref type="note" n="1" target="#beaurain-acte89-n-1"/>, qui utilisera la somme à l’achat de revenus pour
@@ -6600,8 +6600,8 @@
             <text xml:id="beaurain-acte90">
                 <front>
                     <titlePart>Beaurain 90</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
-                    <docAuthor>official de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0047">official de Paris</docAuthor>
                     <docDate><date when="1259-02-14">1259 (n. st.), 14 février</date></docDate>
                     <div type="summary">
                         <p>Maître Jean de la Porte et l’official de Paris, choisis comme arbitres du litige qui opposait les abbayes de Saint-Denis et de Notre-Dame de la Roche<ref type="note" n="1" target="#beaurain-acte90-n-1"/>,
@@ -6672,7 +6672,7 @@
             <text xml:id="beaurain-acte91">
                 <front>
                     <titlePart>Beaurain 91</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1268-02-07">1268 (n. st.), 7 février</date></docDate>
                     <div type="summary">
                         <p>Mathieu abbé de Saint-Denis notifie le remboursement fait en sa présence à Thibaud de Neuvy, panetier du comte [Alphonse] de Poitiers<ref type="note" n="1" target="#beaurain-acte91-n-1"/>, par Hervé seigneur de
@@ -6724,7 +6724,7 @@
             <text xml:id="beaurain-acte92">
                 <front>
                     <titlePart>Beaurain 92</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1222-04">1222, avril</date></docDate>
                     <div type="summary">
                         <p>Pierre abbé de Saint-Denis fait savoir que l’abbaye a donné à son maire de Dampierre<ref type="note" n="1" target="#beaurain-acte92-n-1"/> Mathieu cent quatre-vingts arpents de son bois de Doinvilliers<ref type="note" n="2" target="#beaurain-acte92-n-2"/>, comme en ont décidé Guillaume Menier et Renaud l’Archer [dans leur arbitrage], contre l’abandon par Mathieu, son frère, sa sœur et son épouse de tout droit
@@ -6781,7 +6781,7 @@
             <text xml:id="beaurain-acte93">
                 <front>
                     <titlePart>Beaurain 93</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date notBefore="1222-04-03" notAfter="1222-10-31">1222, [3 avril-31 octobre]</date><placeName>Saint-Germain-en-Laye</placeName></docDate>
                     <div type="summary">
                         <p>Autre expédition de l’<ref target="#beaurain-acte21">acte Beaurain n<hi rend="sup">o</hi> 21</ref>. </p>
@@ -6822,7 +6822,7 @@
             <text xml:id="beaurain-acte94">
                 <front>
                     <titlePart>Beaurain 94</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1275-02">1275 (n. st.), février</date></docDate>
                     <div type="summary">
                         <p>Nicolas maire de Dampierre<ref type="note" n="1" target="#beaurain-acte94-n-1"/> et son épouse Jeanne vendent à l’abbaye de Saint-Denis pour 80 livres parisis cent quatre-vingts arpents au bois de Doinvilliers<ref type="note" n="2" target="#beaurain-acte94-n-2"/>, bordé par les bois de Simon de Chevreuse et de Jean de <foreign xml:lang="lat">Soisai</foreign><ref type="note" n="3" target="#beaurain-acte94-n-3"/>, et
@@ -6887,7 +6887,7 @@
             <text xml:id="beaurain-acte95">
                 <front>
                     <titlePart>Beaurain 95</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1275-10">1275, octobre</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Hervé seigneur de Chevreuse vend à l’abbaye de Saint-Denis pour 300 livres tournois, avec l’accord de son épouse Marie, diverses redevances qu’il tenait en fief de l’abbaye : quatre muids et demi
@@ -6978,7 +6978,7 @@
             <text xml:id="beaurain-acte96">
                 <front>
                     <titlePart>Beaurain 96</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1275-12-11">1275, 11 décembre</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Jean seigneur de Maurepas<ref type="note" n="1" target="#beaurain-acte96-n-1"/> vend à l’abbaye de Saint-Denis pour 60 livres parisis le tiers qu’il avait, à raison du droit de garde et en fief de
@@ -7050,7 +7050,7 @@
             <text xml:id="beaurain-acte97">
                 <front>
                     <titlePart>Beaurain 97</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1277-05">1277, mai</date></docDate>
                     <div type="summary">
                         <p>Guillaume l’Huissier et son épouse Odeline vendent à l’abbaye de Saint-Denis pour 100 livres parisis la redevance en avoine qu’ils percevaient sur le tensement de Trappes<ref type="note" n="1" target="#beaurain-acte97-n-1"/>, et qu’ils tenaient en propre, et le petit molage<ref type="note" n="2" target="#beaurain-acte97-n-2"/>, qu’ils tenaient en fief de l’abbaye. – Acte passé sous le sceau de la
@@ -7120,7 +7120,7 @@
             <text xml:id="beaurain-acte98">
                 <front>
                     <titlePart>Beaurain 98</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1269-11-23">1269, 23 novembre</date></docDate>
                     <div type="summary">
                         <p>Philippe Maltrenchant, écuyer, et son épouse Hodiarde vendent à l’abbaye de Saint-Denis pour 27 livres parisis le cinquième d’un fief à Saint-Forget<ref type="note" n="1" target="#beaurain-acte98-n-1"/>, qu’ils
@@ -7180,7 +7180,7 @@
             <text xml:id="beaurain-acte99a">
                 <front>
                     <titlePart>Beaurain 99a</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1272-04">1272 (a. st.), avril</date></docDate>
                     <div type="summary">
                         <p>Eudes le Doyen de Trappes<ref type="note" n="1" target="#beaurain-acte99a-n-1"/> et son épouse Denise vendent à l’abbaye de Saint-Denis pour 24 livres parisis une sergenterie, dite <foreign xml:lang="fro">doyenné</foreign>, à Trappes, héritée par Eudes et emportant perception des droits suivants : six deniers sur chaque mise en possession ; six deniers sur chaque borne posée ; à la Saint-Denis<ref type="note" n="2" target="#beaurain-acte99a-n-2"/> deux sous parisis, quatre pains et un demi-setier de vin ; à Noël un pain et une chandelle ; à la Chandeleur une torche (<foreign xml:lang="fro">tuertiz</foreign>)<ref type="note" n="3" target="#beaurain-acte99a-n-3"/> ; un agneau sur les agneaux [nés dans l’année ?] ; trente gerbes de blé et trente gerbes d’avoine sur les coutures de l’abbaye au titre de la garde de
@@ -7251,7 +7251,7 @@
             <text xml:id="beaurain-acte99b">
                 <front>
                     <titlePart>Beaurain 99b</titlePart>
-                    <docAuthor>officialité de Chartres</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0050">officialité de Chartres</docAuthor>
                     <docDate><date when="1272-04">[Sans doute 1272 (a. st.), avril.]</date></docDate>
                     <div type="summary">
                         <p>Notification de la vente d’une sergenterie à Trappes<ref type="note" n="1" target="#beaurain-acte99b-n-1"/> (<ref target="#beaurain-acte99a">acte Beaurain n<hi rend="sup">o</hi> 99a</ref>) sous le sceau de
@@ -7291,7 +7291,7 @@
             <text xml:id="beaurain-acte100">
                 <front>
                     <titlePart>Beaurain 100</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1284-02-01">1284 (n.st.), 1<hi rend="sup">er</hi> février</date></docDate>
                     <div type="summary">
                         <p>Sédile dame de Chevreuse, veuve du chevalier Guillaume Maingot seigneur de Surgères<ref type="note" n="1" target="#beaurain-acte100-n-1"/>, vend à l’abbaye de Saint Denis pour 1066 livres tournois un bois de 466
@@ -7393,7 +7393,7 @@
             <text xml:id="beaurain-acte101">
                 <front>
                     <titlePart>Beaurain 101</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1284-02-01">1284 (n.st.), 1<hi rend="sup">er</hi> février</date></docDate>
                     <div type="summary">
                         <p>Notification sous le sceau de la prévôté de Paris de la vente par Sedile dame de Chevreuse<ref type="note" n="1" target="#beaurain-acte101-n-1"/> du bois près des Vaux-de-Cernay<ref type="note" n="2" target="#beaurain-acte101-n-2"/>, dit la Haie d’Yvette<ref type="note" n="3" target="#beaurain-acte101-n-3"/> (<ref target="#beaurain-acte100">acte Beaurain n<hi rend="sup">o</hi> 100</ref>). </p>
@@ -7461,7 +7461,7 @@
             <text xml:id="beaurain-acte102">
                 <front>
                     <titlePart>Beaurain 102</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1275-12-11">1275, 11 décembre</date></docDate>
                     <div type="summary">
                         <p>Florent de <foreign xml:lang="lat">Flocenvilla</foreign><ref type="note" n="1" target="#beaurain-acte102-n-1"/>, écuyer, vend à l’abbaye de Saint-Denis pour 20 sous parisis la redevance annuelle de quatre deniers
@@ -7520,7 +7520,7 @@
             <text xml:id="beaurain-acte103">
                 <front>
                     <titlePart>Beaurain 103</titlePart>
-                    <docAuthor>archidiacre de Pincerais</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0025">archidiacre de Pincerais</docAuthor>
                     <docDate><date when="1261-02-08">1261 (n.st.), 8 février</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Pierre de Chaudon<ref type="note" n="1" target="#beaurain-acte103-n-1"/> et son épouse Liégearde (<foreign xml:lang="lat">Ligardis</foreign>) vendent à l’abbaye de Saint-Denis pour 10 livres parisis
@@ -7610,7 +7610,7 @@
             <text xml:id="beaurain-acte104">
                 <front>
                     <titlePart>Beaurain 104</titlePart>
-                    <docAuthor>abbé des Vaux-de-Cernay</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0017">abbé des Vaux-de-Cernay</docAuthor>
                     <docDate><date when="1283-06">1283, juin</date></docDate>
                     <div type="summary">
                         <p>Roger abbé des Vaux-de-Cernay<ref type="note" n="1" target="#beaurain-acte104-n-1"/> abandonne à l’abbaye de Saint Denis 25 arpents de bois, délimités par des bornes et mentionnés dans des lettres des religieux de
@@ -7682,7 +7682,7 @@
             <text xml:id="beaurain-acte105">
                 <front>
                     <titlePart>Beaurain 105</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1286-09">1286, septembre</date></docDate>
                     <div type="summary">
                         <p>Michel des Bordes<ref type="note" n="1" target="#beaurain-acte105-n-1"/>, clerc, lègue à l’abbaye de Saint-Denis son manoir des Bordes et vingt et un arpents de terre autour, qu’il tient de l’héritage de ses
@@ -7746,7 +7746,7 @@
             <text xml:id="beaurain-acte106">
                 <front>
                     <titlePart>Beaurain 106</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1300-02-19">1300 (n. st.), 19 février</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Gilles de Clagny<ref type="note" n="1" target="#beaurain-acte106-n-1"/> vend à l’abbaye de Saint Denis pour 120 livres parisis les biens et droits qu’il tient à Dampierre<ref type="note" n="2" target="#beaurain-acte106-n-2"/> et dans son finage, mouvant du fief de Jean de Damiete<ref type="note" n="3" target="#beaurain-acte106-n-3"/>, de l’abbaye de Saint-Denis et de Simon de Dampierre : le moulin
@@ -7837,7 +7837,7 @@
             <text xml:id="beaurain-acte107a">
                 <front>
                     <titlePart>Beaurain 107a</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when-iso="1300-02-29">1300 (n. st.), 29 février</date></docDate>
                     <div type="summary">
                         <p>Jeanne, épouse du chevalier Gilles de Clagny<ref type="note" n="1" target="#beaurain-acte107a-n-1"/>, donne son consentement à la vente faite par celui-ci à l’abbaye de Saint-Denis (<ref target="#beaurain-acte106">acte Beaurain n<hi rend="sup">o</hi> 106</ref>). – Acte notifié sous le sceau de l’officialité de Paris. </p>
@@ -7889,7 +7889,7 @@
             <text xml:id="beaurain-acte107b">
                 <front>
                     <titlePart>Beaurain 107b</titlePart>
-                    <docAuthor>prévôté de Châteaufort</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0059">prévôté de Châteaufort</docAuthor>
                     <docDate><date when="1300-03-08">1300 (n. st.), 8 mars</date></docDate>
                     <div type="summary">
                         <p>Jean de Damiete<ref type="note" n="1" target="#beaurain-acte107b-n-1"/>, écuyer, vend à l’abbaye de Saint-Denis pour 27 livres parisis le fief qu’il tenait d’elle à Dampierre<ref type="note" n="2" target="#beaurain-acte107b-n-2"/>. – Acte passé sous le sceau de la prévôté de Châteaufort. </p>
@@ -7950,7 +7950,7 @@
             <text xml:id="beaurain-acte108">
                 <front>
                     <titlePart>Beaurain 108</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1296-12-24">1296, 24 décembre</date></docDate>
                     <div type="summary">
                         <p>Pierre Moreau d’Élancourt<ref type="note" n="1" target="#beaurain-acte108-n-1"/> et son épouse Marie vendent à l’abbaye de Saint-Denis pour 9 livres parisis un pré sis dans la prairie d’Élancourt, qu’ils tenaient

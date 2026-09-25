@@ -447,7 +447,7 @@
             <text xml:id="dugny-acte1">
                 <front>
                     <titlePart>Dugny 1</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1193">1193</date></docDate>
                     <div type="summary">
                         <p>Hugues, abbé de Saint-Denis, et son chapitre notifient l’accord passé entre Baudouin d’Andilly<ref type="note" n="1" target="#dugny-acte1-n-1"/> et ses hôtes de Garges. Baudouin leur a concédé à mi-fruit, à
@@ -518,7 +518,7 @@
             <text xml:id="dugny-acte2">
                 <front>
                     <titlePart>Dugny 2</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1207-06">1207, juin</date></docDate>
                     <div type="summary">
                         <p>Ours, chambrier du roi<ref type="note" n="1" target="#dugny-acte2-n-1"/>, avec l’accord de son épouse <foreign xml:lang="lat">Leticia</foreign> et de ses enfants, confirme la donation et la vente que Hugues Beau
@@ -571,7 +571,7 @@
             <text xml:id="dugny-acte3">
                 <front>
                     <titlePart>Dugny 3</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date notBefore="1207-04-22" notAfter="1207-10-31">1207, [22 avril - 31 octobre]</date><placeName>Paris</placeName></docDate>
                     <div type="summary">
                         <p> Philippe Auguste confirme la donation, en aumône, d’un cinquième de tout ce que Hugues, fils de Gérard de Saint-Denis, avait à Dugny, tant en propre qu’en fief, ainsi que la vente de tout ce qui lui restait en ce
@@ -624,7 +624,7 @@
             <text xml:id="dugny-acte4">
                 <front>
                     <titlePart>Dugny 4</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1207-04">1207 (a. st.), avril</date></docDate>
                     <div type="summary">
                         <p>Roger la Pie, seigneur de Villepinte<ref type="note" n="1" target="#dugny-acte4-n-1"/>, notifie sous son sceau l’abandon fait, avec son accord et celui de son épouse, par son fils Hugues le Loup de redevances
@@ -693,7 +693,7 @@
             <text xml:id="dugny-acte5">
                 <front>
                     <titlePart>Dugny 5</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1207-07">1207, juillet</date></docDate>
                     <div type="summary">
                         <p>Gautier d’Aulnay<ref type="note" n="1" target="#dugny-acte5-n-1"/>, avec le consentement de sa mère et de ses frères, ratifie la cession au profit de l’abbaye de Saint-Denis par Hugues Beau Neveu, partie en
@@ -748,7 +748,7 @@
             <text xml:id="dugny-acte6">
                 <front>
                     <titlePart>Dugny 6</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1213-03">1213 (n. st.), mars</date><placeName>Paris</placeName></docDate>
                     <div type="summary">
                         <p>Ours, chambrier du roi<ref type="note" n="1" target="#dugny-acte6-n-1"/> , ratifie la vente faite à l’abbaye de Saint-Denis par Hugues de Dugny, de cens dans et hors la ville de Saint-Denis, d’un rapport de 4
@@ -803,7 +803,7 @@
             <text xml:id="dugny-acte7">
                 <front>
                     <titlePart>Dugny 7</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1219-05">1219, mai</date></docDate>
                     <div type="summary">
                         <p>Adam de Mareil<ref type="note" n="1" target="#dugny-acte7-n-1"/>, clerc, lègue à Saint-Denis le cinquième de son héritage sur sa terre de Garges, tenue de l’abbaye, s’il vient à décéder durant son voyage en
@@ -879,7 +879,7 @@
             <text xml:id="dugny-acte8">
                 <front>
                     <titlePart>Dugny 8</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1219-05">1219, mai</date></docDate>
                     <div type="summary">
                         <p>Autre expédition du legs par Adam de Mareil<ref type="note" n="1" target="#dugny-acte8-n-1"/>, clerc, du cinquième de son héritage à Garges (acte<ref target="#dugny-acte7"> Dungy n<hi rend="sup">o</hi>7</ref>). –
@@ -940,7 +940,7 @@
             <text xml:id="dugny-acte9">
                 <front>
                     <titlePart>Dugny 9</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
                     <docDate><date when="1219-06">1219, juin</date></docDate>
                     <div type="summary">
                         <p>Gautier chevalier de Villiers<ref type="note" n="1" target="#dugny-acte9-n-1"/> et son épouse Héloïse sa femme donnent à Saint-Denis une terre de pâture d’environ un arpent, contiguë au derrière de la maison de
@@ -1002,7 +1002,7 @@
             <text xml:id="dugny-acte10">
                 <front>
                     <titlePart>Dugny 10</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date notBefore="1213-03" notAfter="1213-04-13">1213 [mars-13 avril] </date><placeName>Paris</placeName></docDate>
                     <div type="summary">
                         <p>Philippe Auguste confirme la vente de cens et de droits d’avalage faite à l’abbaye de Saint-Denis par Hugues de Dugny avec l’assentiment de son chambrier Ours (acte <ref target="#dugny-acte6">Dugny
@@ -1040,7 +1040,7 @@
             <text xml:id="dugny-acte11">
                 <front>
                     <titlePart>Dugny 11</titlePart>
-                    <docAuthor>abbé de Juilly</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0005">abbé de Juilly</docAuthor>
                     <docDate><date when="1222-11-01">1222, 1er novembre</date></docDate>
                     <div type="summary">
                         <p>Gilles, abbé de Juilly<ref type="note" n="1" target="#dugny-acte11-n-1"/> amortit de Saint-Denis, contre un don gracieux (<foreign xml:lang="lat">caritas</foreign>) de 40 livres parisis et l’abandon d’une rente
@@ -1098,7 +1098,7 @@
             <text xml:id="dugny-acte12">
                 <front>
                     <titlePart>Dugny 12</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1223">1223</date></docDate>
                     <div type="summary">
                         <p>Pierre de Dugny et son épouse Aude (Halda) vendent à Saint-Denis, pour 33 livres parisis, sept arpents de terre arable à Dugny, pris dans le fief tenu de l’abbaye en ligesse par Pierre, ainsi que 15 sous parisis
@@ -1157,7 +1157,7 @@
             <text xml:id="dugny-acte13">
                 <front>
                     <titlePart>Dugny 13</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
                     <docDate><date when="1224-09">1224, septembre</date></docDate>
                     <div type="summary">
                         <p>Raoul, maire de Louvres<ref type="note" n="1" target="#dugny-acte13-n-1"/>, et son épouse Émeline vendent à Saint-Denis pour 18 livres parisis des cens portant sur des maisons et [des courtils], d’un rapport de
@@ -1213,7 +1213,7 @@
             <text xml:id="dugny-acte14">
                 <front>
                     <titlePart>Dugny 14</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1228-02-14">1228 (n. st.), 14 février</date></docDate>
                     <div type="summary">
                         <p>Soutain (<foreign xml:lang="lat">Soutannus</foreign>) chevalier de Jagny<ref type="note" n="1" target="#dugny-acte14-n-1"/> et son épouse Alix vendent à Saint-Denis pour 20 livres parisis le fief qu’ils tenaient
@@ -1285,7 +1285,7 @@
             <text xml:id="dugny-acte15">
                 <front>
                     <titlePart>Dugny 15</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1228-05">1228, mai</date></docDate>
                     <div type="summary">
                         <p>Guillaume évêque de Paris ratifie la vente faite à Saint-Denis par Robert, curé (<foreign xml:lang="lat">presbiter</foreign>) de Dugny, d’un cens de sept sous parisis, mouvant en fief de l’abbaye et qui avait été
@@ -1331,7 +1331,7 @@
             <text xml:id="dugny-acte16">
                 <front>
                     <titlePart>Dugny 16</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1228-05-29">1228, 29 mai</date></docDate>
                     <div type="summary">
                         <p>Marguerite, épouse de Guillaume Bateste, chevalier, promet, avec l’accord de celui-ci, de ne pas contester la vente faite à Saint-Denis par Soutain de Jagny<ref type="note" n="1" target="#dugny-acte16-n-1"/> et
@@ -1388,7 +1388,7 @@
             <text xml:id="dugny-acte17">
                 <front>
                     <titlePart>Dugny 17</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1230-04-11">1230 (n. st.), 11 avril</date><placeName>Louvres</placeName></docDate>
                     <div type="summary">
                         <p>Étienne Boulard de Gonesse et son épouse Émeline vendent à Saint-Denis pour 80 livres parisis le fief qu’ils tenaient de l’abbaye à Garges, consistant en censives, terres arables et champarts. – Acte notifié par
@@ -1434,7 +1434,7 @@
             <text xml:id="dugny-acte18">
                 <front>
                     <titlePart>Dugny 18</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1231-07">1231, juillet</date></docDate>
                     <div type="summary">
                         <p>Guillaume de Dugny, écuyer, et son épouse Marie, avec l’accord d’Isabelle, mère de Guillaume, donnent en aumône à Saint-Denis, pour un cinquième, trois arpents de terre à Dugny, au lieu-dit <foreign xml:lang="fro">Couart</foreign>, et lui vendent les quatre autres cinquièmes pour 10 livres parisis. – Acte notifié par l’archidiacre de Paris G.</p>
@@ -1485,7 +1485,7 @@
             <text xml:id="dugny-acte19">
                 <front>
                     <titlePart>Dugny 19</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1230-11-19">1230, 19 novembre</date></docDate>
                     <div type="summary">
                         <p>Pierre chevalier de Paluel<ref type="note" n="1" target="#dugny-acte19-n-1"/> et son épouse Aude donnent en aumône à Saint-Denis, pour un cinquième, douze arpents de terre et quatre arpents de pré à La Molette<ref type="note" n="2" target="#dugny-acte19-n-2"/> et lui vendent les quatre autres cinquièmes pour 80 livres parisis. – Acte notifié par l’official de l’archidiacre de Paris.</p>
@@ -1536,7 +1536,7 @@
             <text xml:id="dugny-acte20">
                 <front>
                     <titlePart>Dugny 20</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1234-05">1234, mai</date></docDate>
                     <div type="summary">
                         <p>Renauld, fils de Nicolas prévôt de Gonesse, et son épouse Alix reconnaissent tenir de Saint-Denis tout leur pourpris et maison-forte (<foreign xml:lang="lat">fortericia</foreign>) du Thillay<ref type="note" n="1" target="#dugny-acte20-n-1"/> à 14 deniers parisis de chef-cens, à la réserve de la justice, que l’abbaye exerce comme elle le fait sur les maisons de ses hôtes au Thillay. – Acte notifié par l’archidiacre de
@@ -1585,7 +1585,7 @@
             <text xml:id="dugny-acte21">
                 <front>
                     <titlePart>Dugny 21</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1235-01">1235 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Élinand de Garges et son épouse Marie, avec l’accord d’Odeline, sœur d’Élinand, et de son mari Thomas de l’Aître, vendent à Saint-Denis, pour 40 livres parisis, neuf quartiers de vigne à Garges, au Mont<ref type="note" n="1" target="#dugny-acte21-n-1"/>, dans la censive de l’abbaye. – Acte notifié par l’official de l’archidiacre de Paris.</p>
@@ -1634,7 +1634,7 @@
             <text xml:id="dugny-acte22">
                 <front>
                     <titlePart>Dugny 22</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1239-04">1239, avril</date></docDate>
                     <div type="summary">
                         <p>Simon dit de Mauléon et son épouse Agnès donnent à Guillaume d’Arnouville<ref type="note" n="1" target="#dugny-acte22-n-1"/>, écuyer, pour son mariage avec leur fille Jeanne tous les droits qu’ils avaient à
@@ -1693,7 +1693,7 @@
             <text xml:id="dugny-acte23">
                 <front>
                     <titlePart>Dugny 23</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1240-11">1240, novembre</date></docDate>
                     <div type="summary">
                         <p>Étienne de Brie, clerc, et son épouse Marie échangent avec Adam de Dugny tous les droits qu’ils avaient à Dugny, tant sur le moulin de Paluel<ref type="note" n="1" target="#dugny-acte23-n-1"/> qu’en autres biens,
@@ -1769,7 +1769,7 @@
             <text xml:id="dugny-acte24">
                 <front>
                     <titlePart>Dugny 24</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1241-04">1241 (a. st.), avril</date></docDate>
                     <div type="summary">
                         <p>Guillaume d’Arnouville<ref type="note" n="1" target="#dugny-acte24-n-1"/> et son épouse Jeanne vendent à Saint-Denis pour 30 livres parisis les terres à cens et à champart qu’ils tenaient en fief de l’abbaye à
@@ -1845,7 +1845,7 @@
             <text xml:id="dugny-acte25">
                 <front>
                     <titlePart>Dugny 25</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1242-11">1242, novembre</date></docDate>
                     <div type="summary">
                         <p>Geoffroy Blondel de Garges, son épouse Alix et leur fils <foreign xml:lang="lat">Perratus </foreign>vendent à Saint-Denis pour 32 sous parisis une pièce de terre arable au territoire de Garges, chargée envers
@@ -1892,7 +1892,7 @@
             <text xml:id="dugny-acte26">
                 <front>
                     <titlePart>Dugny 26</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1253-04">1253 (a. st.), avril</date></docDate>
                     <div type="summary">
                         <p>Pierre chevalier du Plessis<ref type="note" n="1" target="#dugny-acte26-n-1"/> abandonne en faveur de Saint-Denis toutes les prétentions qu’il avaient élevées sur une pièce de pré qu’il disait avoir en sa censive
@@ -1941,7 +1941,7 @@
             <text xml:id="dugny-acte27">
                 <front>
                     <titlePart>Dugny 27</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1249-02">1249 (n. st.), février</date></docDate>
                     <div type="summary">
                         <p>Alix, veuve de Renaud du Thillay<ref type="note" n="1" target="#dugny-acte27-n-1"/>, vend à Thibaud de Milly, grand prieur de Saint-Denis, au titre de son office, pour 30 livres parisis, tout le champart qu’elle
@@ -2004,7 +2004,7 @@
             <text xml:id="dugny-acte28">
                 <front>
                     <titlePart>Dugny 28</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1247-12">1247, décembre</date></docDate>
                     <div type="summary">
                         <p>Pierre Menot et son épouse Richeud, de Dugny, vendent à Saint-Denis, pour 7 livres parisis et demie, une pièce de terre arable sise à Dugny, à L’Épinette<ref type="note" n="1" target="#dugny-acte28-n-1"/>, qu’ils
@@ -2053,7 +2053,7 @@
             <text xml:id="dugny-acte29">
                 <front>
                     <titlePart>Dugny 29</titlePart>
-                    <docAuthor>abbé de Saint-Victor de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0015">abbé de Saint-Victor de Paris</docAuthor>
                     <docDate><date when="1263-08">1263, août</date></docDate>
                     <div type="summary">
                         <p>Robert, abbé de Saint-Victor de Paris, confirme l’échange conclu entre son prieur de Villiers-le-Bel<ref type="note" n="1" target="#dugny-acte29-n-1"/> et l’abbaye de Saint-Denis, cette dernière abandonnant au
@@ -2118,7 +2118,7 @@
             <text xml:id="dugny-acte30">
                 <front>
                     <titlePart>Dugny 30</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1254-03">1254 (a. st.), mars.</date></docDate>
                     <div type="summary">
                         <p>Renaud dit de Champagnes<ref type="note" n="1" target="#dugny-acte30-n-1"/>, chevalier, et son épouse Jeanne vendent à Saint-Denis, pour les quatre cinquièmes, contre 24 livres parisis, et aumônent, pour le
@@ -2195,7 +2195,7 @@
             <text xml:id="dugny-acte31">
                 <front>
                     <titlePart>Dugny 31</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1273-07-01">1273, 10 juillet</date></docDate>
                     <div type="summary">
                         <p>Guillaume de Mauléon, écuyer, et son épouse Isabelle vendent à Saint-Denis, pour 118 livres 10 sous parisis, des redevances qu’ils percevaient à Gonesse et que Guillaume avait en héritage et tenait en fief de
@@ -2268,7 +2268,7 @@
             <text xml:id="dugny-acte32">
                 <front>
                     <titlePart>Dugny 32</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1273-07-01">1273, juillet</date></docDate>
                     <div type="summary">
                         <p>Autre notification, par Guillaume de Mauléon, de la vente qu’il a faite à Saint-Denis de redevances à Gonesse (acte <ref target="#dugny-acte31">Dugny n<hi rend="sup">o</hi> 31</ref>).</p>
@@ -2324,7 +2324,7 @@
             <text xml:id="dugny-acte33">
                 <front>
                     <titlePart>Dugny 33</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1274-03"> 1274 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Raoul d’Étif<ref type="note" n="1" target="#dugny-acte33-n-1"/>, écuyer, vend pour 8 livres parisis à l’abbé de Saint-Denis, agissant au nom du grand prieur pour son office, les redevances qu’il levait aux octaves
@@ -2404,7 +2404,7 @@
             <text xml:id="dugny-acte34">
                 <front>
                     <titlePart>Dugny 34</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1269-12-31">1269, 31 décembre</date></docDate>
                     <div type="summary">
                         <p>Adam de Copin<ref type="note" n="1" target="#dugny-acte34-n-1"/> de Sarcelles, écuyer, vend au grand prieur de Saint-Denis, pour 24 livres parisis, tout ce qu’il possédait, biens, cens, rentes, hostsies,
@@ -2474,7 +2474,7 @@
             <text xml:id="dugny-acte35">
                 <front>
                     <titlePart>Dugny 35</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1253-11">1253, novembre</date></docDate>
                     <div type="summary">
                         <p>Jean Chauvin de Gonesse et son épouse Érembourg reprennent de Saint-Denis, au cens de six deniers parisis aux octaves de la Saint-Denis, cinq quartiers de terre, sis au finage de Gonesse, au Val du roi<ref type="note" n="1" target="#dugny-acte35-n-1"/>, qu’ils tenaient auparavant à champart ; ils donnent en compensation à l’abbaye un arpent de terre sis à Dugny et au Mont<ref type="note" n="2" target="#dugny-acte35-n-2"/> jusque là tenu d’eux à champart, et six deniers parisis obole de croît de cens à verser par des tenanciers et sur des terres dont le détail est donné, à la voie de Montmorency<ref type="note" n="3" target="#dugny-acte35-n-3"/> et à la croix de feu Hugues<ref type="note" n="4" target="#dugny-acte35-n-4"/>. – Acte notifié par l’official de l’archidiacre de Paris.</p>
@@ -2534,7 +2534,7 @@
             <text xml:id="dugny-acte36">
                 <front>
                     <titlePart>Dugny 36</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1265-11">1265, novembre</date></docDate>
                     <div type="summary">
                         <p>Perrot de Champagnes<ref type="note" n="1" target="#dugny-acte36-n-1"/>, écuyer, vend pour 8 livres 3 sous parisis au [grand] prieur de Saint-Denis, agissant pour son office, une pièce de vigne au finage de
@@ -2598,7 +2598,7 @@
             <text xml:id="dugny-acte37">
                 <front>
                     <titlePart>Dugny 37</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1269-05-31">1269, 31 mai</date></docDate>
                     <div type="summary">
                         <p>Dreu de Paris, bourgeois de Saint-Denis, et son épouse Marie vendent pour 55 livres parisis au grand prieur de Saint-Denis, agissant pour son office, une pièce de pré sise au finage de Dugny, au Pont-Yblon<ref type="note" n="1" target="#dugny-acte37-n-1"/>, bordant la Morée<ref type="note" n="2" target="#dugny-acte37-n-2"/>, contiguë à des prés du prieur et de Jean <foreign xml:lang="fro">Haut levé</foreign>, et
@@ -2675,7 +2675,7 @@
             <text xml:id="dugny-acte38">
                 <front>
                     <titlePart>Dugny 38</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1261-04-14">1261, 14 avril</date></docDate>
                     <div type="summary">
                         <p>Jean de La Motte du Thillay<ref type="note" n="1" target="#dugny-acte38-n-1"/>, écuyer, et son épouse Isabelle vendent pour 18 livres parisis au grand prieur de Saint-Denis, agissant pour son office, 30 sous
@@ -2737,7 +2737,7 @@
             <text xml:id="dugny-acte39">
                 <front>
                     <titlePart>Dugny 39</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1287-09">1287, septembre</date></docDate>
                     <div type="summary">
                         <p>Adam de Champagnes<ref type="note" n="1" target="#dugny-acte39-n-1"/>, écuyer, à la suite du désaccord qui l’opposait à Saint-Denis, abandonne pour 10 livres parisis ses droits sur cinq quartiers de vigne au
@@ -2826,7 +2826,7 @@
             <text xml:id="dugny-acte40">
                 <front>
                     <titlePart>Dugny 40</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1263-06-08">1263, 8 juin</date></docDate>
                     <div type="summary">
                         <p>Jean chevalier de Garges et son fils Henri reconnaissent que la maison et le jardin situé derrière elle, qu’Henri a achetés de Guillaume le Jeune à Garges, dépendent de la censive et seigneurie de l’abbaye de
@@ -2876,7 +2876,7 @@
             <text xml:id="dugny-acte41">
                 <front>
                     <titlePart>Dugny 41</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1260-02-13">1260 (n. st.), 13 février</date></docDate>
                     <div type="summary">
                         <p>Adam, fils de feu Guillaume de Copin<ref type="note" n="1" target="#dugny-acte41-n-1"/> , écuyer, confirme aux trinitaires de Mitry<ref type="note" n="2" target="#dugny-acte41-n-2"/> la rente de 20 sous parisis
@@ -2935,7 +2935,7 @@
             <text xml:id="dugny-acte42">
                 <front>
                     <titlePart>Dugny 42</titlePart>
-                    <docAuthor>trinitaires</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0066">trinitaires</docAuthor>
                     <docDate><date when="1270-03-09">1270 (n. st.), 9 mars</date></docDate>
                     <div type="summary">
                         <p>Les trinitaires de Mitry<ref type="note" n="1" target="#dugny-acte42-n-1"/> vendent pour 13 livres parisis, sur l’injonction et au bénéfice du [grand] prieur de Saint-Denis, la rente de 20 sous parisis qui leur
@@ -2987,7 +2987,7 @@
             <text xml:id="dugny-acte43">
                 <front>
                     <titlePart>Dugny 43</titlePart>
-                    <docAuthor>prévôté de Gonesse</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0060">prévôté de Gonesse</docAuthor>
                     <docDate><date when="1283-06-25">1283, 25 juin</date></docDate>
                     <div type="summary">
                         <p>Jean chevalier des Groues<ref type="note" n="1" target="#dugny-acte43-n-1"/> et son épouse Isabelle vendent au grand prieur de Saint-Denis, pour 6 livres tournois, neuf sous et neuf deniers parisis de croît de
@@ -3053,7 +3053,7 @@
             <text xml:id="dugny-acte44">
                 <front>
                     <titlePart>Dugny 44</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1265-11-18">1265, 18 novembre</date></docDate>
                     <div type="summary">
                         <p>Autre notification de la vente d’une pièce de vigne au finage de Garges par Pierre de Champagnes<ref type="note" n="1" target="#dugny-acte44-n-1"/> écuyer (acte <ref target="#dugny-acte36"> Dugny n<hi rend="sup">o</hi> 36</ref>). – Acte passé sous le sceau de l’officialité de Paris.</p>
@@ -3118,7 +3118,7 @@
             <text xml:id="dugny-acte45">
                 <front>
                     <titlePart>Dugny 45</titlePart>
-                    <docAuthor>prévôté de Gonesse</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0060">prévôté de Gonesse</docAuthor>
                     <docDate><date when="1266-01">1266 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Jean du Pré et son épouse Perronelle vendent pour 50 sous parisis au grand prieur de Saint-Denis des redevances sur des biens sis au finage de Gonesse, de l’héritage de Perronelle : d’une part, deux deniers et
@@ -3184,7 +3184,7 @@
             <text xml:id="dugny-acte46">
                 <front>
                     <titlePart>Dugny 46</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1269-11">1269, novembre</date></docDate>
                     <div type="summary">
                         <p>Henri de Garges, écuyer, avec l’accord de son père Jean, qui scelle l’acte, assigne au grand prieur de Saint-Denis un chef-cens de 27 deniers, à acquitter aux octaves de la Saint-Denis, sur trois arpents de vigne
@@ -3253,7 +3253,7 @@
             <text xml:id="dugny-acte47">
                 <front>
                     <titlePart>Dugny 47</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1263-06">1263, juin</date></docDate>
                     <div type="summary">
                         <p>Henri de Dugny, clerc, et son épouse Pétronille vendent pour 16 livres parisis au [grand] prieur de Saint-Denis la part qu’ils avaient dans un pré ayant appartenu à feu Adam chevalier de Dugny, dans la censive du
@@ -3314,7 +3314,7 @@
             <text xml:id="dugny-acte48">
                 <front>
                     <titlePart>Dugny 48</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1259-12-20">1259, 20 décembre</date></docDate>
                     <div type="summary">
                         <p>Guillaume, maître de l’Hôtel-Dieu de Gonesse, cède à Saint-Denis neuf deniers de chef-cens sur plusieurs pièces de terre au finage de Bouqueval<ref type="note" n="1" target="#dugny-acte48-n-1"/> et obtient en
@@ -3366,7 +3366,7 @@
             <text xml:id="dugny-acte49">
                 <front>
                     <titlePart>Dugny 49</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1275-12-10">1275, 10 décembre</date></docDate>
                     <div type="summary">
                         <p>Raoul de Belloy<ref type="note" n="1" target="#dugny-acte49-n-1"/> et son épouse Margueritte vendent pour 18 livres parisis à l’abbé de Saint-Denis, agissant pour l’office du [grand] prieur, vingt-huit sous
@@ -3460,7 +3460,7 @@
             <text xml:id="dugny-acte50">
                 <front>
                     <titlePart>Dugny 50</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1279-03">1279 (n. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Isabelle des Groues<ref type="note" n="1" target="#dugny-acte50-n-1"/>, veuve de Jean des Groues chevalier de Roissy<ref type="note" n="2" target="#dugny-acte50-n-2"/>, vend pour 50 sous parisis au [grand] prieur
@@ -3526,7 +3526,7 @@
             <text xml:id="dugny-acte51">
                 <front>
                     <titlePart>Dugny 51</titlePart>
-                    <docAuthor>prévôté de Gonesse</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0060">prévôté de Gonesse</docAuthor>
                     <docDate><date when="1281-06-15">1281, 15 juin</date></docDate>
                     <div type="summary">
                         <p>Oudard de Bonneuil<ref type="note" n="1" target="#dugny-acte51-n-1"/>, écuyer, et son épouse Jeanne vendent pour 4 livres parisis au [grand] prieur de Saint-Denis, agissant pour son office, une pièce de terre
@@ -3593,7 +3593,7 @@
             <text xml:id="dugny-acte52">
                 <front>
                     <titlePart>Dugny 52</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1281-05-07">1281, 7 mai</date></docDate>
                     <div type="summary">
                         <p>Guillaume de Gonesse, écuyer, fils de feu Simon chevalier de Gonesse, donne vingt deniers de chef-cens sur cinq arpents de terre arable au territoire du Bois <foreign xml:lang="fro">Bonomin</foreign><ref type="note" n="1" target="#dugny-acte52-n-1"/> à Raoul d’Estif<ref type="note" n="2" target="#dugny-acte52-n-2"/>, écuyer, pour le récompenser des services que celui-ci lui a rendus. – Acte notifié par
@@ -3667,7 +3667,7 @@
             <text xml:id="dugny-acte53">
                 <front>
                     <titlePart>Dugny 53</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1283-11">1283, novembre</date></docDate>
                     <div type="summary">
                         <p>Raoul d’Estif<ref type="note" n="1" target="#dugny-acte53-n-1"/>, écuyer, vend pour 32 livres parisis à l’abbé de Saint-Denis, agissant au nom du [grand] prieur vingt et un sous sept deniers parisis et un tournois
@@ -3786,7 +3786,7 @@
             <text xml:id="dugny-acte54">
                 <front>
                     <titlePart>Dugny 54</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1284-12">1284, décembre</date></docDate>
                     <div type="summary">
                         <p>Robert de Charonne<ref type="note" n="1" target="#dugny-acte54-n-1"/> et son épouse Jeanne vendent pour 72 livres parisis à Jean, [grand] prieur de Saint-Denis, agissant pour son office, une masure sise à Dugny,
@@ -3895,7 +3895,7 @@
             <text xml:id="dugny-acte55">
                 <front>
                     <titlePart>Dugny 55</titlePart>
-                    <docAuthor>abbé de Saint-Victor de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0015">abbé de Saint-Victor de Paris</docAuthor>
                     <docDate><date when="1287-06">1287, juin</date></docDate>
                     <div type="summary">
                         <p>Pierre, abbé de Saint-Victor de Paris, vend pour quinze livres parisis à Saint-Denis les dîmes dites de l’autel, perçues au Thillay<ref type="note" n="1" target="#dugny-acte55-n-1"/>, sises à la Hayette<ref type="note" n="2" target="#dugny-acte55-n-2"/>, à la Couturelle<ref type="note" n="3" target="#dugny-acte55-n-3"/> et au sentier du Grand Champ<ref type="note" n="4" target="#dugny-acte55-n-4"/>, et mouvant
@@ -3954,7 +3954,7 @@
             <text xml:id="dugny-acte56">
                 <front>
                     <titlePart>Dugny 56</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1288-01-03">1288 (n. st.), 3 janvier</date></docDate>
                     <div type="summary">
                         <p>Renaud et Jeanne, enfants de feu Guillaume le Pâtre dit le Voyer, prêtre, vendent pour 80 livres parisis au [grand] prieur de Saint-Denis une série de cens, des terres, une vigne et un champart en divers lieux
@@ -4125,7 +4125,7 @@
             <text xml:id="dugny-acte57">
                 <front>
                     <titlePart>Dugny 57</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1287-12-18">1287, 18 décembre</date></docDate>
                     <div type="summary">
                         <p>Guillaume de Gonesse, écuyer, et son épouse Marie ratifient contre 45 livres parisis la vente faite à Saint-Denis par Renaud et sa sœur, enfants de Guillaume le Pâtre, des biens que ceux-ci possédaient à Garges et
@@ -4202,7 +4202,7 @@
             <text xml:id="dugny-acte58">
                 <front>
                     <titlePart>Dugny 58</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1288-01">1288 (n. st.), janvier </date></docDate>
                     <div type="summary">
                         <p>Jean du Vivier, écuyer, avec l’accord de son épouse Jeanne, amortit contre 100 sous parisis la vente de deux arpents de pré au Pont-Yblon<ref type="note" n="1" target="#dugny-acte58-n-1"/> faite par Dreu de Paris
@@ -4263,7 +4263,7 @@
             <text xml:id="dugny-acte59">
                 <front>
                     <titlePart>Dugny 59</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1294-02-26">1294 (n. st.), 26 février</date></docDate>
                     <div type="summary">
                         <p>Jean de Chambly<ref type="note" n="1" target="#dugny-acte59-n-1"/>, chevalier du roi et châtelain de Val-Pendant<ref type="note" n="2" target="#dugny-acte59-n-2"/>, et son épouse Marguerite donnent à Saint-Denis
@@ -4333,7 +4333,7 @@
             <text xml:id="dugny-acte60">
                 <front>
                     <titlePart>Dugny 60</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1275-12-10">1275, 10 décembre</date></docDate>
                     <div type="summary">
                         <p>Autre notification de la vente par Raoul de Belloy<ref type="note" n="1" target="#dugny-acte60-n-1"/> du Thillay<ref type="note" n="2" target="#dugny-acte60-n-2"/> de redevances sur des vignes et d’une terre
@@ -4402,7 +4402,7 @@
             <text xml:id="dugny-acte61">
                 <front>
                     <titlePart>Dugny 61</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1300-06-11">1300 (n. st.), 11 juin</date></docDate>
                     <div type="summary">
                         <p>Pierre chevalier de Garges et son épouse Perronelle vendent pour 55 livres parisis à Saint-Denis la redevance de cent cinq sous qu’ils percevaient le lendemain des octaves de la Saint-Denis sur les cens que lève à
@@ -4461,7 +4461,7 @@
             <text xml:id="dugny-acte62">
                 <front>
                     <titlePart>Dugny 62</titlePart>
-                    <docAuthor>roi de France</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0063">roi de France</docAuthor>
                     <docDate><date notBefore="1296-03-25" notAfter="1296-03-31">1296, 25-31 mars</date> ou <date when="1297-03">1297 (n. st.), mars</date>. <placeName>Paris</placeName></docDate>
                     <div type="summary">
                         <p>Le roi de France Philippe [le Bel] vidime et confirme l’acte du 30 mars 1295 par lequel ses commissaires aux nouveaux aquêts et francs-fiefs dans la prévôté de Paris, maître Simon Bouvel et Simon Payen,
@@ -4537,7 +4537,7 @@
             <text xml:id="dugny-acte63">
                 <front>
                     <titlePart>Dugny 63</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1297-02-07">1297 (n. st.), 7 février</date></docDate>
                     <div type="summary">
                         <p>Raoul de La Motte<ref type="note" n="1" target="#dugny-acte63-n-1"/>, écuyer, demeurant à Garges, et son épouse Alice vendent pour 24 livres parisis à Jean de Dinan, grand prieur de l’abbaye de Saint-Denis
@@ -4619,7 +4619,7 @@
             <text xml:id="dugny-acte64">
                 <front>
                     <titlePart>Dugny 64</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1296-03-27">1296 (n. st.), 27 mars</date></docDate>
                     <div type="summary">
                         <p> Pierre des Prés et son épouse Marie de Saint-Brice<ref type="note" n="1" target="#dugny-acte64-n-1"/> vendent pour 16 livres 19 sous parisis au grand prieur de Saint-Denis, agissant pour son office, le champart,

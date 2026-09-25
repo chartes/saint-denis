@@ -1297,7 +1297,7 @@
   </xsl:template>
 
   <!-- ================================================================
-       D43 (2026-09-24) : les deux index des auteurs d'actes.
+       D43 (2026-09-24, refondu le 2026-09-25) : les deux index des auteurs d'actes.
 
        POURQUOI
        ~~~~~~~~
@@ -1307,63 +1307,68 @@
        d'équivalent ici : les deux liens menaient, faute de mieux, à la recherche
        plein texte, avec un intitulé de survol qui l'avouait.
 
-       Ils sont maintenant reconstitués depuis le TEI servi par DoTS et portés par
-       un fichier compagnon lu avec document(), comme saint-denis-images-locales.xml :
-       rien n'est ajouté à la base, rien n'est à réingérer. Parité vérifiée terme à
-       terme contre les index publiés (66 et 294 termes, 3 601 occurrences).
+       Ils ont d'abord été portés par un fichier compagnon lu avec document().
+       Ils sont désormais DANS LE TEI, dans saint-denis-site.xml, à la fin des deux
+       pages « Parcourir » : plus de compagnon, plus de document(), et une vraie
+       donnée versionnée, servie par l'API et cherchable comme le reste du corpus.
+       Parité conservée : 66 et 294 termes, 534 et 3 601 renvois.
 
        OÙ
        ~~
-       Dans les deux pages « Parcourir » du site, celles-là même qui portaient les
-       liens Pleade ; le lien historique devient une ancre vers la rubrique.
+       <div type="index" xml:id="sd-index-auteurs-cartulaire"> et
+       <div type="index" xml:id="sd-index-auteurs-inventaire">, derniers enfants des
+       pages « Parcourir » — celles-là même qui portaient les liens Pleade, dont le
+       lien historique devient une ancre vers la rubrique. Le type « index » n'est
+       cité par aucun citeStructure : ces divisions n'entrent pas au sommaire.
 
        GROUPEMENT PAR INITIALE
        ~~~~~~~~~~~~~~~~~~~~~~~
-       La feuille est déclarée version="1.1" : pas de xsl:for-each-group. L'initiale
-       de classement est donc calculée à la fabrication du compagnon (@lettre sur
-       l'item, liste des initiales dans « lettres ») et la feuille se contente de
-       parcourir ces initiales. Même raison pour le libellé court d'un renvoi (@n
-       sur le ptr) : « Tremblay 15 », « t. I, n° 956 ».
-       ================================================================ -->
-  <xsl:variable name="sd-index-auteurs"
-                select="document('saint-denis-index-auteurs.xml')/sdIndexAuteurs"/>
+       La feuille est déclarée version="1.1" : pas de xsl:for-each-group. Le
+       compagnon contournait ce manque par un attribut @lettre sur chaque item, hors
+       TEI. Le groupement est maintenant porté par la STRUCTURE : une <list
+       type="index"> par initiale, son @n donnant l'initiale de classement (« * »
+       pour les termes sans initiale) et son <head> le titre du groupe (« Sans
+       initiale » dans ce cas). C'est la forme des index de `cartulaires`, elle est
+       valide contre tei_all, et la feuille n'a plus qu'à parcourir les listes.
+       Même raison pour le libellé court d'un renvoi (@n sur le ptr) :
+       « Tremblay 15 », « t. I, n° 956 ».
 
-  <!-- Rubrique complète d'un des deux index. $cle = 'cartulaire' ou 'inventaire'. -->
-  <xsl:template name="sd-index-auteurs">
-    <xsl:param name="cle"/>
-    <xsl:variable name="idx" select="$sd-index-auteurs/index[@cle = $cle]"/>
-    <section class="sd-index-auteurs" id="sd-index-auteurs-{$cle}">
+       LIAGE
+       ~~~~~
+       Les 534 <docAuthor> des sept chapitres du Cartulaire blanc portent un @ref
+       vers l'entrée d'index qui les recense (saint-denis-site.xml#sd-auteur-cb-NNNN).
+       Ce @ref n'est pas rendu : il lie la source à son index, il ne change rien à
+       l'affichage. L'Inventaire n'a pas de <docAuthor> — ses occurrences sont des
+       champs de notice — et n'est donc pas lié de la même façon.
+       ================================================================ -->
+  <xsl:template match="tei:div[@type = 'index'][starts-with(@xml:id, 'sd-index-auteurs-')]"
+                priority="16">
+    <xsl:variable name="cle" select="substring-after(@xml:id, 'sd-index-auteurs-')"/>
+    <section class="sd-index-auteurs" id="{@xml:id}">
       <h2 class="sd-index-auteurs-titre">
-        <xsl:value-of select="$idx/tei:list/tei:head"/>
+        <xsl:value-of select="tei:head[1]"/>
       </h2>
       <p class="sd-index-auteurs-chapeau">
-        <xsl:value-of select="$idx/@termes"/>
+        <xsl:value-of select="count(tei:list/tei:item)"/>
         <xsl:text> termes, </xsl:text>
-        <xsl:value-of select="$idx/@occurrences"/>
+        <xsl:value-of select="count(tei:list/tei:item/tei:ptr)"/>
         <xsl:text> renvois. Index reconstitué depuis le texte encodé, en parité avec l’index publié par le site d’origine.</xsl:text>
       </p>
       <nav class="sd-index-lettres" aria-label="Aller à une initiale">
-        <xsl:for-each select="$idx/lettres/lettre">
-          <xsl:variable name="c" select="string(.)"/>
-          <a class="sd-index-lettre-lien" href="#sd-index-auteurs-{$cle}-{translate($c, '*', '0')}">
+        <xsl:for-each select="tei:list">
+          <a class="sd-index-lettre-lien" href="#sd-index-auteurs-{$cle}-{translate(@n, '*', '0')}">
             <xsl:choose>
-              <xsl:when test="$c = '*'">&#8226;</xsl:when>
-              <xsl:otherwise><xsl:value-of select="$c"/></xsl:otherwise>
+              <xsl:when test="@n = '*'">&#8226;</xsl:when>
+              <xsl:otherwise><xsl:value-of select="@n"/></xsl:otherwise>
             </xsl:choose>
           </a>
         </xsl:for-each>
       </nav>
-      <xsl:for-each select="$idx/lettres/lettre">
-        <xsl:variable name="c" select="string(.)"/>
-        <div class="sd-index-groupe" id="sd-index-auteurs-{$cle}-{translate($c, '*', '0')}">
-          <h3 class="sd-index-initiale">
-            <xsl:choose>
-              <xsl:when test="$c = '*'">Sans initiale</xsl:when>
-              <xsl:otherwise><xsl:value-of select="$c"/></xsl:otherwise>
-            </xsl:choose>
-          </h3>
+      <xsl:for-each select="tei:list">
+        <div class="sd-index-groupe" id="sd-index-auteurs-{$cle}-{translate(@n, '*', '0')}">
+          <h3 class="sd-index-initiale"><xsl:value-of select="tei:head[1]"/></h3>
           <ul class="sd-index-termes">
-            <xsl:for-each select="$idx/tei:list/tei:item[@lettre = $c]">
+            <xsl:for-each select="tei:item">
               <li class="sd-index-terme">
                 <!-- « details » plutôt qu'une liste déployée : un terme porte jusqu'à
                      647 renvois (« auteurs laïques », Inventaire). Fermé, l'index se lit
@@ -1387,6 +1392,12 @@
       </xsl:for-each>
     </section>
   </xsl:template>
+
+  <!-- L'index ne paraît pas dans la table des matières de hteiml : elle liste les
+       divisions enfantes d'une page, et l'index vient d'y entrer. Il est déjà atteint
+       par l'ancre du lien historique, en bas de la page qui le porte. -->
+  <xsl:template match="tei:div[@type = 'index'][starts-with(@xml:id, 'sd-index-auteurs-')]"
+                mode="li" priority="16"/>
 
   <!-- Un renvoi de l'index. Les cibles ont les deux formes que la feuille résout
        déjà pour les « ref » du TEI : « chapitre.xml#chapitre-acteN » (Cartulaire
@@ -1417,21 +1428,12 @@
                               [@xml:id = 'sd-les-textes--cartulaire-blanc--parcourir'
                                or @xml:id = 'sd-les-textes--inventaire--parcourir']"
                 priority="16">
-    <xsl:variable name="cle">
-      <xsl:choose>
-        <xsl:when test="@xml:id = 'sd-les-textes--cartulaire-blanc--parcourir'">cartulaire</xsl:when>
-        <xsl:otherwise>inventaire</xsl:otherwise>
-      </xsl:choose>
-    </xsl:variable>
     <article class="sd-static-page sd-page-parcourir" id="{@xml:id}">
       <xsl:if test="@corresp">
         <xsl:attribute name="data-legacy-source"><xsl:value-of select="@corresp"/></xsl:attribute>
       </xsl:if>
       <h1 class="sd-page-title"><xsl:value-of select="tei:head[1]"/></h1>
       <xsl:apply-templates select="node()[not(self::tei:head[1])]"/>
-      <xsl:call-template name="sd-index-auteurs">
-        <xsl:with-param name="cle" select="string($cle)"/>
-      </xsl:call-template>
     </article>
   </xsl:template>
 

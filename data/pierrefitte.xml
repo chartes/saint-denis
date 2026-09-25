@@ -349,7 +349,7 @@
             <text xml:id="pierrefitte-acte1">
                 <front>
                     <titlePart>Pierrefitte 1</titlePart>
-                    <docAuthor>auteurs ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0026">auteurs ecclésiastiques</docAuthor>
                     <docDate><date when="1225-01">1225 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Raoul, frère du Temple, et maître G., prêtre de Saint-Germain-l’Auxerrois, exécuteurs du testament de feue Eustachie, veuve de Maurice, chambellan du roi<ref type="note" n="1" target="#pierrefitte-acte1-n-1"/>,
@@ -419,7 +419,7 @@
             <text xml:id="pierrefitte-acte2">
                 <front>
                     <titlePart>Pierrefitte 2</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1225-01">1225 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>L’official de Paris notifie la transaction passée par les exécuteurs du testament de feue Eustachie, veuve de Maurice, chambellan du ro<ref type="note" n="1" target="#pierrefitte-acte2-n-1"/>, avec Étienne
@@ -490,7 +490,7 @@
             <text xml:id="pierrefitte-acte3">
                 <front>
                     <titlePart>Pierrefitte 3</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1229-06-21">1229, 21 juin</date></docDate>
                     <div type="summary">
                         <p>Pierre de <foreign xml:lang="fro">Byaudeport</foreign><ref type="note" n="1" target="#pierrefitte-acte3-n-1"/>, chevalier, et sa femme Saintisme (<foreign xml:lang="lat">Sanctisma</foreign>) reconnaissent avoir
@@ -558,7 +558,7 @@
             <text xml:id="pierrefitte-acte4">
                 <front>
                     <titlePart>Pierrefitte 4</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1230-10">1230, octobre</date></docDate>
                     <div type="summary">
                         <p>Adam chevalier de Villetaneuse<ref type="note" n="1" target="#pierrefitte-acte4-n-1"/> reconnaît tenir en fief d’Eudes [IV], abbé de Saint-Denis, les biens suivants, pour lesquels il lui a fait hommage : un four à
@@ -641,7 +641,7 @@
             <text xml:id="pierrefitte-acte5">
                 <front>
                     <titlePart>Pierrefitte 5</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1231-12">1231, décembre</date></docDate>
                     <div type="summary">
                         <p>Alexandre chevalier de Richebourg<ref type="note" n="1" target="#pierrefitte-acte5-n-1"/>, Mathieu, chambellan de l’abbé de Saint-Denis, et son épouse Jeanne donnent pour un cinquième et vendent pour le reste,
@@ -723,7 +723,7 @@
             <text xml:id="pierrefitte-acte6">
                 <front>
                     <titlePart>Pierrefitte 6</titlePart>
-                    <docAuthor>officialité de Meaux</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0054">officialité de Meaux</docAuthor>
                     <docDate><date when="1231-12">1231, décembre</date></docDate>
                     <div type="summary">
                         <p>Henri et Robert, frères et chevaliers de Richebourg<ref type="note" n="1" target="#pierrefitte-acte6-n-1"/>, et leurs épouses Hélois et Aalis donnent pour un cinquième et vendent pour le reste, contre 20 livres
@@ -790,7 +790,7 @@
             <text xml:id="pierrefitte-acte7">
                 <front>
                     <titlePart>Pierrefitte 7</titlePart>
-                    <docAuthor>divers ecclésiastiques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0037">divers ecclésiastiques</docAuthor>
                     <docDate><date when="1232-05">1232, mai</date></docDate>
                     <div type="summary">
                         <p>Frère Philippe, moine et cellérier de Saint-Denis, et P. de Boissy<ref type="note" n="1" target="#pierrefitte-acte7-n-1"/>, chanoine de Bayeux, rendent leur arbitrage sur le différend qui opposait l’abbaye de
@@ -848,7 +848,7 @@
             <text xml:id="pierrefitte-acte8">
                 <front>
                     <titlePart>Pierrefitte 8</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1232-05">1232, mai</date></docDate>
                     <div type="summary">
                         <p> Vidimus par l’évêque de Paris G(uillaume)<ref type="note" n="1" target="#pierrefitte-acte8-n-1"/> de l’arbitrage rendu par frère Philippe, moine et cellérier de Saint-Denis, et P. de Boissy<ref type="note" n="2" target="#pierrefitte-acte8-n-2"/>, chanoine de Bayeux, sur le différend qui opposait l’abbaye de Saint-Denis et Ernaud Ermenoud au sujet du pressoir et du manoir que ce dernier avait édifiés à Villeneuve<ref type="note" n="3" target="#pierrefitte-acte8-n-3"/> sur la censive de l’abbaye [<ref target="#pierrefitte-acte7">acte Pierrefitte n<hi rend="sup">o</hi> 7</ref>]. </p>
@@ -906,7 +906,7 @@
             <text xml:id="pierrefitte-acte9">
                 <front>
                     <titlePart>Pierrefitte 9</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1232-11">1232, novembre</date></docDate>
                     <div type="summary">
                         <p> Guillaume Porel et son épouse Ade donnent pour un cinquième et vendent pour le reste, contre 15 livres parisis, à l’abbaye de Saint-Denis trois quartiers de vigne à Pierrefitte. Ade donne comme garant de son
@@ -948,7 +948,7 @@
             <text xml:id="pierrefitte-acte10">
                 <front>
                     <titlePart>Pierrefitte 10</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1232-12-16">1232, 16 décembre</date></docDate>
                     <div type="summary">
                         <p>Jean de Chennevières<ref type="note" n="1" target="#pierrefitte-acte10-n-1"/> et son épouse Agathe vendent à l’abbaye de Saint-Denis pour 45 livres la moitié d’un pressoir à Pierrefitte, [des redevances annuelles
@@ -1001,7 +1001,7 @@
             <text xml:id="pierrefitte-acte11">
                 <front>
                     <titlePart>Pierrefitte 11</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1234-03">1234 (a. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Jean de Taverny<ref type="note" n="1" target="#pierrefitte-acte11-n-1"/>, Raoul de Saint-Brice<ref type="note" n="2" target="#pierrefitte-acte11-n-2"/> et leurs épouses Émeline et Agnès donnent pour un cinquième
@@ -1055,7 +1055,7 @@
             <text xml:id="pierrefitte-acte12">
                 <front>
                     <titlePart>Pierrefitte 12</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1236-07">1236, juillet</date></docDate>
                     <div type="summary">
                         <p>Jean de Piscop<ref type="note" n="1" target="#pierrefitte-acte12-n-1"/> et Jeanne son épouse vendent à l’abbaye de Saint-Denis pour 25 livres parisis les droits (redevance d’un chapon, cens, pressurage<ref type="note" n="2" target="#pierrefitte-acte12-n-2"/>, justice) qu’ils avaient sur diverses vignes à Pierrefitte : un arpent, dit Blondel et tenu par le prêtre Guibert ; au terroir dit Martin<ref type="note" n="3" target="#pierrefitte-acte12-n-3"/>, un demi-arpent tenu par Guibert, un demi-arpent tenu par Gérard Ève, et un quartier comme [ailleurs] un arpent et demi tenu par feu Foubert Point l’Âne, un arpent et
@@ -1124,7 +1124,7 @@
             <text xml:id="pierrefitte-acte13">
                 <front>
                     <titlePart>Pierrefitte 13</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1237-07">1237, juillet</date></docDate>
                     <div type="summary">
                         <p>Jean chevalier de Piscop<ref type="note" n="1" target="#pierrefitte-acte13-n-1"/> et Jeanne sa femme vendent à Saint-Denis pour 198 livres parisis tout ce qu’ils avaient et tout ce que le feu père de Jean, Pierre
@@ -1188,7 +1188,7 @@
             <text xml:id="pierrefitte-acte14">
                 <front>
                     <titlePart>Pierrefitte 14</titlePart>
-                    <docAuthor>officialité de l’archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0052">officialité de l’archidiacre de Paris</docAuthor>
                     <docDate><date when="1239-08">1239, août</date></docDate>
                     <div type="summary">
                         <p>Renaud chevalier des Loges<ref type="note" n="1" target="#pierrefitte-acte14-n-1"/> et son épouse Beatrice vendent à l’abbaye de Saint-Denis, pour dix livres parisis, une redevance d’un muid et demi de vin à
@@ -1243,7 +1243,7 @@
             <text xml:id="pierrefitte-acte15">
                 <front>
                     <titlePart>Pierrefitte 15</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1239-08">1239, août</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Guillaume Bateste donne son accord, en son nom et en celui de son épouse Isabelle, à la vente faite à l’abbaye de Saint-Denis pour 10 livres parisis par son fidèle Renaud chevalier des Loges<ref type="note" n="1" target="#pierrefitte-acte15-n-1"/> d’une redevance d’un muid et demi de vin à Pierrefitte [<ref target="#pierrefitte-acte14">acte Pierrefitte n<hi rend="sup">o</hi> 14 </ref>], que Renaud
@@ -1297,7 +1297,7 @@
             <text xml:id="pierrefitte-acte16">
                 <front>
                     <titlePart>Pierrefitte 16</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1239-09">1239, septembre</date></docDate>
                     <div type="summary">
                         <p>Guillaume Bateste et sa femme Isabelle approuvent la vente d’une redevance en vin (<foreign xml:lang="lat">vinagium</foreign>) à Pierrefitte faite par Renaud chevalier des Loges<ref type="note" n="1" target="#pierrefitte-acte16-n-1"/> à l’abbaye de Saint-Denis [<ref target="#pierrefitte-acte14">acte Pierrefitte n<hi rend="sup">o</hi> 14 </ref>], et promettent de ne jamais vouloir faire valoir de droits
@@ -1347,7 +1347,7 @@
             <text xml:id="pierrefitte-acte17">
                 <front>
                     <titlePart>Pierrefitte 17</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1241-08">1241, août</date></docDate>
                     <div type="summary">
                         <p>Pierre chevalier des Bruyères<ref type="note" n="1" target="#pierrefitte-acte17-n-1"/> ratifie la vente faite par le chevalier Henri et son épouse Saintisme (<foreign xml:lang="lat">Sanctisma</foreign>), de
@@ -1413,7 +1413,7 @@
             <text xml:id="pierrefitte-acte18">
                 <front>
                     <titlePart>Pierrefitte 18</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1242-02-07">1242 (n. st.), 7 février</date></docDate>
                     <div type="summary">
                         <p>É(tienne), archidiacre de Paris, notifie l’amortissement consenti par l’abbaye de Saint-Denis à l’église paroissiale de Pierrefitte, dont le prêtre, Jacques, a acheté de Richard Aubry et de son épouse Houdiarde
@@ -1463,7 +1463,7 @@
             <text xml:id="pierrefitte-acte19">
                 <front>
                     <titlePart>Pierrefitte 19</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1242-05">1242, mai</date></docDate>
                     <div type="summary">
                         <p>Guillaume d’Ermenonville<ref type="note" n="1" target="#pierrefitte-acte19-n-1"/>, écuyer, et son épouse Jeanne vendent à l’abbaye de Saint-Denis un demi-arpent de vigne sis à Pierrefitte, dans la censive de
@@ -1509,7 +1509,7 @@
             <text xml:id="pierrefitte-acte20">
                 <front>
                     <titlePart>Pierrefitte 20</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1243-03">1243 (a. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Jean de Nonneville<ref type="note" n="1" target="#pierrefitte-acte20-n-1"/> et son frère Eustache, avec leurs épouses Agnès et Pétronille, cèdent à l’abbaye de Saint-Denis, alors qu’ils se trouvent à Compans<ref type="note" n="2" target="#pierrefitte-acte20-n-2"/>, tous les droits qu’ils avaient sur le fief tenu d’eux à Pierrefitte par le chevalier Pierre Navet et Jean de Chennevières<ref type="note" n="3" target="#pierrefitte-acte20-n-3"/>. – Acte passé sous le sceau de l’officialité de Paris. </p>
@@ -1570,7 +1570,7 @@
             <text xml:id="pierrefitte-acte21">
                 <front>
                     <titlePart>Pierrefitte 21</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1246-06">1246, juin</date></docDate>
                     <div type="summary">
                         <p>Guillaume le Comte et Jean, gendre de Gilbert le Comte, de Pierrefitte, prennent à surcens de l’abbaye de Saint-Denis, chacun pour une moitié, une pièce de vigne d’environ un arpent et six carreaux à Pierrefitte
@@ -1668,7 +1668,7 @@
             <text xml:id="pierrefitte-acte22">
                 <front>
                     <titlePart>Pierrefitte 22</titlePart>
-                    <docAuthor>évêque de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0043">évêque de Paris</docAuthor>
                     <docDate><date when="1246-08">1246, août</date></docDate>
                     <div type="summary">
                         <p>L’évêque de Paris Guillaume confirme l’accord passé entre le doyen et le chapitre de Paris, le prieur de Deuil<ref type="note" n="1" target="#pierrefitte-acte22-n-1"/> et le maître de l’Hôtel-Dieu de Gonesse<ref type="note" n="2" target="#pierrefitte-acte22-n-2"/>, d’une part, et l’abbaye de Saint-Denis, d’autre part, au sujet de l’abandon réciproque que chaque partie a fait à l’autre de son droit de reportage dans
@@ -1722,7 +1722,7 @@
             <text xml:id="pierrefitte-acte23">
                 <front>
                     <titlePart>Pierrefitte 23</titlePart>
-                    <docAuthor>auteurs laïques</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0027">auteurs laïques</docAuthor>
                     <docDate><date when="1251-03-22">1251 (n. st.), 22 mars</date></docDate>
                     <div type="summary">
                         <p>Jean le Bigot, chevalier, seigneur de Condé-sur-Risle<ref type="note" n="1" target="#pierrefitte-acte23-n-1"/> vend à l’abbaye de Saint-Denis, pour 70 livres parisis, dont il a déjà reçu 40 livres, trois arpents
@@ -1791,7 +1791,7 @@
             <text xml:id="pierrefitte-acte24">
                 <front>
                     <titlePart>Pierrefitte 24</titlePart>
-                    <docAuthor>officialité de Lisieux</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0053">officialité de Lisieux</docAuthor>
                     <docDate><date when="1251-05">1251, mai</date></docDate>
                     <div type="summary">
                         <p>Jean Bigot, chevalier, seigneur de Condé-sur-Risle<ref type="note" n="1" target="#pierrefitte-acte24-n-1"/> vend à l’abbaye de Saint-Denis deux arpents et un demi quartier de vignes à Pierrefitte, au clos de la
@@ -1846,7 +1846,7 @@
             <text xml:id="pierrefitte-acte25">
                 <front>
                     <titlePart>Pierrefitte 25</titlePart>
-                    <docAuthor>archidiacre de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0024">archidiacre de Paris</docAuthor>
                     <docDate><date when="1230-11">1230, novembre</date></docDate>
                     <div type="summary">
                         <p>Ernaud Ermenoud et son épouse Richilde donnent en dot à leur fille Alice et à leur gendre Jean trente arpents de terre et huit arpents de vigne, dont sept à Villetaneuse<ref type="note" n="1" target="#pierrefitte-acte25-n-1"/> et un à Deuil-la-Barre<ref type="note" n="2" target="#pierrefitte-acte25-n-2"/>, une demi-maison à Villetaneuse, une autre maison à Saint-Denis à L’Estrée<ref type="note" n="3" target="#pierrefitte-acte25-n-3"/>, dans la censive d’Érembourg <foreign xml:lang="fro">la Buorde</foreign>, et cent livres parisis. Ils assignent à leur fils Henri, comme sa part convenable d’héritage,
@@ -1909,7 +1909,7 @@
             <text xml:id="pierrefitte-acte26">
                 <front>
                     <titlePart>Pierrefitte 26</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1227-12">1227, décembre</date></docDate>
                     <div type="summary">
                         <p>Le prévôt de Paris, Jean des Vignes, met dans la main du roi le litige qui opposait l’abbaye de Saint-Denis et Mathieu de Montmorency<ref type="note" n="1" target="#pierrefitte-acte26-n-1"/> au sujet du droit de
@@ -1957,7 +1957,7 @@
             <text xml:id="pierrefitte-acte27">
                 <front>
                     <titlePart>Pierrefitte 27</titlePart>
-                    <docAuthor>abbé de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0011">abbé de Saint-Denis</docAuthor>
                     <docDate><date when="1234-01">1234 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Eudes abbé de Saint-Denis notifie les achats que l’abbaye a réalisés avec Guibert, ancien prêtre de Pierrefitte, pour un montant de 120 livres parisis, dont Guibert a déjà versé 60 livres : l’acquisition de deux
@@ -2038,7 +2038,7 @@
             <text xml:id="pierrefitte-acte28">
                 <front>
                     <titlePart>Pierrefitte 28</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1234-01">1234 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Jean Louvel vend pour 20 livres parisis à Guibert, ancien prêtre de Pierrefitte, une pièce de vigne à Pierrefitte, mouvant de la censive de Saint-Denis et proche d’une vigne de l’abbaye. Il oblige six
@@ -2102,7 +2102,7 @@
             <text xml:id="pierrefitte-acte29">
                 <front>
                     <titlePart>Pierrefitte 29</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1269-04-10">1269, 10 avril</date></docDate>
                     <div type="summary">
                         <p>Mathieu chevalier d’Argenteuil<ref type="note" n="1" target="#pierrefitte-acte29-n-1"/> vend à l’abbaye de Saint-Denis, pour 6 livres parisis et demie moins 15 deniers, près d’un demi arpent de vigne qu’il tenait
@@ -2162,7 +2162,7 @@
             <text xml:id="pierrefitte-acte30">
                 <front>
                     <titlePart>Pierrefitte 30</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1267-12-03">1267, 3 décembre</date></docDate>
                     <div type="summary">
                         <p>Jean l’Écuyer, fils de feu Henri l’Écuyer, vend à l’abbaye de Saint-Denis, pour 43 livres 18 sous parisis, une vigne à Pierrefitte, sous la Plâtrière<ref type="note" n="1" target="#pierrefitte-acte30-n-1"/>,
@@ -2224,7 +2224,7 @@
             <text xml:id="pierrefitte-acte31">
                 <front>
                     <titlePart>Pierrefitte 31</titlePart>
-                    <docAuthor>officialité de Paris</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0055">officialité de Paris</docAuthor>
                     <docDate><date when="1269-03">1269 (a. st.), mars</date></docDate>
                     <div type="summary">
                         <p>Le chevalier Robert le Tyois et son épouse Pétronille vendent d’une part quatre arpents moins trois perches de vigne au finage de Pierrefitte, jouxtant la vigne des enfants de feu Baudouin chevalier des Loges<ref type="note" n="1" target="#pierrefitte-acte31-n-1"/> et celle des Innocents de Saint-Paul<ref type="note" n="2" target="#pierrefitte-acte31-n-2"/>, dans la censive du cenier de Saint-Denis, chargée d’un cens
@@ -2289,7 +2289,7 @@
             <text xml:id="pierrefitte-acte32">
                 <front>
                     <titlePart>Pierrefitte 32</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1275-03-28">1275 (n. st.), 28 mars</date></docDate>
                     <div type="summary">
                         <p>Jean le Concierge de Saint-Denis et son épouse Marguerite vendent à l’abbaye de Saint-Denis, pour 200 livres parisis, un clos de vigne à Pierrefitte, entre un clos de l’abbaye et la vigne d’Oudin Bobelin, un pré
@@ -2355,7 +2355,7 @@
             <text xml:id="pierrefitte-acte33">
                 <front>
                     <titlePart>Pierrefitte 33</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1278-01">1278 (n. st.), janvier</date></docDate>
                     <div type="summary">
                         <p>Léger de Beauvais, fils de feu Roger de Beauvais, vend à l’abbaye de Saint-Denis pour 9 livres parisis un quartier et sept carreaux de vigne à Pierrefitte, au clos de la Barre<ref type="note" n="1" target="#pierrefitte-acte33-n-1"/>, jouxtant les vignes de l’abbaye, dans la censive de l’abbaye et chargés envers elle d’un cens de trois deniers et une poitevine à la Saint-Denis. – Acte passé sous le sceau
@@ -2410,7 +2410,7 @@
             <text xml:id="pierrefitte-acte34">
                 <front>
                     <titlePart>Pierrefitte 34</titlePart>
-                    <docAuthor>prévôté de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0061">prévôté de Saint-Denis</docAuthor>
                     <docDate><date when="1273-01-10">1273 (n. st.), 10 janvier</date></docDate>
                     <div type="summary">
                         <p>Jean le Pouhier et son épouse Hersent, Laurent Gaubert et son épouse Marie, de Pierrefitte, vendent à Gilles Espiart, cenier de Saint-Denis, pour 13 livres parisis une masure sise à Pierrefitte en la rue Guéroux
@@ -2461,7 +2461,7 @@
             <text xml:id="pierrefitte-acte35">
                 <front>
                     <titlePart>Pierrefitte 35</titlePart>
-                    <docAuthor>prévôté de Saint-Denis</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0061">prévôté de Saint-Denis</docAuthor>
                     <docDate><date when="1270-08-29">1270, 29 août</date></docDate>
                     <div type="summary">
                         <p>Bertaud <foreign xml:lang="fro">Engenoil</foreign> et son épouse Cécile vendent à Gilles [Espiart], cenier de l’abbaye de Saint-Denis, pour 20 livres parisis trois quartiers et demi de pré et de terre situés à
@@ -2519,7 +2519,7 @@
             <text xml:id="pierrefitte-acte36">
                 <front>
                     <titlePart>Pierrefitte 36</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1281-03-18">1281 (n. st.), 18 mars</date></docDate>
                     <div type="summary">
                         <p>Pierre du Cellier et son épouse Péronnelle vendent à l’abbaye de Saint-Denis, pour 8 livres parisis, un demi arpent de vigne qu’ils tenaient à Pierrefitte, jouxtant des deux côtés des terres de l’abbaye, dans la
@@ -2577,7 +2577,7 @@
             <text xml:id="pierrefitte-acte37">
                 <front>
                     <titlePart>Pierrefitte 37</titlePart>
-                    <docAuthor>Châtelet</docAuthor>
+                    <docAuthor ref="saint-denis-site.xml#sd-auteur-cb-0032">Châtelet</docAuthor>
                     <docDate><date when="1284-12">[1284, décembre]</date></docDate>
                     <div type="summary">
                         <p>Hémery Menuet de Pierrefitte et son épouse Aceline vendent à Renaud du Temple, cenier de l’abbaye de Saint-Denis, pour 9 livres parisis, une vigne qu’ils tenaient au finage de Villeneuve[-lès-Pierrefitte]<ref type="note" n="1" target="#pierrefitte-acte37-n-1"/>, jouxtant des terres du cenier et de Renaud le Clerc de Pierrefitte, dans la censive du cenier, au chef-cens de neuf deniers parisis aux octaves de la
