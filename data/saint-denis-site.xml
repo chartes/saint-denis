@@ -4734,6 +4734,8 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
               <p rend="date">[Auteur des textes de cette section : Olivier Guyotjeannin ; date de la dernière mise à jour : 21 juin 2010]</p>
             </div>
           </div>
+        <div type="page" xml:id="sd-les-textes--inventaire--presentation">
+          <head>Présentation</head>
         <div type="page" xml:id="sd-les-textes--inventaire--presentation--distribution-des-volumes" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/distribution-des-volumes.html">
               <head>Distribution des volumes</head>
               <div type="legacy-block" rend="static-content">
@@ -4799,6 +4801,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p>Un autre écueil réside dans le classement chronologique en apparence strict, au mois et au jour près, des actes. Écueil d’abord avec les conversions de millésime qui, en début d’année, sont bien prises en compte, mais non indiquées (le millésime exprimé demeure en ancien style : « février 1230 » suit « décembre 1230 »), et surtout apparemment pliées à l’usage du style de Pâques, dont l’emploi est tout autre que sûr. Écueil aussi du fait que certaines dates sont mal interprétées, certains auteurs confondus (lettres d’Alexandre IV pris pour Alexandre III, classées à l’année 1163 au lieu de 1258 : n° 354-355 ; acte du roi Robert Ier pris pour Robert II, à la suite de Doublet d’ailleurs, et classé à l’année 988 au lieu de 923 : n° 166), des actes non datés, enfin, assignés à toute force à une année précise (« Environ l’an… ») mais très arbitraire.</p>
 </div>
             </div>
+        </div>
         <div type="page" xml:id="sd-les-textes--inventaire--parcourir" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/parcourir.html">
             <head>Édition électronique</head>
             <div type="legacy-block" rend="static-content">
