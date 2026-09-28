@@ -389,6 +389,18 @@
     <h4 class="sd-legacy-h4"><xsl:apply-templates/></h4>
   </xsl:template>
 
+  <!-- 2026-09-28 — conformité tei_all. Sur le site d'origine, certains blocs posaient du
+       contenu en ligne directement entre deux blocs (le texte d'un élément dans les exemples
+       de code, une vignette cliquable en tête de page). TEI n'admet pas d'élément en ligne
+       enfant direct d'un <div> : ce contenu est enveloppé dans un <ab type="legacy-inline">,
+       qui ne produit rien par lui-même, pour que le HTML reste celui d'avant, octet pour octet.
+       Les <p> voisins ne voient pas la différence : hteiml ne cherche qu'un <p> non vide
+       comme frère précédent pour retirer « noindent », et <ab> n'en est pas un, pas plus que
+       l'élément en ligne d'avant. -->
+  <xsl:template match="tei:ab[@type = 'legacy-inline']" priority="12">
+    <xsl:apply-templates/>
+  </xsl:template>
+
   <!-- Page « Recherche » : DoTS-vue compile le fragment comme un template Vue et
        n'exécute pas les <script> ; la recherche plein texte passe par l'index
        dots-cli-es et l'interface de recherche de DoTS-vue, pas par la XSL. -->

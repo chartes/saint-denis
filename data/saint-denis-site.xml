@@ -10815,7 +10815,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
                 </p>
 <p>Le tableau de la tradition, qui contient une série de références bibliographiques, est encodé à l’aide de l’élément EAD Bibliographie &lt;bibliography&gt;. Chacune des références est saisie dans un élément Référence bibliographique &lt;bibref&gt;. Pour le regeste n° 408, on a donc, pour le début du tableau de la tradition :</p>
 <div type="legacy-block" rend="code">
-<p rend="open">&lt;<hi rend="span el">bibliography</hi>&gt;</p><p rend="open">&lt;<hi rend="span el">bibref</hi>&gt;</p><hi rend="span texte">En original</hi><p rend="close">&lt;/<hi rend="span el">bibref</hi>&gt;</p><p rend="open">&lt;<hi rend="span el">bibref</hi>&gt;</p><hi rend="span texte">Au second tome du cartulaire blanc p. 518.</hi><p rend="close">&lt;/<hi rend="span el">bibref</hi>&gt;</p><p rend="comment">&lt;!-- etc. --&gt;</p><p rend="close">&lt;/<hi rend="span el">bibliography</hi>&gt;</p>
+<p rend="open">&lt;<hi rend="span el">bibliography</hi>&gt;</p><p rend="open">&lt;<hi rend="span el">bibref</hi>&gt;</p><ab type="legacy-inline"><hi rend="span texte">En original</hi></ab><p rend="close">&lt;/<hi rend="span el">bibref</hi>&gt;</p><p rend="open">&lt;<hi rend="span el">bibref</hi>&gt;</p><ab type="legacy-inline"><hi rend="span texte">Au second tome du cartulaire blanc p. 518.</hi></ab><p rend="close">&lt;/<hi rend="span el">bibref</hi>&gt;</p><p rend="comment">&lt;!-- etc. --&gt;</p><p rend="close">&lt;/<hi rend="span el">bibliography</hi>&gt;</p>
 </div>
 
 </div>
@@ -10823,7 +10823,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 <p rend="heading-h2">Les autres informations</p>
 <p>De nombreux regestes sont complétés, soit en marge soit en fin de texte, par diverses informations (indications liées au calendrier comme la date de Pâques, commentaires sur le texte, noms propres apparaissant dans l’acte...). Il a été choisi d’encoder ces informations à l’aide d’un élément EAD Autres informations descriptives &lt;odd&gt;, chacun des segments d’information y faisant l’objet d’un élément &lt;p&gt;. Pour le regeste n° 408, on a donc :</p>
 <div type="legacy-block" rend="code">
-<p rend="open">&lt;<hi rend="span el">odd</hi>&gt;</p><p rend="open">&lt;<hi rend="span el">p</hi>&gt;</p><hi rend="span texte">1174</hi><p rend="close">&lt;/<hi rend="span el">p</hi>&gt;</p><p rend="open">&lt;<hi rend="span el">p</hi>&gt;</p><hi rend="span texte">nombre d’or 16, Pâques 24 mars, dominicale F</hi><p rend="close">&lt;/<hi rend="span el">p</hi>&gt;</p><p rend="close">&lt;/<hi rend="span el">odd</hi>&gt;</p>
+<p rend="open">&lt;<hi rend="span el">odd</hi>&gt;</p><p rend="open">&lt;<hi rend="span el">p</hi>&gt;</p><ab type="legacy-inline"><hi rend="span texte">1174</hi></ab><p rend="close">&lt;/<hi rend="span el">p</hi>&gt;</p><p rend="open">&lt;<hi rend="span el">p</hi>&gt;</p><ab type="legacy-inline"><hi rend="span texte">nombre d’or 16, Pâques 24 mars, dominicale F</hi></ab><p rend="close">&lt;/<hi rend="span el">p</hi>&gt;</p><p rend="close">&lt;/<hi rend="span el">odd</hi>&gt;</p>
 </div>
 
 </div>
