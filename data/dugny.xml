@@ -29,9 +29,9 @@
                 <edition>1<hi rend="sup">ère</hi> édition électronique</edition>
             </editionStmt>
             <publicationStmt>
+                <publisher ref="https://www.wikidata.org/wiki/Q273570 https://data.bnf.fr/fr/ark:/12148/cb118634749 https://www.idref.fr/026375052 https://www.chartes.psl.eu/">École nationale des chartes</publisher>
                 <date when="2011">2011</date>
                 <idno>http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/dugny/</idno>
-                <publisher ref="https://www.wikidata.org/wiki/Q273570 https://data.bnf.fr/fr/ark:/12148/cb118634749 https://www.idref.fr/026375052 https://www.chartes.psl.eu/">École nationale des chartes</publisher>
                 <address><addrLine>19, rue de la Sorbonne</addrLine><addrLine>75005 Paris</addrLine><addrLine>tél.: +33 (0)1 55 42 75 00</addrLine><addrLine>http://www.enc.sorbonne.fr/</addrLine></address>
                 <availability status="restricted">
                     <p>L’École nationale des chartes met à disposition cette ressource électronique structurée, protégée par le code de la propriété intellectuelle sur les bases de données (<ref target="http://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000006279245&amp;cidTexte=LEGITEXT000006069414" type="externalLink">L341-1</ref>), selon les termes de la licence Creative Commons :
