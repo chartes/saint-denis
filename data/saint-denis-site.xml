@@ -5487,9 +5487,9 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
         <div type="page" xml:id="sd-les-textes--inventaire--presentation--contenu-et-presentation" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/contenu-et-presentation.html">
               <head>Contenu et présentation</head>
               <div type="legacy-block" rend="static-content">
-<ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome1/voir.html?ns=inventairejpg_0477.jpg">
+<ab type="legacy-inline"><ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome1/voir.html?ns=inventairejpg_0477.jpg">
 <graphic url="legacy-source/assets/les-textes/inventaire/presentation/tome1_image0477_notice408.jpg" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/inventaire/presentation/tome1_image0477_notice408.jpg" n="Inventaire général, tome 1 (LL1189), page 436, extrait, notice 408. Cliquer pour voir l’image entière"/>
-</ref>
+</ref></ab>
 <p>L’Inventaire général prend en compte, en premier lieu, les originaux conservés et accessibles à son époque ; la mention de leur existence a parfois été ajoutée après coup, au gré donc de trouvailles, dans le courant du XVIII<hi rend="sup">e</hi> siècle. Ces indications, précieuses pour un premier bilan de la conservation des actes entre Moyen Âge et décennies antérieures à la Révolution, souffrent toutefois quelques lacunes, certains actes aujourd’hui conservés en original n’étant pas signalés comme tels. Et surtout, on l’a dit, la mention n’est assortie d’aucune description ni indication de cote ou de classement, et se limite à l’invariable formule : « En original » (ou « En original double » pour une double expédition).</p>
 <p>Les copies simples sont très rarement mentionnées, Dom Thomas et ses successeurs concentrant alors leur attention sur des vidimus d’actes, conservés ou non en original.</p>
 <p>Les transcriptions des actes au Cartulaire blanc, au cartulaire « de Thou » comme à leurs copies réalisées peu auparavant au XVII<hi rend="sup">e</hi> siècle, ainsi qu’à quelques autres cartulaires mineurs (inégalement exploités), sont par contre, et pour la première fois, délibérément mentionnées. Il est même probable que l’entreprise a commencé par la mise en regeste du Cartulaire blanc. Nous avons pu toutefois noter, de façon significative, que Dom Thomas avait écarté quelques transcriptions du Cartulaire blanc (par exemple <ref target="http://saint-denis.enc.sorbonne.fr/inventaire/tome1/notice287">regeste n° 287</ref>, introduit plus tard à partir du seul original = <ref target="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/rueil/acte30">acte Rueil n° 30</ref>) : il s’agit d’actes (souvent des <hi rend="italic">munimina</hi>) qui n’ont pas de lien direct ou explicite avec l’abbaye.</p>
@@ -10770,9 +10770,9 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
               <head>La structuration du texte de l’Inventaire</head>
               <anchor xml:id="sd-le-projet--aspects-informatiques--inventaire--structuration-du-texte--structuration-du-texte"/>
               <div type="legacy-block" rend="static-content">
-<ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome1/voir.html?ns=inventairejpg_0477.jpg">
+<ab type="legacy-inline"><ref target="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome1/voir.html?ns=inventairejpg_0477.jpg">
 <graphic url="legacy-source/assets/le-projet/aspects-informatiques/inventaire/tome1_image0477_notice408.jpg" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/aspects-informatiques/inventaire/tome1_image0477_notice408.jpg" n="Inventaire général, tome 1 (LL1189), page 436, extrait, notice 408. Cliquer pour voir l’image de la page entière"/>
-</ref>
+</ref></ab>
 <p>Nous donnons ici quelques explications sur les règles qui ont été suivies pour la
                 mise en œuvre de l’EAD 2002 lors du processus de transcription du texte de
                 l’Inventaire. Le standard EAD 2002 et sa documentation sont supposés connus.</p>
