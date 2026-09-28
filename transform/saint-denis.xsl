@@ -401,6 +401,26 @@
     <xsl:apply-templates/>
   </xsl:template>
 
+  <!-- 2026-09-28 — conformité tei_all. Le lien « Retour au début » qui clôt un bloc du site
+       d'origine y est un <p>. Quand il suit des sous-blocs <div>, TEI n'admet plus de <p> :
+       il est alors encodé <trailer type="retour-debut">, pied de division. hteiml rendrait un
+       <p class="trailer"> ; on rend le même <p> qu'avant, avec la règle de hteiml pour un <p>
+       (tei2html.xsl, modèle tei:p) : « noindent » sauf après un <p> non vide ou un frère dont
+       le texte commence par un tiret. -->
+  <xsl:template match="tei:trailer[@type = 'retour-debut']" priority="12">
+    <xsl:variable name="prev" select="preceding-sibling::*[not(self::tei:pb)][1]"/>
+    <p>
+      <xsl:attribute name="class">
+        <xsl:choose>
+          <xsl:when test="contains('-–—', substring(normalize-space($prev), 1, 1))">p</xsl:when>
+          <xsl:when test="local-name($prev) = 'p' and translate($prev, '*∾  ', '') != ''">p</xsl:when>
+          <xsl:otherwise>p noindent</xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
+      <xsl:apply-templates/>
+    </p>
+  </xsl:template>
+
   <!-- Page « Recherche » : DoTS-vue compile le fragment comme un template Vue et
        n'exécute pas les <script> ; la recherche plein texte passe par l'index
        dots-cli-es et l'interface de recherche de DoTS-vue, pas par la XSL. -->
