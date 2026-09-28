@@ -11,7 +11,7 @@
                 <edition>1<hi rend="sup">re</hi> édition électronique</edition>
             </editionStmt>
             <publicationStmt>
-                <publisher ref="https://www.wikidata.org/wiki/Q273570 https://data.bnf.fr/fr/ark:/12148/cb118634749 https://www.idref.fr/026375052 https://www.chartes.psl.eu/">École nationale des chartes</publisher>
+                <publisher ref="https://www.chartes.psl.eu/">École nationale des chartes</publisher>
                 <date when="2019">2019</date>
                 <idno>http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/ully/</idno>
                 <address><addrLine>19, rue de la Sorbonne</addrLine><addrLine>75005 Paris</addrLine><addrLine>tél.: +33 (0)1 55 42 75 00</addrLine><addrLine>http://www.enc.sorbonne.fr/</addrLine></address>

@@ -6,7 +6,7 @@
         <title type="short">Saint-Denis : pages du site</title><editor ref="https://www.wikidata.org/wiki/Q273570 https://data.bnf.fr/fr/ark:/12148/cb118634749 https://www.idref.fr/026375052">École nationale des chartes</editor>
       </titleStmt>
       <publicationStmt>
-        <publisher ref="https://www.wikidata.org/wiki/Q273570 https://data.bnf.fr/fr/ark:/12148/cb118634749 https://www.idref.fr/026375052 https://www.chartes.psl.eu/">École nationale des chartes</publisher>
+        <publisher ref="https://www.chartes.psl.eu/">École nationale des chartes</publisher>
         <date when="2026">2026</date>
         <idno>http://saint-denis.enc.sorbonne.fr/</idno><availability>
           <p>Reconstruction de migration à partir du site ÉLEC historique ; conserver les droits et licences des sources.</p>

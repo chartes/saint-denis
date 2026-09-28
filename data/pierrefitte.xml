@@ -32,7 +32,7 @@
             <publicationStmt>
                 
                 
-                <publisher ref="https://www.wikidata.org/wiki/Q273570 https://data.bnf.fr/fr/ark:/12148/cb118634749 https://www.idref.fr/026375052 https://www.chartes.psl.eu/">École nationale des chartes</publisher>
+                <publisher ref="https://www.chartes.psl.eu/">École nationale des chartes</publisher>
                 <date when="2010">2010-....</date>
                 <address><addrLine>19, rue de la Sorbonne</addrLine><addrLine>75005 Paris</addrLine></address>
                 <availability status="restricted">
