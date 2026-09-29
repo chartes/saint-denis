@@ -1016,6 +1016,73 @@
   </xsl:template>
 
   <!-- ================================================================
+       2026-09-29 — RENVOIS DES TÉMOINS VERS L'INVENTAIRE GÉNÉRAL.
+
+       Chaque acte du Cartulaire blanc cite, dans sa tradition (bloc « Indiqué »), la notice de
+       l'Inventaire général qui l'analyse : `<witness xml:id="…-indiqué-ig-1">Inv. gén. I, n° 59,
+       p. 43-44…</witness>`. Sur l'ÉLEC ce renvoi était cliquable (div.regeste-inclus, 486
+       fragments) ; ici il restait du texte, un seul des 505 témoins portant un <ref>. L'Inventaire
+       est désormais dans DoTS (ISD-vol1 à 3, D21) : on relie donc, comme pour les renvois d'actes
+       (D29) et les permaliens (D25), en XSL et sans toucher au TEI. Le texte affiché ne change pas.
+
+       Relevé sur le TEI (29/09) : 485 renvois dans 505 témoins, tous d'un seul nœud de texte, deux
+       formes (« I, n° 59 » et, une fois, « II, p. 616, n° 2363 ») ; les 20 autres témoins disent
+       que l'acte n'a pas été retrouvé dans l'Inventaire.
+
+       On ne relie que vers une notice qui EXISTE. Sans document() (retiré du corpus le 25/09), la
+       feuille le vérifie par les plages de numéros de chaque volume (1-1181, 1182-3195, 3196-3253,
+       relevées sur ISD-vol1..3) moins leurs cinq lacunes (76, 799 ; 1579, 2835 ; 3201). Le seul
+       renvoi qui tombe hors de son volume, « Inv. gén. I, n° 1941 » (saint-martin-acte61 : la
+       notice 1941 est au tome II), reste du texte : corriger le tome serait deviner.
+
+       Même nœud de texte, deux renvois : « … deux actes Saint-Martin n° 60 et n° 61 » suit le
+       renvoi à l'Inventaire dans le même témoin. Ce modèle, plus prioritaire que celui des renvois
+       d'actes (cas A), leur repasse donc la partie non reconnue avec la même expression.
+       ================================================================ -->
+  <xsl:variable name="sd-ig-motif"
+                select="'Inv\.[\s&#160;]*gén\.[\s&#160;]*(III|II|I)[\s&#160;]*,[\s&#160;]*(p\.[\s&#160;]*\d+(-\d+)?[\s&#160;]*,[\s&#160;]*)?n[\s&#160;]*[°o][\s&#160;]*(\d+)'"/>
+  <xsl:variable name="sd-ig-lacunes" select="' 1-76 1-799 2-1579 2-2835 3-3201 '"/>
+
+  <xsl:template priority="7"
+      match="text()[not(ancestor::tei:ref)]
+                   [ancestor::tei:witness[contains(@xml:id, '-indiqué-ig')]]
+                   [matches(., $sd-ig-motif)]">
+    <xsl:analyze-string select="." regex="{$sd-ig-motif}">
+      <xsl:matching-substring>
+        <xsl:variable name="v" select="string-length(regex-group(1))"/>
+        <xsl:variable name="num" select="regex-group(4)"/>
+        <xsl:variable name="n" select="number($num)"/>
+        <xsl:choose>
+          <xsl:when test="(($v = 1 and $n &gt;= 1 and $n &lt;= 1181)
+                           or ($v = 2 and $n &gt;= 1182 and $n &lt;= 3195)
+                           or ($v = 3 and $n &gt;= 3196 and $n &lt;= 3253))
+                          and not(contains($sd-ig-lacunes, concat(' ', $v, '-', $num, ' ')))">
+            <a class="sd-inventaire sd-ig-renvoi"
+               title="Notice n° {$num} de l'Inventaire général, tome {regex-group(1)}"
+               href="/saint-denis/document/ISD-vol{$v}?refId=ISD-vol{$v}_notice{$num}">
+              <xsl:value-of select="."/>
+            </a>
+          </xsl:when>
+          <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+        </xsl:choose>
+      </xsl:matching-substring>
+      <xsl:non-matching-substring>
+        <xsl:analyze-string select="."
+            regex="{concat('(actes?[\s&#160;]+(', $sd-chap-motif, ')[\s&#160;]*(?:n[\s&#160;]*[°o][\s&#160;]*)?)(\d+[a-z]?)')}">
+          <xsl:matching-substring>
+            <xsl:value-of select="regex-group(1)"/>
+            <xsl:call-template name="sd-lien-acte">
+              <xsl:with-param name="chapitre" select="regex-group(2)"/>
+              <xsl:with-param name="numero" select="regex-group(3)"/>
+            </xsl:call-template>
+          </xsl:matching-substring>
+          <xsl:non-matching-substring><xsl:value-of select="."/></xsl:non-matching-substring>
+        </xsl:analyze-string>
+      </xsl:non-matching-substring>
+    </xsl:analyze-string>
+  </xsl:template>
+
+  <!-- ================================================================
        2026-09-14 — les derniers renvois VIVANTS vers le site qui ferme.
 
        L'audit de cohérence du 2026-09-13 avait conclu qu'il n'en restait aucun : c'était FAUX,
