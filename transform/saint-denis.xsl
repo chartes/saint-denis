@@ -249,6 +249,43 @@
   <xsl:template match="tei:note[not(@xml:id)][parent::tei:quote]" mode="fn" priority="9"/>
 
   <!--
+    2026-09-29 — Notes répétées page par page (régression du commit ac57450, 24/09).
+    Depuis que les actes portent un <pb n facs> en tête de transcription, le modèle
+    nommé « footnotes » de hteiml (tei2html.xsl, appelé par le seul modèle tei:text)
+    voit des pb et bascule sur sa collecte PAR PAGE : pour chaque pb il reliste les
+    notes que la clé note-pb rattache à cette page, dans un <div class="page"> ouvert
+    par un intitulé « p. N » (lien #pbN, sans ancre en face : nos pb se rendent en
+    details.sd-folio), avec des retours #noteN_ sans appel. Ces notes sont celles de
+    l'apparat et de div[@type='notes'], déjà émises une fois par la collecte hors flux
+    (mode fn, surcharges ci-dessus) : d'où les doublons (428 actes sur 512).
+    Le corpus n'avait AUCUN pb avant ac57450 (0 dans les onze fichiers au commit
+    474d680) : lui passer une liste de pb vide rend exactement la collecte d'avant.
+    Modèle tei:text recopié de hteiml à l'identique, au seul paramètre pb près ;
+    hteiml n'est pas touché, la précédence d'import suffit.
+  -->
+  <xsl:template match="tei:text">
+    <xsl:param name="level" select="count(ancestor::tei:group)"/>
+    <article>
+      <xsl:attribute name="id">
+        <xsl:call-template name="id"/>
+      </xsl:attribute>
+      <xsl:call-template name="atts"/>
+      <xsl:apply-templates select="*">
+        <xsl:with-param name="level" select="$level +1"/>
+      </xsl:apply-templates>
+      <xsl:if test="not(tei:group)">
+        <xsl:variable name="notes-cont" select="."/>
+        <xsl:for-each select="/">
+          <xsl:call-template name="footnotes">
+            <xsl:with-param name="cont" select="$notes-cont"/>
+            <xsl:with-param name="pb" select="()"/>
+          </xsl:call-template>
+        </xsl:for-each>
+      </xsl:if>
+    </article>
+  </xsl:template>
+
+  <!--
     Appels dont la note cible est absente du TEI source (7 cas dans beaurain :
     beaurain-acte33-n-5, acte87-n-4, acte87-n-13, acte87-n-14, acte106-n-3).
     Lacune de l'edition d'origine, pas de la migration : on affiche l'appel sans
