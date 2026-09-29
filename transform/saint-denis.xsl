@@ -51,6 +51,24 @@
 
   <xsl:template match="tei:front/tei:docDate" priority="12">
     <p class="docDate sd-docDate"><xsl:apply-templates/></p>
+    <!-- 2026-09-29 : « URL de cette page ». L'ÉLEC l'imprimait sous la date de chacun des 512 actes
+         (div.tei-summary-refurl, `<http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/beaurain/acte3>`).
+         Repris avec l'adresse locale de l'acte, comme pour l'Inventaire (modèle isd-permalien, D25),
+         et pour la même raison en TEXTE entre chevrons, pas en lien : DoTS-vue confie tout lien de même
+         origine à son routeur, et un renvoi vers la route courante vide la page (mesuré en D25).
+         Chaque acte a un seul docDate (512/512) et un xml:id « <chapitre>-acte<N> » (512/512) : le
+         chapitre, qui est l'identifiant de la ressource, se lit avant « -acte ». -->
+    <xsl:variable name="acte" select="string(ancestor::tei:text[@xml:id][1]/@xml:id)"/>
+    <xsl:if test="contains($acte, '-acte') and not(following-sibling::tei:docDate)">
+      <div class="sd-refurl">
+        <span class="refurl-label"><b>URL de cette page : </b></span>
+        <span class="sd-permalien">
+          <xsl:text>&lt;</xsl:text>
+          <xsl:value-of select="concat('/saint-denis/document/', substring-before($acte, '-acte'), '?refId=', $acte)"/>
+          <xsl:text>&gt;</xsl:text>
+        </span>
+      </div>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="tei:front/tei:docDate/text()[normalize-space() = '']" priority="12"/>
