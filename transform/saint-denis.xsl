@@ -36,18 +36,10 @@
        placeName en <span> contigus (« roi de France774, décembrePalais de Samoussy »).
        Ancien site (fragments Pleade) : <h1>titre</h1><p class="tei-docDate">date. — lieu</p>,
        plusieurs dates avec le texte qui les sépare (« ou »), docAuthor non affiché.
-       On reprend la ligne de date à l'identique ; docAuthor reste affiché, sur sa propre ligne
-       (le masquer comme l'ancien site : décision en attente). -->
-  <xsl:template match="tei:front/tei:docAuthor" priority="12">
-    <xsl:if test="not(preceding-sibling::tei:docAuthor)">
-      <p class="sd-docAuthor">
-        <xsl:for-each select="../tei:docAuthor">
-          <xsl:if test="position() &gt; 1"><xsl:text> ; </xsl:text></xsl:if>
-          <span class="docAuthor"><xsl:apply-templates/></span>
-        </xsl:for-each>
-      </p>
-    </xsl:if>
-  </xsl:template>
+       On reprend la ligne de date à l'identique.
+       2026-09-29 : docAuthor masqué, comme sur l'ancien site (décision de l'utilisateur). La
+       catégorie d'auteur reste dans le TEI (docAuthor/@ref vers l'index des auteurs d'actes). -->
+  <xsl:template match="tei:front/tei:docAuthor" priority="12"/>
 
   <xsl:template match="tei:front/tei:docDate" priority="12">
     <p class="docDate sd-docDate"><xsl:apply-templates/></p>
