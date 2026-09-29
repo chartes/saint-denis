@@ -89,6 +89,12 @@
             </langUsage>
         <textClass><keywords scheme="EDTF"><term type="temporalCoverage"><date>1193/1300</date></term></keywords></textClass></profileDesc>
         <revisionDesc>
+            <change when="2026-09-28">publisher de l'École nationale des chartes : ref ramené au seul site de l'École (https://www.chartes.psl.eu/), au lieu des identifiants Wikidata / BnF / IdRef (commit 42ae17f).</change>
+            <change when="2026-09-28">publicationStmt remis dans l'ordre TEI : publisher avant date et idno (commit f1701d9).</change>
+            <change when="2026-09-25">21 renvoi(s) aux illustrations du chapitre portent en @facs le chemin de l'image servie (images/saint-denis/illustrations/…) (commit d46cb4d).</change>
+            <change when="2026-09-25">64 docAuthor portent un @ref vers l'entrée de l'index des auteurs d'actes qui les recense (saint-denis-site.xml#sd-auteur-cb-NNNN) (commit dd34d93).</change>
+            <change when="2026-09-24">59 pb[@n][@facs] posés en tête de transcription des actes, reliant le texte à la page du Cartulaire blanc (LL 1157) quand la table des actes et le témoin B donnent la même page (commit ac57450).</change>
+            <change when="2026-09-21">Autorités : funder reçoit un @ref (identifiants Wikidata, BnF, IdRef).</change>
             <change when="2026-09-10">Enrichissement du teiHeader selon le modèle DoTS : title[@type=short], publisher/@ref, date/@when, licence/@target, notesStmt/note[@type=citation], creation/date, textClass temporalCoverage.</change><change when="2012-06" who="#LG #FC">Quelques petites corrections</change>
             <change when="2011-06" who="#FC">Publication</change>
             <change when="2011-05" who="#FC">Relecture, modifications du modèle</change>

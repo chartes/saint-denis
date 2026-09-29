@@ -94,6 +94,12 @@
             </langUsage>
         <textClass><keywords scheme="EDTF"><term type="temporalCoverage"><date>0833/1299</date></term></keywords></textClass></profileDesc>
         <revisionDesc>
+            <change when="2026-09-29">citeStructure « introduction » étendue à //front[@xml:id] (l'xml:id de l'introduction est sur le front) : l'introduction devient une unité citable.</change>
+            <change when="2026-09-28">publisher de l'École nationale des chartes : ref ramené au seul site de l'École (https://www.chartes.psl.eu/), au lieu des identifiants Wikidata / BnF / IdRef (commit 42ae17f).</change>
+            <change when="2026-09-25">65 renvoi(s) aux illustrations du chapitre portent en @facs le chemin de l'image servie (images/saint-denis/illustrations/…) (commit d46cb4d).</change>
+            <change when="2026-09-25">57 docAuthor portent un @ref vers l'entrée de l'index des auteurs d'actes qui les recense (saint-denis-site.xml#sd-auteur-cb-NNNN) (commit dd34d93).</change>
+            <change when="2026-09-24">42 pb[@n][@facs] posés en tête de transcription des actes, reliant le texte à la page du Cartulaire blanc (LL 1157) quand la table des actes et le témoin B donnent la même page (commit ac57450).</change>
+            <change when="2026-09-21">Autorités : funder et principal reçoivent un @ref (identifiants Wikidata, BnF, IdRef).</change>
             <change when="2026-09-10">Enrichissement du teiHeader selon le modèle DoTS : title[@type=short], publisher/@ref, date/@when, licence/@target, notesStmt/note[@type=citation], creation/date, textClass temporalCoverage.</change><!-- révision dec. 2015 -->
             <change when="1015-03" who="#FC">Corrections techniques</change>
             <change when="2015-12" who="#FC">Corrections sur demande d'Olivier Guyotjeannin</change>
