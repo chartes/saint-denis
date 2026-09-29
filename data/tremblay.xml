@@ -77,8 +77,8 @@
                     traitement de texte.</p>
             </projectDesc>
             <refsDecl>
-                <citeStructure unit="introduction" match="//front/div[@xml:id][1]" use="@xml:id">
-                    <citeData property="dct:title" use="normalize-space(string((head)[1]))"/>
+                <citeStructure unit="introduction" match="//front[@xml:id] | //front/div[@xml:id][1]" use="@xml:id">
+                    <citeData property="dct:title" use="normalize-space(string((head | div/head)[1]))"/>
                 </citeStructure>
                 <citeStructure unit="acte" match="//group/text[@xml:id]" use="@xml:id">
                     <citeData property="dct:title" use="normalize-space(concat(front/docDate/date, ' — ', front/div[@type='short-summary']))"/>
