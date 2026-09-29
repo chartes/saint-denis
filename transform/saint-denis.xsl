@@ -107,6 +107,28 @@
     </span>
   </xsl:template>
 
+  <!-- 2026-09-29 — double espace avant la leçon. hteiml (tei2html.xsl, modèle tei:lem) pose une
+       espace insécable avant chaque lemme, sauf après une apostrophe, sans regarder si le texte qui
+       précède l'<app> finit déjà par un blanc. Dans ce corpus c'est presque toujours le cas
+       (« eidem⏎ <app><lem>Amarico… » : 1 042 apparats sur 1 097), d'où « eidem  Amarico ».
+       Même modèle que hteiml, avec une condition de plus : pas d'insécable quand le nœud qui précède
+       l'<app> est un nœud texte terminé par un blanc (espace, tabulation, fin de ligne, insécable).
+       Les commentaires de l'éditeur posés juste avant l'<app> (« FC sept 2012 … », « REVOIR »,
+       3 cas) sont sautés pour trouver ce nœud texte : ils ne s'affichent pas.
+       La règle de l'apostrophe est gardée telle quelle. -->
+  <xsl:template match="tei:lem">
+    <xsl:variable name="prev" select="normalize-space(../preceding-sibling::node()[1])"/>
+    <xsl:variable name="prevnode" select="../preceding-sibling::node()[not(self::comment())][1]"/>
+    <xsl:if test="translate(substring($prev, string-length($prev)), concat($apos, '’'), '') != ''
+                  and not($prevnode/self::text() and matches(string($prevnode), '[\s&#160;]$'))">
+      <xsl:text>&#160;</xsl:text>
+    </xsl:if>
+    <span>
+      <xsl:call-template name="atts"/>
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+
   <xsl:template match="tei:lem//tei:choice[tei:sic][tei:corr]" priority="12">
     <em class="sic"><xsl:apply-templates select="tei:sic/node()"/></em>
   </xsl:template>
