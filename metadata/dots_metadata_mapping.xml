@@ -31,7 +31,7 @@
     <dct:description scope="document" xpath="/TEI/teiHeader/encodingDesc/projectDesc/p"/>
     <dct:license scope="document" xpath="/TEI/teiHeader/fileDesc/publicationStmt/availability/licence/@target"/>
     <dct:rights scope="document" xpath="/TEI/teiHeader/fileDesc/publicationStmt/availability/licence"/>
-    <dct:identifier scope="document" xpath="/TEI/teiHeader/fileDesc/publicationStmt/idno"/>
+    <dct:identifier scope="document" xpath="/TEI/@xml:id"/><dct:creator scope="document" xpath="(/TEI/teiHeader/fileDesc/titleStmt/principal ! normalize-space(string-join((forename, surname), ' ')), /TEI/teiHeader/fileDesc/titleStmt/respStmt[normalize-space(resp) = 'édition']/name ! normalize-space(.))"/>
     <schema:type scope="document" resourceId="all">Book</schema:type>
     <schema:name scope="document" xpath="/TEI/teiHeader/fileDesc/titleStmt/title[1]"/>
     <schema:dateCreated scope="document" xpath="/TEI/teiHeader/profileDesc/creation/date[not(@type)]"/>

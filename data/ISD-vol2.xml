@@ -20,6 +20,20 @@
         </citeStructure>
       </refsDecl>
     </encodingDesc>
+    <profileDesc>
+      <creation><date from="1680" to="1728">1680-1728</date></creation>
+      <langUsage>
+        <language ident="fre">français (langue de l’Inventaire)</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-04">profileDesc : date de compilation de l’Inventaire (1680-1728, d’après les pages du site : « compilé des années 1680 aux années 1720 », « achevé en 1728 ») et langues ; revisionDesc.</change>
+      <change when="2026-09-28">publisher/@ref : le site de l’École seul (commit 42ae17f).</change>
+      <change when="2026-09-25">Mise en conformité tei_all (commit ee778f1).</change>
+      <change when="2026-09-24">Folios attachés au texte par des pb/@facs (commit ac57450).</change>
+      <change when="2026-09-24">Versement dans le dépôt chartes/saint-denis, branche migration (commit e42cdbf).</change>
+      <change when="2026-09-12">Notices reprises du site saint-denis.enc.sorbonne.fr avant sa fermeture.</change>
+    </revisionDesc>
   </teiHeader>
   <text><body>
     <div type="section" xml:id="ISD-vol2_e0000040">

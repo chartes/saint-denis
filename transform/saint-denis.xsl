@@ -1098,6 +1098,24 @@
        Servies par le serveur de fichiers local du port 8081 et NON par une URL de même origine :
        DoTS-vue confie tout href de même origine à son routeur, et un lien vers `/images/…zip`
        mène à une route morte. Même raison et même forme que la branche PDF des illustrations. -->
+  <!-- 2026-10-04 — Renvois au Du Cange (Tremblay, Ully : 17 liens). L'ancien site
+       ducange.enc.sorbonne.fr fermant, ils visent l'édition Du Cange de l'École servie
+       par DoTS : ducange_<initiale>?refId=<ENTRÉE>. Le TEI garde l'adresse d'origine.
+       L'entrée est l'identifiant de l'ancien site, en capitales et sans espace (« REPORTAGIUM 1 »,
+       « banagium ») ; deux formes n'étaient pas des entrées et l'ancien site les ouvrait sur
+       la page de l'article : « pertica » → PERTICA1, « nummata » → NUMISMA (« Nummata.
+       Vide in Nummus »). L'ancre éventuelle (#BRUARIUM-3) est gardée. Les 12 entrées visées
+       répondent en local et sur le dev (vérifié le 04/10). -->
+  <xsl:template match="tei:ref[contains(@target, 'ducange.enc.sorbonne.fr/')]" priority="14">
+    <xsl:variable name="cible" select="substring-after(@target, 'ducange.enc.sorbonne.fr/')"/>
+    <xsl:variable name="brut" select="replace(replace(upper-case(substring-before(concat($cible, '#'), '#')), '%20', ''), ' ', '')"/>
+    <xsl:variable name="entree" select="if ($brut = 'PERTICA') then 'PERTICA1' else if ($brut = 'NUMMATA') then 'NUMISMA' else $brut"/>
+    <xsl:variable name="ancre" select="substring-after($cible, '#')"/>
+    <a href="{$elec-base}/ducange/document/ducange_{substring($entree, 1, 1)}?refId={$entree}{if ($ancre != '') then concat('#', $ancre) else ''}">
+      <xsl:apply-templates/>
+    </a>
+  </xsl:template>
+
   <xsl:template match="tei:ref[contains(@target, 'enc.sorbonne.fr')][ends-with(lower-case(@target), '.zip')]"
                 priority="16">
     <a class="sd-telechargement"
