@@ -585,7 +585,10 @@
   </xsl:template>
 
   <xsl:template name="isd-intitule">
-    <xsl:for-each select="tei:head[not(@type = 'sub')] | tei:label[@type = 'section']">
+    <!-- 2026-10-05 : les rubriques rétablies d'après le site (notes de l'éditeur, notes de
+         l'inventaire manuscrit, références ajoutées par l'éditeur) n'entrent pas dans
+         l'intitulé : il reste celui d'avant le rétablissement. -->
+    <xsl:for-each select="tei:head[not(@type = 'sub')] | tei:label[@type = 'section'][not(following-sibling::*[1][self::tei:p[starts-with(@rend, 'note-')]])][not(normalize-space(.) = 'Références ajoutées par l’éditeur')]">
       <xsl:choose>
         <xsl:when test="self::tei:head"><xsl:apply-templates select="." mode="title"/></xsl:when>
         <xsl:otherwise><xsl:value-of select="normalize-space(.)"/></xsl:otherwise>
