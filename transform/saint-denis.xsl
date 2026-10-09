@@ -19,25 +19,16 @@
     <div class="summary"><xsl:apply-templates/></div>
   </xsl:template>
 
-  <xsl:template match="tei:summary" mode="a" priority="20">
-    <span class="summary"><xsl:apply-templates/></span>
-  </xsl:template>
 
   <xsl:template match="tei:msName" priority="20">
     <span class="msName"><xsl:apply-templates/></span>
   </xsl:template>
 
-  <xsl:template match="tei:msName" mode="a" priority="20">
-    <span class="msName"><xsl:apply-templates/></span>
-  </xsl:template>
 
   <xsl:template match="tei:am" priority="20">
     <span class="am"><xsl:apply-templates/></span>
   </xsl:template>
 
-  <xsl:template match="tei:am" mode="a" priority="20">
-    <span class="am"><xsl:apply-templates/></span>
-  </xsl:template>
 
   <!-- B1f (autopilote 2026-09-11) : en-tête des actes. La générique rend docAuthor, docDate et
        placeName en <span> contigus (« roi de France774, décembrePalais de Samoussy »).
@@ -70,7 +61,6 @@
     </xsl:if>
   </xsl:template>
 
-  <xsl:template match="tei:front/tei:docDate/text()[normalize-space() = '']" priority="12"/>
 
   <xsl:template match="tei:front/tei:docDate/tei:placeName" priority="12">
     <xsl:text>. — </xsl:text>
@@ -229,7 +219,6 @@
        ================================================================ -->
   <!-- Ne garder que l'introduction du chapitre : pas les actes. -->
   <xsl:template match="tei:TEI[tei:teiHeader]/tei:text/tei:group" priority="15"/>
-  <xsl:template match="tei:TEI[tei:teiHeader]/tei:text/tei:back" priority="15"/>
 
 
 
@@ -412,15 +401,6 @@
        ================================================================ -->
 
   <!-- Conteneurs de la ressource saint-denis-site.xml -->
-  <xsl:template match="tei:div[@type='rubrique']" priority="12">
-    <section class="sd-rubrique">
-      <xsl:if test="@xml:id">
-        <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
-      </xsl:if>
-      <h1 class="sd-rubrique-title"><xsl:value-of select="tei:head[1]"/></h1>
-      <xsl:apply-templates select="node()[not(self::tei:head[1])]"/>
-    </section>
-  </xsl:template>
 
   <xsl:template match="tei:div[@type='part']" priority="12">
     <section class="sd-part">
@@ -460,9 +440,6 @@
   </xsl:template>
   <xsl:template match="tei:p[starts-with(@rend,'heading-h3')]" priority="12">
     <h3 class="sd-legacy-h3"><xsl:apply-templates/></h3>
-  </xsl:template>
-  <xsl:template match="tei:p[starts-with(@rend,'heading-h4')]" priority="12">
-    <h4 class="sd-legacy-h4"><xsl:apply-templates/></h4>
   </xsl:template>
 
   <!-- 2026-09-28 — conformité tei_all. Sur le site d'origine, certains blocs posaient du
@@ -580,9 +557,6 @@
     </a>
   </xsl:template>
 
-  <xsl:template match="tei:div[@type = 'notice']" mode="title" priority="14">
-    <xsl:call-template name="isd-intitule"/>
-  </xsl:template>
 
   <xsl:template name="isd-intitule">
     <!-- 2026-10-05 : les rubriques rétablies d'après le site (notes de l'éditeur, notes de
@@ -632,7 +606,6 @@
       </xsl:for-each>
     </dl>
   </xsl:template>
-  <xsl:template match="tei:list[@type = 'gloss'][ancestor::tei:div[@type = 'notice']]/tei:item" priority="14"/>
 
   <!-- Le permalien d'une unité de l'Inventaire, ramené sur l'adresse locale.
        Un seul endroit pour les deux formes : le champ d'une NOTICE (`<label>/<item>` d'une liste
@@ -736,14 +709,6 @@
     </xsl:choose>
   </xsl:template>
 
-  <!-- Lien du site d'origine qui ne contient qu'une image (vignette vers la visionneuse) : hteiml
-       n'applique pas les modèles à un ref sans texte et affiche l'URL. On rend l'image, dans le lien
-       d'origine (autre site : DoTS-vue ne le détourne pas). -->
-  <xsl:template match="tei:ref[tei:graphic][normalize-space(.) = '']" priority="12">
-    <a class="sd-image-link" href="{@target}" target="_blank" rel="noopener">
-      <xsl:apply-templates select="tei:graphic"/>
-    </a>
-  </xsl:template>
 
   <!-- 2026-09-12 : les images du Cartulaire blanc et de l'Inventaire sont RAPATRIÉES (autorisation
        de l'utilisateur, « 1. ok télécharge »), donc les 831 liens vers la visionneuse de l'ancien
@@ -911,14 +876,6 @@
     </span>
   </xsl:template>
 
-  <!-- Modèle d'origine, laissé intact par précaution. Il ne reçoit plus rien : les renvois
-       relatifs AVEC `ns=` partent en `sd-folio` (priorité 13) et ceux SANS `ns=` sont pris
-       par le modèle ci-dessus (priorité 15). -->
-  <xsl:template match="tei:ref[starts-with(@target, '../')][contains(@target, 'images/cartulaireblanc/')]" priority="12">
-    <a class="sd-legacy-viewer" href="http://saint-denis.enc.sorbonne.fr/images/{substring-after(@target, 'images/')}" target="_blank" rel="noopener">
-      <xsl:apply-templates/>
-    </a>
-  </xsl:template>
 
   <!-- ================================================================
        2026-09-14 — RENVOIS D'UN ACTE À L'AUTRE LAISSÉS EN TEXTE BRUT.
@@ -1270,10 +1227,6 @@
        Les anciens sites ELEC ferment : le TEXTE affiche est conserve mot pour mot (c'est
        l'identifiant de la publication d'origine), seule la cible devient la route locale.
        Table et bloc produits par dots-autopilot/scripts/d5_legacy_links_fix.py. -->
-  <!-- portail ELEC -->
-  <xsl:template match="tei:title[../tei:idno[@type = 'URI'][normalize-space(.) = 'http://elec.enc.sorbonne.fr' or normalize-space(.) = 'http://elec.enc.sorbonne.fr/']]" priority="14">
-    <a class="title d5-local" href="{$elec-base}/"><xsl:apply-templates/></a>
-  </xsl:template>
   <!-- adresse de l'ancien site -->
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/']" priority="14">
     <a class="idno d5-local" href="{$elec-base}/saint-denis"><xsl:apply-templates/></a>
@@ -1303,10 +1256,6 @@
   <xsl:template match="tei:ref[@target = 'http://elec.enc.sorbonne.fr/cartulaires/']" priority="14">
     <a class="ref d5-local" href="{$elec-base}/cartulaires"><xsl:apply-templates/></a>
   </xsl:template>
-  <!-- page de recherche plein texte locale (cf. B1d) -->
-  <xsl:template match="tei:ref[@target = 'http://saint-denis.enc.sorbonne.fr/recherche-avancee.html?document=cartulaire']" priority="14">
-    <a class="ref d5-local" href="{$elec-base}/saint-denis/search"><xsl:apply-templates/></a>
-  </xsl:template>
   <!-- D5-FIN -->
 
   <!-- ================= D14c (autopilote 2026-09-12) : conformite au rendu de l'ancien site
@@ -1324,9 +1273,6 @@
     <xsl:apply-templates/>
   </xsl:template>
 
-  <xsl:template match="tei:expan" mode="a" priority="20">
-    <xsl:apply-templates mode="a"/>
-  </xsl:template>
 
   <xsl:template match="tei:ex" priority="20">
     <span class="sd-ex">
@@ -1336,11 +1282,6 @@
     </span>
   </xsl:template>
 
-  <xsl:template match="tei:ex" mode="a" priority="20">
-    <xsl:text>(</xsl:text>
-    <xsl:apply-templates mode="a"/>
-    <xsl:text>)</xsl:text>
-  </xsl:template>
 
   <!-- 2. « Documents annexes ». L'ancien site titrait TOUS les blocs d'annexes
        (p class="annexes-label"). Les listes de tremblay et rueil portent ce titre dans le TEI
