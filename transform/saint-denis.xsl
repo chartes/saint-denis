@@ -6,6 +6,18 @@
   exclude-result-prefixes="tei">
 
   <xsl:import href="../../renderers/hteiml/xsl/tei2html.xsl"/>
+  <xsl:include href="ordinaux.xsl"/> <!-- chantier ordinaux 2026-10-08 -->
+  <!-- 2026-10-09 : tableaux sans en-tête de la notice saint-denis-site (table des chapitres, table des actes) :
+       la première ligne contient les intitulés de colonnes ; elle est rendue en <th scope="col">.
+       Ciblé sur ces deux tables seulement, par le dernier intitulé de leur première ligne (le xml:id
+       de la div disparaît en excludeFragments=true, d'où ce contexte-là). -->
+  <xsl:template match="tei:table[tei:row[1]/tei:cell[last()][normalize-space(.) = ('Nb. actes', 'Édition de la notice dans l’inventaire')]]/tei:row[1]/tei:cell" priority="5">
+    <th scope="col">
+      <xsl:if test="@cols &gt; 1"><xsl:attribute name="colspan" select="@cols"/></xsl:if>
+      <xsl:if test="@rows &gt; 1"><xsl:attribute name="rowspan" select="@rows"/></xsl:if>
+      <xsl:apply-templates/>
+    </th>
+  </xsl:template>
   <!-- C7 (2026-10-02) : racine de l'application. '' en local (dots-vue servi à la racine),
        '/elec' sur le serveur de développement (dots-vue sous /elec/). Tous les liens internes
        et les images passent par elle. -->
