@@ -6,7 +6,6 @@
   exclude-result-prefixes="tei">
 
   <xsl:import href="../../renderers/hteiml/xsl/tei2html.xsl"/>
-  <xsl:include href="ordinaux.xsl"/> <!-- chantier ordinaux 2026-10-08 -->
   <!-- 2026-10-09 : tableaux sans en-tête de la notice saint-denis-site (table des chapitres, table des actes) :
        la première ligne contient les intitulés de colonnes ; elle est rendue en <th scope="col">.
        Ciblé sur ces deux tables seulement, par le dernier intitulé de leur première ligne (le xml:id
@@ -229,6 +228,13 @@
        sur `tei:TEI[tei:teiHeader]/tei:text`, ne les atteignent pas.
        Meme correctif que christofle.xsl et chroniqueslatines.xsl.
        ================================================================ -->
+  <!-- 2026-10-12 : DoTS récent sert les fragments en <TEI><dts:wrapper>…</dts:wrapper></TEI>.
+       Sans modèle, l'enveloppe tombait dans le modèle d'erreur de hteiml (« <dts:wrapper> »
+       écrit en rouge autour de chaque page) : on la traverse. -->
+  <xsl:template match="*[local-name() = 'wrapper']">
+    <xsl:apply-templates/>
+  </xsl:template>
+
   <!-- Ne garder que l'introduction du chapitre : pas les actes. -->
   <xsl:template match="tei:TEI[tei:teiHeader]/tei:text/tei:group" priority="15"/>
 
@@ -496,7 +502,7 @@
         (Beaurain, Dugny, Pierrefitte, Rueil, Saint-Martin, Tremblay, Ully) se fait avec le
         moteur de recherche de l’application, alimenté par l’index dots-cli-es.</p>
       <!-- autopilote 2026-09-11 : route DoTS-vue déclarée dans saint-denis.conf.json (customRoutes) -->
-      <p class="sd-search-go"><a class="sd-search-link" href="{$elec-base}/saint-denis/search">Ouvrir la recherche plein texte</a></p>
+      <p class="sd-search-go"><a class="sd-search-link" href="../search">Ouvrir la recherche plein texte</a></p>
     </section>
   </xsl:template>
 
@@ -672,7 +678,7 @@
        public/images/saint-denis/. DoTS-vue route tout <a href> de même origine
        (router.push) : les images sont donc rendues en <img>, jamais en lien.
        ================================================================ -->
-  <xsl:variable name="sd-images" select="concat($elec-base, '/images/saint-denis/')"/>
+  <xsl:variable name="sd-images" select="'../../images/saint-denis/'"/>
 
   <xsl:template match="tei:graphic[starts-with(@url, 'legacy-source/assets/')]" priority="12">
     <img class="sd-graphic" loading="lazy" src="{$sd-images}assets/{substring-after(@url, 'legacy-source/assets/')}" alt="{normalize-space(@n)}"/>
@@ -700,7 +706,7 @@
                (port 8081), seule façon d'ouvrir un fichier — DoTS-vue détourne les liens de même
                origine vers son routeur (leçon de E1). -->
           <xsl:when test="ends-with(lower-case($file), '.pdf') or ends-with(lower-case(string($jointe)), '.pdf')">
-            <a class="sd-illustration-pdf" href="{$sd-fichiers}{$src}" target="_blank" rel="noopener">
+            <a class="sd-illustration-pdf" href="{$sd-fichiers}/images/saint-denis/illustrations/{$jointe}" target="_blank" rel="noopener">
               <xsl:apply-templates/>
               <xsl:text> (PDF)</xsl:text>
             </a>
@@ -983,7 +989,7 @@
     <xsl:param name="numero"/>
     <xsl:variable name="rid" select="lower-case($chapitre)"/>
     <a class="sd-acte-renvoi" title="Aller à l'acte {$chapitre} n° {$numero}"
-       href="{$elec-base}/saint-denis/document/{$rid}?refId={$rid}-acte{$numero}">
+       href="{$rid}?refId={$rid}-acte{$numero}">
       <xsl:value-of select="$numero"/>
     </a>
   </xsl:template>
@@ -1032,7 +1038,7 @@
                           and not(contains($sd-ig-lacunes, concat(' ', $v, '-', $num, ' ')))">
             <a class="sd-inventaire sd-ig-renvoi"
                title="Notice n° {$num} de l'Inventaire général, tome {regex-group(1)}"
-               href="{$elec-base}/saint-denis/document/ISD-vol{$v}?refId=ISD-vol{$v}_notice{$num}">
+               href="ISD-vol{$v}?refId=ISD-vol{$v}_notice{$num}">
               <xsl:value-of select="."/>
             </a>
           </xsl:when>
@@ -1104,7 +1110,7 @@
        feuille). Simplifié le 2026-10-02 : la branche navindex était morte. -->
   <xsl:template match="tei:ref[contains(@target, 'enc.sorbonne.fr')][contains(@target, 'recherche-avancee.html')]"
                 priority="16">
-    <a class="sd-recherche-locale" href="{$elec-base}/saint-denis/search" title="Recherche dans la collection Saint-Denis.">
+    <a class="sd-recherche-locale" href="../search" title="Recherche dans la collection Saint-Denis.">
       <xsl:apply-templates/>
     </a>
   </xsl:template>
@@ -1159,7 +1165,7 @@
           )
         )
       ">
-        <a class="sd-internal" href="{$elec-base}/saint-denis/document/{$chap}?refId={$id}">
+        <a class="sd-internal" href="{$chap}?refId={$id}">
           <xsl:apply-templates/>
         </a>
       </xsl:when>
@@ -1179,16 +1185,16 @@
     <xsl:variable name="frag" select="substring-after(@target, '#')"/>
     <xsl:choose>
       <xsl:when test="contains($sd-chapitres, concat(' ', $file, ' ')) and $frag != ''">
-        <a class="sd-internal" href="{$elec-base}/saint-denis/document/{$file}?refId={$frag}"><xsl:apply-templates/></a>
+        <a class="sd-internal" href="{$file}?refId={$frag}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:when test="contains($sd-chapitres, concat(' ', $file, ' '))">
-        <a class="sd-internal" href="{$elec-base}/saint-denis/document/{$file}"><xsl:apply-templates/></a>
+        <a class="sd-internal" href="{$file}"><xsl:apply-templates/></a>
       </xsl:when>
       <!-- 2026-09-12 (D21) : l'Inventaire général est maintenant dans DoTS (ressources ISD-vol1
            à 3, 3 285 notices), le renvoi reste donc dans l'application. L'identifiant d'unité
            est préfixé par le volume, comme dans le TEI produit : ISD-vol1_notice395. -->
       <xsl:when test="starts-with($file, 'ISD-vol') and starts-with($frag, 'notice')">
-        <a class="sd-inventaire" href="{$elec-base}/saint-denis/document/{$file}?refId={$file}_{$frag}"><xsl:apply-templates/></a>
+        <a class="sd-inventaire" href="{$file}?refId={$file}_{$frag}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:otherwise><xsl:apply-imports/></xsl:otherwise>
     </xsl:choose>
@@ -1198,7 +1204,7 @@
     <xsl:variable name="chap" select="substring-before(@target, '-acte')"/>
     <xsl:choose>
       <xsl:when test="contains($sd-chapitres, concat(' ', $chap, ' '))">
-        <a class="sd-internal" href="{$elec-base}/saint-denis/document/{$chap}?refId={@target}"><xsl:apply-templates/></a>
+        <a class="sd-internal" href="{$chap}?refId={@target}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:otherwise><xsl:apply-imports/></xsl:otherwise>
     </xsl:choose>
@@ -1208,7 +1214,7 @@
     <xsl:variable name="chap" select="substring-before(substring-after(@target, '#'), '-intro')"/>
     <xsl:choose>
       <xsl:when test="contains($sd-chapitres, concat(' ', $chap, ' '))">
-        <a class="sd-internal" href="{$elec-base}/saint-denis/document/{$chap}"><xsl:apply-templates/></a>
+        <a class="sd-internal" href="{$chap}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:otherwise><xsl:apply-imports/></xsl:otherwise>
     </xsl:choose>
@@ -1221,13 +1227,13 @@
     <xsl:variable name="num" select="substring-after($rest, 'acte')"/>
     <xsl:choose>
       <xsl:when test="contains($sd-chapitres, concat(' ', $chap, ' ')) and $rest = ''">
-        <a class="sd-internal" href="{$elec-base}/saint-denis/document/{$chap}"><xsl:apply-templates/></a>
+        <a class="sd-internal" href="{$chap}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:when test="contains($sd-chapitres, concat(' ', $chap, ' ')) and starts-with($rest, 'acte') and $num != '' and translate(substring($num, 1, 1), '0123456789', '') = ''
                       and (translate($num, '0123456789', '') = ''
                            or (string-length(translate($num, '0123456789', '')) = 1
                                and translate(substring($num, string-length($num)), 'abcdefghijklmnopqrstuvwxyz', '') = ''))">
-        <a class="sd-internal" href="{$elec-base}/saint-denis/document/{$chap}?refId={$chap}-{$rest}"><xsl:apply-templates/></a>
+        <a class="sd-internal" href="{$chap}?refId={$chap}-{$rest}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:otherwise><xsl:apply-imports/></xsl:otherwise>
     </xsl:choose>
@@ -1241,28 +1247,28 @@
        Table et bloc produits par dots-autopilot/scripts/d5_legacy_links_fix.py. -->
   <!-- adresse de l'ancien site -->
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/']" priority="14">
-    <a class="idno d5-local" href="{$elec-base}/saint-denis"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="../"><xsl:apply-templates/></a>
   </xsl:template>
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/beaurain/']" priority="14">
-    <a class="idno d5-local" href="{$elec-base}/saint-denis/document/beaurain"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="beaurain"><xsl:apply-templates/></a>
   </xsl:template>
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/dugny/']" priority="14">
-    <a class="idno d5-local" href="{$elec-base}/saint-denis/document/dugny"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="dugny"><xsl:apply-templates/></a>
   </xsl:template>
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/pierrefitte/']" priority="14">
-    <a class="idno d5-local" href="{$elec-base}/saint-denis/document/pierrefitte"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="pierrefitte"><xsl:apply-templates/></a>
   </xsl:template>
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/rueil/']" priority="14">
-    <a class="idno d5-local" href="{$elec-base}/saint-denis/document/rueil"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="rueil"><xsl:apply-templates/></a>
   </xsl:template>
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/saint-martin/']" priority="14">
-    <a class="idno d5-local" href="{$elec-base}/saint-denis/document/saint-martin"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="saint-martin"><xsl:apply-templates/></a>
   </xsl:template>
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/tremblay/']" priority="14">
-    <a class="idno d5-local" href="{$elec-base}/saint-denis/document/tremblay"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="tremblay"><xsl:apply-templates/></a>
   </xsl:template>
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/ully/']" priority="14">
-    <a class="idno d5-local" href="{$elec-base}/saint-denis/document/ully"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="ully"><xsl:apply-templates/></a>
   </xsl:template>
   <!-- collection cartulaires servie ici -->
   <xsl:template match="tei:ref[@target = 'http://elec.enc.sorbonne.fr/cartulaires/']" priority="14">
@@ -1368,12 +1374,12 @@
     </xsl:variable>
     <xsl:choose>
       <xsl:when test="$rub != '' and $rub != $id">
-        <a class="sd-internal sd-site-page" href="{$elec-base}/saint-denis/document/saint-denis-site?refId={$rub}#{$id}">
+        <a class="sd-internal sd-site-page" href="saint-denis-site?refId={$rub}#{$id}">
           <xsl:apply-templates/>
         </a>
       </xsl:when>
       <xsl:when test="$rub != ''">
-        <a class="sd-internal sd-site-page" href="{$elec-base}/saint-denis/document/saint-denis-site?refId={$rub}">
+        <a class="sd-internal sd-site-page" href="saint-denis-site?refId={$rub}">
           <xsl:apply-templates/>
         </a>
       </xsl:when>
@@ -1390,11 +1396,11 @@
     <xsl:variable name="notice" select="substring-after($apres, '/')"/>
     <xsl:choose>
       <xsl:when test="$tome != '' and starts-with($notice, 'notice')">
-        <a class="sd-inventaire sd-inventaire-url" href="{$elec-base}/saint-denis/document/ISD-vol{$tome}?refId=ISD-vol{$tome}_{$notice}"><xsl:apply-templates/></a>
+        <a class="sd-inventaire sd-inventaire-url" href="ISD-vol{$tome}?refId=ISD-vol{$tome}_{$notice}"><xsl:apply-templates/></a>
       </xsl:when>
       <!-- « Le tome I dans son ensemble » : la cible est le volume, pas une notice (3 cas). -->
       <xsl:when test="$tome != '' and normalize-space($notice) = ''">
-        <a class="sd-inventaire sd-inventaire-tome" href="{$elec-base}/saint-denis/document/ISD-vol{$tome}"><xsl:apply-templates/></a>
+        <a class="sd-inventaire sd-inventaire-tome" href="ISD-vol{$tome}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:otherwise>
         <a class="sd-legacy-inventaire" href="{@target}" target="_blank" rel="noopener"><xsl:apply-templates/></a>
@@ -1515,13 +1521,13 @@
     <xsl:choose>
       <xsl:when test="starts-with($file, 'ISD-vol')">
         <a class="sd-inventaire sd-index-renvoi"
-           href="{$elec-base}/saint-denis/document/{$file}?refId={$file}_{$frag}">
+           href="{$file}?refId={$file}_{$frag}">
           <xsl:value-of select="@n"/>
         </a>
       </xsl:when>
       <xsl:otherwise>
         <a class="sd-internal sd-index-renvoi"
-           href="{$elec-base}/saint-denis/document/{$file}?refId={$frag}">
+           href="{$file}?refId={$frag}">
           <xsl:value-of select="@n"/>
         </a>
       </xsl:otherwise>

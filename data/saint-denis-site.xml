@@ -31,7 +31,7 @@
              reste dans le fichier mais hors sommaire. -->
         <citeStructure unit="partie" match="/TEI/text/body/div[@type=('page','part')]" use="@xml:id">
           <citeData property="dct:title" use="head[1]"/>
-          <citeStructure unit="section" match="div[@type=('page','subpart')]" use="@xml:id">
+          <citeStructure unit="section" match="div[@type=('page','subpart')][not(@xml:id = 'sd-le-projet--credits')]" use="@xml:id">
             <citeData property="dct:title" use="head[1]"/>
             <citeStructure unit="section" match="div[@type=('page','subpart')]" use="@xml:id">
               <citeData property="dct:title" use="head[1]"/>

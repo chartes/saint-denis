@@ -1,2 +1,2 @@
-id	title	short_title	creator	publisher	issued	description	license
-saint-denis	Chartes médiévales de l’abbaye de Saint-Denis (VIIe-XIIIe siècle)	Chartes médiévales de Saint-Denis	Olivier Guyotjeannin	École nationale des chartes	2010	Édition ÉLEC préservée avec ses paratextes.	https://creativecommons.org/licenses/by-nc-nd/2.0/fr/
+id	title	short_title	creator	creator_wikidata_qid	creator_bnf_ark	creator_idref_ppn	publisher	issued	description	license
+saint-denis	Chartes médiévales de l’abbaye de Saint-Denis (VIIe-XIIIe siècle)	Chartes médiévales de Saint-Denis	Olivier Guyotjeannin	https://www.wikidata.org/wiki/Q3351082	https://data.bnf.fr/fr/ark:/12148/cb11906612z	https://www.idref.fr/026911337	École nationale des chartes	2010	Édition ÉLEC préservée avec ses paratextes.	https://creativecommons.org/licenses/by-nc-nd/2.0/fr/
