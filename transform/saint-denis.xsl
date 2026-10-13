@@ -4,12 +4,24 @@
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:tei="http://www.tei-c.org/ns/1.0"
   exclude-result-prefixes="tei">
+  <!-- Saint-Denis : surcharge de hteiml, reconstruite le 13/10/2026 en partant du rendu
+       hteiml nu.
 
+       Les actes du Cartulaire blanc reprennent le DOM du site historique (Pleade,
+       saint-denis.enc.sorbonne.fr) : h1.tei-doc-title, p.tei-docDate, div.tei-summary,
+       div.tei-tradition (p.tei-docs-orig / -cop / -edi, div.indiqué-ig), div.tei-comments,
+       div.tei-transcription, de sorte que la CSS de Pleade (theme/css/module-tei.css)
+       s'y applique.
+
+       Reprises telles quelles de la feuille précédente (rien n'est retiré) : appels et
+       corps des notes, apparat (leçon + appel, note en marge et en pied comme dans
+       dots-vue), renvois entre actes, vers l'Inventaire général, vers les pages du site,
+       vers le Du Cange, corrections de renvois faux (rueil, ully), images (folios,
+       illustrations), notices de l'Inventaire, index des auteurs d'actes, recherche.
+
+       Version 1.1 gardée : plusieurs tests comparent une chaîne à un nombre (mode de
+       compatibilité). -->
   <xsl:import href="../../renderers/hteiml/xsl/tei2html.xsl"/>
-  <!-- 2026-10-09 : tableaux sans en-tête de la notice saint-denis-site (table des chapitres, table des actes) :
-       la première ligne contient les intitulés de colonnes ; elle est rendue en <th scope="col">.
-       Ciblé sur ces deux tables seulement, par le dernier intitulé de leur première ligne (le xml:id
-       de la div disparaît en excludeFragments=true, d'où ce contexte-là). -->
   <xsl:template match="tei:table[tei:row[1]/tei:cell[last()][normalize-space(.) = ('Nb. actes', 'Édition de la notice dans l’inventaire')]]/tei:row[1]/tei:cell" priority="5">
     <th scope="col">
       <xsl:if test="@cols &gt; 1"><xsl:attribute name="colspan" select="@cols"/></xsl:if>
@@ -17,51 +29,24 @@
       <xsl:apply-templates/>
     </th>
   </xsl:template>
-  <!-- C7 (2026-10-02) : racine de l'application. '' en local (dots-vue servi à la racine),
-       '/elec' sur le serveur de développement (dots-vue sous /elec/). Tous les liens internes
-       et les images passent par elle. -->
   <xsl:variable name="elec-base" select="'/elec'"/>
-  <!-- Fichiers servis hors du routeur de dots-vue (PDF d'illustrations, archives ZIP) : en local
-       le serveur de fichiers du port 8081 ; sur le serveur, la racine de l'application. -->
   <xsl:variable name="sd-fichiers" select="$elec-base"/>
-  <xsl:output indent="no"/><!-- autopilote 2026-09-11 : sinon DoTS-vue colle les mots (condense) -->
-
+  <xsl:output indent="no"/>
   <xsl:template match="tei:summary" priority="20">
     <div class="summary"><xsl:apply-templates/></div>
   </xsl:template>
-
-
   <xsl:template match="tei:msName" priority="20">
     <span class="msName"><xsl:apply-templates/></span>
   </xsl:template>
-
-
   <xsl:template match="tei:am" priority="20">
     <span class="am"><xsl:apply-templates/></span>
   </xsl:template>
-
-
-  <!-- B1f (autopilote 2026-09-11) : en-tête des actes. La générique rend docAuthor, docDate et
-       placeName en <span> contigus (« roi de France774, décembrePalais de Samoussy »).
-       Ancien site (fragments Pleade) : <h1>titre</h1><p class="tei-docDate">date. — lieu</p>,
-       plusieurs dates avec le texte qui les sépare (« ou »), docAuthor non affiché.
-       On reprend la ligne de date à l'identique.
-       2026-09-29 : docAuthor masqué, comme sur l'ancien site (décision de l'utilisateur). La
-       catégorie d'auteur reste dans le TEI (docAuthor/@ref vers l'index des auteurs d'actes). -->
   <xsl:template match="tei:front/tei:docAuthor" priority="12"/>
-
   <xsl:template match="tei:front/tei:docDate" priority="12">
-    <p class="docDate sd-docDate"><xsl:apply-templates/></p>
-    <!-- 2026-09-29 : « URL de cette page ». L'ÉLEC l'imprimait sous la date de chacun des 512 actes
-         (div.tei-summary-refurl, `<http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/beaurain/acte3>`).
-         Repris avec l'adresse locale de l'acte, comme pour l'Inventaire (modèle isd-permalien, D25),
-         et pour la même raison en TEXTE entre chevrons, pas en lien : DoTS-vue confie tout lien de même
-         origine à son routeur, et un renvoi vers la route courante vide la page (mesuré en D25).
-         Chaque acte a un seul docDate (512/512) et un xml:id « <chapitre>-acte<N> » (512/512) : le
-         chapitre, qui est l'identifiant de la ressource, se lit avant « -acte ». -->
+    <p class="tei-docDate"><xsl:apply-templates/></p>
     <xsl:variable name="acte" select="string(ancestor::tei:text[@xml:id][1]/@xml:id)"/>
     <xsl:if test="contains($acte, '-acte') and not(following-sibling::tei:docDate)">
-      <div class="sd-refurl">
+      <div class="tei-summary-refurl">
         <span class="refurl-label"><b>URL de cette page : </b></span>
         <span class="sd-permalien">
           <xsl:text>&lt;</xsl:text>
@@ -71,22 +56,10 @@
       </div>
     </xsl:if>
   </xsl:template>
-
-
   <xsl:template match="tei:front/tei:docDate/tei:placeName" priority="12">
     <xsl:text>. — </xsl:text>
     <xsl:apply-imports/>
   </xsl:template>
-
-  <!-- B1h (autopilote 2026-09-11) : apparat critique.
-       (1) identifiants : la générique fabrique l'id d'un <app> depuis son @n (« appa ») et le pose deux fois
-       (span.app ET appel, « appa_ ») ; un même @n revient dans un acte (22 actes, 41 fois), les appels
-       menaient alors à la première note de même lettre. De même, les div sans xml:id d'un fragment
-       reçoivent « div1 », « div2 » en front ET en body (ids en double dans les 512 actes).
-       On surcharge le modèle nommé « id » : app et div sans xml:id d'un acte → id unique préfixé par
-       l'acte ; tout le reste repasse par le modèle d'origine (même corps, match="*" mode="id").
-       (2) lemme : <lem><choice><sic/><corr/></choice></lem> + note « sic B pour … » ; l'ancien site
-       affichait la leçon du manuscrit (sic), la générique affiche corr et rend la note absurde (25 cas). -->
   <xsl:template name="id">
     <xsl:param name="prefix"/>
     <xsl:param name="suffix"/>
@@ -114,8 +87,6 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
-  <!-- span.app sans id (l'appel porte déjà « …_ ») ; appel marqué app-ref (contrôle d'apparat). -->
   <xsl:template match="tei:app" priority="12">
     <span class="app">
       <xsl:apply-templates select="tei:lem"/>
@@ -124,16 +95,6 @@
       </xsl:call-template>
     </span>
   </xsl:template>
-
-  <!-- 2026-09-29 — double espace avant la leçon. hteiml (tei2html.xsl, modèle tei:lem) pose une
-       espace insécable avant chaque lemme, sauf après une apostrophe, sans regarder si le texte qui
-       précède l'<app> finit déjà par un blanc. Dans ce corpus c'est presque toujours le cas
-       (« eidem⏎ <app><lem>Amarico… » : 1 042 apparats sur 1 097), d'où « eidem  Amarico ».
-       Même modèle que hteiml, avec une condition de plus : pas d'insécable quand le nœud qui précède
-       l'<app> est un nœud texte terminé par un blanc (espace, tabulation, fin de ligne, insécable).
-       Les commentaires de l'éditeur posés juste avant l'<app> (« FC sept 2012 … », « REVOIR »,
-       3 cas) sont sautés pour trouver ce nœud texte : ils ne s'affichent pas.
-       La règle de l'apostrophe est gardée telle quelle. -->
   <xsl:template match="tei:lem">
     <xsl:variable name="prev" select="normalize-space(../preceding-sibling::node()[1])"/>
     <xsl:variable name="prevnode" select="../preceding-sibling::node()[not(self::comment())][1]"/>
@@ -146,22 +107,12 @@
       <xsl:apply-templates/>
     </span>
   </xsl:template>
-
   <xsl:template match="tei:lem//tei:choice[tei:sic][tei:corr]" priority="12">
     <em class="sic"><xsl:apply-templates select="tei:sic/node()"/></em>
   </xsl:template>
-
-  <!-- B1g (autopilote 2026-09-11) : tradition des actes. La générique rend chaque listWit en <ul>,
-       chaque témoin en <li> et, pour un témoin sans <label>, affiche son xml:id comme un sigle
-       (« ully<sup>-acte3-indiqué-i-noir</sup> », 1 552 témoins « Indiqué »).
-       Ancien site (fragments Pleade) : un paragraphe par liste, libellé tiré du suffixe de l'xml:id
-       (« Originaux : », « Copies : », « Éditions : » ; « Indiqué : » en tête de bloc), témoins séparés
-       par « — ». Les 3 listes sans xml:id (« Autre tradition », rueil-acte47 « Indiqué ») n'y étaient
-       pas affichées : on les rend ici avec leur propre head. -->
   <xsl:template match="tei:div[@type='tradition']/tei:listWit[tei:listWit]" priority="12">
-    <div class="sd-tradition"><xsl:apply-templates select="tei:listWit"/></div>
+    <div class="tei-tradition"><xsl:apply-templates select="tei:listWit"/></div>
   </xsl:template>
-
   <xsl:template match="tei:div[@type='tradition']/tei:listWit/tei:listWit" priority="12">
     <xsl:variable name="id" select="concat(@xml:id, '#')"/>
     <xsl:variable name="type">
@@ -193,14 +144,14 @@
     </xsl:variable>
     <xsl:choose>
       <xsl:when test="$type = 'ind' or ($type = 'autre' and tei:head)">
-        <div class="sd-listWit sd-docs-{$type}">
+        <div class="indiqué-ig tei-docs-{$type}">
           <xsl:if test="@xml:id"><xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute></xsl:if>
           <p class="listWit-head"><b><xsl:value-of select="$label"/><xsl:text>&#160;:</xsl:text></b></p>
-          <p class="sd-witnesses"><xsl:copy-of select="$witnesses"/></p>
+          <p class="tei-witnesses"><xsl:copy-of select="$witnesses"/></p>
         </div>
       </xsl:when>
       <xsl:otherwise>
-        <p class="sd-listWit sd-docs-{$type}">
+        <p class="tei-docs-{$type}">
           <xsl:if test="@xml:id"><xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute></xsl:if>
           <xsl:if test="$label != ''">
             <span class="listWit-head"><b><xsl:value-of select="$label"/><xsl:text>&#160;: </xsl:text></b></span>
@@ -210,53 +161,44 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
-  <!-- ================================================================
-       Racine de la ressource : n'afficher que le PREMIER texte.
-
-       Sans `ref`, DoTS Vue demande le document entier
-       (`document?resource=beaurain&amp;mediaType=html`) : la generique rend la page
-       de garde issue du teiHeader PUIS tout le corps (1,4 Mo de HTML), soit
-       l'edition complete empilee sous la page d'accueil.
-
-       Sur ELEC, chaque chapitre du cartulaire s'ouvre sur sa seule introduction ; les
-       actes passent par le sommaire.
-
-       On neutralise donc, au seul rendu du document complet, tout ce qui suit
-       la premiere unite citable. Les fragments sont servis dans un
-       <dts:wrapper> SANS teiHeader ni <text> : les motifs ci-dessous, ancres
-       sur `tei:TEI[tei:teiHeader]/tei:text`, ne les atteignent pas.
-       Meme correctif que christofle.xsl et chroniqueslatines.xsl.
-       ================================================================ -->
-  <!-- 2026-10-12 : DoTS récent sert les fragments en <TEI><dts:wrapper>…</dts:wrapper></TEI>.
-       Sans modèle, l'enveloppe tombait dans le modèle d'erreur de hteiml (« <dts:wrapper> »
-       écrit en rouge autour de chaque page) : on la traverse. -->
+  <!-- Structure d'un acte, comme Pleade : en-tête (titre, date, analyse), puis tradition,
+       commentaire et transcription, séparés par un filet. -->
+  <xsl:template match="tei:text/tei:front" priority="12">
+    <div class="front"><xsl:apply-templates/></div>
+  </xsl:template>
+  <xsl:template match="tei:front/tei:titlePart" priority="12">
+    <h1 class="tei-doc-title"><xsl:apply-templates/></h1>
+  </xsl:template>
+  <xsl:template match="tei:front/tei:docDate/tei:date" priority="12">
+    <span class="tei-date"><xsl:apply-templates/></span>
+  </xsl:template>
+  <xsl:template match="tei:front/tei:div[@type = 'summary']" priority="12">
+    <div class="tei-summary"><xsl:apply-templates/></div>
+  </xsl:template>
+  <xsl:template match="tei:text/tei:body" priority="12">
+    <div class="tei-doc-body"><xsl:apply-templates/></div>
+  </xsl:template>
+  <xsl:template match="tei:body/tei:div[@type = ('tradition', 'comments', 'transcription')]" priority="12">
+    <hr/>
+    <div class="tei-{@type}">
+      <xsl:if test="@xml:lang"><xsl:attribute name="lang" select="@xml:lang"/></xsl:if>
+      <xsl:apply-templates/>
+    </div>
+  </xsl:template>
+  <!-- Sigle d'un témoin (A, B, a…) : en italique chez Pleade. -->
+  <xsl:template match="tei:witness/tei:label" priority="12">
+    <span class="tei-label"><xsl:apply-templates/></span>
+  </xsl:template>
+  <!-- Citations des anciens inventaires et rubriques : entre guillemets, comme Pleade. -->
+  <xsl:template match="tei:quote[@type = ('summary', 'rubric')]" priority="12">
+    <span class="quote-{@type}">«&#160;<xsl:apply-templates/>&#160;»</span>
+  </xsl:template>
   <xsl:template match="*[local-name() = 'wrapper']">
     <xsl:apply-templates/>
   </xsl:template>
-
-  <!-- Ne garder que l'introduction du chapitre : pas les actes. -->
   <xsl:template match="tei:TEI[tei:teiHeader]/tei:text/tei:group" priority="15"/>
-
-
-
-  <!--
-    Saint-Denis : appel et note sont deux elements distincts relies par @target
-       appel : <ref type="note" n="2" target="#beaurain-acte1-n-2"/>
-       note  : <note xml:id="beaurain-acte1-n-2">…</note>  (sans @target retour)
-
-    La generique emet <a href="#{id-genere-de-l-appel}" id="{id-genere}_"> : le
-    lien aller pointe vers l'appel (au lieu de la note) et l'ancre de retour ne
-    correspond pas au retour de la note (qui vise #{id-de-la-note}_). Les 767
-    appels sont casses dans les deux sens.
-
-    Correctif : href = la cible (@target = la note) ; ancre de l'appel =
-    #{id-de-la-note}_ pour recevoir le lien retour de la note.
-  -->
   <xsl:template match="tei:ref[@type='note']">
     <xsl:variable name="noteid" select="substring-after(@target, '#')"/>
-    <!-- B1h : une même note appelée deux fois (regeste + transcription) : le 1er appel garde « id_ »
-         (cible du retour), les suivants « id_2 », « id_3 »… (sinon id en double). -->
     <xsl:variable name="rang" select="count(preceding::tei:ref[@type='note'][@target = current()/@target])"/>
     <a class="noteref" href="#{$noteid}">
       <xsl:attribute name="id">
@@ -272,43 +214,10 @@
       </sup>
     </a>
   </xsl:template>
-
-  <!--
-    Notes SANS xml:id (gloses editoriales inline : « place du marche… », « Sic B
-    pour… »). La generique les traite comme des appels de note et emet des
-    <a href="#noteN"> orphelins (pierrefitte, tremblay). Ce sont de courtes
-    gloses au fil du texte : on les rend inline entre crochets. Les notes
-    d'apparat identifiees (xml:id, deportees dans div[@type='notes']) ne sont pas
-    concernees.
-  -->
   <xsl:template match="tei:note[not(@xml:id) and not(parent::tei:div[@type = 'notes'])]" priority="8">
     <span class="gloss"> [<xsl:apply-templates/>]</span>
   </xsl:template>
-
-  <!--
-    Les gloses precedentes restaient collectees par la passe hors flux (mode
-    'fn'), qui n'ecarte que les notes filles de div/front/back/app/notesStmt.
-    Les notes filles de <quote> etaient donc rendues DEUX fois : en glose inline
-    et en note de bas de page, cette derniere avec un lien de retour vers une
-    ancre jamais emise (13 cas dans rueil, aucun ailleurs).
-  -->
   <xsl:template match="tei:note[not(@xml:id)][parent::tei:quote]" mode="fn" priority="9"/>
-
-  <!--
-    2026-09-29 — Notes répétées page par page (régression du commit ac57450, 24/09).
-    Depuis que les actes portent un <pb n facs> en tête de transcription, le modèle
-    nommé « footnotes » de hteiml (tei2html.xsl, appelé par le seul modèle tei:text)
-    voit des pb et bascule sur sa collecte PAR PAGE : pour chaque pb il reliste les
-    notes que la clé note-pb rattache à cette page, dans un <div class="page"> ouvert
-    par un intitulé « p. N » (lien #pbN, sans ancre en face : nos pb se rendent en
-    details.sd-folio), avec des retours #noteN_ sans appel. Ces notes sont celles de
-    l'apparat et de div[@type='notes'], déjà émises une fois par la collecte hors flux
-    (mode fn, surcharges ci-dessus) : d'où les doublons (428 actes sur 512).
-    Le corpus n'avait AUCUN pb avant ac57450 (0 dans les onze fichiers au commit
-    474d680) : lui passer une liste de pb vide rend exactement la collecte d'avant.
-    Modèle tei:text recopié de hteiml à l'identique, au seul paramètre pb près ;
-    hteiml n'est pas touché, la précédence d'import suffit.
-  -->
   <xsl:template match="tei:text">
     <xsl:param name="level" select="count(ancestor::tei:group)"/>
     <article>
@@ -330,16 +239,8 @@
       </xsl:if>
     </article>
   </xsl:template>
-
-  <!--
-    Appels dont la note cible est absente du TEI source (7 cas dans beaurain :
-    beaurain-acte33-n-5, acte87-n-4, acte87-n-13, acte87-n-14, acte106-n-3).
-    Lacune de l'edition d'origine, pas de la migration : on affiche l'appel sans
-    lien plutot qu'un lien mort.
-  -->
   <xsl:key name="sd-note-by-id" match="tei:note[@xml:id]" use="@xml:id"/>
   <xsl:key name="sd-ref-by-target" match="tei:ref[@type='note'][@target]" use="substring-after(@target, '#')"/>
-
   <xsl:template match="tei:ref[@type='note'][not(key('sd-note-by-id', substring-after(@target, '#')))]" priority="9">
     <sup class="noteref-orphan">
       <xsl:choose>
@@ -348,32 +249,13 @@
       </xsl:choose>
     </sup>
   </xsl:template>
-
-  <!--
-    Les notes editoriales de Saint-Denis sont deja deportees dans un
-    <div type="notes">. Ce conteneur ne doit pas etre rendu dans le flux
-    principal : sinon la generique transforme une premiere fois chaque <note>
-    en appel et l'on obtient le bloc parasite ou toutes les notes valent « 1 ».
-    Leur corps est emis une seule fois par la collecte hors flux ci-dessous.
-  -->
   <xsl:template match="tei:div[@type = 'notes' or @type = 'footnotes']" priority="30"/>
-
-  <!--
-    Les notes deportees n'ont pas toujours @n : reprendre le numero porte par
-    l'appel <ref type="note" n="…"> qui pointe vers elles.
-
-    Important : footnotes() de hteiml parcourt le mode fn trois fois
-    (author/editor/sans @resp). La surcharge doit donc respecter le parametre
-    $resp, sinon chaque note est rendue trois fois.
-  -->
   <xsl:template match="tei:div[@type = 'notes' or @type = 'footnotes']//tei:note[@xml:id]" mode="fn" priority="20">
     <xsl:param name="resp"/>
     <xsl:if test="($resp = '' and not(@resp))
                   or (@resp and @resp = $resp)
                   or ($resp = '' and @resp and @resp != 'author' and @resp != 'editor')">
       <aside class="note" id="{@xml:id}">
-        <!-- autopilote 2026-09-11 : lien retour seulement si un appel vise la note (lacunes de la source,
-             ex. rueil-acte23-n-, ully-acte3-n-1 à 3) ; sinon numéro sans lien. -->
         <xsl:choose>
           <xsl:when test="key('sd-ref-by-target', @xml:id)">
             <a class="noteback" href="#{@xml:id}_">
@@ -412,14 +294,6 @@
       </aside>
     </xsl:if>
   </xsl:template>
-
-
-  <!-- ================================================================
-       Saint-Denis V2 — pages éditoriales historiques + recherche ES
-       ================================================================ -->
-
-  <!-- Conteneurs de la ressource saint-denis-site.xml -->
-
   <xsl:template match="tei:div[@type='part']" priority="12">
     <section class="sd-part">
       <xsl:if test="@xml:id">
@@ -429,7 +303,6 @@
       <xsl:apply-templates select="node()[not(self::tei:head[1])]"/>
     </section>
   </xsl:template>
-
   <xsl:template match="tei:div[@type='subpart']" priority="12">
     <section class="sd-subpart">
       <xsl:if test="@xml:id">
@@ -439,7 +312,6 @@
       <xsl:apply-templates select="node()[not(self::tei:head[1])]"/>
     </section>
   </xsl:template>
-
   <xsl:template match="tei:div[@type='page']" priority="12">
     <article class="sd-static-page">
       <xsl:if test="@xml:id">
@@ -452,32 +324,15 @@
       <xsl:apply-templates select="node()[not(self::tei:head[1])]"/>
     </article>
   </xsl:template>
-
   <xsl:template match="tei:p[starts-with(@rend,'heading-h2')]" priority="12">
     <h2 class="sd-legacy-h2"><xsl:apply-templates/></h2>
   </xsl:template>
   <xsl:template match="tei:p[starts-with(@rend,'heading-h3')]" priority="12">
     <h3 class="sd-legacy-h3"><xsl:apply-templates/></h3>
   </xsl:template>
-
-  <!-- 2026-09-28 — conformité tei_all. Sur le site d'origine, certains blocs posaient du
-       contenu en ligne directement entre deux blocs (le texte d'un élément dans les exemples
-       de code, une vignette cliquable en tête de page). TEI n'admet pas d'élément en ligne
-       enfant direct d'un <div> : ce contenu est enveloppé dans un <ab type="legacy-inline">,
-       qui ne produit rien par lui-même, pour que le HTML reste celui d'avant, octet pour octet.
-       Les <p> voisins ne voient pas la différence : hteiml ne cherche qu'un <p> non vide
-       comme frère précédent pour retirer « noindent », et <ab> n'en est pas un, pas plus que
-       l'élément en ligne d'avant. -->
   <xsl:template match="tei:ab[@type = 'legacy-inline']" priority="12">
     <xsl:apply-templates/>
   </xsl:template>
-
-  <!-- 2026-09-28 — conformité tei_all. Le lien « Retour au début » qui clôt un bloc du site
-       d'origine y est un <p>. Quand il suit des sous-blocs <div>, TEI n'admet plus de <p> :
-       il est alors encodé <trailer type="retour-debut">, pied de division. hteiml rendrait un
-       <p class="trailer"> ; on rend le même <p> qu'avant, avec la règle de hteiml pour un <p>
-       (tei2html.xsl, modèle tei:p) : « noindent » sauf après un <p> non vide ou un frère dont
-       le texte commence par un tiret. -->
   <xsl:template match="tei:trailer[@type = 'retour-debut']" priority="12">
     <xsl:variable name="prev" select="preceding-sibling::*[not(self::tei:pb)][1]"/>
     <p>
@@ -491,59 +346,27 @@
       <xsl:apply-templates/>
     </p>
   </xsl:template>
-
-  <!-- Page « Recherche » : DoTS-vue compile le fragment comme un template Vue et
-       n'exécute pas les <script> ; la recherche plein texte passe par l'index
-       dots-cli-es et l'interface de recherche de DoTS-vue, pas par la XSL. -->
   <xsl:template match="tei:div[@type='search']" priority="30">
     <section class="sd-search" id="sd-search">
       <h2>Rechercher dans les chartes éditées</h2>
       <p class="sd-search-help">La recherche plein texte dans les actes du Cartulaire blanc
         (Beaurain, Dugny, Pierrefitte, Rueil, Saint-Martin, Tremblay, Ully) se fait avec le
         moteur de recherche de l’application, alimenté par l’index dots-cli-es.</p>
-      <!-- autopilote 2026-09-11 : route DoTS-vue déclarée dans saint-denis.conf.json (customRoutes) -->
       <p class="sd-search-go"><a class="sd-search-link" href="../search">Ouvrir la recherche plein texte</a></p>
     </section>
   </xsl:template>
-
-
-  <!-- ================================================================
-       D21 (2026-09-12) : Inventaire général des chartes de Saint-Denis.
-       Il était servi par l'ancien site (497 renvois depuis les TEI de l'édition) et n'existait
-       pas dans DoTS. Les trois volumes y sont versés comme ressources ISD-vol1 à 3 : sections
-       (« Chartes décrites sous les nos 155-167, Années 901-1000 ») et notices, chacune avec ses
-       champs et le texte de son regeste. Le rendu reprend la présentation du site : le numéro et
-       le regeste bref en titre, les champs en liste de définitions, puis l'édition du regeste.
-       ================================================================ -->
   <xsl:template match="tei:div[@type = 'notice']" priority="14">
     <article class="isd-notice" id="{@xml:id}">
       <h3 class="isd-notice-head"><xsl:apply-templates select="tei:head[1]/node()"/></h3>
       <xsl:apply-templates select="node() except tei:head[1]"/>
     </article>
   </xsl:template>
-
   <xsl:template match="tei:div[@type = 'section']" priority="14">
     <section class="isd-section" id="{@xml:id}">
       <h2 class="isd-section-head"><xsl:apply-templates select="tei:head[1]/node()"/></h2>
       <xsl:apply-templates select="node() except tei:head[1]"/>
     </section>
   </xsl:template>
-
-  <!-- 2026-09-25 : les rubriques internes d'une notice étaient encodées <head type="section">.
-       TEI n'admet un <head> qu'en tête de son <div> (model.divTop) : placé après la liste des
-       champs ou après un <p>, il est refusé — d'où 9 333 erreurs contre tei_all dans les trois
-       volumes. Arbitrage pris sur la source, encore en ligne (Pleade/EAD,
-       saint-denis.enc.sorbonne.fr, relevé le 2026-09-25, trois notices témoins, une par tome) :
-       ces rubriques n'y sont pas des titres. Ce sont les <head> EAD de <scopecontent>,
-       <bibliography>, <odd> et du bloc éditorial « cart-links », rendus en
-       <p class="pl-pgd-head…"> — jamais en <h1>-<h6> — au même titre que les <th> du tableau
-       de champs, que nous encodons déjà en <label>. La conversion HTML→TEI a confondu le <head>
-       d'EAD (une rubrique) avec celui de TEI (le titre d'une division) : on les rend donc à
-       <label type="section">, l'élément TEI des étiquettes, comme les champs courts voisins.
-       2026-10-02 (guide de validation, Saint-Denis, point 4) : on les rend désormais comme l'ancien
-       site, en étiquettes : un <p class="isd-rubrique">, plus un titre <h1>-<h6>. Le saut de page
-       éventuel est rendu avant, comme dans le modèle générique de hteiml ; une rubrique vide ne
-       donne rien. Sans titre, plus de signet « § » : il n'existait pas sur l'ancien site. -->
   <xsl:template match="tei:div[@type = 'notice']/tei:label[@type = 'section']" priority="14">
     <xsl:if test="normalize-space(.) != ''">
       <xsl:apply-templates select="tei:pb"/>
@@ -552,18 +375,6 @@
       </p>
     </xsl:if>
   </xsl:template>
-
-  <!-- Corollaire du point précédent : la table des matières de hteiml (nav/ol.tree, servie par
-       l'API avec le document comme avec le fragment) compose l'intitulé d'une unité en
-       chaînant TOUS ses <head> enfants (common.xsl, l. 679 : for-each tei:head[not(@type='sub')],
-       séparés par « . »). Une notice y figurait donc sous « N° 3196. Édition du regeste.
-       Références données par l'Inventaire général… ». Les rubriques n'étant plus des <head>,
-       cet intitulé se réduirait au seul titre : ce serait mieux, mais ce serait changer ce qui
-       s'affiche, ce que ce chantier s'interdit. On rend donc l'intitulé à l'identique, rubriques
-       comprises. Les 9 333 rubriques sont du texte nu, sans balise ni espace final (vérifié),
-       d'où le simple normalize-space() là où un <head> passerait par son mode title.
-       À rouvrir si l'on veut un jour raccourcir ces intitulés : il suffira de retirer
-       tei:label du for-each ci-dessous. -->
   <xsl:template match="tei:div[@type = 'notice']" mode="a" priority="14">
     <xsl:param name="class"/>
     <a>
@@ -574,12 +385,7 @@
       <xsl:call-template name="isd-intitule"/>
     </a>
   </xsl:template>
-
-
   <xsl:template name="isd-intitule">
-    <!-- 2026-10-05 : les rubriques rétablies d'après le site (notes de l'éditeur, notes de
-         l'inventaire manuscrit, références ajoutées par l'éditeur) n'entrent pas dans
-         l'intitulé : il reste celui d'avant le rétablissement. -->
     <xsl:for-each select="tei:head[not(@type = 'sub')] | tei:label[@type = 'section'][not(following-sibling::*[1][self::tei:p[starts-with(@rend, 'note-')]])][not(normalize-space(.) = 'Références ajoutées par l’éditeur')]">
       <xsl:choose>
         <xsl:when test="self::tei:head"><xsl:apply-templates select="." mode="title"/></xsl:when>
@@ -592,24 +398,12 @@
       </xsl:if>
     </xsl:for-each>
   </xsl:template>
-
-  <!-- Les champs d'une notice : une liste de définitions, comme le tableau du site. -->
   <xsl:template match="tei:list[@type = 'gloss'][ancestor::tei:div[@type = 'notice']]" priority="14">
     <dl class="isd-champs">
       <xsl:for-each select="tei:label">
         <dt><xsl:apply-templates/></dt>
         <dd>
           <xsl:choose>
-            <!-- 2026-09-13, décision de l'utilisateur (« url local du coup ») : le champ
-                 « URL de cette page » portait le permalien du site qui ferme
-                 (`<http://saint-denis.enc.sorbonne.fr/inventaire/tome1/notice155>`). On affiche
-                 désormais l'adresse locale de la notice, et cliquable.
-                 Le TEI n'est PAS modifié : la donnée d'origine reste dans la base, seule la
-                 présentation change — donc réversible, et rien n'est réécrit dans la source.
-                 Correspondance vérifiée avant d'écrire : les 3 286 permaliens des trois volumes
-                 (1 196 + 2 032 + 58) désignent TOUS un fragment existant, `tomeN` répondant à
-                 `ISD-volN` et le reste du chemin à l'identifiant de la notice. En cas de forme
-                 inattendue, on retombe sur le texte d'origine plutôt que de perdre l'information. -->
             <xsl:when test="normalize-space(.) = 'URL de cette page'">
               <xsl:call-template name="isd-permalien">
                 <xsl:with-param name="brut" select="normalize-space(following-sibling::tei:item[1])"/>
@@ -624,12 +418,6 @@
       </xsl:for-each>
     </dl>
   </xsl:template>
-
-  <!-- Le permalien d'une unité de l'Inventaire, ramené sur l'adresse locale.
-       Un seul endroit pour les deux formes : le champ d'une NOTICE (`<label>/<item>` d'une liste
-       de définitions) et celui d'une SECTION (`<p rend="URL de cette page">`). La section avait
-       été oubliée au premier essai — `ISD-vol3_noticeglobale` gardait l'adresse de l'ancien site,
-       relevé par d25_permaliens_test.py. -->
   <xsl:template name="isd-permalien">
     <xsl:param name="brut"/>
     <xsl:param name="secours"/>
@@ -640,25 +428,15 @@
     <xsl:variable name="vol" select="concat('ISD-vol', substring-after($tome, 'tome'))"/>
     <xsl:choose>
       <xsl:when test="starts-with($tome, 'tome') and $unite != ''">
-        <!-- Du TEXTE entre chevrons, et non un lien — pour deux raisons qui vont dans le même
-             sens. C'est la présentation de l'ÉLEC (`<http://…/notice155>`), et un permalien se
-             copie, il ne se clique pas : il désigne la page où l'on se trouve déjà. Surtout,
-             DoTS-vue confie tout lien de même origine à son routeur, et un renvoi vers la route
-             courante VIDE le document (mesuré le 2026-09-13 : 13 notices et 25 646 caractères
-             avant le clic, 0 après). Le rendre cliquable serait offrir un bouton qui efface la
-             page. -->
         <span class="isd-permalien">
           <xsl:text>&lt;</xsl:text>
           <xsl:value-of select="concat($elec-base, '/saint-denis/document/', $vol, '?refId=', $vol, '_', $unite)"/>
           <xsl:text>&gt;</xsl:text>
         </span>
       </xsl:when>
-      <!-- Forme inattendue : on garde le texte d'origine plutôt que de perdre l'information. -->
       <xsl:otherwise><xsl:apply-templates select="$secours"/></xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
-  <!-- Les indications de section (numéros des notices, note de l'éditeur…) gardent leur libellé. -->
   <xsl:template match="tei:div[@type = 'section']/tei:p[@rend]" priority="14">
     <p class="isd-section-info"><span class="isd-libelle"><xsl:value-of select="@rend"/><xsl:text> : </xsl:text></span>
       <xsl:choose>
@@ -672,29 +450,10 @@
       </xsl:choose>
     </p>
   </xsl:template>
-
-  <!-- ================================================================
-       Images (autopilote 2026-09-11) : servies par DoTS-vue depuis
-       public/images/saint-denis/. DoTS-vue route tout <a href> de même origine
-       (router.push) : les images sont donc rendues en <img>, jamais en lien.
-       ================================================================ -->
   <xsl:variable name="sd-images" select="'../../images/saint-denis/'"/>
-
   <xsl:template match="tei:graphic[starts-with(@url, 'legacy-source/assets/')]" priority="12">
     <img class="sd-graphic" loading="lazy" src="{$sd-images}assets/{substring-after(@url, 'legacy-source/assets/')}" alt="{normalize-space(@n)}"/>
   </xsl:template>
-
-  <!-- 2026-09-12, refondu le 2026-09-25 : les illustrations de chapitre sont rapatriées, pour
-       celles qu'on a pu identifier. L'ancien site ne les servait PAS sous le nom du TEI mais comme
-       pièces jointes Pleade, sous des noms engendrés
-       (`functions/tei/attached/tremblay/tremblay_e0000328.jpg`) : 26 des 37 noms cités ont été
-       appariés par le libellé du lien dans les fragments de l'ancien site. Les autres gardent le
-       rendu « absente » — mieux vaut le dire que de montrer la mauvaise image.
-
-       La table nom → fichier vivait dans un compagnon lu avec document(). Elle est maintenant
-       DANS LE TEI : les 96 renvois qui citent une de ces 26 illustrations portent le chemin servi
-       en @facs, la forme que le corpus emploie déjà 1 874 fois pour ses pages. Plus de compagnon,
-       plus de document(), et le chemin voyage avec le renvoi qui s'en sert. -->
   <xsl:template match="tei:ref[starts-with(@target, 'illustrations/')] | tei:ptr[starts-with(@target, 'illustrations/')]" priority="12">
     <xsl:variable name="file" select="substring-after(@target, 'illustrations/')"/>
     <xsl:variable name="jointe" select="substring-after(@facs, 'images/saint-denis/illustrations/')"/>
@@ -702,9 +461,6 @@
       <xsl:when test="$jointe">
         <xsl:variable name="src" select="concat($sd-images, 'illustrations/', $jointe)"/>
         <xsl:choose>
-          <!-- Une généalogie en PDF ne s'affiche pas : on la sert par l'autre origine locale
-               (port 8081), seule façon d'ouvrir un fichier — DoTS-vue détourne les liens de même
-               origine vers son routeur (leçon de E1). -->
           <xsl:when test="ends-with(lower-case($file), '.pdf') or ends-with(lower-case(string($jointe)), '.pdf')">
             <a class="sd-illustration-pdf" href="{$sd-fichiers}/images/saint-denis/illustrations/{$jointe}" target="_blank" rel="noopener">
               <xsl:apply-templates/>
@@ -726,23 +482,6 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
-
-  <!-- 2026-09-12 : les images du Cartulaire blanc et de l'Inventaire sont RAPATRIÉES (autorisation
-       de l'utilisateur, « 1. ok télécharge »), donc les 831 liens vers la visionneuse de l'ancien
-       site deviennent l'image elle-même, dépliable sur place.
-       Ce que visaient ces liens : `images/<série>/voir.html?ns=<fichier>.jpg`, c'est-à-dire une
-       visionneuse Pleade, pas un fichier. Les fichiers sont maintenant servis par DoTS-vue depuis
-       public/images/saint-denis/<série>/<fichier>.
-       Un compagnon lu avec document() énumérait les fichiers présents et servait de garde-fou.
-       Il a été retiré le 2026-09-25, après mesure : les 839 renvois `ns=` désignent tous un
-       fichier recensé, 839 sur 839, et les 1 874 `pb/@facs` de même, 1 874 sur 1 874. Le garde-fou
-       ne rejetait donc rien. Le fonds d'images étant clos (il reste local, rien n'y sera
-       ajouté), le @target et le @facs pilotent seuls, comme sur christofle.
-       (Le cache HTML de DoTS ne se rafraîchit pas tout seul : sa clé ne dépend que de la date de
-       CETTE feuille, qu'il faut donc toucher — ou vider le store du corpus.)
-       Pourquoi un <details> et non un lien : DoTS-vue confie tout href de même origine à son
-       routeur, donc un lien vers /images/… mène à une route morte (leçon de D5 et de E2). -->
   <xsl:template match="tei:ref[contains(@target, 'images/cartulaireblanc/') or contains(@target, 'images/inventaire/')][contains(@target, 'ns=')]" priority="13">
     <xsl:variable name="serie" select="substring-before(substring-after(@target, 'images/'), '/voir.html')"/>
     <xsl:variable name="fichier" select="normalize-space(substring-after(@target, 'ns='))"/>
@@ -750,10 +489,6 @@
     <details class="sd-folio">
       <summary>
         <span class="sd-folio-libelle">
-          <!-- Le contenu du renvoi est rendu tel quel : ce peut être un libellé
-               (« LL 1157, p. 465 ») ou une vignette (`tei:graphic`), qui devient alors
-               l'aperçu cliquable. Un renvoi vide retombe sur le nom du fichier, pour ne
-               jamais produire un <summary> muet. -->
           <xsl:apply-templates/>
           <xsl:if test="not(node())"><xsl:value-of select="$fichier"/></xsl:if>
         </span>
@@ -762,29 +497,6 @@
            alt="{if ($libelle != '') then $libelle else $fichier}"/>
     </details>
   </xsl:template>
-
-  <!-- ================================================================
-       2026-09-24 — LES FOLIOS ATTACHÉS AU TEXTE PAR <pb facs>.
-
-       Décision du responsable : les images de folios entrent dans le TEI, pas dans une galerie
-       d'affichage. 1 874 `tei:pb[@facs]` ont donc été posés dans les sources :
-         - 441 en tête de la transcription d'un acte du Cartulaire blanc (7 chapitres), quand la
-           table des actes du site ET le témoin B de l'acte donnent la même page de cartulaire ;
-         - 1 433 en tête de la première notice de chaque page de l'Inventaire général
-           (ISD-vol1/2/3), d'après la mention « Archives nationales, LL 118x page N ».
-       Le @facs porte le chemin servi par DoTS-vue, `images/saint-denis/<série>/<fichier>`, comme
-       christofle porte `images/sources/…`.
-
-       ATTENTION : hteiml/xsl/tei2html.xsl a un modèle VIDE pour `tei:div/tei:pb` (l. 1149) ; sans
-       la surcharge ci-dessous tous ces pb disparaîtraient silencieusement, puisqu'ils sont
-       justement enfants directs de div (transcription, notice). La précédence d'import suffit,
-       la priorité n'est là que pour être explicite.
-
-       Le rendu est celui, déjà éprouvé et déjà mis en forme, des renvois `details.sd-folio` :
-       un intitulé cliquable qui déplie l'image sur place. On ne fabrique pas de lien vers
-       /images/… : DoTS-vue confie tout href de même origine à son routeur (leçon de D5 et E2).
-       Le @facs fait foi : le compagnon qui vérifiait la présence du fichier a été retiré le
-       2026-09-25, ses 4 368 folios couvrant déjà les 1 874 @facs sans en rejeter un seul. -->
   <xsl:template match="tei:pb[@facs]" priority="20">
     <xsl:variable name="rel" select="substring-after(@facs, 'images/saint-denis/')"/>
     <xsl:variable name="fichier" select="tokenize($rel, '/')[last()]"/>
@@ -831,43 +543,6 @@
            alt="{if (normalize-space($libelle) != '') then $libelle else $fichier}"/>
     </details>
   </xsl:template>
-
-  <!-- ================================================================
-       2026-09-14 (agentsd) — LES CINQ VISIONNEUSES DE SÉRIE.
-
-       Signalé par l'utilisateur depuis `sd-feuilleter-images` : « faudrait changer les liens, ça
-       renvoie à l'ÉLEC historique ». Relevé exhaustif sur les onze ressources de la collection
-       (ref/ptr vers `voir.html`) : 844 renvois, dont 839 portent `ns=` — donc une image désignée,
-       déjà traités juste au-dessus en `details.sd-folio` — et **5 seulement n'en portent pas**.
-       (839 = 837 dans `saint-denis-site`, 1 dans `dugny`, 1 dans `saint-martin`.)
-       Tous les cinq sont dans `saint-denis-site`, sur la rubrique « Feuilleter les images » :
-         images/cartulaireblanc/tome1/voir.html   « Tome 1 (Archives nationales LL 1157) »
-         images/cartulaireblanc/tome2/voir.html   « Tome 2 (Archives nationales LL 1158) »
-         images/inventaire/tome1/voir.html        « Tome 1 (Archives nationales, LL 1189) »
-         images/inventaire/tome2/voir.html        « Tome 2 (Archives nationales, LL 1190) »
-         images/inventaire/tome3/voir.html        « Tome 3 (Archives nationales, LL 1191) »
-       (Le commentaire précédent en annonçait 2 : il ne comptait que les formes relatives, et le
-       modèle qui suit ne filtrait pas `ns=`. Les 2 formes relatives du corpus portent en fait
-       toutes les deux `ns=` et partent donc en `sd-folio` ; ce modèle-ci ne garde plus rien.)
-
-       AUCUNE DE CES CINQ ADRESSES N'A D'ÉQUIVALENT LOCAL, et c'est mesuré, pas supposé : ce qui a
-       été rapatrié, ce sont des FOLIOS, pas une visionneuse de tome. Il n'existe pas non plus de route de galerie
-       côté DoTS-vue — seules `/saint-denis/search` et les routes de document sont déclarées.
-       Un lien de série ne désigne aucune image : lui en choisir une (la première du tome, par
-       exemple) serait fabriquer une cible que le TEI n'a jamais écrite. On ne le fait pas.
-
-       Ils cessent donc d'être des liens et redeviennent du texte, ce qui répond à la demande sans
-       inventer de destination. L'intitulé de survol dit franchement ce qu'on a et ce qu'on n'a pas
-       — même parti pris que `sd-recherche-locale` ci-dessous. Le décompte affiché était calculé
-       sur le compagnon ; depuis son retrait (2026-09-25) il est LU SUR LE @n DU RENVOI, dans le
-       TEI, où une note dit en toutes lettres que ces cinq nombres sont un état arrêté du fonds
-       (relevé du 2026-09-24 : 968, 629, 938, 1 029, 804) et non un calcul. Le fonds est clos.
-       On les a mis dans la source et non dans la feuille parce qu'ils décrivent le corpus, non
-       sa présentation : ils doivent voyager avec le renvoi qu'ils qualifient, être versionnés
-       avec lui, et disparaître avec lui.
-       Pour le tome 1 du Cartulaire blanc, l'équivalent local existe déjà et fonctionne : la
-       sous-liste des sept chapitres, juste au-dessous, est faite de sept `details.sd-folio`.
-       ================================================================ -->
   <xsl:template match="tei:ref[contains(@target, 'images/cartulaireblanc/') or contains(@target, 'images/inventaire/')]
                               [contains(@target, '/voir.html')][not(contains(@target, 'ns='))]"
                 priority="15">
@@ -887,47 +562,11 @@
         </xsl:choose>
       </xsl:attribute>
       <xsl:apply-templates/>
-      <!-- Garde-fou de sérialisation : la feuille est en method="xml", et un <span/> vide
-           avalerait la suite du document. Le renvoi porte toujours son intitulé, mais on ne
-           parie pas là-dessus. -->
       <xsl:if test="not(node())"><xsl:value-of select="$serie"/></xsl:if>
     </span>
   </xsl:template>
-
-
-  <!-- ================================================================
-       2026-09-14 — RENVOIS D'UN ACTE À L'AUTRE LAISSÉS EN TEXTE BRUT.
-
-       Signalé par l'utilisateur depuis `ully-acte93` : « voir aussi acte Moyvillers n° 57 »,
-       qu'on lit sans pouvoir le suivre. L'examen a montré que la question dépasse les « voir » :
-       le corpus renvoie d'un acte à l'autre partout, tantôt dans un `<ref>` — donc cliquable —
-       tantôt en clair. Mesuré sur les sept chapitres (`scripts/d30_renvois_actes.py`) :
-       **599 renvois déjà liés, 156 en texte brut, et les 156 ont une cible qui existe.**
-
-       DEUX VÉRIFICATIONS ONT DÉCIDÉ DE LA RÈGLE, et elles valaient la peine.
-       1. Le numéro AFFICHÉ est la bonne clé, pas l'ancien `@target`. Le TEI porte
-          `<ref target="#rueil-acte127">acte Rueil n° 70</ref>` : la cible est périmée (ancienne
-          numérotation, 214 cibles mortes dans le seul Rueil), le libellé est juste. C'est
-          exactement ce qu'avait établi D1 le 2026-09-11, dont la table `sd-renvois-corriges`
-          corrige ces cibles d'après leur libellé. On relie donc sur le NUMÉRO LU.
-       2. Un chapitre cité n'est pas forcément édité. « acte Moyvillers n° 57 » ne peut pas être
-          relié : Moyvillers ne fait pas partie des sept chapitres publiés. La règle ne connaît
-          que ces sept noms ; tout le reste demeure du texte, ce qui est la bonne réponse.
-
-       CE QUI EST RENDU CLIQUABLE : le NUMÉRO, et non toute la formule. Raison technique, pas
-       esthétique : « n° » s'écrit de deux façons dans ce corpus, « n° » dans un seul nœud de
-       texte (97 cas) et `n<hi rend="sup">o</hi>` (59 cas), qui traverse une frontière
-       d'éléments. XSLT ne peut pas ouvrir un lien dans un nœud et le fermer dans un autre :
-       relier la formule entière donnerait deux traitements différents pour une même chose.
-       Le numéro, lui, est toujours d'un seul tenant.
-       ================================================================ -->
-
   <xsl:variable name="sd-chap-motif"
                 select="'Beaurain|Dugny|Pierrefitte|Rueil|Saint-Martin|Tremblay|Ully'"/>
-
-  <!-- Cas A — « acte Rueil n° 58 », « actes Dugny 32 » : tout dans le même nœud de texte.
-       Restreint aux contextes où ces renvois vivent réellement (mesuré : p, note, item,
-       witness) et à ce qui n'est pas déjà dans un `<ref>`, pour ne pas relier deux fois. -->
   <xsl:template priority="5"
       match="text()[not(ancestor::tei:ref)]
                    [ancestor::tei:p or ancestor::tei:note or ancestor::tei:item or ancestor::tei:witness]
@@ -944,10 +583,6 @@
       <xsl:non-matching-substring><xsl:value-of select="."/></xsl:non-matching-substring>
     </xsl:analyze-string>
   </xsl:template>
-
-  <!-- Cas B — « acte Rueil n<hi rend="sup">o</hi> 51 » : le numéro est dans le nœud de texte
-       QUI SUIT l'exposant. On ne l'attrape que si le texte d'avant se termine bien par
-       « acte <Chapitre> n », pour ne pas transformer en lien le premier nombre venu. -->
   <xsl:template priority="6"
       match="text()[not(ancestor::tei:ref)]
                    [preceding-sibling::node()[1][self::tei:hi][normalize-space() = 'o']]
@@ -955,11 +590,6 @@
                    [matches(string(preceding-sibling::node()[2]),
                             concat('actes?\s+(', $sd-chap-motif, ')\s*n\s*$'))]">
     <xsl:variable name="avant" select="string(preceding-sibling::node()[2])"/>
-    <!-- Le nom du chapitre est retrouvé en essayant les sept, et NON par `replace()`.
-         Cette feuille est déclarée `version="1.1"`, que Saxon traite en compatibilité 1.0 :
-         le `replace($avant, '^.*(…)$', '$1')` écrit d'abord faisait échouer TOUTE la
-         transformation de pierrefitte — HTTP 500 sur la racine du chapitre, isolé par
-         bissection le 2026-09-14. Sept comparaisons valent mieux qu'une expression fragile. -->
     <xsl:variable name="chap">
       <xsl:for-each select="tokenize($sd-chap-motif, '\|')">
         <xsl:if test="matches($avant, concat('actes?\s+', ., '\s*n\s*$'))">
@@ -983,7 +613,6 @@
       <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
   <xsl:template name="sd-lien-acte">
     <xsl:param name="chapitre"/>
     <xsl:param name="numero"/>
@@ -993,35 +622,9 @@
       <xsl:value-of select="$numero"/>
     </a>
   </xsl:template>
-
-  <!-- ================================================================
-       2026-09-29 — RENVOIS DES TÉMOINS VERS L'INVENTAIRE GÉNÉRAL.
-
-       Chaque acte du Cartulaire blanc cite, dans sa tradition (bloc « Indiqué »), la notice de
-       l'Inventaire général qui l'analyse : `<witness xml:id="…-indiqué-ig-1">Inv. gén. I, n° 59,
-       p. 43-44…</witness>`. Sur l'ÉLEC ce renvoi était cliquable (div.regeste-inclus, 486
-       fragments) ; ici il restait du texte, un seul des 505 témoins portant un <ref>. L'Inventaire
-       est désormais dans DoTS (ISD-vol1 à 3, D21) : on relie donc, comme pour les renvois d'actes
-       (D29) et les permaliens (D25), en XSL et sans toucher au TEI. Le texte affiché ne change pas.
-
-       Relevé sur le TEI (29/09) : 485 renvois dans 505 témoins, tous d'un seul nœud de texte, deux
-       formes (« I, n° 59 » et, une fois, « II, p. 616, n° 2363 ») ; les 20 autres témoins disent
-       que l'acte n'a pas été retrouvé dans l'Inventaire.
-
-       On ne relie que vers une notice qui EXISTE. Sans document() (retiré du corpus le 25/09), la
-       feuille le vérifie par les plages de numéros de chaque volume (1-1181, 1182-3195, 3196-3253,
-       relevées sur ISD-vol1..3) moins leurs cinq lacunes (76, 799 ; 1579, 2835 ; 3201). Le seul
-       renvoi qui tombe hors de son volume, « Inv. gén. I, n° 1941 » (saint-martin-acte61 : la
-       notice 1941 est au tome II), reste du texte : corriger le tome serait deviner.
-
-       Même nœud de texte, deux renvois : « … deux actes Saint-Martin n° 60 et n° 61 » suit le
-       renvoi à l'Inventaire dans le même témoin. Ce modèle, plus prioritaire que celui des renvois
-       d'actes (cas A), leur repasse donc la partie non reconnue avec la même expression.
-       ================================================================ -->
   <xsl:variable name="sd-ig-motif"
                 select="'Inv\.[\s&#160;]*gén\.[\s&#160;]*(III|II|I)[\s&#160;]*,[\s&#160;]*(p\.[\s&#160;]*\d+(-\d+)?[\s&#160;]*,[\s&#160;]*)?n[\s&#160;]*[°o][\s&#160;]*(\d+)'"/>
   <xsl:variable name="sd-ig-lacunes" select="' 1-76 1-799 2-1579 2-2835 3-3201 '"/>
-
   <xsl:template priority="7"
       match="text()[not(ancestor::tei:ref)]
                    [ancestor::tei:witness[contains(@xml:id, '-indiqué-ig')]]
@@ -1060,30 +663,6 @@
       </xsl:non-matching-substring>
     </xsl:analyze-string>
   </xsl:template>
-
-  <!-- ================================================================
-       2026-09-14 — les derniers renvois VIVANTS vers le site qui ferme.
-
-       L'audit de cohérence du 2026-09-13 avait conclu qu'il n'en restait aucun : c'était FAUX,
-       mon relevé exigeait un attribut `class` à côté du `href`, que ces `<a>` n'ont pas. Le
-       balayage exhaustif en a trouvé **16 adresses sur 19 unités**. Deux familles se réparent,
-       et l'utilisateur les a demandées toutes les deux (« ok fais le 1 et le 2 »).
-       ================================================================ -->
-
-  <!-- (1) Les six archives à télécharger : rapatriées le 2026-09-14 sous
-       `dots-vue/public/images/saint-denis/telechargements/` (6,0 Mo, les six vérifiées comme
-       ZIP valides après téléchargement — une archive tronquée se télécharge sans erreur).
-       Servies par le serveur de fichiers local du port 8081 et NON par une URL de même origine :
-       DoTS-vue confie tout href de même origine à son routeur, et un lien vers `/images/…zip`
-       mène à une route morte. Même raison et même forme que la branche PDF des illustrations. -->
-  <!-- 2026-10-04 — Renvois au Du Cange (Tremblay, Ully : 17 liens). L'ancien site
-       ducange.enc.sorbonne.fr fermant, ils visent l'édition Du Cange de l'École servie
-       par DoTS : ducange_<initiale>?refId=<ENTRÉE>. Le TEI garde l'adresse d'origine.
-       L'entrée est l'identifiant de l'ancien site, en capitales et sans espace (« REPORTAGIUM 1 »,
-       « banagium ») ; deux formes n'étaient pas des entrées et l'ancien site les ouvrait sur
-       la page de l'article : « pertica » → PERTICA1, « nummata » → NUMISMA (« Nummata.
-       Vide in Nummus »). L'ancre éventuelle (#BRUARIUM-3) est gardée. Les 12 entrées visées
-       répondent en local et sur le dev (vérifié le 04/10). -->
   <xsl:template match="tei:ref[contains(@target, 'ducange.enc.sorbonne.fr/')]" priority="14">
     <xsl:variable name="cible" select="substring-after(@target, 'ducange.enc.sorbonne.fr/')"/>
     <xsl:variable name="brut" select="replace(replace(upper-case(substring-before(concat($cible, '#'), '#')), '%20', ''), ' ', '')"/>
@@ -1093,7 +672,6 @@
       <xsl:apply-templates/>
     </a>
   </xsl:template>
-
   <xsl:template match="tei:ref[contains(@target, 'enc.sorbonne.fr')][ends-with(lower-case(@target), '.zip')]"
                 priority="16">
     <a class="sd-telechargement"
@@ -1102,41 +680,17 @@
       <xsl:apply-templates/>
     </a>
   </xsl:template>
-
-  <!-- (2) Les entrées Pleade de recherche avancée (3 rendus) mènent à la recherche locale
-       (`/saint-denis/search`, route déclarée dans la conf, vérifiée en service). Les deux liens
-       vers l'index des auteurs d'actes (navindex.html) ne passent plus par ici : ils mènent à
-       l'index reconstitué au bas de leur page « Parcourir » (modèle de priorité 18, en fin de
-       feuille). Simplifié le 2026-10-02 : la branche navindex était morte. -->
   <xsl:template match="tei:ref[contains(@target, 'enc.sorbonne.fr')][contains(@target, 'recherche-avancee.html')]"
                 priority="16">
     <a class="sd-recherche-locale" href="../search" title="Recherche dans la collection Saint-Denis.">
       <xsl:apply-templates/>
     </a>
   </xsl:template>
-
-  <!-- B1e (autopilote 2026-09-11) : liens absolus de l'ancien site vers les chapitres et actes du Cartulaire
-       blanc -> pages DoTS internes. Seuls les 7 chapitres édités et les actes « acteN » (chiffres, plus une lettre finale éventuelle) sont
-       réécrits (y compris « acteNa/b », tous présents dans DoTS). Corrigé le 2026-10-02 : l'Inventaire général
-       est dans DoTS depuis D21 (renvois internes, voir le modèle des renvois « .xml » et celui de la l. ~1430),
-       et les téléchargements sont servis en local depuis le 2026-09-14 (modèle « .zip » ci-dessus). -->
   <xsl:variable name="sd-chapitres" select="' beaurain dugny pierrefitte rueil saint-martin tremblay ully '"/>
-
-  <!-- D1 (autopilote 2026-09-11) : renvois du TEI vers des actes inexistants (ancienne numérotation, déjà morts
-       sur l'ancien site : 0 fragment Pleade pour ces identifiants). Cible corrigée d'après le libellé du lien
-       lui-même (« acte Rueil no 70 » → rueil-acte70, « 16a » → rueil-acte16a, « acte Ully no 40 » → ully-acte40).
-       Table générée depuis les TEI (30 renvois de l'introduction de Rueil, 1 dans ully-acte13). -->
   <xsl:variable name="sd-renvois-corriges" select="' rueil-acte101=rueil-acte44 rueil-acte103=rueil-acte46 rueil-acte108=rueil-acte51 rueil-acte110=rueil-acte53 rueil-acte111=rueil-acte54 rueil-acte112=rueil-acte55 rueil-acte115=rueil-acte58 rueil-acte117=rueil-acte60 rueil-acte120=rueil-acte63 rueil-acte121=rueil-acte64 rueil-acte122=rueil-acte65 rueil-acte123=rueil-acte66 rueil-acte125=rueil-acte68 rueil-acte127=rueil-acte70 rueil-acte71=rueil-acte16a rueil-acte73=rueil-acte17 rueil-acte76=rueil-acte20 rueil-acte77=rueil-acte21 rueil-acte79=rueil-acte23 rueil-acte84=rueil-acte28a rueil-acte85=rueil-acte28b rueil-acte88=rueil-acte31 rueil-acte90=rueil-acte33 rueil-acte94=rueil-acte37 rueil-acte96=rueil-acte39 rueil-acte97=rueil-acte40 rueil-acte98=rueil-acte41 ully-acte140=ully-acte40 '"/>
-
-  <!-- B1f (2026-09-11) : renvois TEI internes entre actes.
-       Exemple :
-         <ref target="#ully-acte88b">acte Ully no 88b</ref>
-       Dans un fragment DoTS, href="#ully-acte88b" chercherait seulement une ancre
-       dans la page courante. On le transforme donc en vraie route DoTS-vue. -->
   <xsl:template
       match="tei:ref[starts-with(@target, '#')][contains(@target, '-acte')][not(@type='note')]"
       priority="12">
-    <!-- D1 : cibles obsolètes (ancienne numérotation) corrigées d'après le libellé du lien, voir sd-renvois-corriges -->
     <xsl:variable name="id0" select="substring-after(@target, '#')"/>
     <xsl:variable name="id">
       <xsl:choose>
@@ -1174,12 +728,6 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-  <!-- D1 (autopilote 2026-09-11) : autres formes de renvois du TEI (noms de fichiers de l'édition d'origine).
-       « rueil.xml#rueil-acte7 » (inter-chapitres, 40) → /saint-denis/document/rueil?refId=rueil-acte7 ;
-       « tremblay.xml » → /saint-denis/document/tremblay ; « ully-acte77 » sans # (6) → ?refId=ully-acte77 ;
-       « ISD-vol1.xml#notice395 » (Inventaire général, 20) → notice de l'Inventaire dans DoTS (D21, ci-dessous) ;
-       « #ully-intro3.d », « #tremblay-introduction » : cible absente du fragment affiché (section sans xml:id
-       dans le TEI reconstruit ; front hors navigation) → page d'entrée du chapitre, qui est son introduction. -->
   <xsl:template match="tei:ref[not(@type = 'note')][contains(@target, '.xml')][not(contains(@target, ':'))]" priority="12">
     <xsl:variable name="file" select="substring-before(@target, '.xml')"/>
     <xsl:variable name="frag" select="substring-after(@target, '#')"/>
@@ -1190,16 +738,12 @@
       <xsl:when test="contains($sd-chapitres, concat(' ', $file, ' '))">
         <a class="sd-internal" href="{$file}"><xsl:apply-templates/></a>
       </xsl:when>
-      <!-- 2026-09-12 (D21) : l'Inventaire général est maintenant dans DoTS (ressources ISD-vol1
-           à 3, 3 285 notices), le renvoi reste donc dans l'application. L'identifiant d'unité
-           est préfixé par le volume, comme dans le TEI produit : ISD-vol1_notice395. -->
       <xsl:when test="starts-with($file, 'ISD-vol') and starts-with($frag, 'notice')">
         <a class="sd-inventaire" href="{$file}?refId={$file}_{$frag}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:otherwise><xsl:apply-imports/></xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
   <xsl:template match="tei:ref[not(@type = 'note')][contains(@target, '-acte')][not(contains(@target, '#') or contains(@target, '/') or contains(@target, '.') or contains(@target, ':'))]" priority="12">
     <xsl:variable name="chap" select="substring-before(@target, '-acte')"/>
     <xsl:choose>
@@ -1209,7 +753,6 @@
       <xsl:otherwise><xsl:apply-imports/></xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
   <xsl:template match="tei:ref[not(@type = 'note')][starts-with(@target, '#')][contains(@target, '-intro')][not(key('id', substring-after(@target, '#')))]" priority="13">
     <xsl:variable name="chap" select="substring-before(substring-after(@target, '#'), '-intro')"/>
     <xsl:choose>
@@ -1219,7 +762,6 @@
       <xsl:otherwise><xsl:apply-imports/></xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
   <xsl:template match="tei:ref[starts-with(@target, 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/')]" priority="11">
     <xsl:variable name="path" select="substring-after(@target, 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/')"/>
     <xsl:variable name="chap" select="substring-before(concat($path, '/'), '/')"/>
@@ -1238,14 +780,6 @@
       <xsl:otherwise><xsl:apply-imports/></xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
-  <!-- D5-DEBUT (autopilote 2026-09-12) : liens vers les anciens sites ELEC -->
-  <!-- hteiml fait un lien de tout tei:idno commencant par « http » (tei2html.xsl l. 1805),
-       du tei:title voisin d'un idno[@type='URI'] (l. 1796) et de tei:ref/@target (l. 1456).
-       Les anciens sites ELEC ferment : le TEXTE affiche est conserve mot pour mot (c'est
-       l'identifiant de la publication d'origine), seule la cible devient la route locale.
-       Table et bloc produits par dots-autopilot/scripts/d5_legacy_links_fix.py. -->
-  <!-- adresse de l'ancien site -->
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/']" priority="14">
     <a class="idno d5-local" href="../"><xsl:apply-templates/></a>
   </xsl:template>
@@ -1270,28 +804,12 @@
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/ully/']" priority="14">
     <a class="idno d5-local" href="ully"><xsl:apply-templates/></a>
   </xsl:template>
-  <!-- collection cartulaires servie ici -->
   <xsl:template match="tei:ref[@target = 'http://elec.enc.sorbonne.fr/cartulaires/']" priority="14">
     <a class="ref d5-local" href="{$elec-base}/cartulaires"><xsl:apply-templates/></a>
   </xsl:template>
-  <!-- D5-FIN -->
-
-  <!-- ================= D14c (autopilote 2026-09-12) : conformite au rendu de l'ancien site
-       (fragments Pleade en cache, legacy-source/fragments) =================
-
-       1. Developpement d'abreviation. Les conventions publiees de l'edition
-          (« Le Cartulaire blanc : conventions de presentation », le-projet/aspects-scientifiques/
-          cartulaire-blanc/conventions-de-presentation.html) disent : « Lorsque des noms propres
-          limites dans le Cartulaire a la seule initiale peuvent etre developpes sans hesitation,
-          les lettres restituees figurent entre parentheses : ainsi, par exemple, H- transcrit
-          H(ugo). » L'ancien site rendait donc <expan>W<ex>illelmus</ex></expan> en « W(illelmus) »
-          (texte simple, sans balise). hteiml (tei2html.xsl l. 2893 et 2899) rend « [W<ins>illelmus</ins>] ».
-          On reprend la convention de l'edition. -->
   <xsl:template match="tei:expan" priority="20">
     <xsl:apply-templates/>
   </xsl:template>
-
-
   <xsl:template match="tei:ex" priority="20">
     <span class="sd-ex">
       <xsl:text>(</xsl:text>
@@ -1299,49 +817,15 @@
       <xsl:text>)</xsl:text>
     </span>
   </xsl:template>
-
-
-  <!-- 2. « Documents annexes ». L'ancien site titrait TOUS les blocs d'annexes
-       (p class="annexes-label"). Les listes de tremblay et rueil portent ce titre dans le TEI
-       (<head>Documents annexes</head>), celles de dugny non : on l'ajoute alors, avec le meme
-       libelle que le TEI des autres chapitres et que l'ancien site. -->
   <xsl:template match="tei:div[@type = 'appendices']/tei:list[not(tei:head)]" priority="12">
     <p class="sd-annexes-label">Documents annexes</p>
     <xsl:apply-imports/>
   </xsl:template>
-
-  <!-- 3. Resume court. L'ancien site n'affichait dans la page d'un acte que
-       div[@type='summary'] (511 fragments Pleade sur 511) ; div[@type='short-summary'] servait
-       de titre dans les tables et n'etait jamais imprime sous le resume. DoTS l'affichait a la
-       suite du resume, donc deux fois le meme contenu. Il reste le titre DTS de l'unite
-       (mapping DoTS, non affecte par cette feuille). -->
   <xsl:template match="tei:div[@type = 'short-summary']" priority="12"/>
-
-  <!-- 4. Liens de page a page du site historique dont la cible est HORS du fragment servi.
-       Le TEI porte ces renvois en ancre interne (<ref target="#sd-le-projet<2 tirets>mentions-legales">,
-       ecrit par B1e). Quand la cible est dans le meme fragment, hteiml produit l'ancre attendue ;
-       quand elle est dans une AUTRE rubrique, key('id', ...) ne la trouve pas et hteiml emet un
-       <a> SANS href : le lien de l'ancien site devient mort (releve D14c : 8 liens, « Table des
-       chapitres », « en images », « mentions legales », « en savoir plus sur les choix
-       d'indexation », « section de presentation du contenu de l'Inventaire »).
-       DoTS-vue ne sert que des unites de niveau 1 entieres pour cette ressource (editByLevel 1) :
-       la forme qui ouvre la bonne page est
-       /saint-denis/document/saint-denis-site?refId=<unite de niveau 1>#<unite>  (cf. D8).
-
-       2026-09-24 : le sommaire ne suit plus la navigation de l'ancien site (3 rubriques) mais le
-       plan editorial du responsable scientifique : une page d'introduction generale puis quatre
-       parties. Le niveau 1 ne se lit donc PLUS dans le prefixe de l'identifiant — les xml:id
-       n'ont pas ete renommes, pour ne casser aucun ref/@target ni aucune ancre — et il faut la
-       table de correspondance ci-dessous. Les pages ecartees du sommaire (regroupees dans
-       div[@xml:id='sd-ecarte'], hors citeStructure) ne sont servies par aucun fragment : on leur
-       laisse deliberement $rub vide, elles retombent sur apply-imports et leur intitule redevient
-       du texte, au lieu de pointer vers une page que DoTS ne sert plus. -->
   <xsl:template match="tei:ref[not(@type = 'note')][starts-with(@target, '#sd-')][not(key('id', substring-after(@target, '#')))]" priority="14">
     <xsl:variable name="id" select="substring-after(@target, '#')"/>
     <xsl:variable name="rub">
       <xsl:choose>
-        <!-- Pages ecartees du sommaire : aucune cible servie. A tester EN PREMIER, avant les
-             regles generiques qui les rattraperaient par leur prefixe. -->
         <xsl:when test="$id = 'sd-les-images--accueil'
                      or $id = 'sd-le-projet--feuille-de-route'
                      or $id = 'sd-le-projet--mentions-legales'
@@ -1350,22 +834,16 @@
                      or $id = 'sd-le-projet--aspects-informatiques--generalites--format-d-affichage-des-documents'
                      or $id = 'sd-le-projet--aspects-informatiques--cartulaire-blanc-projet-inf'
                      or $id = 'sd-le-projet--aspects-informatiques--inventaire--encodage-des-enrichissements-editoriaux'"/>
-        <!-- Introduction generale : partie a elle seule. -->
         <xsl:when test="$id = 'sd-les-textes--accueil' or starts-with($id, 'sd-les-textes--accueil--')">sd-les-textes--accueil</xsl:when>
-        <!-- 1re partie : les actes du haut Moyen Age. -->
         <xsl:when test="$id = 'sd-actes-haut-moyen-age' or starts-with($id, 'sd-les-textes--actes-du-haut-moyen-age')">sd-actes-haut-moyen-age</xsl:when>
-        <!-- 2e partie : le Cartulaire blanc (y compris ses images et le descriptif des termes
-             d'indexation, remontes depuis « Les images » et « Le projet »). -->
         <xsl:when test="$id = 'sd-cartulaire-blanc'
                      or starts-with($id, 'sd-les-textes--cartulaire-blanc')
                      or starts-with($id, 'sd-recherche-cartulaire')
                      or starts-with($id, 'sd-les-images--images-cb')
                      or starts-with($id, 'sd-le-projet--aspects-scientifiques--auteurs-actes-principales-entrees')">sd-cartulaire-blanc</xsl:when>
-        <!-- 3e partie : l'Inventaire general (y compris ses images). -->
         <xsl:when test="$id = 'sd-inventaire-general'
                      or starts-with($id, 'sd-les-textes--inventaire')
                      or starts-with($id, 'sd-les-images--images-ig')">sd-inventaire-general</xsl:when>
-        <!-- 4e partie : les pages de description du projet. -->
         <xsl:when test="$id = 'sd-le-projet'
                      or starts-with($id, 'sd-le-projet--')
                      or $id = 'sd-aspects-scientifiques' or $id = 'sd-scientifique-cartulaire' or $id = 'sd-scientifique-inventaire'
@@ -1386,10 +864,6 @@
       <xsl:otherwise><xsl:apply-imports/></xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
-  <!-- 2026-09-12 (D21) : les renvois du TEI du site vers l'Inventaire, sous forme d'URL absolue
-       de l'ancien site (474 cas). Même cible que la forme « ISD-volN.xml#noticeNNN ». Le texte
-       affiché reste celui du TEI. -->
   <xsl:template match="tei:ref[contains(@target, 'saint-denis.enc.sorbonne.fr/inventaire/tome')]" priority="14">
     <xsl:variable name="apres" select="substring-after(@target, '/inventaire/tome')"/>
     <xsl:variable name="tome" select="substring-before($apres, '/')"/>
@@ -1398,7 +872,6 @@
       <xsl:when test="$tome != '' and starts-with($notice, 'notice')">
         <a class="sd-inventaire sd-inventaire-url" href="ISD-vol{$tome}?refId=ISD-vol{$tome}_{$notice}"><xsl:apply-templates/></a>
       </xsl:when>
-      <!-- « Le tome I dans son ensemble » : la cible est le volume, pas une notice (3 cas). -->
       <xsl:when test="$tome != '' and normalize-space($notice) = ''">
         <a class="sd-inventaire sd-inventaire-tome" href="ISD-vol{$tome}"><xsl:apply-templates/></a>
       </xsl:when>
@@ -1407,52 +880,6 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
-  <!-- ================================================================
-       D43 (2026-09-24, refondu le 2026-09-25) : les deux index des auteurs d'actes.
-
-       POURQUOI
-       ~~~~~~~~
-       L'ancien site publiait deux index d'auteurs d'actes, servis par Pleade
-       (navindex.html?base=tei&amp;f=fdocAuthor pour le Cartulaire blanc,
-       ?base=ead&amp;f=fauteursactes pour l'Inventaire général). Ils n'avaient pas
-       d'équivalent ici : les deux liens menaient, faute de mieux, à la recherche
-       plein texte, avec un intitulé de survol qui l'avouait.
-
-       Ils ont d'abord été portés par un fichier compagnon lu avec document().
-       Ils sont désormais DANS LE TEI, dans saint-denis-site.xml, à la fin des deux
-       pages « Parcourir » : plus de compagnon, plus de document(), et une vraie
-       donnée versionnée, servie par l'API et cherchable comme le reste du corpus.
-       Parité conservée : 66 et 294 termes, 534 et 3 601 renvois.
-
-       OÙ
-       ~~
-       <div type="index" xml:id="sd-index-auteurs-cartulaire"> et
-       <div type="index" xml:id="sd-index-auteurs-inventaire">, derniers enfants des
-       pages « Parcourir » — celles-là même qui portaient les liens Pleade, dont le
-       lien historique devient une ancre vers la rubrique. Le type « index » n'est
-       cité par aucun citeStructure : ces divisions n'entrent pas au sommaire.
-
-       GROUPEMENT PAR INITIALE
-       ~~~~~~~~~~~~~~~~~~~~~~~
-       La feuille est déclarée version="1.1" : pas de xsl:for-each-group. Le
-       compagnon contournait ce manque par un attribut @lettre sur chaque item, hors
-       TEI. Le groupement est maintenant porté par la STRUCTURE : une <list
-       type="index"> par initiale, son @n donnant l'initiale de classement (« * »
-       pour les termes sans initiale) et son <head> le titre du groupe (« Sans
-       initiale » dans ce cas). C'est la forme des index de `cartulaires`, elle est
-       valide contre tei_all, et la feuille n'a plus qu'à parcourir les listes.
-       Même raison pour le libellé court d'un renvoi (@n sur le ptr) :
-       « Tremblay 15 », « t. I, n° 956 ».
-
-       LIAGE
-       ~~~~~
-       Les 534 <docAuthor> des sept chapitres du Cartulaire blanc portent un @ref
-       vers l'entrée d'index qui les recense (saint-denis-site.xml#sd-auteur-cb-NNNN).
-       Ce @ref n'est pas rendu : il lie la source à son index, il ne change rien à
-       l'affichage. L'Inventaire n'a pas de <docAuthor> — ses occurrences sont des
-       champs de notice — et n'est donc pas lié de la même façon.
-       ================================================================ -->
   <xsl:template match="tei:div[@type = 'index'][starts-with(@xml:id, 'sd-index-auteurs-')]"
                 priority="16">
     <xsl:variable name="cle" select="substring-after(@xml:id, 'sd-index-auteurs-')"/>
@@ -1482,10 +909,6 @@
           <ul class="sd-index-termes">
             <xsl:for-each select="tei:item">
               <li class="sd-index-terme">
-                <!-- « details » plutôt qu'une liste déployée : un terme porte jusqu'à
-                     647 renvois (« auteurs laïques », Inventaire). Fermé, l'index se lit
-                     comme la liste de termes et de comptes que publiait l'ancien site ;
-                     ouvert, il donne les renvois. HTML seul, ni script ni composant. -->
                 <details class="sd-index-details">
                   <summary class="sd-index-sommaire">
                     <span class="sd-index-libelle"><xsl:value-of select="tei:term"/></span>
@@ -1504,17 +927,8 @@
       </xsl:for-each>
     </section>
   </xsl:template>
-
-  <!-- L'index ne paraît pas dans la table des matières de hteiml : elle liste les
-       divisions enfantes d'une page, et l'index vient d'y entrer. Il est déjà atteint
-       par l'ancre du lien historique, en bas de la page qui le porte. -->
   <xsl:template match="tei:div[@type = 'index'][starts-with(@xml:id, 'sd-index-auteurs-')]"
                 mode="li" priority="16"/>
-
-  <!-- Un renvoi de l'index. Les cibles ont les deux formes que la feuille résout
-       déjà pour les « ref » du TEI : « chapitre.xml#chapitre-acteN » (Cartulaire
-       blanc) et « ISD-volN.xml#noticeNNN » (Inventaire général, identifiant d'unité
-       préfixé par le volume, cf. D21). -->
   <xsl:template name="sd-index-renvoi">
     <xsl:variable name="file" select="substring-before(@target, '.xml')"/>
     <xsl:variable name="frag" select="substring-after(@target, '#')"/>
@@ -1533,9 +947,6 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-
-  <!-- Les deux pages « Parcourir » : même rendu que toute page du site
-       (div[@type='page'], plus haut), suivi de la rubrique d'index. -->
   <xsl:template match="tei:div[@type = 'page']
                               [@xml:id = 'sd-les-textes--cartulaire-blanc--parcourir'
                                or @xml:id = 'sd-les-textes--inventaire--parcourir']"
@@ -1548,10 +959,6 @@
       <xsl:apply-templates select="node()[not(self::tei:head[1])]"/>
     </article>
   </xsl:template>
-
-  <!-- Le lien Pleade historique. Il n'y en a que deux dans tout le corpus, chacun
-       sur la page « Parcourir » qui porte désormais son index : l'ancre est donc
-       toujours dans la page servie. Remplace le repli vers la recherche (priorité 16). -->
   <xsl:template match="tei:ref[contains(@target, 'enc.sorbonne.fr')]
                               [contains(@target, 'navindex.html')]"
                 priority="18">
@@ -1566,5 +973,4 @@
       <xsl:apply-templates/>
     </a>
   </xsl:template>
-
 </xsl:transform>
