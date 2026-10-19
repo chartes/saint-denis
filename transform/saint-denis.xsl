@@ -29,6 +29,12 @@
 
   <xsl:variable name="sd-fichiers" select="$elec-base"/>
 
+  <!-- 2026-10-19 : les sept chapitres du Cartulaire blanc sont servis par le projet cartulaires,
+       l'Inventaire général (ISD-vol1-3) et les pages du site par le projet saint-denis. Liens
+       relatifs à /elec/<projet>/document/<ressource>, justes depuis l'un et l'autre projet. -->
+  <xsl:variable name="sd-vers-chapitres" select="'../../cartulaires/document/'"/>
+  <xsl:variable name="sd-vers-sd" select="'../../saint-denis/document/'"/>
+
   <xsl:output indent="no"/>
 
   <xsl:key name="sd-note-by-id" match="tei:note[@xml:id]" use="@xml:id"/>
@@ -264,7 +270,7 @@
         <span class="refurl-label"><b>URL de cette page : </b></span>
         <span class="sd-permalien">
           <xsl:text>&lt;</xsl:text>
-          <xsl:value-of select="concat($elec-base, '/saint-denis/document/', substring-before($acte, '-acte'), '?refId=', $acte)"/>
+          <xsl:value-of select="concat($elec-base, '/cartulaires/document/', substring-before($acte, '-acte'), '?refId=', $acte)"/>
           <xsl:text>&gt;</xsl:text>
         </span>
       </div>
@@ -781,7 +787,7 @@
     <xsl:param name="numero"/>
     <xsl:variable name="rid" select="lower-case($chapitre)"/>
     <a class="sd-acte-renvoi" title="Aller à l'acte {$chapitre} n° {$numero}"
-       href="{$rid}?refId={$rid}-acte{$numero}">
+       href="{$sd-vers-chapitres}{$rid}?refId={$rid}-acte{$numero}">
       <xsl:value-of select="$numero"/>
     </a>
   </xsl:template>
@@ -802,7 +808,7 @@
                           and not(contains($sd-ig-lacunes, concat(' ', $v, '-', $num, ' ')))">
             <a class="sd-inventaire sd-ig-renvoi"
                title="Notice n° {$num} de l'Inventaire général, tome {regex-group(1)}"
-               href="ISD-vol{$v}?refId=ISD-vol{$v}_notice{$num}">
+               href="{$sd-vers-sd}ISD-vol{$v}?refId=ISD-vol{$v}_notice{$num}">
               <xsl:value-of select="."/>
             </a>
           </xsl:when>
@@ -882,7 +888,7 @@
           )
         )
       ">
-        <a class="sd-internal" href="{$chap}?refId={$id}">
+        <a class="sd-internal" href="{$sd-vers-chapitres}{$chap}?refId={$id}">
           <xsl:apply-templates/>
         </a>
       </xsl:when>
@@ -897,13 +903,13 @@
     <xsl:variable name="frag" select="substring-after(@target, '#')"/>
     <xsl:choose>
       <xsl:when test="contains($sd-chapitres, concat(' ', $file, ' ')) and $frag != ''">
-        <a class="sd-internal" href="{$file}?refId={$frag}"><xsl:apply-templates/></a>
+        <a class="sd-internal" href="{$sd-vers-chapitres}{$file}?refId={$frag}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:when test="contains($sd-chapitres, concat(' ', $file, ' '))">
-        <a class="sd-internal" href="{$file}"><xsl:apply-templates/></a>
+        <a class="sd-internal" href="{$sd-vers-chapitres}{$file}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:when test="starts-with($file, 'ISD-vol') and starts-with($frag, 'notice')">
-        <a class="sd-inventaire" href="{$file}?refId={$file}_{$frag}"><xsl:apply-templates/></a>
+        <a class="sd-inventaire" href="{$sd-vers-sd}{$file}?refId={$file}_{$frag}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:otherwise><xsl:apply-imports/></xsl:otherwise>
     </xsl:choose>
@@ -913,7 +919,7 @@
     <xsl:variable name="chap" select="substring-before(@target, '-acte')"/>
     <xsl:choose>
       <xsl:when test="contains($sd-chapitres, concat(' ', $chap, ' '))">
-        <a class="sd-internal" href="{$chap}?refId={@target}"><xsl:apply-templates/></a>
+        <a class="sd-internal" href="{$sd-vers-chapitres}{$chap}?refId={@target}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:otherwise><xsl:apply-imports/></xsl:otherwise>
     </xsl:choose>
@@ -923,7 +929,7 @@
     <xsl:variable name="chap" select="substring-before(substring-after(@target, '#'), '-intro')"/>
     <xsl:choose>
       <xsl:when test="contains($sd-chapitres, concat(' ', $chap, ' '))">
-        <a class="sd-internal" href="{$chap}"><xsl:apply-templates/></a>
+        <a class="sd-internal" href="{$sd-vers-chapitres}{$chap}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:otherwise><xsl:apply-imports/></xsl:otherwise>
     </xsl:choose>
@@ -936,48 +942,48 @@
     <xsl:variable name="num" select="substring-after($rest, 'acte')"/>
     <xsl:choose>
       <xsl:when test="contains($sd-chapitres, concat(' ', $chap, ' ')) and $rest = ''">
-        <a class="sd-internal" href="{$chap}"><xsl:apply-templates/></a>
+        <a class="sd-internal" href="{$sd-vers-chapitres}{$chap}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:when test="contains($sd-chapitres, concat(' ', $chap, ' ')) and starts-with($rest, 'acte') and $num != '' and translate(substring($num, 1, 1), '0123456789', '') = ''
                       and (translate($num, '0123456789', '') = ''
                            or (string-length(translate($num, '0123456789', '')) = 1
                                and translate(substring($num, string-length($num)), 'abcdefghijklmnopqrstuvwxyz', '') = ''))">
-        <a class="sd-internal" href="{$chap}?refId={$chap}-{$rest}"><xsl:apply-templates/></a>
+        <a class="sd-internal" href="{$sd-vers-chapitres}{$chap}?refId={$chap}-{$rest}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:otherwise><xsl:apply-imports/></xsl:otherwise>
     </xsl:choose>
   </xsl:template>
 
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/']" priority="14">
-    <a class="idno d5-local" href="../"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="../../saint-denis/"><xsl:apply-templates/></a>
   </xsl:template>
 
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/beaurain/']" priority="14">
-    <a class="idno d5-local" href="beaurain"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="{$sd-vers-chapitres}beaurain"><xsl:apply-templates/></a>
   </xsl:template>
 
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/dugny/']" priority="14">
-    <a class="idno d5-local" href="dugny"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="{$sd-vers-chapitres}dugny"><xsl:apply-templates/></a>
   </xsl:template>
 
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/pierrefitte/']" priority="14">
-    <a class="idno d5-local" href="pierrefitte"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="{$sd-vers-chapitres}pierrefitte"><xsl:apply-templates/></a>
   </xsl:template>
 
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/rueil/']" priority="14">
-    <a class="idno d5-local" href="rueil"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="{$sd-vers-chapitres}rueil"><xsl:apply-templates/></a>
   </xsl:template>
 
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/saint-martin/']" priority="14">
-    <a class="idno d5-local" href="saint-martin"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="{$sd-vers-chapitres}saint-martin"><xsl:apply-templates/></a>
   </xsl:template>
 
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/tremblay/']" priority="14">
-    <a class="idno d5-local" href="tremblay"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="{$sd-vers-chapitres}tremblay"><xsl:apply-templates/></a>
   </xsl:template>
 
   <xsl:template match="tei:idno[not(@type = 'URI' and ../tei:title)][normalize-space(.) = 'http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/ully/']" priority="14">
-    <a class="idno d5-local" href="ully"><xsl:apply-templates/></a>
+    <a class="idno d5-local" href="{$sd-vers-chapitres}ully"><xsl:apply-templates/></a>
   </xsl:template>
 
   <xsl:template match="tei:ref[@target = 'http://elec.enc.sorbonne.fr/cartulaires/']" priority="14">
@@ -1014,12 +1020,12 @@
     </xsl:variable>
     <xsl:choose>
       <xsl:when test="$rub != '' and $rub != $id">
-        <a class="sd-internal sd-site-page" href="saint-denis-site?refId={$rub}#{$id}">
+        <a class="sd-internal sd-site-page" href="{$sd-vers-sd}saint-denis-site?refId={$rub}#{$id}">
           <xsl:apply-templates/>
         </a>
       </xsl:when>
       <xsl:when test="$rub != ''">
-        <a class="sd-internal sd-site-page" href="saint-denis-site?refId={$rub}">
+        <a class="sd-internal sd-site-page" href="{$sd-vers-sd}saint-denis-site?refId={$rub}">
           <xsl:apply-templates/>
         </a>
       </xsl:when>
@@ -1033,10 +1039,10 @@
     <xsl:variable name="notice" select="substring-after($apres, '/')"/>
     <xsl:choose>
       <xsl:when test="$tome != '' and starts-with($notice, 'notice')">
-        <a class="sd-inventaire sd-inventaire-url" href="ISD-vol{$tome}?refId=ISD-vol{$tome}_{$notice}"><xsl:apply-templates/></a>
+        <a class="sd-inventaire sd-inventaire-url" href="{$sd-vers-sd}ISD-vol{$tome}?refId=ISD-vol{$tome}_{$notice}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:when test="$tome != '' and normalize-space($notice) = ''">
-        <a class="sd-inventaire sd-inventaire-tome" href="ISD-vol{$tome}"><xsl:apply-templates/></a>
+        <a class="sd-inventaire sd-inventaire-tome" href="{$sd-vers-sd}ISD-vol{$tome}"><xsl:apply-templates/></a>
       </xsl:when>
       <xsl:otherwise>
         <a class="sd-legacy-inventaire" href="{@target}" target="_blank" rel="noopener"><xsl:apply-templates/></a>
@@ -1050,13 +1056,13 @@
     <xsl:choose>
       <xsl:when test="starts-with($file, 'ISD-vol')">
         <a class="sd-inventaire sd-index-renvoi"
-           href="{$file}?refId={$file}_{$frag}">
+           href="{$sd-vers-sd}{$file}?refId={$file}_{$frag}">
           <xsl:value-of select="@n"/>
         </a>
       </xsl:when>
       <xsl:otherwise>
         <a class="sd-internal sd-index-renvoi"
-           href="{$file}?refId={$frag}">
+           href="{$sd-vers-chapitres}{$file}?refId={$frag}">
           <xsl:value-of select="@n"/>
         </a>
       </xsl:otherwise>
