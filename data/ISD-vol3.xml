@@ -12,7 +12,7 @@
     </fileDesc>
     <encodingDesc>
       <refsDecl n="ISD-vol3">
-        <citeStructure unit="section" match="/TEI/text/body/div[@type='section']" use="@xml:id">
+        <citeStructure unit="periode" match="/TEI/text/body/div[@type='section']" use="@xml:id">
           <citeData property="dct:title" use="normalize-space(head[1])"/>
           <citeStructure unit="notice" match="div[@type='notice']" use="@xml:id">
             <citeData property="dct:title" use="normalize-space(head[1])"/>
