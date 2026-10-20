@@ -28,6 +28,7 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
+      <change when="2026-10-20">Note de l’éditeur des sections rétablie d’après les pages du site moissonnées le 12/09/2026 (fragments EAD) : 11 section(s) (label « Note de l’éditeur » et p[@rend="note-editeur"]).</change>
       <change when="2026-10-05">Rubriques rétablies d’après les pages du site moissonnées le 12/09/2026 (fragments EAD) : 153 notes de l’éditeur et 92 notes de l’inventaire manuscrit (label « Notes de l’éditeur » / « Notes de l’inventaire manuscrit » et p[@rend]), et l’intitulé « Références ajoutées par l’éditeur » dans 363 notices, perdus à la conversion. Texte rétabli identique au site, notice par notice ; texte existant inchangé.</change>
       <change when="2026-10-04">profileDesc : date de compilation de l’Inventaire (1680-1728, d’après les pages du site : « compilé des années 1680 aux années 1720 », « achevé en 1728 ») et langues ; revisionDesc ; trois espaces manquantes rétablies dans les notices 17, 42 et 99 (« abbé. Laditte », « Coconiacus. Item », « (Mours) autrement »).</change>
       <change when="2026-09-28">publisher/@ref : le site de l’École seul (commit 42ae17f).</change>
@@ -41,6 +42,8 @@
     <div type="section" xml:id="ISD-vol1_e0000039">
       <head>Années 600-800. (Chartes décrites sous les nos 1-82)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 1-82</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 1-68 du tome I.</p>
     <div type="notice" xml:id="ISD-vol1_notice1" n="1"><pb n="1" facs="images/saint-denis/inventaire/tome1/inventairejpg_0056.jpg"/>
       <head>N° 1. Confirmation par Clotaire II des divers legs mentionnés dans le testament de Jean en faveur de l’abbaye de Saint-Denis.</head>
       <list type="gloss">
@@ -1957,6 +1960,8 @@
     <div type="section" xml:id="ISD-vol1_e0002421">
       <head>Années 801-900. (Chartes décrites sous les nos 83-154)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 83-154</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 70-155 du tome I.</p>
     <div type="notice" xml:id="ISD-vol1_notice83" n="83"><pb n="70" facs="images/saint-denis/inventaire/tome1/inventairejpg_0118.jpg"/>
       <head>N° 83. Donation du village de Hasca (Hasbaing) faite par Nivelon à l’abbaye de Saint-Denis.</head>
       <list type="gloss">
@@ -3677,6 +3682,8 @@
     <div type="section" xml:id="ISD-vol1_e0004435">
       <head>Années 901-1000. (Chartes décrites sous les nos 155-167)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 155-167</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 155-167 du tome I.</p>
     <div type="notice" xml:id="ISD-vol1_notice155" n="155"><pb n="155" facs="images/saint-denis/inventaire/tome1/inventairejpg_0200.jpg"/>
       <head>N° 155. Confirmation par Charles le Simple de l’attribution des revenus du prieuré de Lièpvre au profit de l’abbaye de Saint-Denis.</head>
       <list type="gloss">
@@ -3989,6 +3996,8 @@
     <div type="section" xml:id="ISD-vol1_e0004768">
       <head>Années 1001-1100. (Chartes décrites sous les nos 168-200)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 168-200</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 169-209 du tome I.</p>
     <div type="notice" xml:id="ISD-vol1_notice168" n="168">
       <head>N° 168. </head>
       <list type="gloss">
@@ -4758,6 +4767,8 @@
     <div type="section" xml:id="ISD-vol1_e0005515">
       <head>Années 1101-1125. (Chartes décrites sous les nos 201-238)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 201-238</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 209-263 du tome I.</p>
     <div type="notice" xml:id="ISD-vol1_notice201" n="201"><pb n="209" facs="images/saint-denis/inventaire/tome1/inventairejpg_0254.jpg"/>
       <head>N° 201. </head>
       <list type="gloss">
@@ -5682,6 +5693,8 @@
     <div type="section" xml:id="ISD-vol1_e0006426">
       <head>Années 1126-1150. (Chartes décrites sous les nos 239-291)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 239-291</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 263-332 du tome I.</p>
     <div type="notice" xml:id="ISD-vol1_notice239" n="239">
       <head>N° 239. </head>
       <list type="gloss">
@@ -6961,6 +6974,8 @@
     <div type="section" xml:id="ISD-vol1_e0007651">
       <head>Années 1151-1175. (Chartes décrites sous les nos 292-422)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 292-422</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 332-450 du tome I.</p>
     <div type="notice" xml:id="ISD-vol1_notice292" n="292">
       <head>N° 292. </head>
       <list type="gloss">
@@ -9764,6 +9779,8 @@
     <div type="section" xml:id="ISD-vol1_e0010363">
       <head>Années 1176-1200. (Chartes décrites sous les nos 423-618)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 423-618</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 450-616 du tome I.</p>
     <div type="notice" xml:id="ISD-vol1_notice423" n="423"><pb n="450" facs="images/saint-denis/inventaire/tome1/inventairejpg_0491.jpg"/>
       <head>N° 423. </head>
       <list type="gloss">
@@ -13780,6 +13797,8 @@
     <div type="section" xml:id="ISD-vol1_e0014176">
       <head>Années 1201-1210. (Chartes décrites sous les nos 619-812)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 619-812</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 617-742 du tome I.</p>
     <div type="notice" xml:id="ISD-vol1_notice619" n="619"><pb n="617" facs="images/saint-denis/inventaire/tome1/inventairejpg_0649.jpg"/>
       <head>N° 619. </head>
       <list type="gloss">
@@ -17566,6 +17585,8 @@
     <div type="section" xml:id="ISD-vol1_e0017572">
       <head>Années 1211-1220. (Chartes décrites sous les nos 813-1017)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 813-1017</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 742-850 du tome I.</p>
     <div type="notice" xml:id="ISD-vol1_notice813" n="813"><pb n="742" facs="images/saint-denis/inventaire/tome1/inventairejpg_0768.jpg"/>
       <head>N° 813. </head>
       <list type="gloss">
@@ -21699,6 +21720,8 @@
     <div type="section" xml:id="ISD-vol1_e0021251">
       <head>Années 1221-1224. (Chartes décrites sous les nos 1018-1181)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 1018-1181</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 850-915 du tome I.</p>
     <div type="notice" xml:id="ISD-vol1_notice1018" n="1018"><pb n="850" facs="images/saint-denis/inventaire/tome1/inventairejpg_0873.jpg"/>
       <head>N° 1018. </head>
       <list type="gloss">

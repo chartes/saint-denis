@@ -27,6 +27,7 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
+      <change when="2026-10-20">Note de l’éditeur des sections rétablie d’après les pages du site moissonnées le 12/09/2026 (fragments EAD) : 8 section(s) (label « Note de l’éditeur » et p[@rend="note-editeur"]).</change>
       <change when="2026-10-05">Rubriques rétablies d’après les pages du site moissonnées le 12/09/2026 (fragments EAD) : 249 notes de l’éditeur et 9 notes de l’inventaire manuscrit (label « Notes de l’éditeur » / « Notes de l’inventaire manuscrit » et p[@rend]), et l’intitulé « Références ajoutées par l’éditeur » dans 167 notices, perdus à la conversion. Texte rétabli identique au site, notice par notice ; texte existant inchangé.</change>
       <change when="2026-10-04">profileDesc : date de compilation de l’Inventaire (1680-1728, d’après les pages du site : « compilé des années 1680 aux années 1720 », « achevé en 1728 ») et langues ; revisionDesc.</change>
       <change when="2026-09-28">publisher/@ref : le site de l’École seul (commit 42ae17f).</change>
@@ -40,6 +41,8 @@
     <div type="section" xml:id="ISD-vol2_e0000040">
       <head>Années 1225-1230. (Chartes décrites sous les nos 1182-1436)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 1182-1436</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 1-123 du tome II.</p>
     <div type="notice" xml:id="ISD-vol2_notice1182" n="1182"><pb n="1" facs="images/saint-denis/inventaire/tome2/inventairejpg_0940.jpg"/>
       <head>N° 1182. </head>
       <list type="gloss">
@@ -5113,6 +5116,8 @@
     <div type="section" xml:id="ISD-vol2_e0004509">
       <head>Années 1231-1240. (Chartes décrites sous les nos 1437-1780)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 1437-1780</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 124-301 du tome II.</p>
     <div type="notice" xml:id="ISD-vol2_notice1437" n="1437"><pb n="124" facs="images/saint-denis/inventaire/tome2/inventairejpg_1063.jpg"/>
       <head>N° 1437. </head>
       <list type="gloss">
@@ -11950,6 +11955,8 @@
     <div type="section" xml:id="ISD-vol2_e0010561">
       <head>Années 1241-1250. (Chartes décrites sous les nos 1781-2060)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 1781-2060</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 301-467 du tome II.</p>
     <div type="notice" xml:id="ISD-vol2_notice1781" n="1781"><pb n="301" facs="images/saint-denis/inventaire/tome2/inventairejpg_1239.jpg"/>
       <head>N° 1781. </head>
       <list type="gloss">
@@ -17540,6 +17547,8 @@
     <div type="section" xml:id="ISD-vol2_e0015555">
       <head>Années 1251-1260. (Chartes décrites sous les nos 2061-2295)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 2061-2295</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 467-579 du tome II.</p>
     <div type="notice" xml:id="ISD-vol2_notice2061" n="2061"><pb n="467" facs="images/saint-denis/inventaire/tome2/inventairejpg_1404.jpg"/>
       <head>N° 2061. </head>
       <list type="gloss">
@@ -22090,6 +22099,8 @@
     <div type="section" xml:id="ISD-vol2_e0019625">
       <head>Années 1261-1270. (Chartes décrites sous les nos 2296-2557)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 2296-2557</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 579-708 du tome II.</p>
     <div type="notice" xml:id="ISD-vol2_notice2296" n="2296"><pb n="579" facs="images/saint-denis/inventaire/tome2/inventairejpg_1516.jpg"/>
       <head>N° 2296. </head>
       <list type="gloss">
@@ -27125,6 +27136,8 @@
     <div type="section" xml:id="ISD-vol2_e0024218">
       <head>Années 1271-1280. (Chartes décrites sous les nos 2558-2794)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 2558-2794</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 708-828 du tome II.</p>
     <div type="notice" xml:id="ISD-vol2_notice2558" n="2558"><pb n="708" facs="images/saint-denis/inventaire/tome2/inventairejpg_1647.jpg"/>
       <head>N° 2558. </head>
       <list type="gloss">
@@ -31590,6 +31603,8 @@
     <div type="section" xml:id="ISD-vol2_e0028224">
       <head>Années 1281-1290. (Chartes décrites sous les nos 2795-3027)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 2795-3027</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 829-941 du tome II.</p>
     <div type="notice" xml:id="ISD-vol2_notice2795" n="2795"><pb n="829" facs="images/saint-denis/inventaire/tome2/inventairejpg_1768.jpg"/>
       <head>N° 2795. </head>
       <list type="gloss">
@@ -35894,6 +35909,8 @@
     <div type="section" xml:id="ISD-vol2_e0032131">
       <head>Années 1291-1299. (Chartes décrites sous les nos 3028-3195)</head>
       <p rend="Numéros des notices">Chartes décrites sous les nos 3028-3195</p>
+      <label type="section">Note de l’éditeur</label>
+      <p rend="note-editeur">Les regestes édités ci-après sont aux pages 941-1028 du tome II.</p>
     <div type="notice" xml:id="ISD-vol2_notice3028" n="3028">
       <head>N° 3028. </head>
       <list type="gloss">
