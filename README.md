@@ -20,7 +20,6 @@ Chaque fichier porte son `revisionDesc` : les modifications de la migration (202
 ```
 data/                                les 11 TEI, et data/illustrations/ (2 images d'Ully)
 metadata/collection.tsv              métadonnées de la collection
-metadata/documents_metadata.tsv      métadonnées des 11 ressources
 metadata/dots_metadata_mapping.xml   règles de métadonnées (espace de noms dots-suite)
 schema/                              schéma du corpus
 transform/saint-denis.xsl            feuille de rendu, au nom de la collection ; importe hteiml
