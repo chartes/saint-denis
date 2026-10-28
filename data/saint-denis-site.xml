@@ -58,11 +58,7 @@
       <div type="page" xml:id="sd-les-textes--accueil" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/index.html">
           <head>Chartes de l’abbaye de Saint-Denis : présentation</head>
           <anchor xml:id="sd-les-textes--accueil--preambule"/>
-          <div type="legacy-block" rend="static-content">
-<div type="legacy-block">
-<list type="unordered"><item><ref target="#sd-les-textes--accueil--histoire">Histoire et patrimoine de l’abbaye</ref></item><item><ref target="#sd-les-textes--accueil--sort">Le sort du chartrier monastique</ref></item><item><ref target="#sd-les-textes--accueil--inventaires">Les inventaires anciens des archives</ref></item><item><ref target="#sd-les-textes--accueil--biblio">Orientation bibliographique</ref></item></list>
-</div>
-</div>
+          <!-- 2026-10-28 : menu de l'ancien site retiré (doublon du sommaire de dots-vue) -->
           <anchor xml:id="sd-les-textes--accueil--histoire"/>
           <div type="legacy-block" rend="static-content">
 <p rend="heading-h2">Histoire et patrimoine de l’abbaye</p>
@@ -107,8 +103,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
         </div>
 <div type="part" xml:id="sd-actes-haut-moyen-age">
           <head>Actes du haut Moyen Âge</head>
-        <div type="page" xml:id="sd-les-textes--actes-du-haut-moyen-age--introduction" corresp="http://saint-denis.enc.sorbonne.fr/les-textes/actes-du-haut-moyen-age/introduction.html">
-            <head>Introduction</head>
+        <anchor xml:id="sd-les-textes--actes-du-haut-moyen-age--introduction"/><!-- 2026-10-28 : unique page de la partie, fusionnée avec elle -->
             <div type="legacy-block" rend="static-content">
 <p>En 2003, Daniel Sonzogni confiait un mémoire original, « Le chartrier de l’abbaye de Saint-Denis en France au haut Moyen Âge : essai de reconstitution », à la revue <hi rend="italic">Pecia, ressources en archivistique</hi>, volume 3, [Saint-Denis], 2003, p. 9-210. Après une brève introduction, il y donnait un état détaillé des sources et de la bibliographie disponibles sur l’histoire de l’abbaye jusqu’en l’an mil, puis le catalogue des 267 actes retrouvés du chartrier de l’établissement, qu’ils fussent publiés ou inédits, connus par une tradition foisonnante ou par d’allusives mentions. Cette mise au point a été reprise à l’identique par les Éditions Brepols, dans la collection « Pecia : le livre et l’écrit », dédiée à la codicologie et à l’histoire du livre.</p>
 <p>Ce premier catalogue, qui a apporté une aide décisive, pour les premiers siècles, à l’édition numérique de l’Inventaire général des archives dionysiennes de 1680-1720, était, tout ce temps durant, poursuivi par l’auteur, jusqu’à former un ouvrage totalement nouveau, à l’information décuplée : pourvu d’une introduction étoffée sur les particularité de la fabrication, de la tradition et de l’archivage des actes du fonds de Saint-Denis, il ajoute aux sèches notices du catalogue primitif quelques nouvelles mentions, et surtout le fruit d’un examen attentif des originaux et copies anciennes, notes dorsales comprises, des discussions chronologiques et critiques, des identifications toponymiques serrées, et <hi rend="italic">last but not least</hi>, des extraits copieux de la plupart des actes, qui permettent au chercheur d’approfondir commodément sa lecture. Ces extraits sont pris aux meilleures éditions, et aussi souvent que possible à la base « Chartes originales antérieures à 1121 conservées en France » (&lt;<ref target="http://www.cn-telma.fr/originaux/index/">http://www.cn-telma.fr/originaux/index/</ref>&gt;).</p>
@@ -121,7 +116,7 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
             <div type="legacy-block" rend="static-content">
               <p rend="date">[Auteur de cette page : Olivier Guyotjeannin ; date de la dernière mise à jour : 20 janvier 2017]</p>
             </div>
-          </div>
+          
       </div>
 <div type="part" xml:id="sd-inventaire-general">
           <head>L’Inventaire général</head>
@@ -5179,6 +5174,10 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
           <div type="legacy-block" rend="static-content"> <p>Ce site Web en est à une première version, beaucoup de choses ne fonctionnent pas encore de manière optimale, et des fonctionnalités ne sont pas encore en place. Par ailleurs les contenus seront enrichis dans les prochains mois. La <ref target="#sd-le-projet--feuille-de-route" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/feuille-de-route.html">feuille de route</ref> vous en dira plus sur ce qui est prévu.</p>
 <p>Vous voulez faire une suggestion, une remarque, poser une question, signaler un problème ? Vous êtes chercheur et vous aimeriez contribuer aux contenus ? Vous vous intéressez aux aspects informatiques ? Vous pouvez prendre contact avec nous en utilisant la boîte aux lettres <ref target="mailto:info.saint-denis@enc.sorbonne.fr?subject=saint-denis">info.saint-denis@enc.sorbonne.fr</ref>.</p></div>
         </div>
+      </div>
+      <div type="ecarte" xml:id="sd-ecarte" rend="hors-sommaire">
+        <head>Pages ecartees du sommaire</head>
+        <!-- ecartee le 2026-10-28 : crédits, déjà dans la page « À propos » de dots-vue (about4.vue) ; s'affichaient sur la page « Le projet » -->
         <div type="page" xml:id="sd-le-projet--credits" corresp="http://saint-denis.enc.sorbonne.fr/le-projet/credits.html">
           <head>Crédits</head>
           <div type="legacy-block" rend="static-content">
@@ -5198,9 +5197,6 @@ LL 1189, LL 1190 et LL 1191, qui vont respectivement des origines à 1224, de
 
 </div>
         </div>
-      </div>
-      <div type="ecarte" xml:id="sd-ecarte" rend="hors-sommaire">
-        <head>Pages ecartees du sommaire</head>
         <!-- Pages retirees du plan editorial (mail du responsable scientifique, et pages
              vides). Conservees ici hors citeStructure : elles ne paraissent plus au
              sommaire DoTS mais restent dans le fichier, et les ref/@target internes
