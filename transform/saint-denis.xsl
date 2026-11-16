@@ -189,8 +189,13 @@
 
   <xsl:template match="tei:div[@type = 'notice']" priority="14">
     <article class="isd-notice" id="{@xml:id}" data-pdf="">
-      <!-- 2026-11-16 : export PDF de la notice, comme sur l'ancien site (comportement : bloc 5 de elec.customJs.js) -->
-      <button type="button" class="elec-pdf" title="Obtenir cette notice en PDF">PDF</button>
+      <!-- 2026-11-16 : outils de l'ancien site (comportements : blocs 5 et 6 de elec.customJs.js) : porte-documents,
+           PDF de la notice, PDF de la période et de toutes ses notices (« avec ses sous-unités ») -->
+      <div class="elec-outils">
+        <button type="button" class="elec-panier" data-panier-id="{@xml:id}" data-panier-titre="{normalize-space(tei:head[1])}">Ajouter au porte-documents</button>
+        <button type="button" class="elec-pdf" title="Obtenir cette notice en PDF">PDF</button>
+        <button type="button" class="elec-pdf" data-pdf-parent="{@xml:id}" title="Obtenir en PDF la période et toutes ses notices">PDF de la période</button>
+      </div>
       <h3 class="isd-notice-head"><xsl:apply-templates select="tei:head[1]/node()"/></h3>
       <xsl:apply-templates select="node() except tei:head[1]"/>
     </article>
@@ -318,6 +323,12 @@
       </xsl:when>
       <xsl:otherwise><xsl:apply-templates select="$secours"/></xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+
+  <!-- 2026-11-16 : la « Note de l'éditeur » d'une période (label puis p[@rend='note-editeur']) est un paragraphe, pas un
+       champ : sans cela le modèle suivant affichait « note-editeur : » devant le texte (vu dans le PDF de la période). -->
+  <xsl:template match="tei:div[@type = 'section']/tei:p[@rend = ('note-editeur', 'note-inventaire')]" priority="15">
+    <p class="p noindent {@rend}"><xsl:apply-templates/></p>
   </xsl:template>
 
   <xsl:template match="tei:div[@type = 'section']/tei:p[@rend]" priority="14">
