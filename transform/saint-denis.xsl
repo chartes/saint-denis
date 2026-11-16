@@ -188,7 +188,9 @@
 
 
   <xsl:template match="tei:div[@type = 'notice']" priority="14">
-    <article class="isd-notice" id="{@xml:id}">
+    <article class="isd-notice" id="{@xml:id}" data-pdf="">
+      <!-- 2026-11-16 : export PDF de la notice, comme sur l'ancien site (comportement : bloc 5 de elec.customJs.js) -->
+      <button type="button" class="elec-pdf" title="Obtenir cette notice en PDF">PDF</button>
       <h3 class="isd-notice-head"><xsl:apply-templates select="tei:head[1]/node()"/></h3>
       <xsl:apply-templates select="node() except tei:head[1]"/>
     </article>
