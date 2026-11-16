@@ -197,14 +197,25 @@
   <!-- 2026-11-16 : notes de l'Inventaire remises à leur appel (TEI refait depuis l'EAD). hteiml n'écrit pas le corps
        des notes d'un fragment : il est écrit ici, juste après le paragraphe qui les appelle, sous les rubriques et dans
        la forme de l'ancien site (« Notes de l'inventaire manuscrit » en lettres, « Notes de l'éditeur » en chiffres). -->
+  <!-- 2026-11-16 : renvois de l'Inventaire d'une notice à une autre (ancien site : ead.html?c=ISD-vol1_notice139) -->
+  <xsl:template match="tei:ref[contains(@target, 'ead.html?c=ISD-vol')]" priority="17">
+    <xsl:variable name="id" select="substring-before(concat(substring-after(@target, 'c='), '&amp;'), '&amp;')"/>
+    <a class="sd-internal" href="{$sd-vers-sd}{substring-before($id, '_')}?refId={$id}"><xsl:apply-templates/></a>
+  </xsl:template>
+
   <!-- dates des notices (TEI refait depuis l'EAD) : deux modèles hteiml de même priorité visent tei:date (XTDE0540) -->
   <xsl:template match="tei:div[@type = 'notice']//tei:date" priority="15">
     <span class="date"><xsl:apply-templates/></span>
   </xsl:template>
 
-  <xsl:template match="tei:div[@type = 'notice']/tei:p[.//tei:note[@type = ('inventaire', 'editeur')]]" priority="16">
+  <!-- les notes d'une rubrique s'écrivent après son DERNIER paragraphe (« … 637. » puis « Dado chancellier. », puis
+       les notes), comme sur l'ancien site -->
+  <xsl:template match="tei:div[@type = 'notice']/tei:p[not(following-sibling::*[1][self::tei:p])]
+                       [(preceding-sibling::tei:p | .)[preceding-sibling::tei:label[@type = 'section'][1] is current()/preceding-sibling::tei:label[@type = 'section'][1]]//tei:note[@type = ('inventaire', 'editeur')]]"
+                priority="16">
     <xsl:next-match/>
-    <xsl:variable name="p" select="."/>
+    <xsl:variable name="rubrique" select="preceding-sibling::tei:label[@type = 'section'][1]"/>
+    <xsl:variable name="p" select="(preceding-sibling::tei:p | .)[preceding-sibling::tei:label[@type = 'section'][1] is $rubrique]"/>
     <xsl:for-each select="('inventaire', 'editeur')">
       <xsl:variable name="type" select="."/>
       <xsl:variable name="notes" select="$p//tei:note[@type = $type]"/>
