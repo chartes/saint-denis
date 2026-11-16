@@ -198,9 +198,10 @@
        des notes d'un fragment : il est écrit ici, juste après le paragraphe qui les appelle, sous les rubriques et dans
        la forme de l'ancien site (« Notes de l'inventaire manuscrit » en lettres, « Notes de l'éditeur » en chiffres). -->
   <!-- 2026-11-16 : renvois de l'Inventaire d'une notice à une autre (ancien site : ead.html?c=ISD-vol1_notice139) -->
-  <xsl:template match="tei:ref[contains(@target, 'ead.html?c=ISD-vol')]" priority="17">
-    <xsl:variable name="id" select="substring-before(concat(substring-after(@target, 'c='), '&amp;'), '&amp;')"/>
-    <a class="sd-internal" href="{$sd-vers-sd}{substring-before($id, '_')}?refId={$id}"><xsl:apply-templates/></a>
+  <xsl:template match="tei:ref[contains(@target, 'ead.html?')][contains(@target, 'c=ISD-vol')]" priority="17">
+    <!-- ead.html?c=ISD-vol1_notice139 (même tome) ou ead.html?id=ISD-vol1&c=ISD-vol1_notice635 (autre tome) -->
+    <xsl:variable name="id" select="substring-before(concat(substring-after(@target, 'c=ISD-vol'), '&amp;'), '&amp;')"/>
+    <a class="sd-internal" href="{$sd-vers-sd}ISD-vol{substring-before($id, '_')}?refId=ISD-vol{$id}"><xsl:apply-templates/></a>
   </xsl:template>
 
   <!-- dates des notices (TEI refait depuis l'EAD) : deux modèles hteiml de même priorité visent tei:date (XTDE0540) -->

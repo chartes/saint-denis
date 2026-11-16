@@ -4255,19 +4255,8 @@
             <p>confirmation de privilèges et exemptions.</p>
             <p>luminaire, aumônes, hospitalité</p>
             <p>nombre d’or 9, Pâques 13 avril, dominicale FE</p>
-            <p>Vidimus par Odo, légat du Saint-Siège, de l’an 1248 de la charte de Charles le Chauve cy-dessus. <emph render="super">1</emph></p>
-            <p>Confirmation de la charte cy-dessus par Saint Louis au mois de mars 1269, au 2e tome du présent inventaire p. <emph render="super">2</emph>, et par le roy Charles 6e au mois de décembre 1392, au 4e tome du présent inventaire page 261 </p>
-            <list type="deflist">
-              <head>Notes de l’éditeur</head>
-              <defitem>
-                <label>1</label>
-                <item>texte raturé sur la ligne: « en original »</item>
-              </defitem>
-              <defitem>
-                <label>2</label>
-                <item>raturé: peut-être « 700 »</item>
-              </defitem>
-            </list>
+            <p>Vidimus par Odo, légat du Saint-Siège, de l’an 1248 de la charte de Charles le Chauve cy-dessus. <note label="1"><p>texte raturé sur la ligne: « en original »</p></note></p>
+            <p>Confirmation de la charte cy-dessus par Saint Louis au mois de mars 1269, au 2e tome du présent inventaire p. <note label="2"><p>raturé: peut-être « 700 »</p></note>, et par le roy Charles 6e au mois de décembre 1392, au 4e tome du présent inventaire page 261 </p>
           </odd>
         </c>
         <c level="item" id="ISD-vol1_notice114">
@@ -6375,14 +6364,7 @@
           </bibliography>
           <odd id="ISD-vol1_e0004676">
             <head>Autres informations portées en fin de notice dans l’inventaire</head>
-            <p>nombre d’or 10, Pâques 28 mars,<emph render="super">1</emph> dominicale C.</p>
-            <list type="deflist">
-              <head>Notes de l’éditeur</head>
-              <defitem>
-                <label>1</label>
-                <item>texte raturé illisible</item>
-              </defitem>
-            </list>
+            <p>nombre d’or 10, Pâques 28 mars,<note label="1"><p>texte raturé illisible</p></note> dominicale C.</p>
           </odd>
         </c>
         <c level="item" id="ISD-vol1_notice165">
@@ -7670,14 +7652,7 @@
             <head>Autres informations portées en fin de notice dans l’inventaire</head>
             <p>prieuré de Saint-Gobert</p>
             <p>nombre d’or 9, Pâques 13 avril, dominicale E</p>
-            <p>Nota que l’original de cette charte est d’un caractère et d’un sceau hors de tout soupçon, mais la datte est d’une autre main et d’une autre encre, et paroist avoir été adjoustée après coup ; aussy ne convient-elle point, car l’année 1091 étoit la 32e année du règne de Philipes Ier et non pas la 35e, l’indiction estoit 14 et non pas 13. Doublet, pensant mieux faire quadrer ces dattes, l’a mise de l’an 1095, laquelle <emph render="super">1</emph> convient aussy peu avec les autres dattes.</p>
-            <list type="deflist">
-              <head>Notes de l’éditeur</head>
-              <defitem>
-                <label>1</label>
-                <item>elle rayé</item>
-              </defitem>
-            </list>
+            <p>Nota que l’original de cette charte est d’un caractère et d’un sceau hors de tout soupçon, mais la datte est d’une autre main et d’une autre encre, et paroist avoir été adjoustée après coup ; aussy ne convient-elle point, car l’année 1091 étoit la 32e année du règne de Philipes Ier et non pas la 35e, l’indiction estoit 14 et non pas 13. Doublet, pensant mieux faire quadrer ces dattes, l’a mise de l’an 1095, laquelle <note label="1"><p>elle rayé</p></note> convient aussy peu avec les autres dattes.</p>
           </odd>
         </c>
         <c level="item" id="ISD-vol1_notice199">
@@ -10338,18 +10313,13 @@
           <odd id="ISD-vol1_e0007048">
             <head>Autres informations portées en fin de notice dans l’inventaire</head>
             <p>
-              <emph render="super">1</emph>
+              <note label="1">
+                <p>raturée sur la ligne: « 558 »</p>
+              </note>
             </p>
             <p>1139</p>
             <p>nombre d’or 19, Pâques, 23 avril, dominicale A</p>
             <p>prieuré d’Essonne</p>
-            <list type="deflist">
-              <head>Notes de l’éditeur</head>
-              <defitem>
-                <label>1</label>
-                <item>raturée sur la ligne: « 558 »</item>
-              </defitem>
-            </list>
           </odd>
         </c>
         <c level="item" id="ISD-vol1_notice266">
@@ -33464,14 +33434,7 @@
           </bibliography>
           <odd id="ISD-vol1_e0020059">
             <head>Autres informations portées en fin de notice dans l’inventaire</head>
-            <p>K28, n°10<emph render="super">1</emph></p>
-            <list type="deflist">
-              <head>Notes de l’éditeur</head>
-              <defitem>
-                <label>1</label>
-                <item>Cette mention est de la même main que le mot « Ingeborg » suscrit au XIX<emph render="super">e</emph> siècle dans le regeste</item>
-              </defitem>
-            </list>
+            <p>K28, n°10<note label="1"><p>Cette mention est de la même main que le mot « Ingeborg » suscrit au XIX<emph render="super">e</emph> siècle dans le regeste</p></note></p>
           </odd>
         </c>
         <c level="item" id="ISD-vol1_notice951">

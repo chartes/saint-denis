@@ -198,8 +198,7 @@ def convertir_composant(doc, cid, niveau, racine=False):
                 inline(p, el("bibref" if nom == "bibliography" else "p", s))
             else:
                 inconnus["dans-section:%s" % p.tag.replace(H, "")] += 1
-        if nom == "scopecontent":
-            placer_notes(haut)
+        placer_notes(haut)          # notes d'une rubrique, quelle qu'elle soit (regeste, références, autres informations)
         stats["section:" + nom] += 1
     if ctrl:
         ca = el("controlaccess", comp)

@@ -20805,14 +20805,7 @@
           </bibliography>
           <odd id="ISD-vol2_e0011170">
             <head>Autres informations portées en fin de notice dans l’inventaire</head>
-            <p>Vide 327<emph render="super">1</emph></p>
-            <list type="deflist">
-              <head>Notes de l’éditeur</head>
-              <defitem>
-                <label>1</label>
-                <item>Renvoi au <extref xlink:href="http://saint-denis.enc.sorbonne.fr/ead.html?c=ISD-vol2_notice1825">regeste no 1825 (page 327)</extref>.</item>
-              </defitem>
-            </list>
+            <p>Vide 327<note label="1"><p>Renvoi au <extref xlink:href="http://saint-denis.enc.sorbonne.fr/ead.html?c=ISD-vol2_notice1825">regeste no 1825 (page 327)</extref>.</p></note></p>
           </odd>
         </c>
         <c level="item" id="ISD-vol2_notice1815">

@@ -14,9 +14,10 @@ reconstruction sont décrits dans chaque fichier (`archdesc/processinfo`) ; ils 
 Contrôles : valides EAD 2002 (schéma de la Library of Congress) ; 3 307 composants, aucune page manquante ;
 aucun mot perdu par rapport aux pages Pleade (`verifier_texte.py`).
 
-Ce dossier n'est pas lu par DoTS. Les TEI servis (`data/ISD-vol*.xml`) en ont été refaits le même jour
-(`regenerer_tei.py`) : contenu et balisage repris de l'EAD, charpente DoTS (en-tête, identifiants, `pb`, titres)
-gardée ; 3 270 notices sur 3 285, les 15 autres inchangées.
+Ce dossier n'est pas lu par DoTS. Le corps des notices des TEI servis (`data/ISD-vol*.xml`) en a été refait le même
+jour (`regenerer_tei_v2.py`), dans l'ordre et avec les libellés de l'ancien site (dont la ligne « Regeste bref ») ;
+l'en-tête, les sections, les identifiants, les `pb` et les titres des notices sont ceux du TEI de septembre. Le rendu
+dans dots-vue a été comparé notice par notice aux pages de l'ancien site, pour les trois volumes.
 
 Les scripts lisent des chemins de la machine où ils ont été écrits : ils documentent la reconstruction plus qu'ils
 ne se relancent tels quels.
