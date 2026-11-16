@@ -1,0 +1,1653 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+  <eadheader langencoding="iso639-2b" countryencoding="iso3166-1" scriptencoding="iso15924" dateencoding="iso8601" repositoryencoding="iso15511">
+    <eadid countrycode="FR">ISD-vol3</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper>« Continuation de l’inventaire des chartes de l’abbaye de Saint-Denis<lb/>Tome 3<emph render="super">e</emph><lb/>commençant en l’an 1300, et finissant en l’an 1369 inclusivement »</titleproper>
+        <titleproper>Inventaire général des chartes de Saint-Denis : tome III (Archives nationales, LL 1191), pages 1-34</titleproper>
+        <author>Par Dom François Thomas et des continuateurs anonymes<lb/>Édition préparée par Olivier Guyotjeannin, Sandrine Della Bartolomea et Florence Clavaud (École nationale des chartes)</author>
+      </titlestmt>
+      <editionstmt>
+        <p>1<emph render="super">ère</emph> édition électronique</p>
+      </editionstmt>
+      <publicationstmt>
+        <publisher>École nationale des chartes</publisher>
+        <address>
+          <addressline>19, rue de la Sorbonne</addressline>
+          <addressline>75005 Paris</addressline>
+        </address>
+        <date>juin 2010</date>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Fichier reconstruit le 16 novembre 2026 à partir des 58 pages HTML que l'application Pleade servait pour ce volume (saint-denis.enc.sorbonne.fr, copie locale faite avant la fermeture du site, septembre 2026) ; l'EAD d'origine n'a pas été retrouvé. <date normal="20261116">2026-11-16</date></creation>
+      <langusage>
+        <language langcode="fre">français</language>
+      </langusage>
+    </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="20261116">16 novembre 2026</date>
+        <item>Reconstruction en EAD 2002 à partir du rendu HTML de Pleade (voir creation et processinfo).</item>
+      </change>
+    </revisiondesc>
+  </eadheader>
+  <archdesc level="subseries" id="ISD-vol3_noticeglobale">
+    <did>
+      <unittitle label="Intitulé">Chartes de l’abbaye de Saint-Denis des origines à 1300 (3<emph render="super">e</emph> partie)</unittitle>
+      <unitid label="Numéros des notices">Chartes décrites sous les n<emph render="super">os</emph> 3196-3265</unitid>
+      <unitdate label="Dates">De 1300 à 1302</unitdate>
+    </did>
+    <odd>
+      <head>Note de l’éditeur</head>
+      <p>Les regestes édités ci-après sont aux pages 1-34 du tome III.</p>
+    </odd>
+    <processinfo>
+      <head>Reconstruction</head>
+      <p>Éléments lus dans les classes de Pleade (pl-ead-*) : unitid, unittitle, unitdate, physdesc, genreform, emph (@render), scopecontent, bibliography, odd, titleproper, author, editionstmt, publisher, address, date, change.</p>
+      <p>Choix de la reconstruction (non lus dans une classe) : les « Types(s) d’auteur d’acte » sont rendus en controlaccess/name[@role='auteur d’acte'] et les « Types de documents » en controlaccess/genreform, chaque groupe sous son intitulé ; la ligne « Édition réalisée d’après » en did/note ; les notes que Pleade regroupait en fin de regeste sont remises à la place de leur appel, en note[@label = l’appel] (note[@altrender='ms'] pour les notes de l’Inventaire, comme le prescrit le guide d’encodage du site) ; quand l’appel n’a pas été retrouvé, elles restent en fin de regeste en list[@type='deflist'] ; le tableau de la tradition est en bibliography/bibref (guide d’encodage) ; la « Correspondance avec le cartulaire blanc » en relatedmaterial ; les « Notes de l’éditeur » des séries en odd ; un second intitulé dans un même bloc (« Références ajoutées par l’éditeur ») ouvre un bloc emboîté du même nom (bibliography/bibliography), que Pleade affichait à plat.</p>
+      <p>Les libellés affichés par Pleade sont gardés en @label ; quand Pleade affichait une valeur d’attribut faute de libellé, elle est remise en @datechar pour les dates (« confirmation », « nst » = nouveau style) et en @type pour les cotes (« ENC »).</p>
+      <p>Les liens de recherche de Pleade sont réduits à leur terme ; les liens vers les images et les pages du site sont gardés en extref, sur l’ancien domaine. La ligne « URL de cette page » est omise : elle se déduit de l’identifiant de la notice (http://saint-denis.enc.sorbonne.fr/inventaire/tomeN/&lt;id sans préfixe&gt;).</p>
+    </processinfo>
+    <dsc>
+      <c level="item" id="ISD-vol3_notice3196">
+        <did>
+          <unitid label="Notice numéro">n° 3196</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 5 février</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1969.jpg">1</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">pape</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000044">
+          <head>Édition du regeste</head>
+          <p>Bulle du pape Boniface huitiesme par laquelle il accorde à tous ceux qui visiteront l’église de Saint-Denis, dans laquelle repose le corps de Saint Louis, le jour de la feste de ce roy ou pendant l’octave d’icelle un an et quarante jours d’indulgences. Donnée à Latran, les nones de février, l’an sixiesme de son pontificat, revenant au cinquiesme février 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000049">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>Doublet p. 627</bibref>
+          <bibliography>
+            <head>Références ajoutées par l’éditeur</head>
+            <bibref>Indiqué : Barbiche, t. II, n° 2125</bibref>
+          </bibliography>
+        </bibliography>
+        <odd id="ISD-vol3_e0000053">
+          <head>Autres informations portées en fin de notice dans l’inventaire</head>
+          <p>Pasque 10 avril, dominicale CB</p>
+        </odd>
+      </c>
+      <c level="item" id="ISD-vol3_notice3197">
+        <did>
+          <unitid label="Notice numéro">n° 3197</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 11 avril</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1969.jpg">1</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1970.jpg">2</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">roi de France</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000063">
+          <head>Édition du regeste</head>
+          <p>Ordonnance du roy Philippes le Bel par laquelle, sur les plaintes à luy faites par les abbé et religieux de Saint-Denis des vexations que leur faisoient ses officiers et justiciers et autres personnes puissantes du royaume, sa Majesté deffend à tous sesdits officiers de saisir et retenir injustement les biens meubles et immeubles appartenans ausdits abbé et religieux ny les troubler aucunement en la jouissance et possession d’iceux, mais les y conserver et mettre sous la protection de sa Majesté à l’encontre desdites personnes puissantes qui voudroient usurper lesdits biens. Item, leur deffend de lever plus d’une fois par an les <emph render="underline">annates</emph> qui luy peuvent appartenir suivant la concession qui luy en a esté faite par le Saint-Siège sur les prieurez et maisons deppendantes de ladite abbaye, quoiqu’elles vinssent à vacquer plusieurs fois dans une mesme année ; et à l’esgard des administrations et offices claustraux de ladite abbaye comme de cellerier, sacristain, aumônier, pitancier et autres, les revenus desquels sont affectez à certains usages particuliers et desquels ceux qui les exercent doivent rendre compte, sa Majesté déclare que vaccation d’iceux arrivant, il ne luy est deu aucun droit. Du lendemain de Pasques 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000069">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>K 37, n° 7</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3198">
+        <did>
+          <unitid label="Notice numéro">n° 3198</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 13 avril</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1970.jpg">2</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000081">
+          <head>Édition du regeste</head>
+          <p>Donation faite par Guillaume du Moulin et sa femme au profit de l’abbaye de Saint-Denis, de deux arpens et demi de terre et vigne en une pièce scis au terroir du Pré-Saint-Gervais, lieu dit la Roche, tenant d’une part à la vigne Robert le Comte, d’autre à la vigne des hoirs Gaultier du Chemin ; item, un arpent de vigne lieu dit Beaudon, tenant d’une part à la masure Roger Blondeau, d’autre à la veuve Richard Bouttemotte ; item, une masure tenant d’une part à la masure Jean Coüanne et à la masure Jolivet ; le tout scis au Pré-Saint-Gervais, en la censive de ladite abbaye. Item, un arpent et demi quartier de terre au-dessous de Pantin, tenant d’une part à la terre Jacques Bourdon, d’autre à la terre Jean Lebordier, en censive de Guy de Hugot. Par devant le garde de la prévosté de Paris, le mercredy après Pasques, l’an 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0229V_L.jpg">page 422 (tome 1)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000086">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Original</bibref>
+          <bibref>S 2278, n° 3</bibref>
+          <bibref>Au 1er tome du cartulaire blanc p. 422</bibref>
+          <bibref>Au second tome de la coppie d’iceluy p. 323</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3199">
+        <did>
+          <unitid label="Notice numéro">n° 3199</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 19 avril</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1971.jpg">3</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000099">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de l’abbaye de Saint-Denis par Jean de Fourvillon d’un jardin scis à Sannois, tenant à la maison de ladite abbaye d’un bout à la voie. Par devant Guillaume Thibout garde de la prévosté de Paris, le mardy après les octaves de Pasques 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0161R_L.jpg">page 319 (tome 2)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000103">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au second tome du cartulaire blanc p. 319</bibref>
+          <bibref>Coppie d’iceluy p. 550</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3200">
+        <did>
+          <unitid label="Notice numéro">n° 3200</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 15 mai</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1971.jpg">3</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">abbé de Saint-Denis</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000114">
+          <head>Édition du regeste</head>
+          <p>Aveu rendu à l’abbé de Saint-Denis par Gaucher de Rosé d’un fief qui fut à Jean de Charny scis au terroir de Plailly consistant en deux arpens et demi de terre séans à la Noue et autres héritages, censives et redevances, droits y énoncez accause de la chastellenie de Montmélian, sous le scel de la prévosté de Paris, le samedy 15 may 1300<note label="1"><p>Les données chronologiques fournies par l’Inventaire général sont contradictoires, puisque le 15 mai 1300 tombe un dimanche.</p></note>.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000120">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au gros registre des fiefs p. 1227</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3202">
+        <did>
+          <unitid label="Notice numéro">n° 3202</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 9 juin</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1971.jpg">3</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000130">
+          <head>Édition du regeste</head>
+          <p>Acte par lequel Jacques Gentien et sa femme promettent et s’obligent de tenir de l’abbaye de Saint-Denis en augmentation de fief les quarante sols de croist de cens qu’ils ont acquis de Jacques Fery sur une maison scize rue de la Verrerie à Paris et chargée vers eux de deux deniers de chef-cens, à cause de leur fief mouvant de laditte abbaye. Sous le scel de la prévosté de Paris, le jeudy après la Trinité 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000134">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au gros registre des fiefs p. 146</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3203">
+        <did>
+          <unitid label="Notice numéro">n° 3203</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 11 juin</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1971.jpg">3</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1972.jpg">4</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000144">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de l’abbaye de Saint-Denis par Pierre de Garges de cent cinq sols parisis de cens et rente sur tous les cens que dame Isabeau d’Attainville, dame de Garges, perçoit en la ville et terroir de Gages<note label="1"><p>Sic pour « Garges ».</p></note>, mouvant en fief de laditte abbaye. Par devant Guillaume Thibout garde de la prévosté de Paris, le samedy après la Trinité 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0246V_L.jpg">page 456 (tome 1)</extref>.</p>
+          <p>L’édition de l’acte existe déjà sous le(s) numéro(s) :<list><item><extref xlink:href="http://saint-denis.enc.sorbonne.fr/cartulaire/tome1/dugny/acte61">Dugny 61</extref></item></list></p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000150">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au 1er tome du cartulaire blanc p. 456</bibref>
+          <bibref>Au second tome de la coppie d’iceluy p. 441</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3204">
+        <did>
+          <unitid label="Notice numéro">n° 3204</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 1<emph render="super">er</emph> juin</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1972.jpg">4</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000162">
+          <head>Édition du regeste</head>
+          <p>Bail à rente fait par Gilles de Pontoise, grand prieur de Saint-Denis, à Jean de Crouy d’une maison scize à Saint-Denis, rue de la Fontaine, aumônée par Robert de Montmarte au profit des Charitez, en la censive du portier de Saint-Denis à treize deniers de chef-cens et une maille vers le courtillier, moyennant soixante sols parisis de rente vers les Charitez. Sous le scel de la prévosté de Paris, le premier juin 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000167">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>S 2355, n° 1</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3205">
+        <did>
+          <unitid label="Notice numéro">n° 3205</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, juin</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1972.jpg">4</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">prévôté de Meaux</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000178">
+          <head>Édition du regeste</head>
+          <p>Contract de vente par Baudouin de Tanero et sa femme au profit des abbé et couvent de Saint-Denis de la dixme de la Motte au terroir de Maisoncelles, ausdits vendeurs appartenant par échange fait avec Simon de la Motte, escuier, mouvant en fief desdits abbé et couvent, moyennant quatre-vingt-dix livres tournois. Par devant Pierre du Four garde de la prévosté de Meaux, au mois de juin 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0146V_L.jpg">page 256 (tome 1)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000183">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>Au 1er tome du cartulaire blanc p. 256</bibref>
+          <bibref>Au 3e tome de la coppie d’yceluy p. 1926</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3206">
+        <did>
+          <unitid label="Notice numéro">n° 3206</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, juin</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1972.jpg">4</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1973.jpg">5</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">bailliage de Vermandois</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000195">
+          <head>Édition du regeste</head>
+          <p>Contract d’échange par lequel Jean de Ribemont dit Flamand et sa femme délaissent aux abbé et couvent de Saint-Denis cinq muids et trois jallois de terre scis au terroir de Sairy, en plusieurs pièces énoncées audit contract, en censive de ladite abbaye ; en contr’eschange desquels lesdits de Saint-Denis cèdent ausdits Jean et sa femme cinq autres muids trois jallois au terroir de Ribemont, en plusieurs pièces énoncées audit contract, sur lesquels lesdits de Saint-Denis se sont réservé cinq sols deux deniers de cens, la justice haute et basse et la dixme entière. Par devant Guillaume de Hangest bailly de Vermandois, au mois de juin 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0129V_L.jpg">page 256 (tome 2)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000200">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Vidimus en original</bibref>
+          <bibref>Au second tome du cartulaire blanc p. 256</bibref>
+          <bibref>Au 1er tome de la coppie d’iceluy p. 451</bibref>
+          <bibref>Item au petit cartulaire de Chaource p. 228</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3207">
+        <did>
+          <unitid label="Notice numéro">n° 3207</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 17 juillet</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1973.jpg">5</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1974.jpg">6</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000214">
+          <head>Édition du regeste</head>
+          <p>Aveu rendu à l’abbé de Saint-Denis, à cause de sa seigneurie de Trappes, par Jean Donel de la sergenterie fieffée dudit Trappes, consistant en un arpent et demi de terre franc de champart, lieu dit La Croix-sur-Aleiz, moyennant quoy doit ledit Donel quérir la taille de Saint-Remy par la ville, et est quitte de ladite taille. Item, doit prendre par chacun an le jour de Noël à la second messe chantée en l’église dudit Trappes un petit pain de ceux qui sont offerts à ladite messe sur la part du pain qui appartient en icelle au prévost dudit lieu, et doit aider à partir entre ledit prévost, et <note label="1"><p>raturé sur la ligne : « au »</p></note>curé dudit lieu le pain qui est offert à ladite messe. Item, doit prendre sur la part des chandelles des offrandes de ladite église le jour de la Chandeleur, sur le droit appartenant audit prévost, un tortiz de cire, et doit faire ladite partie devant ledit prévost et ledit curé. Item, doit estre quitte des droits de forage de ladite ville, au moyen de quoy doit aider à conduire de Trappes à Saint-Denis les prisonniers. Item, doit faire la garde le jour de la feste de saint Georges audit Trappes chacun an. Item, doit prendre sur la dixme des agneaux appartenant audit sieur abbé un agneau et doit aider ledit prévost à ceuillir<note label="2"><p>Sic pour « cueillir ».</p></note> la dixme. Item, doit assister annuellement à la procession à Saint-Denis au jour Saint-Denis, et pour ce reçoit ledit jour quatre pains, quatre pintes de vin et deux sols parisis. Sous le scel de la prévosté de Paris, le samedy dix-septiesme juillet 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000222">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au gros registre des fiefs p. 413 et 727</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3208">
+        <did>
+          <unitid label="Notice numéro">n° 3208</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 28 juillet</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1974.jpg">6</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1975.jpg">7</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000233">
+          <head>Édition du regeste</head>
+          <p>Donation faite au profit de l’office d’aumônier de Saint-Denis par Jean de Dugny et sa femme d’une maison, grange, cour, fossez, jardins et aunoys scis à Romaincourt, tenant à la maison et jardins des hoirs Guillaume de Dugny ; item, une pièce de terre devant le moulin de Romaincourt tenant à la terre de Henry de Dugny et à la terre des enfans de Guillaume de Dugny ; item, une pièce de terre derrière ledit moulin, tenant d’une part au fossé par où on va au marais, d’autre ausdits enfants ; item, une pièce de terre sur le chemin de Stains et du moulin, tenant d’une part à la terre desdits enfans, d’autre aux terres de la Maison Rouge ; item, une autre pièce de terre par où ledit chemin de Stains va, tenant d’une part aux terres de la Maison Rouge, d’autre à la terre desdits enfans ; item, une pièce de terre sur la chaussée de Stains tenant d’une part au jardin Pierre de Crony, d’autre à la terre desdits enfans ; item, une pièce de terre sur les murs des jardins de Romaincourt, tenant d’une part à la terre de Renaut l’Escuyer de Stains, d’autre à la terre desdits enfans, dont une partie de la terre est en fief et l’autre moitié à trois deniers de cens vers l’infirmerie ; item, telle part et portion qui appartenoit ausdits donateurs aux cens de Romaincourt deus chacun an le lendemain de Pasques ; le tout mouvant en fief de ladite abbaye, excepté ladite moitié de terre cy-dessus spécifiée. Item, le tiers d’un arpent, tant terre que jardin, tenant de part et d’autre aux terres de Henry de Dugny et au jardin Jean de Livry, chargez du tiers d’une rente payable à Merville. Item, la part et portion à eux appartenant aux marais de Romaincourt, en la censive de l’infirmier, tenant d’une part aux marais de Saint-Léger, d’autre à la terre de Jean de Livry. Par devant Guillaume Thibout garde de la prévosté de Paris, le jeudy après la feste de saint Jacques et saint Christophe 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0290V_L.jpg">page 578 (tome 2)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000238">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>Au second tome du cartulaire blanc p. 578</bibref>
+          <bibref>Coppie d’iceluy p. 1006</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3209">
+        <did>
+          <unitid label="Notice numéro">n° 3209</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 20 août</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1975.jpg">7</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000251">
+          <head>Édition du regeste</head>
+          <p>Contract de vente par Jean de l’Estrée au profit de Jean de Dugny d’une maison scize à Saint-Denis, rue Saint-Jacques, tenant d’un costé sur le ruisseau de la fontaine de Saint-Jacques, chargée de dix-neuf sols parisis de cens vers les Charitez Saint-Denis. Sous le scel de la prévosté de Paris, le samedy après la my-aoust 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000256">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>S 2355, n° 2</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3210">
+        <did>
+          <unitid label="Notice numéro">n° 3210</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 5 août</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1975.jpg">7</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">prévôté de Château-Landon</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000267">
+          <head>Édition du regeste</head>
+          <p>Contract de vente par Simon de Gaudein, escuier, au profit de l’abbaye de Saint-Denis, de la mouvance de tous les fiefs que ledit vendeur avoit au Bois Fontaine, sçavoir le fief que tient Henry de Monceau, escuier, le fief que tient Guillaume de Gaudigny et le fief que tient Guillon le Pelé, lesquels étoient mouvans de luy en plain fief et luy relevoit son fief de ladite abbaye. Sous le scel de la prévosté du Boislandon<note label="1"><p>« Boislandon » est une erreur, il faut comprendre « Châteaulandon, comme l’indique une correction du XIX<emph render="super">e</emph> siècle.</p></note>, le vendredy après la saint Estienne, en aoust 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000275">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>S 2368, n° 2</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3211">
+        <did>
+          <unitid label="Notice numéro">n° 3211</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 27 août</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1976.jpg">8</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000286">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de l’abbaye de Saint-Denis par Henry de Stains d’une place scize à Saint-Denis dans la cour de la maison feu Mahy du Fai, en la censive du pannetier à une maille de cens. Par devant Guillaume Thibout garde de la prévosté de Paris, le samedy après la feste de saint Barthélemy 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0127V_L.jpg">page 218 (tome 1)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000290">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au 1er tome du cartulaire blanc p. 218</bibref>
+          <bibref>Au 1er tome de la coppie d’iceluy p. 679</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3212">
+        <did>
+          <unitid label="Notice numéro">n° 3212</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 11 septembre</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1976.jpg">8</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">prévôté de Melun</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000301">
+          <head>Édition du regeste</head>
+          <p>Donation au profit de l’office d’aumônier par Jean des Prez et sa femme d’une pièce de vigne scize au terroir de Saint-Ouin-en-Brie, vers la vigne dudit aumônier ; item, un arpent de terre auprès Chaimpy de la Chapelle ; item, une maison scize audit Saint-Ouin, tenant à la maison Guillaume le Pire. Sous le scel de la prévosté de Melun, le dimanche après la feste de Notre-Dame, en septembre 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0191R_L.jpg">page 379 (tome 2)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000305">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au second tome du cartulaire blanc p. 379</bibref>
+          <bibref>Coppie d’iceluy p. 662</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3213">
+        <did>
+          <unitid label="Notice numéro">n° 3213</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, septembre</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1976.jpg">8</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000316">
+          <head>Édition du regeste</head>
+          <p>Bail à rente fait par Gilles de Pontoise, grand prieur de Saint-Denis, d’une place où souloit avoir un estal à pain, scis à la Pantière, contenant deux piez et deux pouces de long et quatre pieds de profondeur, en la censive du prévost de la Garenne à un denier de cens, moyennant douze deniers de surcens vers les Charitez. Sous le scel de la prévosté de Paris, au mois de septembre 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000321">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>S 2355, n° 3</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3214">
+        <did>
+          <unitid label="Notice numéro">n° 3214</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 25 octobre</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1977.jpg">9</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000332">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de l’abbaye de Saint-Denis par damoiselle Émeline de Sannois de deux pièces de vignes scizes au terroir dudit Sannois, l’une scize lieu dit le Perrier, tenant à la vigne de ladite abbaye et en censive d’icelle à cinq deniers parisis de cens, l’autre lieu dit les Ruelles, tenant pareillement à ladite abbaye, en censive des Charitez à quatre deniers parisis de cens. Par devant Guillaume Thibout garde de la prévosté de Paris, le mardy devant la Toussaint 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0160V_L.jpg">page 318 (tome 2)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000336">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au second tome du cartulaire blanc p. 318</bibref>
+          <bibref>Coppie d’iceluy p. 549</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3215">
+        <did>
+          <unitid label="Notice numéro">n° 3215</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 13 novembre</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1977.jpg">9</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">officialité de Rouen</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000347">
+          <head>Édition du regeste</head>
+          <p>Vidimus du testament de Hervé de Saint-Denis dit de Colombes, par lequel il lègue la cinquiesme partie de tous ses biens immeubles pour fonder une chapellenie ou autel dans l’église parroissialle de Sainte-Geneviefve scize en la ville de Saint-Denis, à la charge que le curé de ladite église dira ou fera célébrer par chacun jour pour le repos de l’âme dudit fondateur une messe audit autel. Item, lègue à la fabrique de ladite église de Sainte-Geneviève dix sols et au curé dudit lieu dix sols, au chapelain cinq sols et au clerc trois sols. Item, à l’hostel-Dieu de Saint-Denis dix sols. Item, à la recluse de Saint-Quentin cinq sols, et à chacune des béguines deux sols et autres legs ; et nomme pour exécuteurs de sondit testament frère Gilles, religieux et prieur de Saint-Denis en France, et maître Pierre de Saint-Denis, professeur es loix. Par devant l’official de Rouen, le treisiesme novembre 1300.</p>
+        </scopecontent>
+      </c>
+      <c level="item" id="ISD-vol3_notice3216">
+        <did>
+          <unitid label="Notice numéro">n° 3216</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 5 décembre</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1977.jpg">9</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1978.jpg">10</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000359">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de frère Étienne de Portemue et de ses successeurs aumôniers de Saint-Denis par Thomas Alemelle et sa femme de trois quartiers de terre en deux pièces au terroir de Romaincourt, l’une tenant d’une part audit aumônier, d’autre à Renaut de Romaincourt, l’autre tenant de part et d’autre audit Renaut, le tout en censive de l’infirmier à six deniers parisis de cens et d’une demie mine d’avoine. Sous le scel de la prévosté de Paris, le lundy veille de saint Nicolas d’hyver 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0293R_L.jpg">page 583 (tome 2)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000363">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au second tome du cartulaire blanc p. 583</bibref>
+          <bibref>Coppie d’iceluy p. 1014</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3217">
+        <did>
+          <unitid label="Notice numéro">n° 3217</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 20 décembre</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1978.jpg">10</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000375">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de l’abbaye de Saint-Denis par Étienne Turgis d’un manoir et grange scis à Saint-Denis joignant la porte Neufve d’une part et la maison feu Simon de Soily d’autre et d’un bout sur la rue Saint-Jacques, en censive de ladite abbaye à deux sols de cens et douze deniers de curage. Sous le scel de la prévosté de Paris, le mardy avant Noël 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0129R_L.jpg">page 221 (tome 1)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000379">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au 1er tome du cartulaire blanc p. 221</bibref>
+          <bibref>Au 1er tome de la coppie d’iceluy p. 687</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3218">
+        <did>
+          <unitid label="Notice numéro">n° 3218</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 20 décembre</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1978.jpg">10</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000390">
+          <head>Édition du regeste</head>
+          <p>Contract d’acquisition au profit des abbé et religieux de Saint-Denis d’une maison et grange scize à Saint-Denis, joignant d’une part à la porte Neuve de Saint-Denis, d’un bout sur la rue Saint-Jacques, en la censive desdits abbé et religieux à deux sols parisis de cens et douze deniers de curage. Sous le scel de la prévosté de Paris, le mardy devant Noël 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0129R_L.jpg">page 221 (tome 1)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000395">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>Item au 1er tome du cartulaire blanc p. 221</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3219">
+        <did>
+          <unitid label="Notice numéro">n° 3219</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1201-1340</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1978.jpg">10</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1979.jpg">11</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1980.jpg">12</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1981.jpg">13</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1982.jpg">14</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">auteurs laïques</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000406">
+          <head>Édition du regeste</head>
+          <p>Aveu et dénombrement rendu à l’abbé de Saint-Denis par Jean de Fresnoy du fief, terre et seigneurie de Villiers-le-Bel consistant en la cour, les pressoirs, grange, estables, colombier, jardin, maison ; item, seize arpens de bruyères vers le bois d’Escouen ; item, neuf livres, tant cens que taille, sur plusieurs héritages à Saint-Denis ; item, deux arpens de vignes à Villiers-le-Bel ; item, à Noël quarante septiers ou environ d’avoine et quarante chapons sur plusieurs héritages, masures et vignes audit Villiers-le-Bel ; item, à la my-mars quarante corvées ; item, à la mi-Caresme quarante livres de rente pour la franchise des vignes bannières ; item, les ventes des plastres ; item, à Pasques vingt gélines et cinq oyes ; item, justice haute et basse dans les vieux fossez de la ville de Villiers ; item, le moulin Fossard et trois arpens ou environ de pré avec plusieurs masures dudit Villiers qui sont bannières audit moulin, avec toute justice sur iceluy moulin ; item, une rente en ladite abbaye de Saint-Denis, au jour de Saint-Denis ; item, un muid de bled à Gressy ; item, une maison audit Viliers<note label="1"><p>Sic pour « Villiers ».</p></note> baillée pour douze sols chacun an ; item, trois autres maisons et un arpent et demi de vigne avec trois sols de cens ; item, le rouage de vin en quelques masures audit Viliers-le-Bel<note label="2"><p>Sic pour « Villiers-le-Bel ».</p></note>. Item, ensuivent les fiefs mouvans dudit de Fresnoy tant audit Viliers-le-Bel<note label="3"><p>Idem.</p></note> qu’ausdits lieux. Premièrement Guyot de la Vilette pour son moulin séant à Gressy et la moitié de la rivière et de la pesche au-dessous du moulin ; item, Jean de Gondreville dix-sept arpens et demi de terre au terroir de Gressy et es environs ; item, la dame Catherine de Mitry quinze arpens de terre au terroir de Gressy ; item, Jean Fourment tient au terroir de Mitry les deux parts de quarante-huit sols de cens et rente et les deux parts de dix-huit pains et de dix-huit chapons, les deux parts de vingt-quatre sols de cens à la Saint-Remy et les deux parts de sept sols de cens au lendemain de Noël, douze hostices au carrefour et la justice et seigneurie et les deux parts des profits qui peuvent venir desdits cens et rentes avec unze arpens de terre au terroir de Mitry et un arrière-fief que Renaut Malaisié tient à la chevée de Mitry ; item, Guillaume Florence tient audit Gressy douze arpens de terre, sept quartiers de pré, demi arpent de faussoye, son tiers des rentes et du champart de Gressy et sa part de la justice ; item, le fief d’Estif comme il se comporte et cinq hostices audit Gressy. Item, quatre arrière-fiefs séans à Estif et à Bonneuil ou Bounelle que tiennent Pierre Bateste et la dame de Stain, Gaultier d’Estif et Adam Au Feuvre de Gonnesse ; le sire de Thory tient à Gressy treize arpens de terre et neuf quartiers de pré. Item, treize septiers de grain, tant rente que champart, trois mines d’avoine, trois oublies et cinq gélines à Noël et deux sols de cens à la Saint-Remi. Item, huit sols trois deniers et neuf gélines sur trois hostices. Item, la pêche de la rivière, la justice et seigneurie de sa terre. Item, maître Jean de Daumoindaval tient au terroir de Viliers-le-Bel<note label="4"><p>Idem.</p></note> quatorze arpens de terre, sa maison, jardin et vigne, trente sols de cens aux octaves saint Denis et à Noël treize septiers d’avoine et douze chapons et à Pasques dix gélines sur quatorze hostices audit Viliers-le-Bel et toute la justice et seigneurie esdits lieux avec huit arpens de champart. Item, Guyot le Lombard tient en fief sa masure de Deuil et ses appartenances et cent sols avec les exploits qui en proviennent, trois mines d’avoine, trente arpens de terre, quatre arpens et trois quartiers de vigne audit Viliers<note label="5"><p>Idem.</p></note>. Item, cinq hostices à Villiers. Item, quatre arrière-fiefs à Villiers. Item, Colet le Lombard tient en fief dix-huit arpens et trois quartiers de terre en une pièce au terroir dudit Villiers. Item, Jean ... tient en fief au mont de Garges six arpens de terre. Item, madame Margueritte l’Aubigeoise tient en fief cinq arpens et demi de terre en Champlong à Villiers, un arpent de vigne. Item, maître Jean de Marchez tient en fief un petit jardin à Villiers. Item, Begaut tient en fief à Villiers-le-Bel dix-huit arpens et un quartier de terre et quarante-six sols huit deniers de cens, son manoir de Villiers et une mine d’avoine. Item, Adam de Laistre tient en fief au terroir de Villiers quatre arpens et demi de terre. Item, Jean Manessier tient en fief la dixme dit quatorziesme à Villiers-le-Bel du Champlong et es champs qui en deppendent, trois mines d’avoine, deux chapons et une géline. Item, Raoul de Beaumont tient en fief à Sercelles un muid d’avoine sur hostices et trois sols de cens. Item, Robin Chrestien tient en fief audit Villiers-le-Bel cinq arpens trois quartiers de terre, trois deniers et obole de cens, sa maison et jardin. Item, Pierre de la Grange tient en fief une maison devant la fontaine de Villiers. Item, Robert de l’Escot tient en fief deux arpens de terre au terroir de Villiers. Item, Jean Bure tient en fief deux arpens et demi de terre audit Villiers. Item, Agnez de Hermax tient en fief douze arpens de terre audit terroir, moitié de douze sols de cens, moitié de cinq septiers et trois demies mines d’avoine, moitié de huit chapons, moitié de quatre gélines et demie, neuf arpens de terre en champart et les exploits de ce que dessus. Item, le sieur Jean Choisy tient en fief à Essenville quarante sols de cens. Item, Jacques le Troullier tient en fief à Cercelles quarante sols de cens et les exploits en deppendans. Item, Malvau de Maulion tient en fief à Saint-Brice sa masure, moitié d’une fosse à poisson et six sols de cens. Item, un arrière-fief que tient Jean Berenger dudit Malvau à Saint-Brice. Item, Jean Berenger tient en fief trois arpens de terre à Saint-Brice au chemin de Paris. Item, Jean de Lacy tient en fief huit livres de cens, de taille et gros cens à Villiers, quinze septiers d’avoine, vingt chapons et unze gélines, six corvées en mars, sept arpens de terre à Villiers, huit arpens de terre champartrele et les exploits en provenans. Item, le Borgne tient en fief à Dugni soixante sols de cens, treize coutumes et demie, chacune d’icelle valant deux chapons, une géline, un septier d’auvoine et demie mine de bled, dix-huit septiers de grain de champart, moitié du four et jardin et les exploits en provenans, en toutes lesquelles choses Vauterot de Villers a le sixiesme, le tout tenu en fief par ledit le Borgne. Item, Ferry Villain tient en fief à Villiers-le-Bel six arpens et trois quartiers de terre. Item, un arpent et demi de vigne à Villiers, douze sols deux deniers de cens, deux septiers et pleine mine d’avoine, un chapon et les exploits en provenans. Item, Henry l’Hostellier tient à fief à Cercelles trois muids d’avoine sur les voiries, un arpent et demi de pré, six arpens de terre audit Cercelles, cent neuf sols de crois de cens, quarante sols de cens, huit sols six deniers de cens commun, rouage et forage des vins vendus depuis vendenge jusqu’à la Saint-Martin, cinquante sols de rente, trois mines d’avoine, demie mine de bled, et ... chapons et un arrière-fief à Coupin. Item, monsieur Jean de Villiers sire de Domont tient en fief dudit Jean de Frenoy vingt arpens de terre au terroir de Villiers-le-Bel, demi arpent de vigne, vingt-deux septiers et pleine mine d’avoine, vingt chapons sept gélines, douze hostices, vingt arpens de champarterelles, vingt-quatre sols de cens commun, trois arrière-fiefs à Essenville, trente-un arpens de champarterelles à Villiers qui doivent trente-trois sols de taille. Item, ledit monsieur Jean de Villiers tient en fief par confiscation sur les deux fils feu Jean de Hermax dix-sept arpens de terre au terroir de Villiers, unze sols de cens, quatre chapons, deux gélines et un quart, quatre arpens et demi de terre champarterelles, deux septiers dix boisseaux d’avoine. Item, les hoirs Guyart de la Cour tiennent en fief quatorze arpens de terre à Cercelles. Sous le scel dudit avouant, sans datte, environ l’an 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000421">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3220">
+        <did>
+          <unitid label="Notice numéro">n° 3220</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1201-1340</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1983.jpg">15</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">- sans auteur</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000435">
+          <head>Édition du regeste</head>
+          <p>Ancien mémoire des fiefs scis à Villiers-le-Bel et des noms des possesseurs d’iceux. Sans datte, environ l’an 1300.</p>
+        </scopecontent>
+      </c>
+      <c level="item" id="ISD-vol3_notice3221">
+        <did>
+          <unitid label="Notice numéro">n° 3221</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1201-1340</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1983.jpg">15</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">- sans auteur</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000447">
+          <head>Édition du regeste</head>
+          <p>Autre ancien mémoire des fiefs scis à Villiers-le-Bel mouvans de Pierre sire de Villiers-le-Bel et des noms propriétaires desdits fiefs. Sans datte, environ l’an 1300.</p>
+        </scopecontent>
+      </c>
+      <c level="item" id="ISD-vol3_notice3222">
+        <did>
+          <unitid label="Notice numéro">n° 3222</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1983.jpg">15</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">auteurs laïques</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000459">
+          <head>Édition du regeste</head>
+          <p>Aveu rendu à l’abbé de Saint-Denis par Charles Domont d’un fief scis à Crouy consistant en terres et bois. L’an 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000464">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3223">
+        <did>
+          <unitid label="Notice numéro">n° 3223</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1201-1340</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1983.jpg">15</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">auteurs laïques</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000474">
+          <head>Édition du regeste</head>
+          <p>Aveu rendu à l’abbé de Saint-Denis par Pierrot le Felletier et Guillaume de Mesnil au nom et à cause de leurs femmes, filles maître Pierre Levemer, d’un fief scis à Tillay-le-Gaudin consistant en sept buniers de terre scizes audit terroir ; item, trois perches audit terroir ; item, un bunier et demi séant sur le sentier tendant de Recouville à Chiers ; item, trois buniers scis sur ledit sentier tendant aux terres de Maurepart ; item, quatre buniers ; item, douze buniers sur le chemin de Puviers ; item, quatre buniers sur ledit chemin ; item, six buniers ; item, un autre fief contenant quatre buniers huit perches et leurs terres. Sans datte, environ l’an 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000478">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au gros registre des fiefs p. 951</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3224">
+        <did>
+          <unitid label="Notice numéro">n° 3224</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1201-1340</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1983.jpg">15</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1984.jpg">16</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">auteurs laïques</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000488">
+          <head>Édition du regeste</head>
+          <p>Adveu rendu à l’abbé de Saint-Denis à cause de sa seigneurie de Moinvillier par Philippes de Jouy, d’un fief consistant en trente mines et trente verges de terre scis au Pire, tenant d’une part à Philipes de Mainbeville et au chemin qui va de Montmartin à Compienne ; item, au mesme lieu, dix-neuf mines de terre, tenant d’une part aux terres de Beaumanoir, d’autre à Philipes de Mainbeville. Sous le scel dudit avouant, sans datte, environ l’an 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000493">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3225">
+        <did>
+          <unitid label="Notice numéro">n° 3225</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1201-1340</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1984.jpg">16</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">auteurs laïques</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000504">
+          <head>Édition du regeste</head>
+          <p>Aveu rendu à l’abbé de Saint-Denis par Mahy de Stains du fief du quart du moulin Basset et du quart de la maison devant ledit moulin, le quart de cinq arpens et demi de terre tenant au poncel dudit moulin, le quart de quarante sols de cens et de croît de cens audit moulin, le quart d’un hommage. Sans datte, environ l’an 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000508">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au gros registre des fiefs p. 17</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3226">
+        <did>
+          <unitid label="Notice numéro">n° 3226</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301 (n. st.), 4 janvier</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1984.jpg">16</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1985.jpg">17</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000518">
+          <head>Édition du regeste</head>
+          <p>Bail à cens fait par frère Étienne de Portemue, religieux, aumônier de Saint-Denis, au profit de sondit office d’aumônier, à Herbert Lesnière et sa femme des héritages qui ensuivent, sçavoir une maison, jardin et clos et deppendances scis à Saint-Ouin-sur-Seine, tenant d’une part à Aubert de la Croix, d’autre à Perrot Chaudron ; item, six arpens et un quartier et demi de terre audit terroir de Saint-Ouin, en quatre pièces dont l’une est assise à la voye de la Chapelle, tenant d’une part à Michel Herent, l’autre pièce assise à la Croix tenant d’une part à Pierre Lenié, d’autre à la veuve Jean d’Asnières, l’autre pièce au terroir des Carreaux, tenant d’une part à Guillaume Bordier, d’autre au chantre de Saint-Paul de Saint-Denis, et l’autre pièce tenant au clos de la vigne dessus les Marests d’une part, avec ledit clos contenant un arpent de vignes ; tous lesdits héritages mouvans de ladite aumône ; ledit bail fait pour dix livres parisis de cens et rente payables par chacun an vers ledit office d’aumônier en quatre termes. Par devant Guillaume Thibout garde de la prévosté de Paris, le mercredy devant la Triphane 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0291V_L.jpg">page 580 (tome 2)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000523">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>S 2368, dossier 3</bibref>
+          <bibref>Au second tome du cartulaire blanc p. 580</bibref>
+          <bibref>Coppie d’iceluy p. 1010</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3227">
+        <did>
+          <unitid label="Notice numéro">n° 3227</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301 (n. st.), 5 janvier</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1985.jpg">17</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000537">
+          <head>Édition du regeste</head>
+          <p>Contract d’acquisition au profit de l’office de grand prieur de Saint-Denis d’un arpent et demi de vigne scis au terroir de Garges, tenant d’une part audit grand prieur et chargé vers luy de six deniers de cens. Sous le scel de la prévosté de Paris, le jeudy veille de l’Épiphanie 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000542">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>S 2330, n° 25</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3228">
+        <did>
+          <unitid label="Notice numéro">n° 3228</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301 (n. st.), 11 mars</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1985.jpg">17</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000553">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de l’abbaye de Saint-Denis par Jean de Livry d’une maison et pourpris scis à Romaincourt, tenant d’une part au jardin qui fut Jean de Dugni, d’un bout au chemin qui va au moulin de Romaincourt, en censive du grand prieur de Saint-Denis à cinq sols six deniers parisis de cens. Sous le scel de la prévosté de Paris, le samedy devant la my-Caresme 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0292V_L.jpg">page 582 (tome 2)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000558">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>Au second tome du cartulaire blanc p. 582</bibref>
+          <bibref>Coppie d’iceluy p. 1012</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3229">
+        <did>
+          <unitid label="Notice numéro">n° 3229</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 14 mars</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1985.jpg">17</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1986.jpg">18</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000570">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de frère Étienne de Portemue et de son office d’aumônier par Jean de Sercelles et sa femme d’un arpent et demi de terre scis au terroir de Romaincourt, tenant d’une part audit achepteur, d’autre à Mahy des Pilliers, en censive de l’infirmier à trois deniers et mine d’avoine et dix-huit deniers de cens. Sous de scel de la prévosté de Paris, le mardy après la mi-Caresme 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0292V_L.jpg">page 582 (tome 2)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000574">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au second tome du cartulaire blanc p. 582</bibref>
+          <bibref>Coppie d’iceluy p. 1013</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3230">
+        <did>
+          <unitid label="Notice numéro">n° 3230</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 15 mars</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1986.jpg">18</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000586">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de l’abbaye de Saint-Denis par Thomas de Parray et consors d’une maison scize à Saint-Denis, entre la maison des hoirs Foulques Bateste et la maison Jean de Condrel. Par devant Guillaume Thibout garde de la prévosté de Paris, le mercredy après la mi-Caresme 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0116R_L.jpg">page 195 (tome 1)</extref> ; <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0128R_L.jpg">page 219 (tome 1)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000591">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>Au 1er tome du cartulaire blanc p. 195 et 219</bibref>
+          <bibref>Au 1er tome de la coppie d’iceluy p. 625 et 683</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3231">
+        <did>
+          <unitid label="Notice numéro">n° 3231</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301 (n. st.), mars</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1986.jpg">18</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">auteurs laïques</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000603">
+          <head>Édition du regeste</head>
+          <p>Aveu rendu à l’abbé de Saint-Denis par Gilles de Nantouillet d’un fief scis en la parroisse de Taverny, consistant en deux arpens et demi de vigne appellé le Fief ; item, douze sols de cens ; item, une mine d’avoine de rente ; item, deux corvées. Du mois de mars 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000607">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au gros registre des fiefs p. 510</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3232">
+        <did>
+          <unitid label="Notice numéro">n° 3232</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301 (n. st.), 23 mars</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1986.jpg">18</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1987.jpg">19</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">prévôté de Chaumont</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000617">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de l’abbaye de Saint-Denis par dame Catherine du Fayel et consors de la maison et vignes appellés le Clos Oudart, scis à Cergi, et d’une pièce de terre scize au-dessous du clos Renaudet, le tout en censive de ladite abbaye, à six deniers de cens, six septiers de vin de terrage et de deux muids de vin blanc par chacun an, et outre, de huit deniers de cens vers les hoirs Jean de Linvillier à cause d’un bout de ladite pièce de terre qui est vers l’eau comme appert par les bornes, et demi muid de rente vers les hoirs Pierre Mauvoisin. Par devant Foulques Meinier tabellion en la prévosté de Chaumont, le jeudy avant la feste de Notre Dame, en mars 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0350R_L.jpg">page 663 (tome 1)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000622">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>Item au 1er tome du cartulaire blanc p. 663</bibref>
+          <bibref>Item au 3e tome de la coppie d’iceluy p. 1179</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3233">
+        <did>
+          <unitid label="Notice numéro">n° 3233</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301 (n. st.), 13 mars</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1987.jpg">19</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">châtellenie de Pontoise</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000635">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de l’abbaye de Saint-Denis par Asceline de la Croix et ses frères de tout et tel droit, possession et seigneurie à eux appartenans au Clos Bouticourt, terroir de Cergi, entre les vignes de ladite abbaye, chargé vers icelle de neuf deniers de cens et de demi muid de vin rouge d’aumône tel que croît esdites vignes vers les prieurs des Gouzengres et de la Cornilloye. Par devant Dreux Letone garde de la chastellenie de Pontoise, le lundy avant Pasques fleuries 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0351R_L.jpg">page 665 (tome 1)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000639">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au 1er tome du cartulaire blanc p. 665</bibref>
+          <bibref>Au 3e tome de la coppie d’iceluy p. 1185</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3234">
+        <did>
+          <unitid label="Notice numéro">n° 3234</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 10 décembre</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1987.jpg">19</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1988.jpg">20</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000650">
+          <head>Édition du regeste</head>
+          <p>Quittance des droits d’indemnité et amortissement d’un jardin scis à Sannois, acquis par les abbez et couvent de Saint-Denis de Jean Fournillon, mouvant de Guy de Hugot. Sous le scel de la prévosté de Paris, le samedy après la feste de saint Nicolas d’hyver 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0161R_L.jpg">page 319 (tome 2)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000654">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au second tome du cartulaire blanc p. 319</bibref>
+          <bibref>Coppie d’iceluy p. 551</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3235">
+        <did>
+          <unitid label="Notice numéro">n° 3235</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">1300, 9 décembre</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1988.jpg">20</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000666">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de frère Estienne de Portemue et ses successeurs aumôniers de Saint-Denis par Renaut de Romaincourt et sa femme de deux pièces de terres labourables scizes devant la maison de Romaincourt, entre les terres dudit aumônier, chargez de six deniers parisis de cens et de demie mine d’avoine vers l’infirmier de Saint-Denis. Sous le scel de la prévosté de Paris, le vendredy après la saint Nicolas d’hiver 1300.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0293R_L.jpg">page 583 (tome 2)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000670">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au second tome du cartulaire blanc p. 583</bibref>
+          <bibref>Coppie d’iceluy p. 1016</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3236">
+        <did>
+          <unitid label="Notice numéro">n° 3236</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1300</unitdate>
+          <unitdate label="Date revue par l’éditeur">[1251-1300]</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1988.jpg">20</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">auteurs laïques</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000681">
+          <head>Édition du regeste</head>
+          <p>Aveu rendu à l’abbé de Saint-Denis à cause de Montmélian par Guillaume de Saint-Mucien d’un fief scis à Montabis, consistant en huit masures et demie, lesquelles font un costé du village, l’autre costé mouvant des religieux de Chailly ; item, vingt-cinq arpens de bois appellez le buisson de Montabis joignant ausdits religieux de Chailly ; item, onze arpens de terre au chemin de Morte Fontaine, tenant d’un costé audit buisson, d’autre ausdits religieux ; item, six arpens de terre vers l’Essart Beront, tenant des deux costez ausdits religieux ; item, quatre arpens de terre assis vers l’orme de Loisy ; item, six arpens trois quartiers de terre assis entre Montabis et la Fontaine ; item, deux arpens de bruyères entre ledit buisson et le buisson Huet ; item, un arpent de pré et aulnoy assis du costé du pont de la Ramée ; item, telle justice qui appartient audit fief. Sans datte, environ l’an 1300.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000685">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au gros registre des fiefs p. 1227</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3237">
+        <did>
+          <unitid label="Notice numéro">n° 3237</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301, avril</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1989.jpg">21</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">parlement</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000695">
+          <head>Édition du regeste</head>
+          <p>Arrest du parlement par lequel les abbé et couvent de Saint-Denis sont maintenus aux droits de percevoir les revenus et émolumens du bac, batteau et passage du port de Clichy allencontre de Roger de Clichy et sa femme. Du mois d’avril 1301.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000700">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+        </bibliography>
+        <odd id="ISD-vol3_e0000702">
+          <head>Autres informations portées en fin de notice dans l’inventaire</head>
+          <p>Pasques 2 avril, dominicale A</p>
+        </odd>
+      </c>
+      <c level="item" id="ISD-vol3_notice3238">
+        <did>
+          <unitid label="Notice numéro">n° 3238</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301, 28 mai</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1989.jpg">21</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">auteurs laïques</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000712">
+          <head>Édition du regeste</head>
+          <p>Aveu rendu à l’abbé de Saint-Denis à cause de la chastelenie de Montmelian par Adam l’Empereur d’un fief scis au terroir de Plailly. Du vingt-huitiesme may 1301.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000716">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au gros registre des fiefs p. 169</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3239">
+        <did>
+          <unitid label="Notice numéro">n° 3239</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301, 6 juin</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1989.jpg">21</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">châtellenie de Pontoise</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000726">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de l’abbaye de Saint-Denis par Guillaume le Pontonnier de moitié de tout le port de Cergi, moitié de la charrière et des batteaux et des autres outils en deppendans, le tout mouvant de la justice et seigneurie de ladite abbaye à douze deniers de cens et une mine d’orge vers le prieur de Conflans et tel droit que le roy prent audit port le jour de Saint-Christophe par chacun an jusqu’à nones seulement. Par devant Dreux Letone garde du scel de la chastellenie de Pontoise, le mardy après l’octave de la Trinité 1301.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome1/voir.html?ns=FRCHANLL_LL1157_0350V_L.jpg">page 664 (tome 1)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000730">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au 1er tome du cartulaire blanc p. 664</bibref>
+          <bibref>Au 3e tome de la coppie d’iceluy p. 1183</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3240">
+        <did>
+          <unitid label="Notice numéro">n° 3240</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301, 12 juillet</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1989.jpg">21</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1990.jpg">22</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1991.jpg">23</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">auteurs laïques</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000741">
+          <head>Édition du regeste</head>
+          <p>Aveu rendu à l’abbé de Saint-Denis par damoiselle Santisme de Dugny, veuve Jean Bichort, d’un fief consistant en un coulombier et jardin scis à Romaincourt, tenant d’une part aux Charitez de Saint-Denis ; item, une cour enclose où fut autrefois une maison et une grange au bout de la grange des Charitez ; item, audit lieu une saussoye contenant un arpent et demi, tenant d’une part au petit Croust, d’autre aux Charitez ; item, une autre saussoye audit Romaincourt, tenant d’une part aux Charitez, d’autre au petit Croust ; item, sept quartiers de pré baillés pour quarante sols, à partir entre ledit avouant et les Charitez ; item, trois quartiers de terre prèz le jardin dessus-dit, tenant d’une part ausdites Charitez ; item, demi arpent de terre sur les marais de Stains, tenant d’une part aux Charitez ; item, trois quartiers de terre derrière le moulin de Romaincourt ; item, trois arpens de terre près dudit moulin, tenant de part et d’autre ausdites Charitez ; item, trois arpens de terre devant l’huis du jardin des Charitez, tenant de toutes parts ausdites Charitez ; item, cinq quartiers sur le chemin qui va dudit moulin de Romaincourt à Stains, tenant d’une part à maître Jacques de Dussis, d’autre à Jean de Cerisy ; item, trois arpens de terre près la maladerie de Stains, tenant d’une part aux Charitez de Saint-Denis, d’autre à la chaussée ; item, cinq quartiers de terre d’autre part, tenant d’une part à maître Jacques Dussy, d’autre aux héritiers Colin Gaultier sur la chaussée ; item, trois quartiers sur la chaussée ; item, quatre arpens de terre séans sur la chaussée ; item, quatre arpens de vigne scis à Pierrefitte, lieu dit Les Sablons, et sont lesdites terres et vignes franches de dixmes ; item, une maison scize à Saint-Denis, appellé le Four de pierre, avec trente-deux sols parisis de chef-cens sur plusieurs maisons et héritages en ladite ville et terroir, pris en commun entre ledit avouant et ledit abbé de Saint-Denis, avec tous les profits de ventes, saisines et amendes jusqu’à soixante sols parisis et un septier de vin pour chaque saisine à partir comme dessus ; item, soixante sols parisis de cens sur plusieurs héritages dans la ville et terroir de Saint-Denis, Pierrefitte et Saint-Léger ; item, en la ville de Pierrefitte, sur plusieurs maisons et masures et vignes énoncées audit aveu, douze chapons de rente ; item, les forages, rouages et bornages dans l’estendue dudit fief, droit de faire tenir les plaids par son maire en l’hostel de la Pierre dessus-dit. Sous le scel dudit avouant, le douziesme juillet 1301.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000745">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au gros registre des fiefs p. 39</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3241">
+        <did>
+          <unitid label="Notice numéro">n° 3241</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301, 29 août</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1991.jpg">23</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000757">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de frère Étienne de Portemue et de son office d’aumônier de Saint-Denis par Henry de Dugni d’un courtil scis à Romaincourt tenant d’une part audit aumônier, d’autre à la ruelle appartenant à l’infirmier et audit vendeur, d’un bout au chemin de Romaincourt en la censive de Merville. Par devant Guillaume Thibout garde du scel de la prévosté de Paris, le mardy après la feste de Saint Louis 1301.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0293V_L.jpg">page 584 (tome 2)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000761">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au second tome du cartulaire blanc p. 584</bibref>
+          <bibref>Coppie d’iceluy p. 1018</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3242">
+        <did>
+          <unitid label="Notice numéro">n° 3242</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301, 11 septembre</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1991.jpg">23</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1992.jpg">24</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">prévôt de Paris</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000772">
+          <head>Édition du regeste</head>
+          <p>Sentence du prévost de Paris par laquelle les abbé et couvent de Saint-Denis sont maintenus en la possession et saisine de la justice haute et basse du terroir du port de Bezons à l’encontre d’Estienne de Cormeilles, qui prétendoit ladite justice. Du lundy après la Septembresche ou feste de Notre Dame, en septembre 1301.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0161V_L.jpg">page 320 (tome 2)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000777">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>S 2264, n° 4</bibref>
+          <bibref>Au second tome du cartulaire blanc p. 320</bibref>
+          <bibref>Au 1er tome de la coppie d’iceluy p. 552</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3243">
+        <did>
+          <unitid label="Notice numéro">n° 3243</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301, 26 avril</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1992.jpg">24</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000791">
+          <head>Édition du regeste</head>
+          <p>Bail à rente fait par l’aumônier de Saint-Denis à Thomas de Paray d’une maison tenant à la geosle de Saint-Denis, moyennant huit livres parisis de rente. Sous le scel de la prévosté de Paris, le mercredy après la Saint-Marc apostre 1301.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000796">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3244">
+        <did>
+          <unitid label="Notice numéro">n° 3244</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Date revue par l’éditeur">1302 (n. st.), 19 février</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1992.jpg">24</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">abbé de Saint-Denis</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000806">
+          <head>Édition du regeste</head>
+          <p>Ordonnances et règlemens faits par Renaut abbé de Saint-Denis entre les maîtres foulons et les maîtres teinturiers de la ville de Saint-Denis sur les contestations mues entre eux pour le fait de la drapperie. Sous le scel dudit abbé, le lundy devant la Dédicace de l’église la Saint-Denis<note label="1"><p>L’auteur a d’abord écrit « devant la Saint-Denis » puis corrigé par ajout de « la dédicace de l’église » en oubliant de remplacer « la » par « de ».</p></note> --&gt; 1301.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000813">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>Item au 1er tome du livre vert p. 86</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3245">
+        <did>
+          <unitid label="Notice numéro">n° 3245</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301, 10 décembre</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1992.jpg">24</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1993.jpg">25</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000824">
+          <head>Édition du regeste</head>
+          <p>Compromis passé entre les maistres teinturiers de la ville de Saint-Denis et les maîtres foulons de ladite ville sur le fait de leurs maîtrises, par lequel ils se soumettent au jugement de Renaut abbé de Saint-Denis de tous les différents mus entr’eux et s’obligent à exécuter la sentence qui sera par luy rendue sans en pouvoir appeller. Ledit compromis passé sous le scel de la prévosté de Paris, le dimanche après la feste de saint Nicolas d’hyver 1301.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000829">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3246">
+        <did>
+          <unitid label="Notice numéro">n° 3246</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Dates revues par l’éditeur">1301, 10 décembre et 23 mars 1409</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1993.jpg">25</extref></p>
+          </note>
+        </did>
+        <scopecontent id="ISD-vol3_e0000841">
+          <head>Édition du regeste</head>
+          <p>Vidimus du 23 mars 1408 du compromis cy-dessus du dimanche après la feste de saint Nicolas d’hyver 1301.</p>
+        </scopecontent>
+      </c>
+      <c level="item" id="ISD-vol3_notice3247">
+        <did>
+          <unitid label="Notice numéro">n° 3247</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Date revue par l’éditeur">1301, 30 décembre</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1993.jpg">25</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000851">
+          <head>Édition du regeste</head>
+          <p>Contract de vente au profit de frère Estienne de Portemue et de son office d’aumônier de Saint-Denis par Jean Malaquin de moitié d’une maison scize à Saint-Denis, rue François Lequeu, tenant à la maison dudit acheteur, en censive de ladite abbaye à un denier parisis de chef-cens. Par devant Guillaume Thibout garde du scel de la prévosté de Paris, le samedy après Noël 1301.</p>
+        </scopecontent>
+        <relatedmaterial>
+          <head>Correspondance avec le cartulaire blanc</head>
+          <p>L’acte correspondant a été copié au cartulaire blanc, la copie figure <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/cartulaireblanc/tome2/voir.html?ns=FRCHANLL_LL1158_0293V_L.jpg">page 584 (tome 2)</extref>.</p>
+        </relatedmaterial>
+        <bibliography id="ISD-vol3_e0000855">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au 2d tome du cartulaire blanc p. 584</bibref>
+          <bibref>Coppie d’iceluy p. 1017</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3248">
+        <did>
+          <unitid label="Notice numéro">n° 3248</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Dates revues par l’éditeur">1302 (n. st.), 24 janvier ; 1307, 28 juillet (date de la confirmation) et 4 mai 1447</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1993.jpg">25</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1994.jpg">26</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">roi de France</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000868">
+          <head>Édition du regeste</head>
+          <p>Vidimus du quatrième may 1447 d’un autre vidimus du vendredis avant la feste de saint Pere 1307 des lettres du roy Philipes le Bel par lesquelles il deffend au prévost de Paris et à tous autres officiers de justice et sergens royaux d’exploitter ou faire aucun autre acte de justice dans l’estendue de la terre des abbé et religieux de Saint-Denis dans laquelle ils ont toute sorte de justice haute et basse, dattées de la vigile de la Conversion de saint Paul, l’an 1301.</p>
+        </scopecontent>
+      </c>
+      <c level="item" id="ISD-vol3_notice3249">
+        <did>
+          <unitid label="Notice numéro">n° 3249</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Dates revues par l’éditeur">1302 (n. st.), 19 février et 23 mars 1409</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1994.jpg">26</extref></p>
+          </note>
+        </did>
+        <scopecontent id="ISD-vol3_e0000882">
+          <head>Édition du regeste</head>
+          <p>Vidimus du 23 mars 1408 de sentence arbitralle rendue par Renaut abbé de Saint-Denis entre les maîtres teinturiers et foulons de la ville de Saint-Denis pour le fait de l’exercice de leurs maîtrises, sous le scel dudit abbé, le lundy avant la Dédicace de l’église de Saint-Denis 1301.</p>
+        </scopecontent>
+      </c>
+      <c level="item" id="ISD-vol3_notice3250">
+        <did>
+          <unitid label="Notice numéro">n° 3250</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Date revue par l’éditeur">1302 (n. st.), 14 mars</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1994.jpg">26</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">abbé de Saint-Denis</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000892">
+          <head>Édition du regeste</head>
+          <p>Bail à rente fait par Gilles prieur de Saint-Denis à Renaut le Barbier d’une maison scize à Saint-Denis, rue de la Cordonnerie, avec six chambres scizes sur le derrière, aboutissant par derrière à la rue du Four Bégard, moyennant soixante-et-dix sols parisis vers l’office des Charitez et pareille somme vers l’église de Saint-Paul par chacun an. Sous le scel dudit prieur, le mercredy après la feste de saint Grégoire 1301.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000897">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3251">
+        <did>
+          <unitid label="Notice numéro">n° 3251</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Date revue par l’éditeur">1302 (n. st.), 31 mars</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1994.jpg">26</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1995.jpg">27</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000907">
+          <head>Édition du regeste</head>
+          <p>Bail à rente fait par le maître des Charitez à Robert Pate velue d’une grange et court scis à Saint-Denis, rue Maurice de Montfermeil, moyennant trente solz de rente vers les Charitez. Sous le scel de la prévosté de Paris, le samedy devant la mi-Caresme 1301.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000912">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>S 2355, n° 6</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3252">
+        <did>
+          <unitid label="Notice numéro">n° 3252</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Date revue par l’éditeur">1302 (n. st.), 9 avril</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 page <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1995.jpg">27</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">Châtelet</name>
+          </controlaccess>
+          <controlaccess>
+            <head>Types de documents</head>
+            <genreform>original</genreform>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000924">
+          <head>Édition du regeste</head>
+          <p>Contract d’échange par lequel Jean Auger et sa femme délaissent à frère Gilles, prieur, et à frère Jean Doainville, maîtres des Charitez de Saint-Denis, une maison et deppendances scis à Saint-Denis, rue du Sauger, en la censive de l’abbaye à deux sols parisis de chef-cens et trente-huit sols parisis de croît de cens ; item, demi arpent de pré scis à Pont Pierre tenant au pré des Charitez, chargé vers l’infirmier de douze deniers de dixme ; item, sept sols deux deniers parisis de cens sur la maison Henry de Galardon scize rue Corbellion. Et en contr’échange lesdits religieux délaissent ausdits Auger et sa femme une maison scize audit Saint-Denis, derrière les halles ; item, deux pièces de vigne, l’une contenant un arpent scize au terroir de Villetaneuse, l’autre au terroir de Stains contenant un quartier. item, une maison scize à Saint-Denis, en la rue Saint-Paul, en censive dudit Saint-Paul. Sous le scel de la prévosté de Paris, du lundy avant Pasques fleuries 1301.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000929">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>En original</bibref>
+          <bibref>S 2250<emph render="super">A</emph>, n° 36</bibref>
+          <bibref>Item au petit cartulaire blanc p. 97</bibref>
+        </bibliography>
+      </c>
+      <c level="item" id="ISD-vol3_notice3253">
+        <did>
+          <unitid label="Notice numéro">n° 3253</unitid>
+          <unitdate label="Millésime porté sur l’Inventaire">1301</unitdate>
+          <unitdate label="Date revue par l’éditeur">[1301, 11 juin-1301, 17 juin] (estimation grossière)</unitdate>
+          <note label="Édition réalisée d’après">
+            <p>Archives nationales, LL 1191 pages <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1995.jpg">27</extref> et <extref xlink:href="http://saint-denis.enc.sorbonne.fr/images/inventaire/tome3/voir.html?ns=inventairejpg_1996.jpg">28</extref></p>
+          </note>
+        </did>
+        <controlaccess>
+          <controlaccess>
+            <head>Type(s) d’auteur d’acte</head>
+            <name role="auteur d’acte">roi de France</name>
+          </controlaccess>
+        </controlaccess>
+        <scopecontent id="ISD-vol3_e0000942">
+          <head>Édition du regeste</head>
+          <p>Commission adressée par le roi Philipes le Bel à l’évêque de Thérouenne et à Albert de Hangest, chevalier, pour conjoinctement avec le procureur du roy et les gens du comte de Haynaut faire enqueste, sçavoir depuis quel tems ledit seigneur roy est en possession de garder la ville et habitans de Solesmes à l’encontre dudit comte de Haynaut, qui prétendoit que ladite garde luy appartenoit, et faire restituer aux habitans de Solesmes ce qui leur a esté pris par les gens dudit comte et envoyer ladite enqueste à sa Majesté. Donnée à Ypres, après la feste de saint Barnabé 1301.</p>
+        </scopecontent>
+        <bibliography id="ISD-vol3_e0000946">
+          <head>Références données par l’Inventaire général</head>
+          <bibref>Au petit registre de Chaource p. 266</bibref>
+        </bibliography>
+      </c>
+    </dsc>
+  </archdesc>
+</ead>

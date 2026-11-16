@@ -23,6 +23,7 @@ metadata/collection.tsv              métadonnées de la collection
 metadata/dots_metadata_mapping.xml   règles de métadonnées (espace de noms dots-suite)
 schema/                              schéma du corpus
 transform/saint-denis.xsl            feuille de rendu, au nom de la collection ; importe hteiml
+ead/                                 l'Inventaire général en EAD 2002 (reconstruit en 2026, non lu par DoTS ; voir ead/README.md)
 ```
 
 ## Déploiement

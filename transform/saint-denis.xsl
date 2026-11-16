@@ -194,6 +194,36 @@
     </article>
   </xsl:template>
 
+  <!-- 2026-11-16 : notes de l'Inventaire remises à leur appel (TEI refait depuis l'EAD). hteiml n'écrit pas le corps
+       des notes d'un fragment : il est écrit ici, juste après le paragraphe qui les appelle, sous les rubriques et dans
+       la forme de l'ancien site (« Notes de l'inventaire manuscrit » en lettres, « Notes de l'éditeur » en chiffres). -->
+  <!-- dates des notices (TEI refait depuis l'EAD) : deux modèles hteiml de même priorité visent tei:date (XTDE0540) -->
+  <xsl:template match="tei:div[@type = 'notice']//tei:date" priority="15">
+    <span class="date"><xsl:apply-templates/></span>
+  </xsl:template>
+
+  <xsl:template match="tei:div[@type = 'notice']/tei:p[.//tei:note[@type = ('inventaire', 'editeur')]]" priority="16">
+    <xsl:next-match/>
+    <xsl:variable name="p" select="."/>
+    <xsl:for-each select="('inventaire', 'editeur')">
+      <xsl:variable name="type" select="."/>
+      <xsl:variable name="notes" select="$p//tei:note[@type = $type]"/>
+      <xsl:if test="$notes">
+        <p class="isd-rubrique">
+          <xsl:value-of select="if ($type = 'inventaire') then 'Notes de l’inventaire manuscrit' else 'Notes de l’éditeur'"/>
+        </p>
+        <xsl:for-each select="$notes">
+          <xsl:variable name="id"><xsl:call-template name="id"/></xsl:variable>
+          <p class="p noindent note-{$type}" id="{$id}">
+            <a class="noteback" href="#{$id}_"><xsl:value-of select="@n"/></a>
+            <xsl:text>. </xsl:text>
+            <xsl:apply-templates/>
+          </p>
+        </xsl:for-each>
+      </xsl:if>
+    </xsl:for-each>
+  </xsl:template>
+
   <xsl:template match="tei:div[@type = 'section']" priority="14">
     <section class="isd-section" id="{@xml:id}">
       <h2 class="isd-section-head"><xsl:apply-templates select="tei:head[1]/node()"/></h2>
